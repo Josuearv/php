@@ -1,0 +1,71 @@
+
+.graph__block{
+  width: 47%;
+}
+
+.background__andPadding-block--edit{
+  padding: 1.5rem;
+}
+
+.month__value-block{
+  width: 100%;
+  padding: 1rem 0 0 1.5rem;
+}
+
+.line__value-element{
+  font-size: 13px;
+  font-weight: 500;
+}
+.line__value-element::before{
+  content: "";
+  background: #F3992E;
+  border: 1px solid #F7BE7B;
+  width: 45px;
+  height: 2px;
+  border-radius: 0.3rem;
+  margin: 0 1rem 0 0;
+}
+
+.line__value-element--blue::before{
+  content: "";
+  background: #5283FF !important;
+  border: 1px solid #BFD1FF !important;
+  width: 45px;
+  height: 2px;
+  border-radius: 0.3rem;
+  margin: 0 1rem 0 0;
+}
+
+.title__graphmonth-element{
+  font-size: 20px;
+  margin: 0 0 2rem 0;
+}
+
+.title__rendiment-element{
+  color: #3C3C3C;
+  font-weight: 600; 
+  font-size: 14px;
+}
+
+.title__rendiment-element b{
+  color: #F3992E;
+  font-size: 14px;
+}
+
+.title__rendiment-element--colorGray, .title__rendiment-element--colorGray b{
+  color: gray; 
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+@media (max-width: 990px){
+  .section__graph-block{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .graph__block{
+    width: 100%;
+  }
+
+}

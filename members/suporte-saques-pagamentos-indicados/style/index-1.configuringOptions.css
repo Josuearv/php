@@ -1,0 +1,255 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  background: #F0F0F0;
+}
+
+/*################## main */
+
+.container__configuringStart-block{
+  width: 90%;
+  max-width: 1400px;
+  margin: 4rem 0;
+}
+
+.header__titlePrimary-element{
+  font-size: clamp(30px, 2vw, 35px);
+}
+
+.header__spanTitle-element{
+  font-weight: 500;
+}
+
+.footer__header-block{
+  margin: 2rem 0 0 0;
+  background: #FFFFFF;
+  padding: 1rem;
+  border-radius: 0.7rem;
+}
+
+.footer__titlePrimary-element{
+  font-size: 16px;
+}
+
+.footer__href-element{
+  text-decoration: none;
+  background: #5283FF;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  font-size: clamp(12px, 1vw,14px);
+  cursor: pointer;
+  transition: .2s;
+}
+
+.footer__href-element:hover{
+  background: #225ef7;
+} 
+
+/*################## section__cardsMethod-block */
+
+.section__cardsMethod-block{
+  margin: 2.5rem 0 0 0;
+}
+
+.card__methodPayments-block{
+  background: #fff;
+  padding: 1.5rem 1rem;
+  margin: 0 0 1.5rem 0;
+  border-radius: 0.7rem;
+}
+
+#type__radioinput-select{
+  margin: 0 1rem 0 0 ;
+  background: red;
+  cursor: pointer;
+}
+
+.title__Banktransfer-element{
+  font-size: 15px;
+}
+
+.span__textmyAccount-element{
+  margin: 0 0 1rem 0;
+}
+
+.card__informations-block span{
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.Cardconfigure__payments-block{
+  background: red;
+}
+
+.a__configure-element{
+  color: #fff;
+  padding: 0.6rem 1rem;
+  background: #A8A8A8;
+  text-decoration: none;
+  border-radius: 2rem;
+  transition: .2s;
+}
+
+.a__configure-element:hover{
+  background: #575757;
+}
+
+/* input radio */ 
+
+.radio__select {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.radio__select + label {
+  position: relative;
+  cursor: pointer;
+  padding-left: 30px;
+}
+
+.radio__select[type=radio] + label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -21px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: solid 3px gray;
+  vertical-align: bottom;
+
+}
+
+.radio__select[type=radio]:checked + label::before {
+  border: 3px solid #5485FF;
+}
+
+.radio__select[type=radio]:checked + label::after {
+  content: '';
+  background-color: #5485FF;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  position: absolute;
+  margin: 7px 0 0 -23px;
+}
+
+/*################## section__minimumPayment-block */
+
+
+.section__minimumPayment-block{
+  background: #fff;
+  padding: 1.5rem 1rem;
+  margin: 2.5rem 0 0 0;
+  border-radius: 0.7rem;
+}
+
+.title__minimumPaymentPrimary-element{
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.select{
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  border: 1px solid #E8E8E8;
+  width: 390px;
+  padding: 1rem 1rem;
+  border-radius: 0.3rem;
+}
+
+.select select{
+  appearance: none;
+  border: none;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  color: #888888;
+  cursor: pointer;
+
+}
+
+#triangle__down-element{
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #949396;
+}
+
+.text__important-element{
+  font-weight: 500;
+  color: #000000;
+}
+
+.text__important-element b{
+  color: #F5626E;
+}
+
+.labels__checkboxPayments-block{
+  margin: 1rem 0;
+}
+
+.label__checkPayments-element input{
+  width: 20px;
+  height: 20px;
+  margin: 0 0.5rem 0 0;
+  cursor: pointer;
+}
+
+.label__checkPayments-element{
+  margin: 0 0 0.5rem 0;
+}
+
+/*################## footer__notMetodPayments-block */
+
+
+.footer__notMetodPayments-block{
+  margin: 2.5rem 0 0 0;
+}
+
+.footer__spanTitleMetody-element{
+  font-size: 17px;
+  max-width: 1000px;
+  color: black; 
+}
+
+.footer__notMetodPayments-block button{
+  margin: 2rem 0 0 0;
+  border: none;
+  padding: 0.7rem 1rem;
+  background: #5283FF;
+  border-radius: 2rem;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.footer__notMetodPayments-block button:hover{
+  background: #2b4b9c;
+}
+
+
+@media (max-width: 620px){
+  .footer__header-block, .card__methodPayments-block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  } 
+  .footer__href-element, .a__configure-element{
+    margin: 0.5rem 0;
+  }
+  
+  .select{
+    width: 100%;
+  }
+}

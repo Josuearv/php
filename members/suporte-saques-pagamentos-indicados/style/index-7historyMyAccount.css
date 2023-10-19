@@ -1,0 +1,124 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  background: #F0F0F0;
+}
+
+/*################## main__historyMyAccount-block */
+
+.container__historyMyAccount-block{
+  max-width: 1440px;
+  width: 90%;
+  margin: 3.5rem 0;
+}
+
+.div__rowEnd-block{
+  margin: 0.5rem 0 0 0;
+}
+
+.header__historyMyAccount-block h1{
+  font-size: clamp(25px, 1.5vw, 30px)
+}
+
+.div__rowEnd-block span, .b__colorBlue-element{
+  font-weight: 500;
+  font-size: 15px; 
+}
+
+.b__colorBlue-element{
+  color: #618DFD;
+}
+
+.background__andPadding-block{
+  background: #fff;
+  padding: 0.5rem;
+  margin: 2rem 0 0 0;
+  border-radius: 0.7rem;
+}
+
+.row__up{
+  margin: 0.5rem 0;
+}
+
+.title__earningOfTheMonth-element{
+  text-align: center;
+  font-size: 17px;
+  width: 202px;
+  text-align: end;
+  padding: 1rem;
+
+}
+
+.border__earningOf-element{
+  margin: 0 1rem;
+  background: #D3D3D3;
+  width: 1px;
+  height: 300px;
+}
+
+.ul__earningOfTheMonth-block,
+.ul__indicated-block{
+  list-style: none;
+  height: 100%;
+}
+
+.ul__earningOfTheMonth-block li{
+  margin: 0.4rem 0;
+  font-weight: 500;
+}
+
+.border__earningOf-element--height{
+  height: 100px;
+}
+
+.border__indicated-block--height{
+  height: 30px;
+}
+
+
+.ul__indicated-block li{
+  text-decoration: underline;
+  color: #555555;
+}
+
+@media (max-width: 680px){
+  .div__rowEnd-block{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .b__colorBlue-element{
+    margin: 0.5rem 0;
+  }
+
+  .section__earningOfTheMonth-block,
+  .section__movement-block,
+  .section__indicated-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .border__earningOf-element{
+    height: 1px;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .title__earningOfTheMonth-element,
+  .ul__earningOfTheMonth-block{
+    width: 100%;
+    text-align: center;
+  }
+
+  .ul__indicated-block{
+    padding: 1rem;
+    text-align: center;
+  }
+
+}

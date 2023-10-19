@@ -1,0 +1,240 @@
+@media only screen and (max-width: 1000px) {
+    input[type=number]::-webkit-inner-spin-button { 
+  -webkit-appearance: none;
+}
+
+input[type=number] { 
+ -moz-appearance: textfield;
+ appearance: textfield;
+}
+
+legend {
+  margin-left: 0.5vw;
+  font-size: 11px;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  font-family: 'Montserrat';
+  text-transform: capitalize;
+}
+
+fieldset {
+  border-radius: 0.5vw;
+  display: flex;
+  height: 10vw;
+  width: 25vw;
+}
+
+h1, h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.3vw;
+}
+
+p {
+  font-size: 3.2vw;
+}
+
+.red {
+  color: red;
+}
+
+.main {
+  position: relative;
+  top: 7.5vw;
+}
+
+.hero {
+  width: 100%;
+}
+
+.padding {
+  padding: 5vw;
+  display: block;
+  justify-content: space-around;
+}
+
+.grey {
+  background-color: #e1e1e1;
+}
+
+.display {
+  display: block;
+}
+
+.displayGrid {
+  display: grid;
+}
+
+.justify {
+  justify-content: space-evenly;
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.containerHero3 {
+  background-image: url('../images/herogrop.png');
+  background-size: cover;
+  background-position: center;
+   height: 192px;
+}
+
+.containerSectionOne {
+  border-radius: 0.5vw;
+  background-color: white;
+  box-shadow: 0.1vw 0.1vw 0.5vw rgba(0, 0, 0, 0.434);
+  width: 90vw;
+}
+
+.containerSectionTwo {
+  width: 30vw;
+}
+
+.cardHelp {
+  border-radius: 0.5vw;
+  padding: 7vw;
+  margin: 3vw 0;
+  width: 90vw;
+  background-color: white;
+  box-shadow: 0.1vw 0.1vw 0.5vw rgba(0, 0, 0, 0.434);
+}
+
+.textLeft {
+  text-align: left;
+}
+
+.marginBotton {
+  margin-bottom: 1vw;
+}
+
+.width {
+  width: 80vw;
+}
+
+.input {
+   border: none;
+    border-radius: 0.3vw;
+    height: 28px;
+    font-size: 13px;
+    padding: 14px 10px;
+    width: 100%;
+    font-family: 'Montserrat';
+    resize: none;
+}
+
+.input:focus{
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.btnNext {
+  align-items: center;
+    background-color: #5283FF;
+    border: none;
+    border-radius: 0.5vw;
+    color: white;
+    display: flex;
+    padding: 28px 38px;
+    font-weight: 600;
+    height: 56px;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 17px;
+    outline: 0;
+}
+
+.marginImg {
+  margin-left: 2vw;
+}
+
+.displayFlex {
+  display: flex;
+  justify-content: center;
+}
+
+.btnNext2 {
+  align-items: center;
+  background-color: #F45966;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  display: flex;
+  padding: 11px 23px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.h2Card {
+  color: #F45966;
+  font-size: 1.5em;
+}
+
+.pCard {
+    font-size: 13px;
+    font-family: Montserrat;
+}
+
+.marginImg2 {
+  margin-right: 1vw;
+}
+
+.widthCardImg {
+  width: 76px;
+  height: 76px;
+}
+
+.btnNext3 {
+  align-items: center;
+  background-color: #F3992E;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  display: flex;
+  padding: 11px 23px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.h2Card3 {
+  color: #F3992E;
+  font-size: 1.5em;
+}
+.mensagem {
+  box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 16px;
+gap: 10px;
+
+width: 346px;
+height: 255px;
+
+
+background: #FFFFFF;
+border: solid 1px #C0C0C0;
+border-radius: 6px; 
+}
+.alert {
+  width: 110%;
+  height: 60px;
+  border-radius: 6px;
+  padding: 15px;
+  text-align: center;
+
+  margin-top: -80px;
+}
+.success { background: #D0E7DD;}
+.erro { background: #F8D7DA;}
+
+}

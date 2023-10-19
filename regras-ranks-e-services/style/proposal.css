@@ -1,0 +1,518 @@
+/* ########### main */ 
+
+.title__searchName{
+  font-size: clamp(23px, 1.5vw, 28px);
+  max-width: 950px;
+  color: #484848;
+  font-weight: 700;
+}
+
+.section_navInformation{
+  margin: 2rem 0 0 0;
+}
+
+.ul__infoNav{
+  display: flex;
+  align-items: center;
+  list-style: none;
+
+}
+
+.ul__infoNav li{
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: #535353;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.li__activeNav{
+  border-top: 1px solid #CDCDCD;
+  border-left: 1px solid #CDCDCD;
+  border-right: 1px solid #CDCDCD;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+  background: #F2F2F2;
+  position: relative;
+}
+
+.li__activeNav::after{
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #F5F5F5;
+  position: absolute;
+  bottom: -1px;
+}
+
+.li__activeNav:hover{
+  color: #535353 !important;
+}
+
+/* proposal__information */ 
+
+.proposal__information{
+  padding: 2rem 0;
+  border-top: 1px solid #CDCDCD;
+  border-bottom: 1px solid  #CDCDCD;
+}
+
+.card__proposalInformationMoney{
+  margin: 0 2rem 0 0;
+}
+
+.title__cardProposalValue{
+  color: #535353;
+}
+
+.title__nameDescription{
+  margin: 0.3rem 0 0 0;
+  color: #4b4a4a;
+  font-weight:500;
+}
+
+.title__nameSubDescription{
+  color: #4b4a4a;
+  font-weight: 500;
+}
+
+.title__subProposalValue{
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* buttons__proposalInformation */ 
+
+.buttons__proposalInformation{
+  display: flex;
+}
+
+.button__proposal{
+  display: flex;
+  align-items: center;
+  margin: 0 1rem 0 0;
+  padding: 0.4rem 1.7rem;
+  border-radius: 2rem;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+}
+
+.button__proposal img{
+  margin: 0 0.5rem 0 0;
+}
+
+.button__proposal--orange{
+  background: #F79731;
+  border-radius: 1px solid #fae2be;
+}
+
+.button__proposal--orange:hover{
+  background: #ca771e;
+}
+
+.button__proposal--blue{
+  background: #5183FE;
+}
+
+.button__proposal--blue:hover{
+  background: #234497;
+}
+
+.section__aboutPropostInfo{
+  margin: 3rem 0 0 0;
+}
+
+.section__headerChoosePropost{
+  width: 100%;
+}
+
+.ul__headerChoosePropost{
+  list-style: none;
+}
+
+.ul__headerChoosePropost li{
+  padding: 1rem 3rem;
+  background: #F8F8F8;
+  color: #A9A9A9;
+  font-weight: 500;
+}
+
+.li__activeChoosePropost{
+  background: #fff !important;
+  color: #6388D6 !important;
+  font-weight: 600 !important;
+  position: relative;
+  border-top-left-radius: 0.5rem;
+}
+
+.li__activeChoosePropost::after{
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background: #789BED;
+  bottom: 1px;
+  margin: 0 0 0 -3.5rem;
+}
+
+.select{
+  width: 180px;
+  height: 45px;
+  border: 1px solid #E3E3E3;
+  padding: 0.5rem;
+}
+
+/* background__aboutProject */
+
+.background__aboutProject{
+  background: #fff;
+  padding: 2.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.ul__achievments{
+  list-style: none;
+}
+
+.ul__achievments li{
+  margin: 0 1.5rem 0 0;
+  display: flex;
+}
+
+.li__activeStart{
+  display:  flex;
+  align-items: center;
+}
+
+.li__activeStart div{
+  margin: 0 0 0 0.5rem;
+}
+
+.achievements__aboutProject{
+  padding: 1rem 0;
+}
+
+.achievements__aboutProject{
+  border-bottom: 2px solid #E1E1E1;
+}
+
+.background__apple{
+  background: #2E2E2E;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.title__nameValueApple{
+  margin: 0 0.5rem;
+  font-size: 16px;
+}
+
+.title__opacityAssessment{
+  color: #BDBDBD;
+  font-size: 14px;
+}
+
+.title__clientConfiguration{
+  padding: 1.5rem 0 1rem 0;
+}
+
+.text__descriptionProject{
+  font-size: 16px;
+  font-weight: 500;
+  color: #6E6E6E;
+  max-width: 900px;
+}
+
+.title__detailsBlue{
+  color: #6A8CCC;
+  cursor: pointer;
+}
+
+/* ul__timeAchievements */
+
+.ul__timeAchievements{
+  list-style: none;
+}
+
+.ul__timeAchievements li{
+  margin: 1.5rem 0 0 0;
+}
+
+.title__valuePrimaryTimeAchievements{
+  color: #535353;
+  font-size: 25px;
+}
+
+.image__timeAchivements{
+  margin: 1.5rem 0 0 0;
+}
+
+/* buttons__showMessageAndLikes */
+
+.button__showMessage{
+  padding: 0.7rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid #F0F0F0;
+  background: #A7A7A7;
+  color: #fff;
+  font-weight: 500;
+  margin: 0 1rem 0 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button__showMessage:hover{
+  background: #696969;
+}
+
+.background__color{
+  width:40px;
+  height:40px;
+  border-radius: 50%;
+  margin: 0 0.5rem 0 0;
+}
+
+.background__color--grayOpacity{
+  background: #FAFAFC;
+}
+
+.background__color--gray{
+  background: #DFDFDF;
+}
+
+.proposal__cardInfoNew{
+  width: 80%;
+}
+
+.title__cardProposalValue--green{
+  font-weight: 500;
+  color: #63DB2E;
+}
+
+.title__subProposalValue--gray{
+  color: #535353 !important;
+}
+
+.title__nameDescription--size,
+.title__nameSubDescription-size{
+  font-size: 14px;
+  color: #ADADAD;
+}
+
+.button__acceptPropost{
+  background: #63DC27;
+  border: 1px solid #7CC75E;
+}
+
+.button__acceptPropost:hover{
+  background: #469c1a;
+}
+
+.menu__openAchievments{
+  cursor: pointer;
+  position: relative;
+}
+
+.modal__configOptionsBackground{
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  position: absolute;
+  width: auto;
+  padding: 0rem 0;
+  border-radius: 0.2rem;
+  margin: 1.5rem 0 0 -8rem;
+  display: none;
+}
+
+.modal__configOptionsBackground ul{
+  list-style: none;
+}
+
+.modal__configOptions li{
+  font-weight: 500;
+  color: rgb(78, 78, 78);
+  text-align: start;
+  padding: 0.5rem 1rem;
+  transition: 0.3s;
+  border-bottom: 1px solid #D4D4D4;
+}
+
+.modal__configOptions li:hover{
+  color: #F39B2D;
+}
+
+.modal__configOptions li:first-child{
+  margin: 0;
+}
+
+.ul__infoNav li:hover{
+  color: #F39B2D;
+}
+
+.active{
+  display: block;
+}
+
+.rightTriangle{
+  border-top: 15px solid transparent; 
+  border-bottom:15px solid transparent; 
+  border-left: 15px solid #ffffff;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  margin: 0 -0.8rem;
+}
+
+@media (max-width: 990px){
+  .buttons__proposalInformation,
+  .ul__achievments{
+    flex-direction: column;
+  }
+
+  .button__proposal{
+    margin: 0.5rem 0 0 0;
+  }
+
+  .button__proposal:first-child{
+    margin: 0;
+  }
+
+  .ul__achievments{
+    align-items: start;
+  }
+
+  .menu__openAchievments{
+    align-items: start;
+  }
+
+  .content__imagesPerfilPeople,
+  .text__descriptionProject{
+    margin: 0.5rem 0 0 0;
+  }
+
+  .title__clientConfiguration,
+  .div__proposalAbout{
+    flex-direction: column-reverse;
+  }
+
+  .money__aboutInfoProject{
+    margin: 0.5rem 0;
+  }
+  
+  .proposal__cardInfoNew{
+    width: 100%;
+  }
+}
+
+@media (max-width: 750px){
+  .buttons__showMessageAndLikes{
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .button__showMessage{
+    margin: 0.5rem 0 0 0;
+    width: 200px;
+  }
+
+  .images__linksMessage{
+    margin: 1rem 0 0 0;
+  }
+
+  .background__aboutProject{
+    padding: 1.5rem;  
+  }
+}
+
+@media (max-width: 725px){
+  .proposal__information{
+    flex-direction: column;
+  }
+
+  .buttons__proposalInformation{
+    margin: 1.5rem 0 0 0;
+  }
+
+  .content__imagesPerfilPeople{
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .li__activeStart{
+    margin: 0.5rem 0 !important; 
+  }
+}
+
+@media (max-width: 585px){
+  .ul__infoNav,
+  .section__headerChoosePropost{
+    flex-direction: column-reverse;
+    align-items: start;
+  }
+
+  .select{
+    margin: 0 0 1rem 0;
+    width: 100%;
+  }
+
+  .ul__headerChoosePropost,
+  .ul__headerChoosePropost li{
+    width: 100% ;
+  }
+  
+  .ul__headerChoosePropost li{
+    text-align: center;
+  }
+
+  .li__activeChoosePropost::after{
+    margin: 0 0 0 -5rem;
+  }
+
+  .buttons__showMessageAndLikes{
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .images__linksMessage{
+    margin: 1rem 0  0 0;
+  }
+}
+
+@media (max-width: 425px){
+  .ul__headerChoosePropost{
+    flex-direction: column-reverse;
+  }
+
+  .li__activeChoosePropost::after {
+    width: 0;
+  }
+
+  .li__activeChoosePropost{
+    border-bottom: 2px solid #5F84D5;
+  }
+}
+
+@media (max-width: 395px){
+  .proposal__informationMoney{
+    flex-direction: column;
+  }
+
+  .card__proposalInformationMoney{
+    margin: 1rem 0 0 0;
+  }
+
+  .card__proposalInformationMoney:first-child{
+    margin: 0;
+  }
+}

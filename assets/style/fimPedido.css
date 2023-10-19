@@ -1,0 +1,167 @@
+.agradecimento {
+    font-family: 'Helvetica';
+font-style: normal;
+font-weight: 400;
+font-size: 21px;
+line-height: 23px;
+/* identical to box height */
+
+margin-left: 165px;
+
+color: #505050;
+}
+.header {
+    background: #F5F5F5;
+}
+.frame-1501 {
+    margin-left: 165px;
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 10px;
+    
+    width: 1110px;
+    height: 330px;
+    
+    border: 1px solid #CECECE;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.dd-pedido {
+    margin-top: 15px;
+    display: block;
+}
+    .txt-pedido {
+        font-family: 'Helvetica';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        /* identical to box height */
+        
+        text-align: center;
+        
+        color: #505050;
+    }
+    .num-pedido {
+        font-family: 'Helvetica';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 23px;
+/* identical to box height */
+
+text-align: center;
+
+color: #505050;
+    }
+.frame-1503 {
+    align-items: flex-start;
+    padding: 10px;
+    gap: 16px;
+    width: 1110px;
+    height: 61px;
+    border: 1px solid #CECECE;
+
+    margin-left: 165px;
+} 
+    .label-detalhes {
+        font-family: 'Helvetica';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 18px;
+/* identical to box height */
+
+
+color: #505050;
+    }
+    .label-produto {
+        font-family: 'Helvetica';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+/* identical to box height */
+
+
+color: #505050;
+    }
+.frame-1501 {
+    border: solid 0.1rem #ccc;
+    height: auto;
+    }
+    .quadros {
+        display: flex;
+    justify-content: space-between;  
+    }
+    .quadro {
+align-items: center;
+padding: 15px;
+gap: 10px;
+
+width: 50%;
+height: 61px;
+left: 0px;
+top: 467px;
+
+border: 1px solid #CECECE;
+    }
+    .tt-quadro {
+        font-family: 'Helvetica';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 18px;
+/* identical to box height */
+
+
+color: #505050;
+    }
+    .status {
+        display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 4px;
+gap: 10px;
+
+width: auto;
+height: 23px;
+
+background: rgba(94, 221, 45, 0.1);
+/* green */
+
+
+border-radius: 5px;
+    }
+    .pago {
+        border: 1px solid #5EDD2D;
+        font-family: 'Helvetica';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+
+/* green */
+
+color: #5EDD2D;
+    }
+    .pendente {
+        border: 1px solid #ddae2d;
+        font-family: 'Helvetica';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+
+/* green */
+
+color: #ddae2d;
+    }
+

@@ -1,0 +1,107 @@
+.title__chooseService{
+  padding: 0;
+  border: none;
+}
+
+.sub__informationChooseService{
+  padding: 1.5rem;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.title__descriptionShowAddress{
+  font-size: 15px;
+  margin: 0.5rem 0 0 0;
+  color: #8C8C8C;
+}
+
+.title__subDescriptionBlue{
+  color: #2483FA;
+  font-weight: 400;
+}
+
+.cards__inputs{
+  padding: 1.5rem;
+}
+
+.card__input{
+  margin: 2rem 0 0 0;
+}
+
+.card__input:first-child{
+  margin: 0;
+}
+
+.card__input input,
+.card__input textarea{
+  margin: 0.5rem 0;
+  height: 50px;
+  border-radius: 0.5rem;
+  border: 1.5px solid #BFBFBF;
+  outline: none;
+  padding: 0 1rem;
+  font-size: 15px;
+}
+
+.card__input input::placeholder{
+  color: #BFBFBF;
+}
+
+.card__input textarea{
+  height: 140px;
+  padding: 1rem;
+  resize: none;
+}
+
+.card__input textarea::placeholder{
+  padding: 0;
+}
+
+.label__title{
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.title__maxWord{
+  text-align: end;
+  font-size: 13px;
+  font-weight: 500;
+  color: #737380;
+}
+
+.card__dateAll{
+  background: #EDEDED;
+  padding: 1rem;
+  margin: 1rem 0 0 0;
+  border-left: 4px solid #FF7733;
+  border-radius: 0.2rem 0.5rem 0.5rem 0.2rem;
+}
+
+.title__cardDateAll{
+  font-size: 13px;
+  margin: 0 0 0 1rem;
+  font-weight: 500;
+}
+
+.cards__inputs{
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.div_progresso{
+  padding: 1.5rem;
+}
+
+@media (max-width: 425px){
+  .card__dateAll{
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .title__cardDateAll{
+    margin: 0.5rem 0 0 0;
+  }
+
+  .cards__inputs,
+  .div_progresso{
+    padding: 1rem
+  }
+}

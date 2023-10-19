@@ -1,0 +1,356 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  background: #F5F5F5;
+}
+
+/*################## main */
+
+
+.section__protocol-block{
+  box-shadow: rgb(0 0 0 / 4%) 0px 3px 5px;
+}
+
+.container__protocol-block{
+  width: 85%;
+  max-width: 1440px;
+  margin: 4rem 0;
+
+}
+
+.header__protocol-block{
+  padding: 1rem;  
+  background: #F9F9F9;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+}
+
+.span__text-element{
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.span__text-element img{
+  margin: 0 0.3rem 0 0;
+}
+
+.input__block{
+  width: 325px;
+  height: 40px;
+  background: #fff;
+  padding: 0 1rem;
+  border-radius: 2rem;
+}
+
+.input__block input{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.input__block input::placeholder{
+  color: #B8B8B8;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.card__protocol-block{
+  padding: 1rem;
+}
+
+.card__protocol-block--white{
+  background: #fff;
+}
+
+.card__protocol-block--gray {
+  background: #F9F9F9;
+}
+
+.card__titleSolicitationB-element{
+  color: #fff;
+  font-weight: 500;
+  font-size: 13px;
+  border-radius: 0.3rem;
+  padding: 0.2rem 1.5rem; 
+  width: 60px; 
+  margin: 0.5rem 0 0 0;
+  border: 1px solid #c7d7ff;
+  background: #5283FF;
+  border-radius: 0.4rem;
+}
+
+.card__title-block{
+  font-weight: 500;
+}
+
+.card__protocoloTitleBold-element{
+  color: #505050;
+  font-weight: 600;
+}
+
+.card__protocolTitleSecondary-element{
+  margin: 0.5rem 0 0 0;
+  color: #868686;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.card__protocol-buttons{
+  display: flex;
+  border-bottom-left-radius: 0.7rem !important;
+  border-bottom-right-radius: 0.7rem !important;
+}
+
+.button__protocol{
+  border: none;
+  margin: 0 1rem 0 0;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.button__protocol img{
+  margin: 0 0.5rem 0 0;
+}
+
+.button__protocol--active{
+  background: #5EDD2D;
+}
+
+.button__protocol--active:hover{
+  background: #388f16;
+}
+
+.button__protocol--remove{
+  background: #F45966;
+}
+
+.button__protocol--remove:hover{
+  background: #85040e;
+}
+
+.footer__headerProtocol-block{
+  margin: 3rem 0;
+  background: #D9EDF6;
+  border: 1px solid #BCE8F1;
+
+}
+
+.footer__headerProtocolTitle-element{
+  color: #385499;
+  font-weight: 700;
+  padding: 1rem;
+
+}
+
+.form__result{
+  background: #fff;
+  width: 100%;
+  padding: 1.5rem;
+  display: none;
+}
+
+#active__form .form__result{
+  display: flex !important  ;
+}
+
+.inputs__form-block{
+  width: 100%;
+}
+
+.input__name-element,.input__email-element{
+  width: 50%;
+  border: 1px solid #D8D8D8;
+  background: #FAFAFA;
+  position: relative;
+}
+
+.input__name-element{
+  margin: 0 0.5rem 0 0;
+}
+
+.input__email-element{
+  margin: 0 0 0 0.5rem;
+}
+
+.input__name-element span, .input__email-element span{
+  position: absolute;
+  padding: 0.2rem 0 0.5rem 1rem;
+  font-size: 13px;
+  color: #999;
+  opacity: 0.9;
+}
+
+.input__name-element span::after, .input__email-element span::after{
+  content: "*";
+  margin: 0 0 0 0.3rem;
+  font-size: 20px;
+  color: rgb(240, 68, 73);
+}
+
+.input__name-element input, .input__email-element input{
+  height: 100%;
+  width: 100%;
+  padding: 2rem 0 0.7rem 1rem;
+  border: none;
+  outline: none;
+  background: #f5f5f5;
+  font-weight: 500;
+}
+
+
+.text__area{
+  margin: 1.5rem 0 2rem 0;
+  resize: none;
+  height: 250px;
+  padding: 0.5rem;
+  width: 100%;
+  font-size: 16px;    
+  border: 1px solid #D8D8D8;
+  color: #999;
+
+}
+
+.text__area::placeholder{
+  font-size: 16px;
+  color: #999;
+  opacity: 0.9; 
+}
+
+.button__submitForm-element{
+  padding: 1.3rem 3.5rem;
+  background: #5182CE;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 0.3rem;
+  font-size: 18px;
+  cursor: pointer;
+  transition: .3s;  
+}
+
+.button__submitForm-element:hover{
+  background: #1e54a5
+}
+
+
+.footer__headerProtocolTitle-element img{
+  margin: 0 0.5rem 0 0;
+}
+
+.section__protocolSecondary-block{
+  background: #fff;
+  box-shadow: rgb(0 0 0 / 4%) 0px 3px 5px;
+  border-radius: 1rem;
+}
+
+.header__userProtocol-block{
+  background: #F9F9F9;
+  padding: 1rem;
+
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.div__protocolSecondary-block{
+  margin: 0 0 0 1rem;
+}
+
+.title__userName-element{
+  font-weight: 500;
+  font-size: 16px;
+  color: #5E5E5E;
+}
+
+.title__profission-element{
+  font-weight: 600;
+  color: #505050;
+}
+
+.ul__userProtocol-block{
+  padding: 1rem;
+  list-style: none;
+}
+
+.ul__userProtocol-block li{
+  font-weight: 500;
+  padding: 0.5rem 0;
+  font-size: 14px;
+}
+
+@media (max-width: 990px){
+  .card__protocol-block{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .button__protocol {
+    width: 50%;
+  }
+
+  .button__protocol--remove{
+    margin: 0;
+  }
+  
+  .header__protocol-block{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: start;
+  }
+
+  .span__text-element{
+    margin: 1rem 0;
+  }
+  
+  .input__block{
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 650px){
+  .inputs__form-block{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input__name-element, .input__email-element{
+    width: 100%;
+  }
+  
+  .input__email-element{
+    margin: 1rem 0;
+  }
+
+  .button__submitForm-element{
+    padding: 1rem 2.5rem;
+    font-size: 13px;
+  }
+
+}
+
+@media (max-width: 450px){
+
+  .button__protocol--active{
+    margin: 0;
+  }
+
+  .card__protocol-block{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button__protocol {
+    margin: 0.5rem 0;
+    width: 100%;
+  }
+}

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style/cssStyleModal/estilo.css" />
+    <link rel="stylesheet" href="./style/form_projeto_06.css" />
+    <link rel="stylesheet" href="./style/flex.css" />
+
+    <title>Nell bux</title>
+
+    <script src="./script/jquery.js"></script>
+
+  </head>
+  <body>
+
+     <!-- aside -->
+    <aside id="menu-mobile" class="menu-mobile-fecado">
+      <div class="container">
+        <div id="fechar-menu-mobile">
+          <span class="material-icons">cancel</span>
+        </div>
+      </div>
+
+      <ul id="menu-principal">
+        <li><a href="#">Area Membro</a></li>
+        <li><a href="#">Meus Projetos</a></li>
+        <li><a href="#">Minhas Finanças</a></li>
+      </ul>
+
+      <div class="espaco20"></div>
+
+      <a
+        href="#pesquisa-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <span class="material-icons">search</span>
+          <div>Pesquisar</div>
+        </div>
+      </a>
+
+      <a
+        href="#notificacoes-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <span class="material-icons">notifications</span>
+          <div>Notificações</div>
+        </div>
+      </a>
+
+      <a
+        href="#mensagens-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <span class="material-icons">sms</span>
+          <div>Mensagens</div>
+        </div>
+      </a>
+
+      <a
+        href="#usuario-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <div id="logo-tb" class="menu-usuario">TB</div>
+        </div>
+      </a>
+    </aside>   
+
+    <!-- header -->
+    <header class="header justifyContentCenter">
+      <div class="header__container justifyContentSpaceBetween alignItemsCenter">
+        <img src="./assets/imagesHeader/logo.png" />
+        <div id="bt-abrir-menu-mobile" class="exit__menu">
+          <span class="material-icons">menu</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main class="main justifyContentCenter">
+      <div class="main__container">
+        <section class="div_display section__primary">
+          
+          <!-- DIV DO FORMULARIO -->
+          <div class="div_box_form">
+            <form method="POST" action="">
+              <h3 class="title__primary">Perguntas para investidor</h3>
+              <p class="title__nameBox">responda algumas Informações abaixo sobre você</p>
+
+              <div class="formall__Cards">
+
+                <section class="section__cardB">
+                  <p class="title__sectionPrimaryCardB title__nameBox">Qual seu estado civil?</p>
+
+                  <div class="div_display_auto">
+    
+                    <div class="checked__Label">
+                      <label for="5%am">
+                        Solteiro
+                        <input type="radio" id="5%am" name="radio"/>
+                        <div class="custom-radio">
+                          <span></span>
+                        </div>
+                        <div class="border-Orange">
+                          <span></span>
+                        </div>
+                      <label>
+                    </div>   
+    
+                    <div class="checked__Label">
+                      <label for="10%am">
+                        Casado
+                        <input type="radio" id="10%am" name="radio"/>
+                        <div class="custom-radio">
+                          <span></span>
+                        </div>
+                        <div class="border-Orange">
+                          <span></span>
+                        </div>
+                      <label>
+                    </div>   
+    
+                    <div class="checked__Label">
+                      <label for="15%am" class="widthMax">
+                        Separado
+                        <input type="radio" id="15%am" name="radio"/>
+                        <div class="custom-radio">
+                          <span></span>
+                        </div>
+                        <div class="border-Orange">
+                          <span></span>
+                        </div>
+                      <label>
+                    </div>
+  
+                  </div>
+
+                </section>
+
+                <section class="section__cardB">
+                  <p class="title__sectionPrimaryCardB title__nameBox">você possui filhos?</p>
+
+                  <div class="div_display_auto">
+    
+                    <div class="checked__Label">
+                      <label for="1son">
+                        Tenho 1 filho
+                        <input type="radio" id="1son" name="radio2"/>
+                        <div class="custom-radio">
+                          <span></span>
+                        </div>
+                        <div class="border-Orange">
+                          <span></span>
+                        </div>
+                      <label>
+                    </div>   
+    
+                    <div class="checked__Label">
+                      <label for="2childrenMore">
+                        2 filhos ou mais
+                        <input type="radio" id="2childrenMore" name="radio2"/>
+                        <div class="custom-radio">
+                          <span></span>
+                        </div>
+                        <div class="border-Orange">
+                          <span></span>
+                        </div>
+                      <label>
+                    </div>   
+    
+                    <div class="checked__Label">
+                      <label for="noSon">
+                        Não tenho filhos
+                        <input type="radio" id="noSon" name="radio2"/>
+                        <div class="custom-radio">
+                          <span></span>
+                        </div>
+                        <div class="border-Orange">
+                          <span></span>
+                        </div>
+                      <label>
+                    </div>
+  
+                  </div>
+
+                </section>
+
+                <section class="section__cardB">
+                  <p class="title__sectionPrimaryCardB title__nameBox">Qual seu nivel de escolaridade?</p>
+
+                  <div class="div_display_auto">
+    
+                    <div class="checked__Label checked__Label--width">
+                      <label for="fundamental">
+                        Fundamental
+                        <input type="radio" id="fundamental" name="radio3"/>
+                        <div class="custom-radio">
+                          <span></span>
+                        </div>
+                        <div class="border-Orange">
+                          <span></span>
+                        </div>
+                      <label>
+                    </div>   
+    
+                    <div class="checked__Label checked__Label--width">
+                      <label for="average">
+                        Medio
+                        <input type="radio" id="average" name="radio3"/>
+                        <div class="custom-radio">
+                          <span></span>
+                        </div>
+                        <div class="border-Orange">
+                          <span></span>
+                        </div>
+                      <label>
+                    </div>   
+    
+                    <div class="checked__Label checked__Label--width">
+                      <label for="higher">
+                        Superior
+                        <input type="radio" id="higher" name="radio3"/>
+                        <div class="custom-radio">
+                          <span></span>
+                        </div>
+                        <div class="border-Orange">
+                          <span></span>
+                        </div>
+                      <label>
+                    </div>
+
+                    <div class="checked__Label checked__Label--width">
+                      <label for="technician">
+                        técnico
+                        <input type="radio" id="technician" name="radio3"/>
+                        <div class="custom-radio">
+                          <span></span>
+                        </div>
+                        <div class="border-Orange">
+                          <span></span>
+                        </div>
+                      <label>
+                    </div>  
+                    
+                  </div>
+
+                </section>
+
+                <section class="section__secondary justifyContentSpaceBetween alignItemsCenter">
+                  
+                  <div class="cards__activeCheck alignItemsCenter justifyContentSpaceBetween ">
+
+                    <div class="filterScore__information">
+                      <p class="title__salaryinstallments">Qual sua profissão?</p>
+                      <p class="title__salaryinstallments">Quanto tempo você exerce essa profissão?</p>
+                    </div>
+                    
+                    <input type="checkbox" id="chk">
+                    <label for="chk" class="switch">
+                      <span class="slider"></span>
+                    </label>
+
+                  </div>
+                  <div class="inputDate">
+                    <div class="select">
+                      <select>
+                        <option>Selecionar profissão</option>
+                        <option>teste1</option>
+                        <option>teste2</option>
+                        <option>teste3</option>
+                        <option>teste4</option>
+                        <option>teste5</option>
+                      </select>
+                    </div>
+                    <input type="number" placeholder="Tempo"/>
+                  </div>
+                </section>
+
+                <footer class="footer__primary justifyContentSpaceBetween">
+
+                  <div class="footer__informationInput flexDirectionColumn justifyContentSpaceBetween">
+                    <span>Adicione até 5 perguntas personalizadas para investidor</span>
+                    <div class="input__add alignItemsCenter justifyContentSpaceBetween">
+                      <input type="text" placeholder="Escrever uma pergunta" />
+                      <button>adicionar</button>
+                    </div>
+                  </div>
+
+                  <div class="footer__informationMoney">
+                    <div id="triangulo-esquerdo"></div>
+                    <h3 class="footer__titlePrimary">Minha proposta: 
+                      <span class="sub__titleFooter sub__titleFooter--gren">
+                        <span class="title__orange">60 x </span> de <span class="title__orange">R$550,00</span></span>
+                    </h3>
+                    <div class="title__makeAvailable">disponibilizo garantia de bens</div>
+                    <h3 class="footer__titlePrimary">taxa de juros: 
+                      <span class="sub__titleFooter sub__titleFooter--red">
+                        <span class="title__orange">
+                          7.89%
+                        </span>a.m 
+                        <span class="title__orange">
+                          49.76%
+                        </span>a.a</span>
+                    </h3>
+                  </div>
+                </footer>
+
+                <br /><br />
+              </div>
+
+
+              <div class="div_progresso">
+                <img
+                    src="./assets/formProject/arrowLeft.png"
+                    alt=""
+                    width="40"
+                    height="40"
+                  /> 
+
+                <div class="bar">
+                  <div></div>
+                </div>
+
+                <div class="submitDiv" style="text-align: right">
+                  <input
+                    type="submit"
+                    name=""
+                    class="btn_proximo"
+                    disable="disable"
+                    value="Próxima"
+                  />
+                </div>
+
+              </div>
+            </form>
+          </div>
+          <!-- DIV DE INFOEMAÇÕES LATERIAS -->
+          <aside class="div_box_info asideL">
+            <h3 class="title__primaryAside">Torne a sua comunicação mais eficiente, economize tempo e evite mal-entendidos.</h3>
+            <p class="text__infoAside">Guie o investidor para que possa manter contato com você e começar a trabalhar.</p>
+            <p class="text__infoAside">Pense: O que você deseja que o investidor responda em um primeiro contato que fizer com você?</p>
+            <p class="text__infoAside">Você pode adicionar até 5 perguntas personalizadas. Use cada uma delas de forma forma sabiá, Por exemplo: Qual é o seu horário de trabalho?</p>
+
+            <img src="./assets/formProject/imageProjeto2.png" class="img_info" />
+          </aside>
+        </section>
+      </div>
+    </main>
+
+    
+    <!-- jQuery Modal -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+    />
+    <script type="module" src="./script/menu-mobile.js"></script>
+
+    <div id="pesquisa-modal" class="modal">
+      <div class="modal-header">
+        <span class="material-icons">search</span>
+      </div>
+      <div class="modal-body">
+        <input
+          type="text"
+          name="campo-pesquisa-modal"
+          id="campo-pesquisa-modal"
+          value=""
+          placeholder="O que você está procurando?"
+        />
+      </div>
+      <div class="modal-buttons">
+        <a href="#" rel="modal:close" class="botao-modal">Sair</a>
+      </div>
+    </div>
+
+    <div id="notificacoes-modal" class="modal">
+      <div class="modal-header">
+        <span class="material-icons">notifications</span>
+      </div>
+      <div class="modal-body">
+        <div class="lista">
+          <div class="item-notificacao">
+            <div class="mensagem">
+              <div class="titulo">Rejeitamos seu projeto</div>
+              <div class="descricao">Em criar plataforma para reclamação</div>
+            </div>
+            <div class="icone">
+              <span class="material-icons">delete</span>
+            </div>
+          </div>
+
+          <div class="item-notificacao">
+            <div class="mensagem">
+              <div class="titulo">Rejeitamos seu projeto</div>
+              <div class="descricao">Em criar plataforma para reclamação</div>
+            </div>
+            <div class="icone">
+              <span class="material-icons">delete</span>
+            </div>
+          </div>
+
+          <div class="item-notificacao">
+            <div class="mensagem">
+              <div class="titulo">Rejeitamos seu projeto</div>
+              <div class="descricao">Em criar plataforma para reclamação</div>
+            </div>
+            <div class="icone">
+              <span class="material-icons">delete</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-buttons">
+        <a href="#" rel="modal:close" class="botao-modal margin-right5"
+          >Ver todos</a
+        >
+        <a href="#" rel="modal:close" class="botao-modal">Sair</a>
+      </div>
+    </div>
+
+    <div id="mensagens-modal" class="modal">
+      <div class="modal-header">
+        <span class="material-icons">sms</span>
+      </div>
+      <div class="modal-body">
+        <div class="lista">
+          <div class="item-mensagem">
+            <div class="avatar"></div>
+            <div class="mensagem">
+              <div class="titulo">Rejeitamos seu projeto</div>
+              <div class="descricao">Em criar plataforma para reclamação</div>
+            </div>
+            <div class="icone">
+              <span class="material-icons">delete</span>
+            </div>
+          </div>
+
+          <div class="item-mensagem">
+            <div class="avatar"></div>
+            <div class="mensagem">
+              <div class="titulo">Rejeitamos seu projeto</div>
+              <div class="descricao">Em criar plataforma para reclamação</div>
+            </div>
+            <div class="icone">
+              <span class="material-icons">delete</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-buttons">
+        <a href="#" rel="modal:close" class="botao-modal margin-right5"
+          >Ver todos</a
+        >
+        <a href="#" rel="modal:close" class="botao-modal">Sair</a>
+      </div>
+    </div>
+
+    <div id="usuario-modal" class="modal">
+      <div class="modal-header">
+        <div id="logo-tb" class="menu-usuario">TB</div>
+      </div>
+      <div class="modal-body">
+        <div id="box-menu-usuario-modal">
+          <div class="dados">
+            Olá <span class="font-bold">Marcos</span>, seja Bem-Vindo.
+          </div>
+
+          <div class="dados">
+            <ul>
+              <li><a href="#">Configurações da Conta</a></li>
+              <li><a href="#">Meu Perfil</a></li>
+              <li><a href="#">Rank do Dia</a></li>
+            </ul>
+          </div>
+
+          <div class="dados">
+            <div class="header">Ofertas e Pedidos</div>
+
+            <ul>
+              <li><a href="#">Abrir Uma Oferta de Investimento</a></li>
+              <li><a href="#">Encontrar Pedidos</a></li>
+              <li><a href="#">Abrir um Pedido de Crédito</a></li>
+            </ul>
+          </div>
+
+          <div class="dados">
+            <div class="header">Informações da Conta</div>
+
+            <ul>
+              <li><a href="#">Lista de Indicativos</a></li>
+              <li><a href="#">Lista de Seguidores</a></li>
+              <li><a href="#">Histórico de Conta</a></li>
+              <li><a href="#">Faça uma Pergunta</a></li>
+              <li><a href="#">Minhas Apostas</a></li>
+            </ul>
+          </div>
+
+          <div class="dados">
+            <div class="header">Informações da Conta</div>
+
+            <ul>
+              <li>Conta NellBux</li>
+              <li>Meu Usuário</li>
+              <li>1211451-1</li>
+              <li>@eduardoon</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="modal-buttons">
+        <a href="#" rel="modal:close" class="botao-modal">Sair</a>
+      </div>
+    </div>
+
+  </body>
+</html>

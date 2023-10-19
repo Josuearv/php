@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header__container,
+.main__container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 1rem 0;
+}
+
+.main__container {
+  margin: 0;
+  max-height: 85vh;
+  height: 85vh;
+}
+
+.sectionPrimary,
+.div_box_form form{
+  height: 100%;
+}
+
+.div_box_form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+/* FONTS das paginas */
+
+h3 {
+  font-weight: 500;
+}
+
+.title__name{
+  color: #4C4C4A;
+}
+
+p {
+  font-weight: 300;
+}
+
+/* FORM PAGE 01 */
+
+label {
+  font-size: 16px;
+}
+
+
+span {
+  font-size: 12px;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+
+input[type=file] {
+  width: auto;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #c1c1c1;
+}
+
+input[type=date] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #c1c1c1;
+}
+
+input[type=radio] {
+  height: 20px;
+  width: 20px;
+  border: solid 1px #000;
+  margin-left: auto;
+}
+
+input[type=radio]:active {
+  height: 20px;
+  width: 20px;
+  border: solid 1px #f19d2e;
+  margin-left: auto;
+}
+
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #c1c1c1;
+}
+
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+
+/*IMGs da pagina*/
+
+.img_info {
+  margin-top: auto;
+  width: 100%;
+  position: absolute;
+  bottom: 1px;
+  left: 1px;
+  right: 1px;
+
+}
+
+/* DIVs da pagina */
+
+.div_margin {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 25px;
+}
+
+
+.div_logo {
+  width: 100%;
+  background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.div_display {
+  display: flex;
+}
+
+
+.div_box_form {
+  background-color: #f0f0f0;
+  flex: 2;
+  padding: 1.5rem;
+}
+
+.div_box_form form,
+.form__containerInputs{
+  height: 100%;
+}
+
+.title__name--margin{
+  margin: 0.5rem 0;
+}
+
+.title__name--marginTwo{
+  padding: 0 0 1rem 0;
+}
+
+.div_box_info {
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #3a7fff;
+  flex: 1;
+  position: relative;
+}
+
+.div_progresso {
+  width: 100%;
+  text-align: end;
+  display: flex;
+  align-items: center;
+}
+
+.btn_proximo {
+  background-color: #F3992E;
+  border: none;
+  border-radius: 50px;
+  padding: 13px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn_proximo:hover {
+  background: #b97119;
+}
+
+.div_porcentagem {
+  background: #7da67d;
+  padding: 2px;
+  width: 99%;
+  height: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* FORM PAGE 02 */
+
+/* RADIO DA PAGINA */
+
+input[type='radio'] {
+  display: none;
+}
+
+.radio-container label {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.custom-radio {
+  border: 2px solid #DDDDDD;
+  width: 20px;
+  height: 20px;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+
+.custom-radio,
+span {
+  transition: 0.5s ease;
+  color: #3B3F40;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+
+
+.custom-radio span {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+input[type='radio']:checked+.custom-radio {
+  border-color: #F4992E;
+}
+
+input[type='radio']:checked+.custom-radio span {
+  background: #F4992E;
+}
+
+input[type='radio'] {
+  display: none;
+}
+
+.card__check{
+  background: #fff;
+  margin: 0 1rem 1rem 0;
+  width: 280px;
+  padding: 1rem 1rem 2.5rem 1rem;
+  border: 2px solid transparent;
+  border-radius: 0.3rem;
+  transition: 0.3s;
+}
+
+.card__check label{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title__l{
+  font-size: 15px;
+  font-weight: 400;
+  color: #6B6D6C;
+  margin: 0.5rem 0 0 0;
+}
+
+.activeCheck{
+  border: 2px solid #E09B56;
+}
+
+/* FORM PAGE 03 */
+
+.div_anexo {
+  background-color: #c1c1c1;
+  width: max-content;
+  border: 1px #000 dashed;
+}
+
+/* FORM PAGE 04 */
+
+.div_display_auto {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.div_width {
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.div_width:hover {
+  border: 1px solid #f19d2e;
+}
+
+.div_width_1 {
+  width: 150px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.div_width_1:hover {
+  border: 1px solid #f19d2e;
+}
+
+.div_display_form {
+  display: flex;
+}
+
+.div_radio_box_1 {
+  flex: 2;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.div_radio_box_2 {
+  flex: 0.5;
+  text-align: right;
+}
+.bar {
+  width: 100%;
+  border-radius: 10px;
+  height: 10px;
+  background: #B2E1C1;
+  border: 1px solid #C9FFE0;
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.bar div {
+  height: 100%;
+  border-radius: 10px;
+  background: #14C24F;
+  width: 65%;
+  border: 1px solid #45A865;
+}
+
+.title__primaryAside {
+  font-size: 15px;
+}
+
+.text__infoAside {
+  margin: 0.5rem 0;
+  font-size: 15px;
+}
+
+.exit__menu {
+  display: none;
+  cursor: pointer;
+}
+
+.exit__menu .material-icons {
+  color: #000 !important;
+}
+
+@media (max-width: 990px) {
+  .asideL {
+    display: none;
+  }
+
+  .sectionPrimary{
+    flex-wrap: wrap;
+  }
+
+  .exit__menu {
+    display: inline;
+  }
+}
+
+@media (max-width:  725px){
+  .card__check{
+    width: 100%;
+    margin: 0  0 1rem 0;
+  }
+}
+
+@media (max-width: 425px) {
+
+  .div_progresso {
+    flex-direction: column;
+  }
+
+  .submitDiv {
+    width: 100%;
+  }
+
+  .div_progresso div input {
+    width: 100%;
+    border-radius: 0;
+    margin: 1rem 0 0 0;
+  }
+
+  .div_progresso img {
+    display: none;
+  }
+
+  .allCheckRadio {
+    margin: 1rem 0 0 0;
+  }
+}

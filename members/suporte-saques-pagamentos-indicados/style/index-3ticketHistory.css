@@ -1,0 +1,240 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  background: #F5F5F5;
+}
+
+/*################## main */
+
+.main__historicTicket-block{
+  margin: 4rem 0;
+}
+
+.container__historicTicket-block{
+    width: 85%;
+    max-width: 1440px;
+}
+
+.header__titlePrimary-element{
+  font-size: clamp(25px, 2.5vw, 33px);
+}
+
+.header__titleSecondary-element{
+  font-weight: 500;
+  padding: 0.5rem 0 0 0;
+  color: #000000;
+  font-size: 15px;
+}
+
+.header__titleSecondary-element::before{
+  content: "*";
+  font-weight: 600;
+  color: #F46470;
+  margin: 0 0.2rem 0 0
+}
+
+
+.section__attendance-block{
+  margin: 2.5rem 0 0 0;
+}
+
+
+
+.header__attendanceTicket-block{
+  padding: 1rem;  
+  background: #F9F9F9;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+}
+
+.span__text-element{
+  font-weight: 500;
+}
+
+.span__text-element img{
+  margin: 0 0.3rem 0 0;
+}
+
+.input__block{
+  width: 325px;
+  height: 40px;
+  background: #fff;
+  padding: 0 1rem;
+  border-radius: 2rem;
+}
+
+.input__block input{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.input__block input::placeholder{
+  color: #B8B8B8;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.cards__solicitation-block{
+  background: #fff;
+  padding: 1rem;
+  border-bottom-left-radius: 0.7rem;
+  border-bottom-right-radius: 0.7rem;
+}
+
+.card__solicitation-block{
+  padding: 1rem;
+  border-bottom: 1px solid #F8F8F8;
+  cursor: pointer;
+  background: #fff;
+}
+
+.card__solicitation-block:hover{
+  background: rgb(240, 240, 240);
+}
+
+
+
+
+.card__titleSolicitation-element{
+  font-weight: 600;
+  font-size: 16.5px;
+}
+
+.card__titleSolicitationB-element{
+  color: #fff;
+  font-weight: 500;
+  font-size: 13px;
+  margin: 0 0 0 0.5rem;
+  border-radius: 0.3rem;
+  padding: 0.2rem 0.4rem;
+}
+
+.title__lastUpdates-element{
+  font-size: 13.2px;
+  font-weight: 500;
+  margin: 0.3rem 0 0 0;
+  color: #B5B5B5; 
+}
+
+.card__titleSolicitationB-element--blue{
+  border: 1px solid #c7d7ff;
+  background: #5283FF;
+  border-radius: 0.3rem;
+}
+
+
+.card__titleSolicitationB-element--closed{
+  background: #A8A8A8;
+  border: 1px solid #DDDDDD;
+  border-radius: 0.3rem;
+}
+
+.card__titleSolicitationB-element--answer{
+  border: 1px solid #FAD1A0;
+  background: #f3992e;
+  border-radius: 0.3rem;
+}
+
+/* ############ nav */ 
+
+.nav__links-block{
+  margin: 2rem 0 0 0;
+}
+
+
+.ul__pages-block li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 0.1rem
+}
+
+.ul__pages-block li a:hover{
+  background: #505050;
+  border-radius: 0.2rem; 
+  color: #fff;
+}
+
+
+.ul__pages-block li a{
+  font-size: 18px;
+  color: #000000;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.4rem 0.9rem; 
+
+}
+
+.li__primary-element{
+  background: #505050;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2rem; 
+}
+
+.li__primary-element a{
+  color: #fff !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 0.9rem; 
+  
+}
+
+.ul__pages-block li a{
+  text-decoration: none;
+}
+
+
+
+
+.footer__attendance-block{
+  margin: 2rem 0 0 0;
+  text-align: center;
+}
+
+.footer__title-element{
+  font-size: 12px;
+  max-width: 800px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.footer__titleBlue-element{
+  color: #6691FD;
+}
+
+
+@media (max-width: 700px){
+  .header__attendanceTicket-block{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .input__block{
+    width: 100%;
+  }
+
+  .span__text-element{
+    padding: 1rem 0 0 0;
+  }
+
+  .card__titleSolicitation-element{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .card__titleSolicitationB-element{
+    margin: 0.5rem 0 0.5rem 0;
+  }
+}

@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style/cssStyleModal/estilo.css" />
+    <link rel="stylesheet" href="./style/flex.css" />
+    <link rel="stylesheet" href="./style/globalStyles.css" />
+    <link rel="stylesheet" href="./style/surf.css" />
+
+    <title>Nell bux</title>
+
+    <script src="./script/jquery.js"></script>
+  </head>
+
+  <body>
+    <!-- header -->
+
+    <header class="header justifyContentCenter">
+      <div
+        class="header__container justifyContentSpaceBetween alignItemsCenter"
+      >
+        <img src="./assets/imagesHeader/logo.png" alt="" />
+        <div class="nav__moneyAndCredits alignItemsCenter">
+          <div class="my__acountMoneyAll alignItemsCenter flexDirectionColumn">
+            <ul class="my__investmentAndMyMoneySurf justifyContentSpaceBetween">
+              <li>
+                Meus Investimento:
+                <span class="title__valueMoneyOrange">R$277.92</span>
+              </li>
+              <li>
+                Ganhos total Surf:
+                <span class="title__valueMoneyOrange">R$21.18110</span>
+              </li>
+            </ul>
+
+            <ul class="my__memberAndWithdraw justifyContentSpaceBetween">
+              <li>
+                Membros Surfando:
+                <span class="title__valueMoneyWhite">199</span>
+              </li>
+              <li>
+                Rendimento Para Saque:
+                <span class="title__valueMoneyOrange">R$3.25419</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="cards__credits alignItemsCenter">
+            <div class="card__allCredits alignItemsCenter">
+              <img src="./assets/moeda.png" alt="" width="40" height="40" />
+              <h3 class="title__valueMoneyCredit">+0.5 Credits</h3>
+            </div>
+            <div class="screen__selectItem alignItemsCenter">
+              <img src="./assets/monitor.png" alt="" width="40" height="40" />
+              <select>
+                <option>Surfed today</option>
+                <option>teste 1</option>
+                <option>teste 3</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="perfil__accountLogout">
+            <ul
+              class="ul__accountLogout justifyContentSpaceBetween alignItemsCenter"
+            >
+              <li>eduardoon</li>
+              <li><a href="#">(Logout)</a></li>
+            </ul>
+            <div class="card__earnedInterest flexDirectionColumn alignItemsEnd">
+              <h4
+                class="title__earnedInterest alignItemsCenter justifyContentSpaceBetween"
+              >
+                Juros Ganhos
+                <img
+                  src="./assets/helpIcon.png"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+                39.8
+              </h4>
+              <select class="select__languageInterest">
+                <option>English</option>
+                <option>teste 1</option>
+                <option>teste 2</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- main -->
+
+    <main class="main justifyContentCenter">
+      <div
+        class="main-container main__containerWhite justifyContentSpaceBetween"
+      >
+        <section class="section__primaryMainInformation">
+          <div class="interestOnInterest justifyContentSpaceBetween">
+            <h2 class="title__interestOnInterest">Juros sobre Juros</h2>
+            <nav class="nav__links">
+              <ul class="ul__linksInterest alignItemsCenter">
+                <li class="li__myCredit">
+                  <img src="./assets/moeda.png" alt="" width="30" height="30" />
+                  <select>
+                    <option>Credits</option>
+                    <option>teste 1</option>
+                  </select>
+                  <button>Buy</button>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <img
+                      src="./assets/rotate.png"
+                      alt=""
+                      width="30"
+                      height="30"
+                    />
+                    <span>Upgrade</span>
+                  </a>
+                </li>
+
+                <li class="li__myaccount">
+                  <a href="#">
+                    <span>My account</span>
+                    <img
+                      src="./assets/flecha.png"
+                      alt=""
+                      width="30"
+                      height="30"
+                    />
+                  </a>
+                </li>
+
+                <li class="avatar__myPerfil">
+                  <img
+                    src="./assets/avatar.png"
+                    alt=""
+                    width="35"
+                    height="35"
+                  />
+                </li>
+              </ul>
+              <div
+                class="back__myAccount back__myAccountMobile justifyContentCenter flexDirectionColumn"
+              >
+                <div class="titles__backMyAccount alignItemsCenter">
+                  <h3 class="title__initialSurf">12</h3>
+                  <h4 class="title__inicialSurfPrimary alignItemsCenter">
+                    <img
+                      src="./assets/duploRe.png"
+                      alt=""
+                      width="15"
+                      height="15"
+                    />
+                    Iniciar Surf
+                    <img
+                      src="./assets/duploRight.png"
+                      alt=""
+                      width="15"
+                      height="15"
+                    />
+                  </h4>
+                </div>
+                <h4 class="title__getBackMyAccount">
+                  [Volta para minha Conta]
+                </h4>
+              </div>
+            </nav>
+          </div>
+
+          <div class="bar">
+            <div class="bar__value"></div>
+          </div>
+
+          <div class="information__UserAccountHome justifyContentSpaceBetween">
+            <div class="list__perfilUserInformation alignItemsCenter">
+              <img
+                src="./assets/avatar.png"
+                alt=""
+                width="35"
+                height="35"
+                class="avatar__perfil"
+              />
+              <div class="list__perfilColumn alignItemsCenter">
+                <ul class="ul__listUserInformation alignItemsCenter">
+                  <li>
+                    <img
+                      src="./assets/estrelaOrange.png"
+                      alt=""
+                      width="25"
+                      height="25"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/mensagemGray.png"
+                      alt=""
+                      width="25"
+                      height="25"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/alerta.png"
+                      alt=""
+                      width="25"
+                      height="25"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/menuGray.png"
+                      alt=""
+                      width="25"
+                      height="25"
+                    />
+                  </li>
+                </ul>
+
+                <ul class="ul__listUserResult alignItemsCenter">
+                  <li>
+                    <img
+                      src="./assets/presente.png"
+                      alt=""
+                      width="25"
+                      height="25"
+                    />
+                    24
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/triagulo.png"
+                      alt=""
+                      width="25"
+                      height="25"
+                    />
+                    10
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/globo.png"
+                      alt=""
+                      width="25"
+                      height="25"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="back__myAccount justifyContentCenter flexDirectionColumn"
+            >
+              <div class="titles__backMyAccount alignItemsCenter">
+                <h3 class="title__initialSurf">12</h3>
+                <h4 class="title__inicialSurfPrimary alignItemsCenter">
+                  <img
+                    src="./assets/duploRe.png"
+                    alt=""
+                    width="15"
+                    height="15"
+                  />
+                  Iniciar Surf
+                  <img
+                    src="./assets/duploRight.png"
+                    alt=""
+                    width="15"
+                    height="15"
+                  />
+                </h4>
+              </div>
+              <h4 class="title__getBackMyAccount">[Volta para minha Conta]</h4>
+            </div>
+          </div>
+
+          <section class="section__listLink">
+            <ul class="ul__nextLink">
+              <li>Proximo Link em <b id="next__linkValue">11</b> secundos</li>
+              <li>You will earn <b>6.4 credits</b> by visiting this site.</li>
+            </ul>
+            <ul class="ul__LinksShows">
+              <li>
+                <h3 class="title__linkShow justifyContentSpaceBetween">
+                  Link Visualizado
+                  <span class="title__infoInformation">Info</span>
+                </h3>
+                <a href="#">http://youtu.be/WNsPRa2XB1c</a>
+              </li>
+              <li>
+                Ultimo Link Visualizado
+                <a
+                  href="#"
+                  class="a__linkRedirectReportAndBlock alignItemsCenter"
+                >
+                  http://youtu.be/WNsPRa2XB1c
+                  <div class="titles__informationA alignItemsCenter">
+                    <h4 class="title__aboutLink">Report</h4>
+                    <h4 class="title__aboutLink">Block</h4>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <table class="table__analyzeMoney">
+            <tr>
+              <th class="all__money title__thBlack th__widthMoney">
+                Total Ganho
+              </th>
+              <th class="all__money title__thGray alignItemsCenter">
+                5.60 credits
+                <img
+                  src="./assets/informationAbout.png"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </th>
+            </tr>
+
+            <tr>
+              <td class="title__thBlack td__heightText">Sites visited today</td>
+              <td class="title__thGray td__heightText alignItemsCenter">
+                0 Sites
+                <img
+                  src="./assets/informationAbout.png"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td class="title__thBlack">Sites visited this week</td>
+              <td class="title__thGray alignItemsCenter">
+                0 Sites
+                <img
+                  src="./assets/informationAbout.png"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td class="title__thBlack title__BorderGray">
+                Sites visited this month
+              </td>
+              <td class="title__thGray title__BorderGray alignItemsCenter">
+                0 Sites
+                <img
+                  src="./assets/informationAbout.png"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </td>
+            </tr>
+          </table>
+
+          <h3 class="title__myLinks">Seus Links</h3>
+
+          <table class="table__myLinks">
+            <tr class="tr__header">
+              <th class="th__textRight title__thBlack">Tag</th>
+              <th class="th__textRight title__thBlack title__urlRight">Url</th>
+              <th class="th__textRight title__thBlack">Aplicado</th>
+              <th class="th__textRight title__thBlack">Visualizações</th>
+            </tr>
+
+            <tr class="tr__titleURL">
+              <td class="title__thGray">Onde Investir</td>
+              <td class="title__thGray">http://www.youtube.com/watch?</td>
+              <td class="title__thGray">1.00</td>
+              <td class="title__thGray">0</td>
+            </tr>
+
+            <tr class="tr__invesmentAbout">
+              <td class="title__thGray">Onde Investir</td>
+              <td class="title__thGray">http://www.youtube.com/watch?</td>
+              <td class="title__thGray">0.00</td>
+              <td class="title__thGray">0</td>
+            </tr>
+
+            <tr>
+              <td class="title__thGray">Onde Investir</td>
+              <td class="title__thGray">http://www.youtube.com/watch?</td>
+              <td class="title__thGray">0.00</td>
+              <td class="title__thGray">0</td>
+            </tr>
+
+            <tr>
+              <td class="title__thGray">Como fazer</td>
+              <td class="title__thGray">http://www.youtube.com/watch?</td>
+              <td class="title__thGray">0.00</td>
+              <td class="title__thGray">0</td>
+            </tr>
+
+            <tr>
+              <td class="title__thGray">Os Melhores</td>
+              <td class="title__thGray">http://nellbux.com/link/ref.php?</td>
+              <td class="title__thGray">33.20</td>
+              <td class="title__thGray">0</td>
+            </tr>
+          </table>
+
+          <ul class="ul__tableMobile">
+            <li>
+              Tag
+              <h4 class="title__subLi">Onde Investir</h4>
+            </li>
+            <li>
+              Url
+              <h4 class="title__subLi">http://www.youtube.com/watch?</h4>
+            </li>
+            <li>
+              Aplicado
+              <h4 class="title__subLi">33.200</h4>
+            </li>
+            <li>
+              Visualizações
+              <h4 class="title__subLi">1.000</h4>
+            </li>
+          </ul>
+
+          <ul class="ul__tableMobile">
+            <li>
+              Tag
+              <h4 class="title__subLi">Onde Investir</h4>
+            </li>
+            <li>
+              Url
+              <h4 class="title__subLi">http://www.youtube.com/watch?</h4>
+            </li>
+            <li>
+              Aplicado
+              <h4 class="title__subLi">33.200</h4>
+            </li>
+            <li>
+              Visualizações
+              <h4 class="title__subLi">1.000</h4>
+            </li>
+          </ul>
+
+          <ul class="ul__tableMobile">
+            <li>
+              Tag
+              <h4 class="title__subLi">Onde Investir</h4>
+            </li>
+            <li>
+              Url
+              <h4 class="title__subLi">http://www.youtube.com/watch?</h4>
+            </li>
+            <li>
+              Aplicado
+              <h4 class="title__subLi">33.200</h4>
+            </li>
+            <li>
+              Visualizações
+              <h4 class="title__subLi">1.000</h4>
+            </li>
+          </ul>
+
+          <div class="self__distribution justifyContentSpaceBetween">
+            <div class="information__selfDistribution">
+              <h4
+                class="title__selfDistribution title__thBlack alignItemsCenter"
+              >
+                Auto distribuição
+                <img
+                  src="./assets/informationAbout.png"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </h4>
+            </div>
+            <input type="checkbox" class="input__checkSelfDistribution" />
+          </div>
+        </section>
+
+        <aside class="aside__main justifyContentStart flexDirectionColumn">
+          <h2 class="title__topSurf">Top Surf</h2>
+          <div>
+            <h2 class="title__timeLong">Hoje</h2>
+            <table class="table__userToday">
+              <tr>
+                <th></th>
+                <th class="title__user">Usuarios</th>
+                <th class="title__userLinks">Links</th>
+              </tr>
+
+              <tr>
+                <td class="title__salary">1</td>
+                <td class="title__userPerson">Anas Alam</td>
+                <td class="title__valueLink">59702</td>
+              </tr>
+              <tr>
+                <td class="title__salary">2</td>
+                <td class="title__userPerson">vietaustin</td>
+                <td class="title__valueLink">54738</td>
+              </tr>
+              <tr>
+                <td class="title__salary">3</td>
+                <td class="title__userPerson">rko</td>
+                <td class="title__valueLink">23003</td>
+              </tr>
+              <tr>
+                <td class="title__salary">4</td>
+                <td class="title__userPerson">cryptobiz</td>
+                <td class="title__valueLink">21864</td>
+              </tr>
+              <tr>
+                <td class="title__salary">5</td>
+                <td class="title__userPerson">naruto2</td>
+                <td class="title__valueLink">18401</td>
+              </tr>
+              <tr>
+                <td class="title__salary">6</td>
+                <td class="title__userPerson">genira333</td>
+                <td class="title__valueLink">13872</td>
+              </tr>
+              <tr>
+                <td class="title__salary">7</td>
+                <td class="title__userPerson">ta</td>
+                <td class="title__valueLink">13247</td>
+              </tr>
+              <tr>
+                <td class="title__salary">8</td>
+                <td class="title__userPerson">anjoeboo</td>
+                <td class="title__valueLink">9237</td>
+              </tr>
+              <tr>
+                <td class="title__salary">9</td>
+                <td class="title__userPerson">CentrioHos</td>
+                <td class="title__valueLink">9170</td>
+              </tr>
+              <tr>
+                <td class="title__salary">10</td>
+                <td class="title__userPerson">eletromail</td>
+                <td class="title__valueLink">9123</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td class="td__seeMore">See more</td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+
+          <div>
+            <h2 class="title__timeLong">Semana</h2>
+            <table class="table__userToday">
+              <tr>
+                <th></th>
+                <th class="title__user">Username</th>
+                <th class="title__userLinks">Sites</th>
+              </tr>
+
+              <tr>
+                <td class="title__salary">1</td>
+                <td class="title__userPerson">Anas Alam</td>
+                <td class="title__valueLink">59702</td>
+              </tr>
+              <tr>
+                <td class="title__salary">2</td>
+                <td class="title__userPerson">vietaustin</td>
+                <td class="title__valueLink">54738</td>
+              </tr>
+              <tr>
+                <td class="title__salary">3</td>
+                <td class="title__userPerson">rko</td>
+                <td class="title__valueLink">23003</td>
+              </tr>
+              <tr>
+                <td class="title__salary">4</td>
+                <td class="title__userPerson">cryptobiz</td>
+                <td class="title__valueLink">21864</td>
+              </tr>
+              <tr>
+                <td class="title__salary">5</td>
+                <td class="title__userPerson">naruto2</td>
+                <td class="title__valueLink">18401</td>
+              </tr>
+              <tr>
+                <td class="title__salary">6</td>
+                <td class="title__userPerson">genira333</td>
+                <td class="title__valueLink">13872</td>
+              </tr>
+              <tr>
+                <td class="title__salary">7</td>
+                <td class="title__userPerson">ta</td>
+                <td class="title__valueLink">13247</td>
+              </tr>
+              <tr>
+                <td class="title__salary">8</td>
+                <td class="title__userPerson">anjoeboo</td>
+                <td class="title__valueLink">9237</td>
+              </tr>
+              <tr>
+                <td class="title__salary">9</td>
+                <td class="title__userPerson">CentrioHos</td>
+                <td class="title__valueLink">9170</td>
+              </tr>
+              <tr>
+                <td class="title__salary">10</td>
+                <td class="title__userPerson">eletromail</td>
+                <td class="title__valueLink">9123</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td class="td__seeMore">See more</td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+
+          <div>
+            <h2 class="title__timeLong">Total do Mês</h2>
+            <table class="table__userToday">
+              <tr>
+                <th></th>
+                <th class="title__user">Username</th>
+                <th class="title__userLinks">Links</th>
+              </tr>
+
+              <tr>
+                <td class="title__salary">1</td>
+                <td class="title__userPerson">Anas Alam</td>
+                <td class="title__valueLink">59702</td>
+              </tr>
+              <tr>
+                <td class="title__salary">2</td>
+                <td class="title__userPerson">vietaustin</td>
+                <td class="title__valueLink">54738</td>
+              </tr>
+              <tr>
+                <td class="title__salary">3</td>
+                <td class="title__userPerson">rko</td>
+                <td class="title__valueLink">23003</td>
+              </tr>
+              <tr>
+                <td class="title__salary">4</td>
+                <td class="title__userPerson">cryptobiz</td>
+                <td class="title__valueLink">21864</td>
+              </tr>
+              <tr>
+                <td class="title__salary">5</td>
+                <td class="title__userPerson">naruto2</td>
+                <td class="title__valueLink">18401</td>
+              </tr>
+              <tr>
+                <td class="title__salary">6</td>
+                <td class="title__userPerson">genira333</td>
+                <td class="title__valueLink">13872</td>
+              </tr>
+              <tr>
+                <td class="title__salary">7</td>
+                <td class="title__userPerson">ta</td>
+                <td class="title__valueLink">13247</td>
+              </tr>
+              <tr>
+                <td class="title__salary">8</td>
+                <td class="title__userPerson">anjoeboo</td>
+                <td class="title__valueLink">9237</td>
+              </tr>
+              <tr>
+                <td class="title__salary">9</td>
+                <td class="title__userPerson">CentrioHos</td>
+                <td class="title__valueLink">9170</td>
+              </tr>
+              <tr>
+                <td class="title__salary">10</td>
+                <td class="title__userPerson">eletromail</td>
+                <td class="title__valueLink">9123</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td class="td__seeMore">See more</td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <script src="./script/surfScript.js"></script>
+  </body>
+</html>

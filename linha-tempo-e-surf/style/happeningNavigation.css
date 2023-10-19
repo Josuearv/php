@@ -1,0 +1,173 @@
+.card__posterAsked:first-child{
+  margin: 0;
+}
+
+.title__nameAuthorPoster{
+  font-size: 18px;
+}
+
+.title__ofAsked{
+  font-weight: 700;
+  font-size: 29px;
+  color: #F3992E;
+}
+
+.buttons__respondPerson{
+  margin: 2rem 0 0 0;
+}
+
+.button__respondAsked{
+  margin: 0 1rem 0 0;
+  padding: 0.4rem 1rem;
+  background: #5283FF;
+  border: none;
+  border-radius: 2rem;
+  color: #fff;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.button__respondAsked:hover{
+  background: #244db3;
+}
+
+.buttos__saveAndRespond button img{
+  margin: 0 0.5rem 0 0;
+}
+
+.buttos__saveAndRespond button{
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button__saveVisibled{
+  border: none;
+  background: transparent;
+  color: #989898;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.button__flagSecondary{
+  border: none;
+  background: transparent;
+}
+
+.chat__answers{
+  margin: 0;
+  border-radius: 0.5rem;
+}
+
+.card__posterAsked{
+  border-radius: 2rem;
+}
+
+.section__formMe{
+  background: #fff;
+  border-radius: 0.5rem;
+}
+
+.line__row{
+  margin: 2rem 0 0 0;
+  border-bottom: 1px solid #D7D7D7;
+}
+
+.title__answers{
+  position: relative;
+}
+
+.title__answers::after{
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background: #F3992E;
+  left: 1px;
+  bottom: 1px;
+  margin: 0 0 -0.5rem 0;
+  border-radius: 0.1rem;
+}
+
+
+.title__earnCoin{
+  color: #fff;
+  font-weight: 400;
+
+}
+
+.nav__linksPoster{
+  margin: 0 0 1rem 0;
+}
+
+.ul__listPosterLinks{
+  list-style: none;
+}
+
+.ul__listPosterLinks li{
+  margin: 0 0.2rem 0 0;
+}
+
+.ul__listPosterLinks li a{
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #3D74FF;
+  font-weight: 500;  
+  text-decoration: none;
+}
+
+.ul__listPosterLinks li img{
+  margin: 0 0 0 0.5rem;
+}
+
+.title__month a{
+  color: #505050 !important;
+}
+
+@media (max-width: 550px){
+  .information__poster{
+    margin: 0 0 0 1rem;
+  }
+}
+
+@media (max-width: 500px){
+.information__timeLine {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .information__poster{
+    margin: 0;
+  }
+}
+
+@media (max-width: 425px){
+  .buttons__respondPerson{
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .button__flagSecondary{
+    margin: 1rem 0 0 0;
+  }
+
+  .buttos__saveAndRespond{
+    flex-wrap: wrap;
+  }
+
+}
+
+@media (max-width: 450px){
+  .answers__order{
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .for__orderChat{
+    margin: 1rem 0 0 0;
+  }
+
+  .sub__chatAnsWersCard{
+    margin: 0 0 0 -4rem;
+  }
+}

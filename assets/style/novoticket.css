@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Oswald&family=Poppins:wght@300&family=Roboto:ital,wght@0,300;1,400&family=Work+Sans:wght@500&display=swap');
+
+.h1 {
+    width: 335px;
+height: 54px;
+
+/* Titulo-h2 */
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 54px;
+/* identical to box height */
+
+
+/* black */
+
+color: #020202;
+}
+
+.h5 {
+    width: 471px;
+height: 69px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 34px;
+/* or 213% */
+
+
+/* red */
+
+color: #020202;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.frame-1230 {
+    /* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 20px;
+
+width: 1109px;
+height: auto;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+.pes-tkct {
+    /* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+gap: 123px;
+
+width: 99%;
+height: 55px;
+
+background: #F9F9F9;
+border-radius: 10px 10px 0px 0px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.alg-inputs {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+    .input {
+        border: solid 0.1rem #ccc;
+        padding: 7px;
+        border-radius: 4px;
+    }
+       .disable { background: #DCDCDC;}
+    .textarea {
+        width: 98%;
+        height: 300px;
+        border: none;
+        background: #F5F5F5;
+        padding: 10px;
+    } textarea:focus { outline: none;}
+    .sub {
+        float: right;
+        background: #F3992E;
+        padding: 10PX;
+        color: white;
+        border: none;
+    }
+    .file-input {
+        width: 98%;
+        height: 25px;
+        padding: 10px;
+        border-radius: 6px;
+        background: #ccc;
+    }

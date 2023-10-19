@@ -1,0 +1,138 @@
+.main-container{
+  margin: 2rem 0;
+}
+
+.name__primaryNotifications{
+}
+
+.background__orange{
+  width: 35px;
+  height: 35px;
+  background: #F19A33;
+  border: 1px solid #D89D61;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.buttons__notifications button:first-child:hover{
+  background: #ac6611;
+}
+
+.title__notifications{
+  margin: 0 0 0 1rem;
+  font-weight: 600;
+  color: #383C3F;
+  font-size: 30px;
+}
+
+/*############# section__notifications */
+
+.section__notifications{
+  background: #EFEFEF;
+  margin: 2rem 0;
+  padding: 1.5rem;
+}
+
+.ul__notifications{
+  list-style: none;
+}
+
+.ul__notifications li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #C9C9C9 ;
+  background: #F0F0F0;
+  padding: 1.5rem;
+}
+
+.ul__notifications li:first-child{
+  border-top: 1px solid transparent;
+  background: #F9F9F9;
+}
+
+.background__whiteOpa{
+  background: #FAFAFA;
+}
+
+.notification__info{
+  margin: 0 0 0 1.5rem;
+}
+
+.title__rejectProject{
+  font-weight: 500;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.title__rejectProject span{
+  font-weight: 600;
+  margin: 0 0.5rem 0 0;
+}
+
+.text__descriptionProject{
+  margin: 0.5rem 0 0 0;
+  max-width: 750px;
+  color: #3C4144;
+  font-size: 14px;
+}
+
+
+.buttons__notifications button{
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.buttons__notifications button:first-child{
+  background:#F29A30;
+  color: #fff;
+  padding: 0.8rem 1.2rem;
+  border-radius: 2rem;
+  margin: 0 0.5rem 0 0;
+  font-weight: 500;
+}
+
+.title__noneUnderline{
+  text-decoration: none;
+  color: #74777C;
+  display: flex;
+  flex-direction: column;
+}
+
+.title__noneUnderline span{
+  color: black; 
+}
+
+@media (max-width: 990px){
+  .li__notifications{
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .buttons__notifications{
+    width: 100%;
+    margin: 1rem 0 0 0;
+    justify-content: space-between;
+  }
+  
+}
+
+@media (max-width: 725px){
+  .includes__notification{
+    flex-direction: column;
+  }
+
+  .notification__info{
+    margin: 1rem 0;
+  }
+
+  .li__notifications,
+  .section__notifications{
+    padding: 1rem !important;
+  }
+
+}

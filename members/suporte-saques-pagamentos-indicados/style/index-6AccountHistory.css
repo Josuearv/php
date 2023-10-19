@@ -1,0 +1,362 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  background: #F5F5F5;
+}
+
+/*################## main */
+
+.container__accountHistory-block{
+  width: 90%;
+  margin: 4rem 0;
+}
+
+.title__myLink-element{
+  font-weight: 700;
+}
+
+.div__inputsUrl-block{
+  margin: 2rem 0;
+}
+
+.div__inputsUrl-block input{
+  width: 450px;
+  padding: 0.8rem 0.5rem;
+  border: 1px solid #CDCDCD;
+  border-radius: 0.2rem;
+  outline: none;
+}
+
+.div__inputsUrl-block input::placeholder{
+  font-weight: 500;
+}
+
+.text__separatorInputs-element{
+  margin: 0 1rem;
+}
+
+.text__redirectMoney-element{
+  max-width: 630px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.text__redirectMoney-element a{
+  color: #628EFE;
+  text-decoration: none;
+}
+
+.title__referrals-element{
+  margin: 2rem 0 1rem 0;
+  font-size: 16.5px;
+}
+
+/*################## table */
+
+.title___tableDown-element{
+  margin: 0 0 2rem 0;
+}
+
+.table__information-block{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+.table__information-block tr td{
+  padding: 1rem;
+
+}
+
+.tr__border td{
+  border-bottom: 1px solid #D1D1D1;
+  border-right: 1px solid #D1D1D1;
+}
+
+.bg__tableInformation-block{
+  background: #fff;
+  padding: 1rem;
+  border-radius: 0.7rem;
+}
+
+.td__removeBorder-element td{
+  border-bottom: none;
+}
+
+.td__removeBorderRight-element{
+  border-right: none !important;
+}
+
+.table__tdStrong-element{
+  font-weight: 600;
+  text-align: end;
+}
+
+.td__maxWidth-element{
+  max-width: 300px;
+}
+
+.title__tdValue-element, .title__tdValue-element div{
+  font-weight: 500;
+}
+
+/*################## graph */
+
+.graph{
+  background: #fff;
+  margin: 3rem 0;
+  width: 100%;
+  padding: 2rem;  
+  border-radius: 0.7rem;
+}
+
+#myChart{
+  width: 100%;
+  height: 349px;
+}
+
+.graph__canvas-element{
+  width: 55%;
+}
+
+.container__graphCanvas-block {
+  width: 100%;
+}
+
+.title__graphMoney-element{
+  width: 100%;
+  text-align: end;
+  padding: 1rem 0 0 0;
+  font-weight: 600;
+  color: #F5A84C;
+}
+
+/*################## section__wishlist-block */
+
+
+.section__wishlist-block{
+
+}
+
+.section__cardsWishlist-block{
+  margin: 2rem 0 0 0;
+}
+
+.card__wishlist-block{
+  background: #fff;
+  display: flex;
+  padding: 1rem;
+  margin: 0 0 1.5rem 0;
+  border-radius: 0.4rem;
+}
+
+.card__titleName-element{
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.border__perfilWhishlist-block{
+  margin: 1rem 0 0 0;
+  border: 2px solid #F39A31;
+  padding: 0.2rem;
+  border-radius: 50%;
+}
+
+.border__perfilWhishlist-block img{
+  border-radius: 50%;
+}
+
+.border__whiteOnline-block{
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 0.2rem;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin: 4rem 0 0 4.5rem;
+
+}
+
+.border__whiteOnline-block{
+  background: #5EDD2D;
+}
+
+.ul__informationPerfilWishlist-block{
+  list-style: none;
+  height: 100%;
+}
+
+.ul__informationPerfilWishlist-block li{
+  font-weight: 500  ;
+}
+
+.li__statePrimary-element li{
+  margin: 0 0 0.5rem 0;
+}
+
+.title__activeb-element{
+  font-size: 15px;
+}
+
+.title__dateDecorantion-element{
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.row__up{
+  background: #EFEFEF;
+  height: 100%;
+  width: 3px;
+  border-left: 1px solid #F8F8F8;
+  margin: 0 2rem;
+}
+
+.nav__links-block{
+  margin: 2rem 0 0 0;
+}
+
+
+.ul__pages-block li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 0.1rem
+}
+
+.ul__pages-block li a:hover{
+  background: #5283FF;
+  border-radius: 0.2rem; 
+  color: #fff;
+}
+
+
+.ul__pages-block li a{
+  font-size: 18px;
+  color: #000000;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.4rem 0.9rem; 
+
+}
+
+.li__primary-element{
+  background: #5283FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2rem; 
+}
+
+.li__primary-element a{
+  color: #fff !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 0.9rem; 
+  
+}
+
+.ul__pages-block li a{
+  text-decoration: none;
+}
+
+.arrow{
+  display: flex;
+  align-items: center;
+}
+
+/* ######## nav__table-block */
+
+.nav__table-block{
+  width: 100%;
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  border-top: 1px solid #e0e0e0;
+
+  margin: 1rem 0;
+  background: #fff;
+  display: none;
+}
+
+.ul__navTable-block{
+  list-style: none;
+  width: 100%;
+}
+
+.ul__navTable-block li{
+  border-bottom: 1px solid #e0e0e0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.ul__navTable-block li a{
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  margin: 0.5rem 0;
+}
+
+
+@media (max-width: 700px){
+
+  .div__inputsUrl-block{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .div__inputsUrl-block input{
+    width: 100%;
+  }
+
+  .graph__canvas-element{
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px){
+ .card__wishlist-block{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+ } 
+
+ .ul__informationPerfilWishlist-block{
+  margin: 1rem;
+  width: 100%;
+ }
+
+ .li__statePrimary-element li, .li__stateActive-element li{
+  text-align: center;
+ }
+
+ .border__perfilWhishlist-block{
+  padding: 0.1rem;
+ }
+}
+
+@media (max-width: 500px){
+  .bg__tableInformation-block{
+    display: none;
+  }
+
+  .nav__table-block{
+    display: flex;
+  }
+
+  .graph{
+    padding: 1rem;
+  }
+
+  .graph__canvas-element {
+    margin: 1rem 0 0 0;
+  }
+
+}

@@ -1,0 +1,389 @@
+
+.activity__time{
+  right: 2px;
+  bottom: 6px;
+}
+
+.input__persistent{
+  margin: 0 0 0 1rem;
+  width: 100%;
+}
+
+.input__persistent input{
+  border: none;
+  width: 100%;
+  height: 40px;
+  padding: 1rem;
+  outline: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.input__persistent input::placeholder{
+  color: #505050;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.text__persitentAsked img{
+  margin: 0 0.5rem 0 0;
+}
+
+.text__persitentAsked{
+  color: #5283FF;
+  font-weight: 600;
+}
+
+.ul__imageshref{
+  list-style: none;
+}
+
+.ul__imageshref li {
+  margin: 0 0.5rem 0 0;
+}
+
+.button__respond{
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 2rem;
+  background: #F3992E;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.button__respond:hover{
+  background: #b86a0b;
+}
+
+.buttons__perfilUser{
+  margin: 1.5rem 0 0 0;
+}
+
+.buttons__perfilUser button{
+  margin: 0 0.8rem 0 0;
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 2rem;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+.button__typeUser{
+  background: #5283FF;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button__typeUser:hover{
+  background: #1945b3;
+}
+
+.button__category{
+  background: transparent;
+  color: #8ECDF8;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0 !important;
+}
+
+.photo__perfil img{
+  padding: 0.1rem;
+}
+
+.information__poster{
+  width: 100%;
+}
+
+.nav__linksPoster {
+  margin: 0 0 1rem 0;
+}
+
+.ul__listPosterLinks,
+.ul__listPosterLinks{
+  list-style: none;
+}
+
+.buttons__perfilUser{
+  display: none;
+}
+
+.buttons__publishMessage{
+  margin: 1rem 0;
+}
+
+.button__publishOpinion{
+  width: 100%;
+}
+
+.title__categoryMessage{
+  display: none;
+}
+
+.button__publishOpinion{
+  padding: 0.5rem;
+  border-radius: 2rem;  
+}
+
+.ul__listPosterLinks li a {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #3D74FF;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.ul__listPosterLinks li img {
+  margin: 0 0 0 0.5rem;
+}
+
+.title__month a {
+  color: #505050 !important;
+}
+
+.background__modalPublish{
+  position: fixed;
+  top: -1px;
+  left: -1px;
+  right: 1px;
+  bottom: -1px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  z-index: 1;
+  background: hsla(0, 0%, 0%, 0.9);
+
+}
+
+.modal__configPublish{
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 1px;
+  display: none;
+}
+
+.active__buttonPublish .modal__configPublish{
+  display: flex;
+}
+
+.modal__confgiPublishContainer{
+  background: #fff;
+  width: 95%;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  position: fixed;
+  z-index: 1;
+  display: none;
+  z-index: 3;
+  flex-direction: column;
+}
+
+.background__modalConfigPublish {
+  position: fixed;
+  width: 100%;
+  top: -1px;
+  left: -1px;
+  right: 1px;
+  bottom: -1px;
+  z-index: 2;
+  display: none;
+  background: hsla(0, 0%, 0%, 0.9);
+  cursor: pointer;
+}
+
+.active__buttonPublish .background__modalConfigPublish,
+.active__buttonPublish .modal__configPublish,
+.active__buttonPublish .modal__confgiPublishContainer{
+  display: flex;
+  z-index: 3;
+}
+
+
+.title__nameCategoryPublish{
+  color:  #a2c1dd;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.ul__filterListConfigPublish{
+  list-style: none;
+  margin: 1rem 0;
+}
+
+.ul__filterListConfigPublish li{
+  margin: 0 0.5rem 0 0;
+  background: #4F83FF;
+  color: #fff;
+  font-size: 14px;
+  padding: 0.6rem 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.ul__filterListConfigPublish li:hover{
+  background: #2e5dd3;
+}
+
+.text__areaPublish,
+.input__persistent textarea{
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #464648;
+}
+
+.text__areaPublish--margin{
+  margin: 1.5rem 0;
+}
+
+.section__timeLine--mobile{
+  display: none;
+}
+
+.text__areaPublish::placeholder,
+.input__persistent textarea::placeholder{
+  color: #505050;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.ul__imageshref{
+  width: 100%;
+  margin: 0 0 1rem 0;
+}
+
+
+.closeModalPublish{
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.counterTextarea__background{
+  text-align: end;
+}
+
+.cont__areaPublishText{
+  font-size: 15px;
+  font-weight: 500;
+  text-align: end;
+}
+
+#cont{
+  margin: 0 0.5rem 0 0;
+}
+
+@media (max-width: 990px){
+  .main-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section__formMe{
+    margin: 1.5rem 0 0 0;
+    width: 100%;
+  }
+
+  .ul__listInformationModalComment{
+    right: 1px;
+    margin: 0.5rem 0 0 0;
+  }
+}
+
+@media (max-width: 750px){
+  .sub__Content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+@media (max-width: 725px){
+  .ul__listPosterLinks{
+    flex-wrap: wrap;
+  }
+
+  .ul__listPosterLinks li{
+    margin: 0.5rem 0
+  }
+
+  .list__buttonsMessage{
+    flex-direction: column-reverse;
+    align-items: start;
+  }
+
+  .button__askedFavorite{
+    margin: 0.5rem 0;
+  }
+
+  .message__askedC{
+    flex-direction: row;
+    align-items: start;
+  }
+
+  .button__reply{
+    margin: 1rem 0 0 0;
+  }
+
+}
+
+@media (max-width: 550px){
+  .info__posterPerfil{
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .information__poster{
+    margin: 1rem 0 0 0;
+  }
+
+
+}
+
+@media (max-width: 500px) {
+
+  .nav__imagesHref {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .input__persistent {
+    margin: 0;
+  }
+}
+
+@media (max-width: 450px){
+  .titles__Response{
+    margin: 1rem 0 0 0;
+  }
+
+  .title__valueResponse::after{
+    bottom: -5px;
+  }
+
+  .ul__filterListConfigPublish{
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .ul__filterListConfigPublish li{
+    width: 100%;
+    margin: 0.5rem 0 0 0;
+  }
+
+  .ul__filterListConfigPublish li:first-child{
+    margin: 0;
+  }
+}
+

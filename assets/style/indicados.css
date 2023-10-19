@@ -1,0 +1,117 @@
+body {
+    background: #F5F5F5;
+}
+.page {
+    position: absolute;
+    align-items: center;
+    width: 100%;
+}
+.frame-1260 {
+    margin-top: 60px;
+    margin-left: 165px;
+}
+   .txt1 {
+    font-family: 'Helvetica';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 23px;
+/* identical to box height */
+
+color: #020202;
+   }
+.url {
+    margin-top: 70px;
+    margin-left: 165px;
+}
+   .txt-url { font-size: 18px; font-weight: 700;}
+   .alg-url { display: flex; }
+   .input {
+    padding: 7px;
+gap: 10px;
+
+width: 480px;
+height: 38px;
+
+background: #FFFFFF;
+/* grey alto */
+
+border: 1px solid #A8A8A8;
+border-radius: 0px 3px 3px 0px;
+   }
+.frame-21 {
+    text-align: left;
+    margin-left: 5px;
+    margin-top: 40px;
+}
+.ganhos {
+    margin-top: 40px;
+}
+    .txt-ganhos {
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .frame-1282 {
+        margin-top: 60px;
+        padding: 20px;
+gap: 8px;
+
+width: 1110px;
+height: 192px;
+
+background: #FFFFFF;
+border-radius: 10px;
+    }
+    
+    .topico { 
+        height: 66px;
+    }
+    .desc-top { padding: 20px;}
+    .ganhos-grafico {
+        padding: 20px;
+gap: 40px;
+
+width: 1110px;
+height: 378px;
+
+background: #FFFFFF;
+border-radius: 10px;
+margin-top: 60px;
+    }
+.indicados {
+    margin-top: 60px;
+}
+   .alg-ind { display: block;}
+
+   .indicado {
+    display: flex;
+    padding: 20px;
+gap: 32px;
+margin-top: 20px;
+
+width: 1110px;
+height: 147px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+   }
+   .nome-ind {
+    font-family: 'Helvetica';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 23px;
+/* identical to box height */
+
+text-align: right;
+
+color: #000000;
+
+   }
+   .nome-foto { padding: 15px;; border-right: solid 0.1rem #CCCCCC;}
+   .foto-ind {
+    margin-left: 30px;
+    width: 100px;
+    border-radius: 100px
+   }

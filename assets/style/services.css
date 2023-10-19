@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* FONTs */
+h2{
+  font-weight: 200;
+  font-size: 36px;
+}
+
+h3{
+  margin-left: 6px;
+  font-weight:200;
+  font-size: 24px;
+}
+
+p{
+  font-weight: 200;
+  font-size: 16px;
+}
+
+/* IMGs */
+.icons_pedido{
+  width: auto;
+  margin: 5px;
+}
+
+/* LINKs */
+.btn_pedidos_c{
+  color: #fff;
+  background-color: #fb5465;
+  text-decoration: none;
+  padding: 10px 30px 10px 30px;
+  border-radius: 50px;
+}
+
+.btn_pedidos_a{
+  color: #fff;
+  background-color: #F3992E;
+  text-decoration: none;
+  padding: 10px 30px 10px 30px;
+  border-radius: 50px;
+}
+
+.a_servico{
+  text-decoration: none;
+  color: #000;
+  flex: 1;
+}
+
+
+/* DIVs */
+.div_container{
+  width: 100%;
+  margin: 0px;
+  padding: 50px 0px 50px 0px;
+  background-color: #F0F0F0;
+}
+
+.div_margin{
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.div_pedidos{
+  margin-bottom: 60px;
+}
+
+.div_container_pedidos{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: #a4a4a4 3px 3px 3px;
+}
+
+.div_display_pedidos{
+  padding: 10px 20px 10px 20px;
+  display: flex;
+}
+
+.div_icon_pedidos{
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 10%;
+  padding: 10px;
+}
+
+.div_text_pedidos{
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 7px;
+  width: 78%;
+  padding: 10px;
+}
+
+.div_btn_pedidos{
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: right;
+  padding: 10px;
+  width: 15%;
+}
+
+
+
+.div_display_servico{
+  display: flex;
+}
+
+.div_box_servico{
+  flex: 1;
+  margin: 10px;
+  padding: 30px 15px;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: #a4a4a4 3px 3px 3px;
+}
+
+
+/* EDIÇÃO DO SITE RESPONSIVIDADE */
+
+
+@media (max-width: 1200px) {
+
+/* DIVs */
+
+  .div_display_pedidos{
+    padding: 10px 20px 10px 20px;
+    display: inline-flex;
+  }
+
+  .div_display_servico{
+    display: block;
+  }
+
+  .div_icon_pedidos{
+      display: block;
+      margin-top: auto;
+      margin-bottom: auto;
+      width: 50%;
+      padding: 10px;
+    }
+
+  .div_text_pedidos{
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 7px;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .div_btn_pedidos{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+    padding: 10px;
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 812px){
+
+/* DIVs */
+
+  .div_display_pedidos{
+    padding: 10px 20px 10px 20px;
+    display: block;
+  }
+
+  .div_display_servico{
+    display: block;
+  }
+
+  .div_icon_pedidos{
+      display: block;
+      margin-top: auto;
+      margin-bottom: auto;
+      width: 100%;
+      padding: 10px;
+    }
+
+  .div_text_pedidos{
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 7px;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .div_btn_pedidos{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+    padding: 10px;
+    width: 100%;
+  }
+
+}
+
+
+
+

@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+  />
+  
+  <link rel="stylesheet" href="./style/cssStyleModal/estilo.css"/>
+  <link rel="stylesheet" href="./style/flex.css"/>
+  <link rel="stylesheet" href="./style/headerTwo.css"/>
+  <link rel="stylesheet" href="./style/globalStyles.css"/>
+  <link rel="stylesheet" href="./style/timeline.css"/>
+  <link rel="stylesheet" href="./style/happeningHere.css" />
+  <link rel="stylesheet" href="./style/happeningHereMessage.css" />
+
+  <title>Nell bux</title>
+
+  <script src="./script/jquery.js"></script>
+
+</head>
+
+<body>
+
+  <!-- aside -->
+  <aside id="menu-mobile" class="menu-mobile-fecado">
+      <div class="container">
+        <div id="fechar-menu-mobile">
+          <span class="material-icons">cancel</span>
+        </div>
+      </div>
+
+      <ul id="menu-principal">
+        <li><a href="#">Area Membro</a></li>
+        <li><a href="#">Meus Projetos</a></li>
+        <li><a href="#">Minhas Finanças</a></li>
+      </ul>
+
+      <div class="espaco20"></div>
+
+      <a
+        href="#pesquisa-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <span class="material-icons">search</span>
+          <div>Pesquisar</div>
+        </div>
+      </a>
+
+      <a
+        href="#notificacoes-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <span class="material-icons">notifications</span>
+          <div>Notificações</div>
+        </div>
+      </a>
+
+      <a
+        href="#mensagens-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <span class="material-icons">sms</span>
+          <div>Mensagens</div>
+        </div>
+      </a>
+
+      <a
+        href="#usuario-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <div id="logo-tb" class="menu-usuario">TB</div>
+        </div>
+      </a>
+  </aside> 
+
+  <!-- header --> 
+  <header class="header justifyContentCenter alignItemsCenter">
+        <div class="container justifyContentBetween alignItemsCenter">
+          
+          <img
+            id="logo"
+            src="./assets/imagesHeader/logo.png"
+            alt="nell bux logo image"
+            width="120"
+            height="40"
+          />
+  
+          <nav class="nav">
+  
+            <div class="search__nav justifyContentBetween alignItemsCenter">
+              <div class="search__container"></div>
+              <input
+                type="text"
+                placeholder="Pesquisar no nellbux     "
+                name="search"
+              />
+  
+              <div class="filter__result justifyContentBetween">
+                <span id="result__filter" value="">Investidores</span>
+              </div>
+  
+              <img
+                class="filter__seta"
+                src="./assets/imagesHeader/seta.png"
+                alt="arrow that looks like a downward facing triangle"
+                width="15px"
+                height="15px"
+              />
+              <img
+                src="./assets/imagesHeader/search.png"
+                alt="lupa de pesquisa"
+                width="25px"
+                height="25px"
+              />
+              
+              <div class="nav__filter">
+                <ul class="filter__search justifyContentBetween directionColumn alignItemsEnd">
+                </ul>
+              </div>          
+                        
+            </div>
+          
+  
+            <div class="hrefs-blocks justifyContentBetween alignItemsCenter">
+              <div class="block__Communication justifyContentEvenly alignItemsCenter">
+  
+                <li class="button__nav localizationModal openModal li__remove-list">
+  
+                  <a href="#notification">
+                    <span>
+                        <img
+                          
+                          src="./assets/imagesHeader/sino.png"
+                          alt="orange bell icon receive notification"
+                          width="30"
+                          height="30"
+                        />
+                    </span>
+                  </a>
+  
+                  <div class="messageNotification flexDirectionColumn modal__active-element">
+                    
+                    <header
+                      class="header__notification header__messageModal justifyContentSpaceBetween alignItemsCenter"
+                    >
+                      <span class="text__message">Notificações</span>
+                      <span class="text__message">Ver todos</span>
+                    </header>
+                    
+                    <nav class="nav__notification flexDirectionColumn alignItemsCenter">
+                      
+                      <li class="card__notification justifyContentCenter">
+                        <div class="block__text__notification flexDirectionColumn justifyContentCenter">
+                          
+                          <a class="card__notificationt__text card__notificationt__text--weight" >
+                            Rejeitamos seu projeto
+                            <span class="card__notificationt__text card__notificationt__text--margin">Ontem</span>
+                          </a>
+  
+                          <a class="notifications__about justifyContentSpaceBetween AlignItemsCenter"
+                            >Em criar uma plataforma para reclamação
+                            <img
+                              src="./assets/imagesHeader/trash.png"
+                              alt="trash can"
+                              width="35"
+                              height="35"
+                            />
+                          </a>
+  
+                        </div>
+                      </li>
+                                 
+                      <li class="card__notification justifyContentCenter">
+                        <div class="block__text__notification flexDirectionColumn justifyContentCenter">
+                          
+                          <a class="card__notificationt__text card__notificationt__text--weight" >
+                            Rejeitamos seu projeto
+                            <span class="card__notificationt__text card__notificationt__text--margin">Ontem</span>
+                          </a>
+  
+                          <a class="notifications__about justifyContentSpaceBetween AlignItemsCenter"
+                            >Em criar uma plataforma para reclamação
+                            <img
+                              src="./assets/imagesHeader/trash.png"
+                              alt="trash can"
+                              width="35"
+                              height="35"
+                            />
+                          </a>
+  
+                        </div>
+                      </li>
+  
+                      <li class="card__notification justifyContentCenter">
+                        <div class="block__text__notification flexDirectionColumn justifyContentCenter">
+                          
+                          <a class="card__notificationt__text card__notificationt__text--weight" >
+                            Rejeitamos seu projeto
+                            <span class="card__notificationt__text card__notificationt__text--margin">Ontem</span>
+                          </a>
+  
+                          <a class="notifications__about justifyContentSpaceBetween AlignItemsCenter"
+                            >Em criar uma plataforma para reclamação
+                            <img
+                              src="./assets/imagesHeader/trash.png"
+                              alt="trash can"
+                              width="35"
+                              height="35"
+                            />
+                          </a>
+  
+                        </div>
+                      </li>
+  
+                    </nav>
+  
+                  </div>
+  
+                </li>
+  
+  
+                <li class="message localizationModal openModal li__remove-list">
+  
+                  <a href="#message">
+                    <div class="message__mobile">
+                      <img
+                        src="./assets/imagesHeader/message.png"
+                        alt="message icon, orange color with 3 dots in the middle"
+                        width="30"
+                        height="30"
+                      />
+                      <div class="voice__message justifyContentCenter alignItemsCenter">2</div>
+                    </div>
+                  </a>
+  
+                  <div class="messageModalss flexDirectionColumn modal__active-element">
+                    <header class="header__notification header__messageModal justifyContentSpaceBetween alignItemsCenter">
+                      <span class="text__message">Mensagens</span>
+                      <span class="text__message">Ver todos</span>
+                    </header>
+                    <nav class="nav__notification alignItemsCenter flexDirectionColumn">
+                      
+                      <li class="messager__card justifyContentCenter">
+                        <img
+                          src="./assets/imagesHeader/avatar.png"
+                          alt="faceless person with border"
+                          width="40"
+                          height="40"
+                        />
+                        <div class="messager__block__text block__text__notification">
+                          <div class="text__card__mensager justifyContentSpaceBetween">
+                            <span>Repasso Franquia - Oportunidade...</span>
+                            <span id="text__new__mensager">Nova Mensagem</span>
+                          </div>
+      
+                          <span class="text__faq"
+                            >Em criar uma plataforma para reclamação
+                          </span>
+                        </div>
+  
+                      </li>
+  
+                      <li class="messager__card justifyContentCenter">
+                        <img
+                          src="./assets/imagesHeader/avatar.png"
+                          alt="faceless person with border"
+                          width="40"
+                          height="40"
+                        />
+                        <div class="messager__block__text block__text__notification">
+                          <div class="text__card__mensager justifyContentSpaceBetween">
+                            <span>Repasso Franquia - Oportunidade...</span>
+                            <span id="text__new__mensager">Nova Mensagem</span>
+                          </div>
+      
+                          <span class="text__faq"
+                            >Em criar uma plataforma para reclamação
+                          </span>
+                        </div>
+  
+                      </li>
+  
+                      <li class="messager__card justifyContentCenter">
+                        <img
+                          src="./assets/imagesHeader/avatar.png"
+                          alt="faceless person with border"
+                          width="40"
+                          height="40"
+                        />
+                        <div class="messager__block__text block__text__notification">
+                          <div class="text__card__mensager justifyContentSpaceBetween">
+                            <span>Repasso Franquia - Oportunidade...</span>
+                            <span id="text__new__mensager">Nova Mensagem</span>
+                          </div>
+      
+                          <span class="text__faq"
+                            >Em criar uma plataforma para reclamação
+                          </span>
+                        </div>
+  
+                  </div>
+  
+                </li>
+                      
+          
+            </div>
+  
+              <div class="total__investment-block alignItemsCenter">
+                
+                <span class="total__investment-element">Total investido carregando...</span>
+                
+                <button class="modal__h perfil__button openModal">
+  
+                  <div class="modal__eyes">
+                    <span id="balance">Saldo: R$ 0,00</span>
+                  </div>
+                  
+                  <img src="./assets/imagesHeader/eyes.png"  id="modal__get" alt="eyes" width="35" height="35" />
+                </button>
+  
+                <hr id="row__separator">
+              </div>
+              
+  
+              <div class="perfil__account-block total__investment-block alignItemsCenter">
+            
+                <button class="modal__h perfil__button openModal">
+  
+                  <span class="tb__perfil">tb</span>
+                
+                  <div class="perfil__modal modal__active-element justifyContentCenter alignItemsCenter">
+                    <div class="perfil__container">
+                      <div class="perfil__title__block">
+                        <span class="perfil__title">
+                          olá,
+                          <span class="perfil__title__bold">marcos,</span>
+                          seja bem-vindo.
+                        </span>
+                      </div>
+      
+                      <div class="account__config flexDirectionColumn justifyContentSpaceEvenly">
+                        <span class="account__title justifyContentBetween">
+                          Configurações Conta
+                          <span> Meu perfil </span>
+                        </span>
+                        <span class="account__title justifyContentBetween"> Rank do Dia </span>
+                      </div>
+      
+                      <div class="block__offers justifyContentSpaceEvenly flexDirectionColumn">
+                        <span class="title__offers__primary">Ofertas e pedidos</span>
+                        <div class="block__text__offers justifyContentBetween">
+                          <span class="block__text__offers__invest"
+                            >Abrir uma oferta de investimento</span
+                          >
+                          <span class="block__text__offers__invest"
+                            >Encontrar Pedidos</span
+                          >
+                        </div>
+                        <span
+                          class="block__text__offers__invest block__text__offers__invest--text"
+                          >Abrir um pedido de credito</span
+                        >
+                      </div>
+      
+                      <div class="block__Information__offers flexDirectionColumn justifyContentSpaceEvenly">
+                        <span class="title__offers__primary"
+                          >Informações da Conta</span
+                        >
+                        <div class="block__text__offers__account justifyContentSpaceBetween">
+                          <div class="block__text__offers__text flexDirectionColumn">
+                            <span class="block__text__offers__invest"
+                              >Lista de Indicados</span
+                            >
+                            <span class="block__text__offers__invest"
+                              >Histórico de Conta</span
+                            >
+                          </div>
+      
+                          <div class="block__end__offers  flexDirectionColumn">
+                            <span class="block__text__offers__invest"
+                              >Lista de Seguidores</span
+                            >
+                            <span class="block__text__offers__invest"
+                              >Faças uma pergunta</span
+                            >
+                          </div>
+                        </div>
+                        <span class="block__text__offers__invest"
+                          >Minhas Apostas</span
+                        >
+                      </div>
+      
+                      <div class="user__offers justifyContentSpaceBetween AlignItemsCenter">
+                        <div class="block__title__user justifyContentSpaceBetween flexDirectionColumn">
+                          <span class="block__text__offers__invest"
+                            >Conta Nell bux</span
+                          >
+                          <span class="perfil__title__bold">1211451-1</span>
+                        </div>
+                        <div class="block__title__user justifyContentSpaceBetween flexDirectionColumn">
+                          <span class="block__text__offers__invest block__text__user"
+                            >Meu Usuario</span
+                          >
+                          <span class="perfil__title__bold">@eduardoon</span>
+                        </div>
+                      </div>
+  
+                  </div>
+  
+                
+                </button>
+  
+                <span class="perfil__name-element">
+                    Olá Tássio 
+                    <span class="perfil__code-element">55077188</span>
+                </span>
+  
+                <hr id="row__separator">    
+              </div>
+  
+                
+              <span class="leave__element">SAIR</span>      
+          </nav>
+            
+            
+            
+          <div class="exit__menu alignItemsCenter">
+            <span id="bt-abrir-menu-mobile" class="material-icons color__orange">menu</span>
+          </div>
+  
+  
+        </div>
+  </header>
+  
+  <!--Navegação  -->
+  <nav class="nav__hrefs-block justifyContentCenter">
+          <ul class="nav__links-container justifyContentBetween alignItemsCenter">
+            <li>
+              <img src="./assets/imagesNav/home.png" alt="home color orange" width="20" height="20"/>
+              <a href="#">
+                Área de Membro
+              </a>
+            </li>
+
+            <li>
+              <img src="./assets/imagesNav/money.png" alt="orange money bag with s in the middle" width="20" height="20"/>
+              <a href="#">Minhas finanças</a>
+            </li>
+
+            <li>
+              <img src="./assets/imagesNav/investiment.png" alt="investment growing" width="20" height="20" />
+              <a href="#">Investimentos</a>
+            </li>
+
+            <li>
+              <img src="./assets/imagesNav/handmoney.png" alt="hand on top has a coin floating" width="20" height="20" />
+              <a href="#">Ofertas</a>
+            </li>
+
+            <li class="nav__links-element">
+              <img src="./assets/imagesNav/groupPeoples.png" alt="several people one after the other"  width="20" height="20" />
+              <a href="#">Comunidade</a>
+            </li>
+
+            <li>
+              <img src="./assets/imagesNav/foneOuvido.png" alt="Earphone" width="20" height="20"/>
+              <a href="#">Suporte</a>
+            </li>
+
+            <li>
+              <img src="./assets/imagesNav/jornal.png" alt="several sheets of newspaper stacked" width="20" height="20"/>
+              <a href="#">Serviços</a>
+            </li>
+
+          </ul>
+  </nav>
+
+  <!-- main -->
+  <main class="main__block justifyContentCenter">
+    <div class="main-container justifyContentBetween">
+
+      <aside class="aside__twoBlock">
+        <ul class="ul__contentForMe">
+          <li class="li__pageActive">
+            <img src="./assets/timeline/anotacao.png" alt="" width="30" height="30"/>
+            Para você 
+          </li>
+          <li>
+            <img src="./assets/timeline/mensagem.png" alt="" width="30" height="30"/>
+            Linha do tempo 
+          </li>
+          <li>
+            <img src="./assets/timeline/medalha.png" alt="" width="30" height="30"/>
+            Melhores respostas
+          </li>
+        </ul>
+
+        <div class="backgroundearn__coin flexDirectionColumn justifyContentCenter alignItemsCenter">
+          <img src="./assets/timeline/mensagem2.png" alt="" width="40" height="40"/>
+          <h2 class="title__earnCoin">Ganhe moedas<br>
+          ao responder</h2>
+          <img src="./assets/timeline/cofrinho.png" alt="" width="90" height="90"/>
+        </div>
+      </aside>
+
+      <section class="section__formMe">
+        <section class="section__timeLine section__timeLine--desktop">
+          <h1 class="title__timeLine">O que está acontecendo?</h1>
+
+          <div class="information__timeLine alignItemsStart">
+
+            <div class="photo__perfil">
+              <img src="./assets/pessoa.webp" alt="" width="70" height="70">
+              <div class="activity__time"></div>
+            </div>
+
+            <div class="input__persistent">
+              <textarea onkeyup="limite_textarea(this.value)" id="texto" class="text__areaPublish autoTxtArea text__areaPublish--margin" placeholder="O que está acontecendo?"></textarea>
+              <h4 class="text__persitentAsked alignItemsCenter">
+                <img src="./assets/timeline/globo.png" alt="" width="25" height="25">
+                Qualquer pessoa pode responder
+              </h4>
+            </div>
+
+          </div>
+
+          <nav class="nav__imagesHref justifyContentBetween alignItemsCenter">
+            <ul class="ul__imageshref alignItemsCenter">
+              <li>
+                <img src="./assets/timeline/image.png" alt="" width="30" height="30">
+              </li>
+              <li>
+                <img src="./assets/timeline/gif.png" alt="" width="30" height="30">
+              </li>
+              <li>
+                <img src="./assets/timeline/investimento.png" alt="" width="30" height="30">
+              </li>
+              <li>
+                <img src="./assets/timeline/feliz.png" alt="" width="30" height="30">
+              </li>
+              <li>
+                <img src="./assets/timeline/calendario.png" alt="" width="30" height="30">
+              </li>
+              <li>
+                <img src="./assets/timeline/local.png" alt="" width="30" height="30">
+              </li>
+            </ul>
+            <button class="button__respond">Responder</button>
+          </nav>
+
+          <div class="buttons__perfilUser alignItemsCenter">
+
+            <button class="button__category">Categorias</button>
+            <button class="button__typeUser">Internet</button>
+            <button class="button__typeUser">Governo e política</button>
+          </div>
+
+        </section>
+
+        <section class="section__timeLine section__timeLine--mobile active__buttonPublish">
+
+          <div class="perfil__primaryTImeLine alignItemsCenter justifyContentBetween">
+            <h1 class="title__timeLine">O que está acontecendo?</h1>
+            
+            <div class="photo__perfil">
+              <img src="./assets/pessoa.webp" alt="" width="70" height="70">
+              <div class="activity__time"></div>
+            </div>
+          </div>
+
+          <div class="modal__backgroundPublish justifyContentCenter">
+            <div class="background__modalConfigPublish justifyContentCenter alignItemsCenter"></div>
+  
+            <div class="modal__configPublish justifyContentCenter alignItemsCenter">
+              <div class="modal__confgiPublishContainer">
+                
+                  <h5 class="title__nameCategoryPublish">Categorias</h5>
+      
+                  <ul class="ul__filterListConfigPublish alignItemsCenter">
+                    <li>Internet</li>
+                    <li>Governo e politica</li>
+                  </ul>
+      
+                  <div class="perfil__primaryTImeLine perfil__primaryTImeLine--visible justifyContentBetween alignItemsCenter">
+                    <div class="select__filterPeople alignItemsCenter">
+                      <select>
+                        <option>Qualquer pessoa</option>
+                        <option>Apenas seguidores</option>
+                      </select>
+                      <img src="./assets/SetaBaixo2.png" alt="" width="15" height="15">
+                    </div>
+                    
+                    <div class="photo__perfil">
+                        <img src="./assets/pessoa.webp" alt="" width="70" height="70">
+                        <div class="activity__time"></div>
+                    </div>
+                  </div>
+      
+                  <textarea onkeyup="limite_textarea(this.value)" id="texto" class="text__areaPublish autoTxtArea text__areaPublish--margin" placeholder="O que está acontecendo?"></textarea>
+              
+                  <div class="cont__areaPublishText alignItemsCenter justifyContentEnd">
+                    <span id="cont">156</span> / 156 <br>
+                  </div>
+                  
+                  <nav class="nav__imagesHref justifyContentBetween alignItemsCenter flexDirectionColumn">
+                    <ul class="ul__imageshref alignItemsCenter">
+                      <li>
+                        <img src="./assets/timeline/image.png" alt="" width="30" height="30">
+                      </li>
+                      <li>
+                        <img src="./assets/timeline/gif.png" alt="" width="30" height="30">
+                      </li>
+                      <li>
+                        <img src="./assets/timeline/investimento.png" alt="" width="30" height="30">
+                      </li>
+                      <li>
+                        <img src="./assets/timeline/feliz.png" alt="" width="30" height="30">
+                      </li>
+                      <li>
+                        <img src="./assets/timeline/calendario.png" alt="" width="30" height="30">
+                      </li>
+                      <li>
+                        <img src="./assets/timeline/local.png" alt="" width="30" height="30">
+                      </li>
+                    </ul>
+                    <button class="button__respond">Publicar</button>
+                  </nav>
+                  
+                  <img src="./assets/fechar.png" alt="" width="25" height="25" class="closeModalPublish">
+
+              </div>
+            </div>
+          </div>
+          
+          <div class="buttons__publishMessage justifyContentCenter flexDirectionColumn alignItemsCenter">
+            <button class="button__publishOpinion">
+              <img src="./assets/pena.png" alt="" width="30" height="30">
+            </button>
+            <p class="title__categoryMessage">Categorias</p>
+          </div>
+
+          <div class="buttons__perfilUser alignItemsCenter">
+
+            <button class="button__typeUser">Internet</button>
+            <button class="button__typeUser">Governo e política</button>
+          </div>
+
+        </section>
+
+        <section class="section__postAsked">
+          <div class="card__posterAsked flexDirectionColumn">
+
+            <div class="info__posterPerfil  alignItemsCenter">
+              <div class="photo__perfil">
+                <img src="./assets/pessoa.webp" alt="" width="65" height="65"/>
+                <div class="activity__time activity__time--position"></div>
+              </div>
+  
+              <div class="information__poster">
+                <div class="title__namePosterAndComment justifyContentBetween">
+                  <div>
+                    <h3 class="title__nameAuthorPoster">Nome do author
+                      <span class="title__subNamePoster">- Seguir</span>
+                    </h3>
+                    <p class="title__descriptionPoster">Infos complementares</p>
+                  </div>
+  
+                  <div class="titles__Response">
+                    <h3 class="title__valueResponse">7 Respostas</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="information__aboutTextDescription">
+              <h4 class="title__ofAsked">
+                Titulo da pergunta 
+                <span class="title__subOfasked">- ha  8 meses</span>
+              </h4>
+              
+              <p class="title__descriptionAsked">Descricao da pergunta, Descricao da pergunta, Descricao da pergunta, Descricao da pergunta, Descricao da pergunta,Descricao da pergunta, Descricao da pergunta, Descricao da pergunta, Descricao da pergunta... <span class="title__subReadMore">Leia mais</span></p>
+              
+              <img src="./assets/dinsey.jpg" alt="" width="100%" height="100%" class="image__posterCard">
+
+              <div class="itens__replubicPerson alignItemsCenter">
+                <button class="button__reply alignItemsCenter">
+                  <img src="./assets/publishMessage/perfilMain/mensagem" alt="" width="30" height="30">
+                  Responder
+                </button>
+                <ul class="ul__directAbout alignItemsCenter">
+                  <li class="activMessageModal">
+                    <div class="background__MessageIcon background__MessageIcon--blue justifyContentCenter alignItemsCenter">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="25px" height="25px" class="chat__svg">
+                        <path d="M 16 3 C 12.210938 3 8.765625 4.113281 6.21875 5.976563 C 3.667969 7.835938 2 10.507813 2 13.5 C 2 17.128906 4.472656 20.199219 8 22.050781 L 8 29 L 14.746094 23.9375 C 15.15625 23.96875 15.570313 24 16 24 C 19.789063 24 23.234375 22.886719 25.78125 21.027344 C 28.332031 19.164063 30 16.492188 30 13.5 C 30 10.507813 28.332031 7.835938 25.78125 5.976563 C 23.234375 4.113281 19.789063 3 16 3 Z M 16 5 C 19.390625 5 22.445313 6.015625 24.601563 7.589844 C 26.757813 9.164063 28 11.246094 28 13.5 C 28 15.753906 26.757813 17.835938 24.601563 19.410156 C 22.445313 20.984375 19.390625 22 16 22 C 15.507813 22 15.015625 21.972656 14.523438 21.925781 L 14.140625 21.894531 L 10 25 L 10 20.859375 L 9.421875 20.59375 C 6.070313 19.019531 4 16.386719 4 13.5 C 4 11.246094 5.242188 9.164063 7.398438 7.589844 C 9.554688 6.015625 12.609375 5 16 5 Z"></path>
+                      </svg>
+                    </div>
+                    0
+                  </li>
+
+                  <li class="activeLikeModal">
+                    <div class="background__messageIcon background__MessageIcon-green justifyContentCenter alignItemsCenter">
+                      <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 48.000000 48.000000" preserveAspectRatio="xMidYMid meet" class="chat__svg">
+                        <g transform="translate(0.000000,48.000000) scale(0.100000,-0.100000)" stroke="none">
+                          <path d="M215 422 c-5 -29 -17 -48 -51 -76 l-44 -37 0 -112 c0 -75 4 -117 12
+  -125 8 -8 48 -12 114 -12 101 0 103 1 122 27 62 88 90 191 60 221 -7 7 -35 12
+  -64 12 l-52 0 5 44 c5 38 2 48 -20 70 -14 14 -37 26 -51 26 -20 0 -25 -6 -31
+  -38z m62 -28 c3 -9 -1 -38 -10 -65 l-15 -49 74 0 c72 0 74 -1 74 -25 0 -13
+  -14 -54 -32 -90 l-32 -65 -88 0 -88 0 0 93 0 94 45 42 c25 23 45 51 45 62 0
+  23 18 25 27 3z"></path>
+                          <path d="M40 190 c0 -123 1 -130 20 -130 19 0 20 7 20 130 0 123 -1 130 -20
+  130 -19 0 -20 -7 -20 -130z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                    <span class="font__green">1</span>
+                  </li>
+
+                  <li class="activeLikeModal">
+                    <div class="background__messageIcon background__MessageIcon-red justifyContentCenter alignItemsCenter">
+                      <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="25px" height="25px" viewBox="0 0 48.000000 48.000000" preserveAspectRatio="xMidYMid meet" class="chat__svg">
+                        <g transform="translate(0.000000,48.000000) scale(0.100000,-0.100000)" stroke="none">
+                          <path d="M142 408 c-27 -35 -82 -161 -82 -191 0 -46 15 -57 77 -57 l53 0 -6 -44 c-6 -39 -3 -48 19 -70 14 -14 37 -26 50 -26 20 0 26 6 31 35 5 24 21 49 52 77 l44 41 0 111 c0 74 -4 116 -12 124 -17 17 -212 16 -226 0z m198 -123 l0 -95 -45 -43 c-25 -24 -45 -51 -45 -60 0 -9 -5 -17 -10 -17 -20 0 -23 33 -7 81 l15 49 -74 0 c-90 0 -92 6 -39 110 l35 70 85 0 85 0 0 -95z"></path>
+                          <path d="M420 290 c0 -123 1 -130 20 -130 19 0 20 7 20 130 0 123 -1 130 -20 130 -19 0 -20 -7 -20 -130z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                    <span class="font__red">0</span>
+                  </li>
+
+                  <li class="activeLikeModal">
+                    <div class="background__messageIcon background__MessageIcon-greenTwo justifyContentCenter alignItemsCenter">
+                      <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="25px" height="25px" viewBox="0 0 48.000000 48.000000" preserveAspectRatio="xMidYMid meet" class="chat__svg">
+                        <g transform="translate(0.000000,48.000000) scale(0.100000,-0.100000)" stroke="none">
+                          <path d="M340 422 c0 -10 5 -23 12 -30 9 -9 6 -12 -14 -12 -39 0 -71 -31 -133 -130 -62 -98 -76 -110 -129 -110 -29 0 -36 -4 -36 -20 0 -17 7 -20 49 -20 64 0 85 18 156 130 54 86 78 110 106 110 10 0 10 -3 1 -12 -18 -18 -15 -48 6 -48 22 0 82 60 82 81 0 20 -62 79 -83 79 -10 0 -17 -8 -17 -18z"></path>
+                          <path d="M40 360 c0 -17 7 -20 41 -20 33 0 47 -6 70 -31 17 -19 35 -29 44 -25 23 8 18 25 -19 62 -30 30 -40 34 -85 34 -44 0 -51 -3 -51 -20z"></path>
+                          <path d="M245 190 c-16 -25 51 -90 93 -90 20 0 23 -3 14 -12 -18 -18 -15 -48 6 -48 22 0 82 60 82 81 0 20 -62 79 -83 79 -20 0 -23 -30 -5 -48 9 -9 8 -12 -6 -12 -10 0 -31 14 -46 30 -29 31 -45 37 -55 20z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                    <span class="font__green"></span>
+                  </li>
+                </ul>
+
+
+              </div>
+
+              <section class="chat__answers chat__answers--margin">
+                <div class="answers__order justifyContentSpaceBetween">
+                  <h2 class="title__answers">7 Respostas</h2>
+                  <div class="for__orderChat alignItemsCenter">
+                    <select>
+                      <option value>Ordenar por</option>
+                      <option>Mais Recentes</option>
+                      <option>Mais Antigos</option>
+                    </select>
+                    <img src="./assets/publishMessage/perfilMain/PersonPublic/arrow.png" width="30" height="30" alt="">
+                  </div>
+                </div>
+
+                <div class="input__sendChat alignItemsStart">
+                  <div class="input__avatarChat justifyContentCenter alignItemsCenter">
+                    <img src="./assets/publishMessage/perfilMain/avatar" alt="" width="55" height="55">
+                  </div>
+
+                  <div class="input__andButtonsChat">
+                    <input type="text" placeholder="Adicione um comentário...">
+                    <div class="buttons__chatSend justifyContentSpaceBetween alignItemsCenter">
+                      <img src="./assets/publishMessage/chat/caraFeliz.png" alt="" width="30" height="30">
+
+                      <div class="buttons__activeChat">
+                        <button class="button__chat button__cancel">
+                          Cancelar
+                        </button>
+                        <button class="button__chat button__comment">
+                          Comentar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <ul class="ul__chatAnswers">
+                  <li>
+                    <div class="avatar__container avatar__borderChat justifyContentCenter alignItemsCenter">
+                      <div class="avatar__chatAnswers"></div>
+                    </div>
+
+                    <div class="info__chatAnswers flexDirectionColumn">
+                      <h4 class="title__chatAnswers">
+                        Nome de quem respondeu
+                        <span>há 8 meses</span>
+                      </h4>
+                      <section>
+                        <p class="title__descriptionChatAnswers">
+                          Este fator representa o quanto uma pessoa conseguiu
+                          acumular de recursos. Podemos falar de dinheiro
+                          propriamente dito ou terras. Com estes fatores do texto
+                          gerado nesse campo
+                        </p>
+
+                        <div class="sub__Content justifyContentSpaceBetween alignItemsCenter">
+                          
+                          <div class="buttons__redirect alignItemsCenter">
+                            <button class="button__redirect button__redirect--green alignItemsCenter">
+                              <img src="./assets/publishMessage/chat/like.png" alt="" width="30" height="30">
+                              96
+                            </button>
+
+                            <button class="button__redirect button__redirect--red alignItemsCenter">
+                              <img src="./assets/publishMessage/chat/disLike.png" alt="" width="30" height="30">
+                              7
+                            </button>
+
+                            <button class="button__answersText">RESPONDER</button>
+
+                            <div class="modal__informationMenuComment alignItemsCenter">
+                              <img src="./assets/menu.png" class="menu__informationImage" alt="" width="30" height="30">
+                              <ul class="ul__listInformationModalComment">
+                                <li>Ocultar comentário</li>
+                                <li>Denunciar comentário aos administradores do grupo</li>
+                                <li>Denunciar comentário</li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <button class="button__askedFavorite">
+                            Resposta favorita
+                            <img src="./assets/publishMessage/chat/estrela.png" alt="" width="10" height="10">
+                            <img src="./assets/publishMessage/chat/estrela.png" alt="" width="10" height="10">
+                            <img src="./assets/publishMessage/chat/estrela.png" alt="" width="10" height="10">
+                            <img src="./assets/publishMessage/chat/estrela.png" alt="" width="10" height="10">
+                            <img src="./assets/publishMessage/chat/estrela.png" alt="" width="10" height="10">
+                          </button>
+                        </div>
+
+                        <div class="sub__chatAnswers activeSubChat">
+                          <h4 class="title__showComment alignItemsCenter">
+                            <img src="./assets/publishMessage/chat/arrow.png" alt="" width="25" height="25">
+                            Ocultar 2 comentários
+                          </h4>
+
+                          <div class="sub__chatAnsWersCard justifyContentSpaceBetween">
+                            <div class="avatar__container avatar__borderChat justifyContentCenter alignItemsStart">
+                              <div class="avatar__chatAnswers"></div>
+                            </div>
+
+                            <div class="sub__chatAnsWerDescription">
+                              <h4 class="title__chatAnswers">
+                                Nome do autor
+                                <span class="background__titleStrong">AUTOR DA PERGUNTA</span>
+                                <span>há 8 meses (editado)</span>
+                              </h4>
+                              <p class="title__descriptionChatAnswers">
+                                Este fator representa o quanto uma pessoa
+                                conseguiu acumular de recursos. Podemos falar de
+                                dinheiro propriamente dito ou terras. Com estes
+                                fatores do texto gerado nesse campo
+                              </p>
+                              <div class="buttons__redirect alignItemsCenter">
+                                <button class="button__redirect button__redirect--text alignItemsCenter">
+                                  <img src="./assets/publishMessage/chat/likeSub.png" alt="" width="30" height="30">
+                                  96
+                                </button>
+
+                                <button class="button__redirect button__redirect--text alignItemsCenter">
+                                  <img src="./assets/publishMessage/chat/disLikeSub.png" alt="" width="30" height="30">
+                                  7
+                                </button>
+
+                                <button class="button__answersText">
+                                  RESPONDER
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                </ul>
+              </section>
+
+            </div>
+            
+          </div>
+
+          <section class="chat__answers">
+                <div class="answers__order answers__order--margin justifyContentEnd activeMensagens">
+                  <div class="for__orderChat alignItemsCenter">
+                    <select>
+                      <option value>Ordenar por</option>
+                      <option>Mais Recentes</option>
+                      <option>Mais Antigos</option>
+                    </select>
+                    <img src="./assets/publishMessage/perfilMain/PersonPublic/arrow.png" width="30" height="30" alt="">
+                  </div>
+                </div>
+
+                <div class="input__sendChat alignItemsStart">
+                  <div class="input__avatarChat justifyContentCenter alignItemsCenter">
+                    <img src="./assets/publishMessage/perfilMain/avatar" alt="" width="55" height="55">
+                  </div>
+                  <div class="input__andButtonsChat">
+                    <input type="text" placeholder="Adicione um comentário...">
+                    <div class="buttons__chatSend justifyContentSpaceBetween alignItemsCenter">
+                      <img src="./assets/publishMessage/chat/caraFeliz.png" alt="" width="30" height="30">
+
+                      <div class="buttons__activeChat">
+                        <button class="button__chat button__cancel">
+                          Cancelar
+                        </button>
+                        <button class="button__chat button__comment">
+                          Comentar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <ul class="ul__chatAnswers ul__chatAnswers--visibled activePeoplesMensager">
+                  <li>
+                    <div class="avatar__container avatar__borderChat justifyContentCenter alignItemsCenter">
+                      <div class="avatar__chatAnswers"></div>
+                    </div>
+
+                    <div class="info__chatAnswers flexDirectionColumn">
+                      <h4 class="title__chatAnswers">
+                        Nome de quem respondeu
+                        <span>há 8 meses</span>
+                      </h4>
+                      <section>
+                        <p class="title__descriptionChatAnswers">
+                          Este fator representa o quanto uma pessoa conseguiu
+                          acumular de recursos. Podemos falar de dinheiro
+                          propriamente dito ou terras. Com estes fatores do texto
+                          gerado nesse campo
+                        </p>
+
+                        <div class="sub__Content justifyContentSpaceBetween alignItemsCenter">
+                          <div class="buttons__redirect alignItemsCenter">
+                            <button class="button__redirect button__redirect--green alignItemsCenter">
+                              <img src="./assets/timeline/like.png" alt="" width="30" height="30">
+                              96
+                            </button>
+
+                            <button class="button__redirect button__redirect--red alignItemsCenter">
+                              <img src="./assets/timeline/disLike.png" alt="" width="30" height="30">
+                              7
+                            </button>
+
+                            <button class="button__answersText">RESPONDER</button>
+                          </div>
+                          <button class="button__askedFavorite">
+                            Resposta favorita
+                            <img src="./assets/publishMessage/chat/estrela.png" alt="" width="10" height="10">
+                            <img src="./assets/publishMessage/chat/estrela.png" alt="" width="10" height="10">
+                            <img src="./assets/publishMessage/chat/estrela.png" alt="" width="10" height="10">
+                            <img src="./assets/publishMessage/chat/estrela.png" alt="" width="10" height="10">
+                            <img src="./assets/publishMessage/chat/estrela.png" alt="" width="10" height="10">
+                          </button>
+                        </div>
+
+                        <div class="sub__chatAnswerss activeSubChat">
+                          <h4 class="title__showComment alignItemsCenter">
+                            <img src="./assets/timeline/arrowUp.png" alt="" width="25" height="25">
+                            Ocultar 2 comentários
+                          </h4>
+
+                          <div class="sub__chatAnsWersCard justifyContentSpaceBetween">
+                            <div class="avatar__container avatar__borderChat justifyContentCenter alignItemsStart">
+                              <div class="avatar__chatAnswers"></div>
+                            </div>
+
+                            <div class="sub__chatAnsWerDescription">
+                              <h4 class="title__chatAnswers">
+                                Nome do autor
+                                <span class="background__titleStrong">AUTOR DA PERGUNTA</span>
+                                <span>há 8 meses (editado)</span>
+                              </h4>
+                              <p class="title__descriptionChatAnswers">
+                                Este fator representa o quanto uma pessoa
+                                conseguiu acumular de recursos. Podemos falar de
+                                dinheiro propriamente dito ou terras. Com estes
+                                fatores do texto gerado nesse campo
+                              </p>
+                              <div class="buttons__redirect alignItemsCenter">
+                                <button class="button__redirect button__redirect--text alignItemsCenter">
+                                  <img src="./assets/timeline/like.png" alt="" width="30" height="30">
+                                  96
+                                </button>
+
+                                <button class="button__redirect button__redirect--text alignItemsCenter">
+                                  <img src="./assets/timeline/disLike.png" alt="" width="30" height="30">
+                                  7
+                                </button>
+
+                                <button class="button__answersText">
+                                  RESPONDER
+                                </button>
+                                
+                              </div>
+                              <h4 class="title__showComment title__showComment--ocult alignItemsCenter">
+                                <img src="./assets/timeline/arrowUp.png" alt="" width="25" height="25">
+                                Ocultar 2 comentários
+                              </h4>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                </ul>
+          </section>
+        </section>
+      </section>
+    </div>
+  </main>
+
+  <!-- main -->
+
+  <!-- jQuery Modal -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+    />
+
+    <div id="pesquisa-modal" class="modal">
+      <div class="modal-header">
+        <span class="material-icons">search</span>
+      </div>
+      <div class="modal-body">
+        <input
+          type="text"
+          name="campo-pesquisa-modal"
+          id="campo-pesquisa-modal"
+          value=""
+          placeholder="O que você está procurando?"
+        />
+      </div>
+      <div class="modal-buttons">
+        <a href="#" rel="modal:close" class="botao-modal">Sair</a>
+      </div>
+    </div>
+
+    <div id="notificacoes-modal" class="modal">
+      <div class="modal-header">
+        <span class="material-icons">notifications</span>
+      </div>
+      <div class="modal-body">
+        <div class="lista">
+          <div class="item-notificacao">
+            <div class="mensagem">
+              <div class="titulo">Rejeitamos seu projeto</div>
+              <div class="descricao">Em criar plataforma para reclamação</div>
+            </div>
+            <div class="icone">
+              <span class="material-icons">delete</span>
+            </div>
+          </div>
+
+          <div class="item-notificacao">
+            <div class="mensagem">
+              <div class="titulo">Rejeitamos seu projeto</div>
+              <div class="descricao">Em criar plataforma para reclamação</div>
+            </div>
+            <div class="icone">
+              <span class="material-icons">delete</span>
+            </div>
+          </div>
+
+          <div class="item-notificacao">
+            <div class="mensagem">
+              <div class="titulo">Rejeitamos seu projeto</div>
+              <div class="descricao">Em criar plataforma para reclamação</div>
+            </div>
+            <div class="icone">
+              <span class="material-icons">delete</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-buttons">
+        <a href="#" rel="modal:close" class="botao-modal margin-right5"
+          >Ver todos</a
+        >
+        <a href="#" rel="modal:close" class="botao-modal">Sair</a>
+      </div>
+    </div>
+
+    <div id="mensagens-modal" class="modal">
+      <div class="modal-header">
+        <span class="material-icons">sms</span>
+      </div>
+      <div class="modal-body">
+        <div class="lista">
+          <div class="item-mensagem">
+            <div class="avatar"></div>
+            <div class="mensagem">
+              <div class="titulo">Rejeitamos seu projeto</div>
+              <div class="descricao">Em criar plataforma para reclamação</div>
+            </div>
+            <div class="icone">
+              <span class="material-icons">delete</span>
+            </div>
+          </div>
+
+          <div class="item-mensagem">
+            <div class="avatar"></div>
+            <div class="mensagem">
+              <div class="titulo">Rejeitamos seu projeto</div>
+              <div class="descricao">Em criar plataforma para reclamação</div>
+            </div>
+            <div class="icone">
+              <span class="material-icons">delete</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-buttons">
+        <a href="#" rel="modal:close" class="botao-modal margin-right5"
+          >Ver todos</a
+        >
+        <a href="#" rel="modal:close" class="botao-modal">Sair</a>
+      </div>
+    </div>
+
+    <div id="usuario-modal" class="modal">
+      <div class="modal-header">
+        <div id="logo-tb" class="menu-usuario">TB</div>
+      </div>
+      <div class="modal-body">
+        <div id="box-menu-usuario-modal">
+          <div class="dados">
+            Olá <span class="font-bold">Marcos</span>, seja Bem-Vindo.
+          </div>
+
+          <div class="dados">
+            <ul>
+              <li><a href="#">Configurações da Conta</a></li>
+              <li><a href="#">Meu Perfil</a></li>
+              <li><a href="#">Rank do Dia</a></li>
+            </ul>
+          </div>
+
+          <div class="dados">
+            <div class="header">Ofertas e Pedidos</div>
+
+            <ul>
+              <li><a href="#">Abrir Uma Oferta de Investimento</a></li>
+              <li><a href="#">Encontrar Pedidos</a></li>
+              <li><a href="#">Abrir um Pedido de Crédito</a></li>
+            </ul>
+          </div>
+
+          <div class="dados">
+            <div class="header">Informações da Conta</div>
+
+            <ul>
+              <li><a href="#">Lista de Indicativos</a></li>
+              <li><a href="#">Lista de Seguidores</a></li>
+              <li><a href="#">Histórico de Conta</a></li>
+              <li><a href="#">Faça uma Pergunta</a></li>
+              <li><a href="#">Minhas Apostas</a></li>
+            </ul>
+          </div>
+
+          <div class="dados">
+            <div class="header">Informações da Conta</div>
+
+            <ul>
+              <li>Conta NellBux</li>
+              <li>Meu Usuário</li>
+              <li>1211451-1</li>
+              <li>@eduardoon</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="modal-buttons">
+        <a href="#" rel="modal:close" class="botao-modal">Sair</a>
+      </div>
+    </div>
+
+    <script src="./script/menu-mobile.js"></script>
+    <script src="./script/happeningHereFormPublish.js"></script>
+    <script src="./script/openModalsHeader.js"></script>
+    <script src="./script/chatMenu.js"></script>
+    <script src="./script/GlobalTelaFrame11.js"></script>
+</body>
+</html>

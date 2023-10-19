@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/cssStyleModal/estilo.css" />
+    <link rel="stylesheet" href="./style/form_projeto_03.css" />
+    <link rel="stylesheet" href="./style/flex.css" />
+
+    <title>Nell bux</title>
+
+    <script src="./script/jquery.js"></script>
+  </head>
+  <body>
+    <!-- aside -->
+    <aside id="menu-mobile" class="menu-mobile-fecado">
+      <div class="container">
+        <div id="fechar-menu-mobile">
+          <span class="material-icons">cancel</span>
+        </div>
+      </div>
+
+      <ul id="menu-principal">
+        <li><a href="#">Area Membro</a></li>
+        <li><a href="#">Meus Projetos</a></li>
+        <li><a href="#">Minhas Finanças</a></li>
+      </ul>
+
+      <div class="espaco20"></div>
+
+      <a
+        href="#pesquisa-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <span class="material-icons">search</span>
+          <div>Pesquisar</div>
+        </div>
+      </a>
+
+      <a
+        href="#notificacoes-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <span class="material-icons">notifications</span>
+          <div>Notificações</div>
+        </div>
+      </a>
+
+      <a
+        href="#mensagens-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <span class="material-icons">sms</span>
+          <div>Mensagens</div>
+        </div>
+      </a>
+
+      <a
+        href="#usuario-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <div id="logo-tb" class="menu-usuario">TB</div>
+        </div>
+      </a>
+    </aside>
+
+    <!-- header -->
+    <header class="header justifyContentCenter">
+      <div
+        class="header__container justifyContentSpaceBetween alignItemsCenter"
+      >
+        <img src="./assets/imagesHeader/logo.png" />
+        <div id="bt-abrir-menu-mobile" class="exit__menu">
+          <span class="material-icons">menu</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main class="main justifyContentCenter">
+      <div class="main__container">
+        <section class="div_display section__primary">
+          <!-- DIV DO FORMULARIO -->
+          <section class="div_box_form">
+            <form method="POST" action="" enctype="multipart/form-data">
+              <div class="div__boxAllInputs">
+                <h3 class="title__formPrimary">
+                  Explique ao investidor sobre o que consiste esse seu projeto.
+                </h3>
+
+                <h4 class="title__upInput">Título do projeto.</h4>
+                <input
+                  type="text"
+                  name="titulo"
+                  placeholder="Exemplo: financiamento de um terreno para uma empresa de roupa infantil"
+                  class="inputTitle"
+                />
+
+                <h3 class="title__errorInput">
+                  Por favor, especifique o nome do projeto
+                </h3>
+
+                <h4 class="title__upInput">
+                  Descreva o projeto com as suas palavras<br />
+                </h4>
+
+                <textarea
+                  name="descricao"
+                  class="text__areaDescription"
+                  placeholder="Exemplo: Preciso de financiamento com duração de menos de uma semana para incluir em minhas peças que vão para minha segunda loja. Possuo experiencia na area. Necessito de disponibilidade imediata. Estarei atenta a todas as mensagens"
+                ></textarea>
+
+                <h3 class="title__errorInput">
+                  Por favor, informe uma descrição mais longa (pelo menos 125
+                  caracteres). Uma descrição mais longa ajudará os investidores
+                  a encontrarem o seu projeto, e assim enviarão propostas de boa
+                  qualidade
+                </h3>
+
+                <h4 class="title__upInput">Anexar arquivos</h4>
+
+                <h4 class="div_anexo">
+                  <div class="background__opens">+</div>
+                  <div class="btn-file">
+                    Anexar arquivos<input type="file" name="anexo" />
+                  </div>
+                </h4>
+
+                <h4 class="title__upInput">Contexto geral do projeto<br /></h4>
+                <textarea
+                  name="contexto"
+                  placeholder="Conte aos investidores o objetivo do projeto, explicando o alcance e o seu contexto. Deixe de forma mais clara possivel para não ocorrer problemas durante a negociação."
+                  class="text__areaDescriptionName"
+                ></textarea>
+              </div>
+
+              <!-- BOTÃO DA PÁGINA -->
+              <div class="div_progresso">
+                <img
+                  src="./assets/formProject/arrowLeft.png"
+                  alt=""
+                  width="40"
+                  height="40"
+                />
+                <div class="bar">
+                  <div></div>
+                </div>
+                <div class="submitDiv" style="text-align: right">
+                  <input
+                    type="submit"
+                    name=""
+                    class="btn_proximo"
+                    disable="disable"
+                    value="Próxima"
+                  />
+                </div>
+              </div>
+            </form>
+          </section>
+          <!-- DIV DE INFOEMAÇÕES LATERIAS -->
+          <aside class="div_box_info asideL">
+            <h3 class="title__primaryAside">
+              Utilize as categorias e subcategorias para encontrar
+              investidoresde cada área.
+            </h3>
+            <p class="text__infoAside">
+              Quanto mais precisar for a sua solução, mais fácil será para o
+              investidor ideal encontrar o seu projeto.
+            </p>
+            <p class="text__infoAside">
+              Quanto mais precisar for a sua solução, mais fácil será para o
+              investidor ideal encontrar o seu projeto.
+            </p>
+            <p class="text__infoAside">
+              Quanto mais precisar for a sua solução, mais fácil será para o
+              investidor ideal encontrar o seu projeto.
+            </p>
+            <img
+              src="./assets/formProject/imageProjeto2.png"
+              class="img_info"
+            />
+          </aside>
+        </section>
+      </div>
+    </main>
+
+    <!-- jQuery Modal -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+    />
+    <script type="module" src="./script/menu-mobile.js"></script>
+
+    <div id="pesquisa-modal" class="modal">
+      <div class="modal-header">
+        <span class="material-icons">search</span>
+      </div>
+      <div class="modal-body">
+        <input
+          type="text"
+          name="campo-pesquisa-modal"
+          id="campo-pesquisa-modal"
+          value=""
+          placeholder="O que você está procurando?"
+        />
+      </div>
+      <div class="modal-buttons">
+        <a href="#" rel="modal:close" class="botao-modal">Sair</a>
+      </div>
+    </div>
+
+    <div id="notificacoes-modal" class="modal">
+      <div class="modal-header">
+        <span class="material-icons">notifications</span>
+      </div>
+      <div class="modal-body">
+        <div class="lista">
+          <div class="item-notificacao">
+            <div class="mensagem">
+              <div class="titulo">Rejeitamos seu projeto</div>
+              <div class="descricao">Em criar plataforma para reclamação</div>
+            </div>
+            <div class="icone">
+              <span class="material-icons">delete</span>
+            </div>
+          </div>
+
+          <div class="item-notificacao">
+            <div class="mensagem">
+              <div class="titulo">Rejeitamos seu projeto</div>
+              <div class="descricao">Em criar plataforma para reclamação</div>
+            </div>
+            <div class="icone">
+              <span class="material-icons">delete</span>
+            </div>
+          </div>
+
+          <div class="item-notificacao">
+            <div class="mensagem">
+              <div class="titulo">Rejeitamos seu projeto</div>
+              <div class="descricao">Em criar plataforma para reclamação</div>
+            </div>
+            <div class="icone">
+              <span class="material-icons">delete</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-buttons">
+        <a href="#" rel="modal:close" class="botao-modal margin-right5"
+          >Ver todos</a
+        >
+        <a href="#" rel="modal:close" class="botao-modal">Sair</a>
+      </div>
+    </div>
+
+    <div id="mensagens-modal" class="modal">
+      <div class="modal-header">
+        <span class="material-icons">sms</span>
+      </div>
+      <div class="modal-body">
+        <div class="lista">
+          <div class="item-mensagem">
+            <div class="avatar"></div>
+            <div class="mensagem">
+              <div class="titulo">Rejeitamos seu projeto</div>
+              <div class="descricao">Em criar plataforma para reclamação</div>
+            </div>
+            <div class="icone">
+              <span class="material-icons">delete</span>
+            </div>
+          </div>
+
+          <div class="item-mensagem">
+            <div class="avatar"></div>
+            <div class="mensagem">
+              <div class="titulo">Rejeitamos seu projeto</div>
+              <div class="descricao">Em criar plataforma para reclamação</div>
+            </div>
+            <div class="icone">
+              <span class="material-icons">delete</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-buttons">
+        <a href="#" rel="modal:close" class="botao-modal margin-right5"
+          >Ver todos</a
+        >
+        <a href="#" rel="modal:close" class="botao-modal">Sair</a>
+      </div>
+    </div>
+
+    <div id="usuario-modal" class="modal">
+      <div class="modal-header">
+        <div id="logo-tb" class="menu-usuario">TB</div>
+      </div>
+      <div class="modal-body">
+        <div id="box-menu-usuario-modal">
+          <div class="dados">
+            Olá <span class="font-bold">Marcos</span>, seja Bem-Vindo.
+          </div>
+
+          <div class="dados">
+            <ul>
+              <li><a href="#">Configurações da Conta</a></li>
+              <li><a href="#">Meu Perfil</a></li>
+              <li><a href="#">Rank do Dia</a></li>
+            </ul>
+          </div>
+
+          <div class="dados">
+            <div class="header">Ofertas e Pedidos</div>
+
+            <ul>
+              <li><a href="#">Abrir Uma Oferta de Investimento</a></li>
+              <li><a href="#">Encontrar Pedidos</a></li>
+              <li><a href="#">Abrir um Pedido de Crédito</a></li>
+            </ul>
+          </div>
+
+          <div class="dados">
+            <div class="header">Informações da Conta</div>
+
+            <ul>
+              <li><a href="#">Lista de Indicativos</a></li>
+              <li><a href="#">Lista de Seguidores</a></li>
+              <li><a href="#">Histórico de Conta</a></li>
+              <li><a href="#">Faça uma Pergunta</a></li>
+              <li><a href="#">Minhas Apostas</a></li>
+            </ul>
+          </div>
+
+          <div class="dados">
+            <div class="header">Informações da Conta</div>
+
+            <ul>
+              <li>Conta NellBux</li>
+              <li>Meu Usuário</li>
+              <li>1211451-1</li>
+              <li>@eduardoon</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="modal-buttons">
+        <a href="#" rel="modal:close" class="botao-modal">Sair</a>
+      </div>
+    </div>
+  </body>
+</html>

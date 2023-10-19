@@ -1,0 +1,179 @@
+
+
+.aside__graph-block{
+    width: 480px;
+    margin: 2rem 0;
+}
+
+.table__investments-block{
+    width: 100%;
+}
+
+.table__investment-block{
+    width: 80%;
+}
+
+
+.table__investment-block{
+    border-collapse: collapse;
+}
+
+.table__investment-block td{
+    border-bottom: 1px solid #EAEAEA;
+    height: 2rem;
+    padding: 0.5rem 0;
+}
+
+.table__investment-block th{
+    border-bottom: 1px solid #EAEAEA;
+    padding: 0 0 0.5rem 0;
+
+}
+
+.table__borderTransparent-element{
+    border-top: 3px solid transparent;
+}
+
+.title__tablePrimary-element{
+    font-weight: 600;
+    font-size: 14px;
+    color: #505050;
+}
+
+.title__table{
+    font-weight: 600;
+}
+
+.title__table--orange{
+    color: #F3992E;
+}
+
+.title__table--blue{
+    color: #5283FF;
+}
+
+
+.graph__canvas-element{
+    width: 100%;
+    margin: 3rem 0 1.5rem 0;
+}
+
+.result__graph-block{
+    width: 95%;
+}
+
+.title__nameResult-element{
+    display: flex;
+}
+
+.title__names-element{
+    font-weight: 500;
+    font-size: 13px;
+    color: #656565;
+    display: flex;
+    align-items: center;
+}
+
+.line__names-element{
+    width: 45px;
+    height: 0.2rem;
+    margin: 0 0.5rem 0 0;
+}
+
+.line__names-element--orange{
+    background: #F3992E;
+}
+
+.line__names-element--blue{
+    background: #5283FF;
+}
+
+.title__nameResult-element{
+    font-size: 13.5px;
+}
+
+.title__nameResult-element{
+    font-weight: 600;
+}
+
+.title__space{
+    margin: 0 0 0 0.3rem;
+}
+
+.investmentRedirect--element{
+    width: 100%;
+    margin: 5rem 0 0 0;
+}
+
+.button--modifer{
+    background:transparent;
+    border: 1px solid #F39F3B;
+    color: #F39F3B;
+    font-weight: 600;
+}
+
+.button--modifer:hover{
+    color: #fff;
+}
+
+.button__toMeet-element--padding{
+    margin: 12rem 0 0 0;
+}
+
+
+@media (max-width: 1115px){
+    .ul__liActive-block li a{
+        text-align: center;
+    }
+
+    .aside__investmentInformation-block{
+        margin: 2rem 0 0 6rem;
+    }
+
+    .button__toMeet-element{
+        margin: 11rem 0 0 0;
+    }
+}
+
+@media (max-width: 990px){
+
+    .aside__forStarting-block{
+        margin: 2rem  0 0 0;
+    }
+
+    .aside__graph-block{
+        margin: 0;
+        width: 100%;
+    }
+
+    .table__investment-block{
+        width: 100%;
+    }
+    
+    .investmentRedirect--element{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text__button-orange{
+        width: 300px;
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+
+    .table__investments-block{
+        margin: 0 0 3.5rem 0;
+    }
+
+    .text__footer-orange{
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 425px){
+    .text__button-orange{
+        width: 252px;
+    }
+}

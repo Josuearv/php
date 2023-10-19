@@ -1,0 +1,485 @@
+.ul__contentForMe{
+  background: #fff;
+  list-style: none;
+  border-radius: 0.5rem;
+}
+
+.ul__contentForMe li:first-child{
+  margin: 0;
+}
+
+.ul__contentForMe li{
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  font-weight: 600;
+  color: #303030;
+  position: relative;
+}
+
+.ul__contentForMe li img{
+  margin: 0 1rem 0 0;
+}
+
+.li__pageActive::before{
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 30px;
+  background: #F3992E;
+  left: -0.1px;
+}
+
+/* earn__coin */
+
+.backgroundearn__coin{
+  background: #5283FF;
+  margin: 1.5rem  0 0 0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.title__earnCoin{
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+/* section__formMe */
+
+.section__formMe{
+  width: 79%;
+  margin: 0 0 0 1rem;
+}
+
+.section__timeLine{
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.title__timeLine{
+  color: #505050;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.information__timeLine{
+  margin: 1.5rem 0;
+}
+
+.photo__perfil{
+  position: relative;
+}
+
+.photo__perfil img{
+  border-radius: 50%;
+  border: 2px solid #F3992E;
+  padding: 0.2rem;
+}
+
+.activity__time{
+  width: 20px;
+  height: 20px;
+  background: #5EDD2D;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+}
+
+.activity__time--position{
+  right: 1px;
+  bottom: 5px;
+}
+
+.title__namePerfilUser{
+  color: #505050;
+  font-weight: 500;
+  font-size: 17px; 
+}
+
+/* information__publishPerfil */
+
+.information__publishPerfil{
+  margin: 0 0 0 2rem;
+}
+
+.title__namePublishList{
+  color: #505050;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.list__informationPerfilUser{
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+.ul__informationElementPerfil{
+  list-style: none;
+  margin: 0 2rem 0 0;
+}
+
+.ul__informationElementPerfil li{
+  margin: 0.5rem 0;
+  font-weight: 600;
+  color: #A8A8A8;
+  font-size: 17px;
+}
+
+.ul__informationElementPerfil li span{
+  color: #F3992E;
+  font-weight: 700;
+}
+
+.title__responseSend{
+  color: #F3992E;
+  font-size: 16.5px;
+}
+
+/* buttons__perfilUser */
+
+.button__perfilUser{
+  border: none;
+  margin: 0 0.5rem 0 0;
+  padding: 0.7rem 1rem;
+  border-radius: 2rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button__perfilUser img{
+  margin: 0 1rem 0 0;
+}
+
+.button__PerfilUser--blue{
+  background: #5283FF;
+}
+
+.button__PerfilUser--blue:hover{
+  background: #315fd3;
+}
+
+.buttons__perfilUser--orange{
+  background: #F3992E;
+}
+
+.buttons__perfilUser--orange:hover{
+  background: #ac6713;
+}
+
+/* card__posterAsked */
+
+.card__posterAsked{
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.card__posterAsked:first-child{
+  margin: 2.5rem 0 0 0;
+}
+
+.card__posterAsked{
+  margin: 2.5rem 0;
+}
+
+.information__poster{
+  margin: 0 0 0 1rem;
+}
+
+.title__nameAuthorPoster{
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.title__subNamePoster{
+  font-weight: 500;
+  font-size: 15px;
+  color: #5283FF;
+}
+
+.titles__Response{
+  position: relative;
+}
+
+.title__valueResponse{
+  font-weight: 600;
+}
+
+.title__valueResponse::after{
+  content: "";
+  width: 40px;
+  height: 2px;
+  border: 1px solid #F9CC96;
+  border-radius: 0.5rem;
+  background: #F3992E;
+  position: absolute;
+  bottom: 5px;
+  left: 1px;
+}
+
+/* information__aboutTextDescription */
+
+.information__aboutTextDescription{
+  margin: 1.5rem 0 0 0;
+}
+
+.title__ofAsked{
+  color: #505050;
+  font-weight: 600;
+}
+
+.title__subOfasked{
+  color: #ACAEB1;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.title__descriptionAsked{
+  margin: 0.5rem 0 0 0;
+  color: #505050;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.title__subReadMore{
+  color: #6892FF;
+}
+
+.image__posterCard{
+  margin: 1.5rem 0;
+}
+
+.button__reply {
+  border: none;
+  margin: 0 1rem 0 0;
+  padding: 0.3rem 1rem;
+  border-radius: 0.3rem;
+  color: #fff;
+  background: #F3992E;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.button__reply img {
+  margin: 0 0.5rem 0 0;
+}
+
+.button__reply:hover{
+  background: #c77b1e;
+}
+
+.ul__directAbout {
+  list-style: none;
+}
+
+.ul__directAbout li {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 0 1rem 0 0;
+}
+
+.ul__directAbout li img{
+  margin: 0 0.5rem 0 0;
+}
+
+.title__like--green{
+  color: #5EDD2D;
+}
+
+.title__like--red{
+  color: #F45966;
+}
+
+.title__like--gray{
+  color: #505050;
+}
+
+.menu__directAbout{
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.modal__informationMenuComment{
+  margin: 0 0 0 1rem;
+  position: relative;
+}
+
+.ul__listInformationModalComment{
+  position: absolute;
+  top: 25px;
+  width: 300px;
+  background:#fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 1;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  display: none;
+}
+
+.ul__listInformationModalComment li{
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  padding: 0.6rem;
+  border-radius: 0.4rem;
+  margin: 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.ul__listInformationModalComment li:first-child{
+  margin: 0;
+}
+
+.ul__listInformationModalComment li:hover{
+  background: #F2F2F2;
+}
+
+.menu__informationImage{
+  cursor: pointer;
+}
+
+.activeModalMenu{
+  display: block;
+}
+
+.title__chatAnswers,
+.title__chatAnswers{
+  font-size: 17px;
+}
+
+.buttons__redirect{
+  margin: 0;
+}
+
+.sub__Content{
+  margin: 1rem 0 0 0;
+}
+
+.information__timeLine--visibled{
+  display: flex !important;
+}
+
+.buttons__perfilUser{
+  display: flex;
+}
+
+@media (max-width: 1100px){
+  .sub__Content{
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .button__askedFavorite{
+    margin: 0.5rem 0;
+  }
+}
+
+@media (max-width: 990px){
+  .section__formMe{
+    margin: 1.5rem 0 0 0;
+    width: 100%;
+  }
+
+  .information__publishPerfil{
+    margin: 1rem 0;
+  }
+
+  .information__publishPerfil--margin{
+    margin: 0 0 0 1rem;
+  }
+}
+
+
+@media (max-width: 725px){
+  .card__posterAsked{
+    flex-direction: column;
+    padding: 1.5rem 2.5rem 1.5rem 1.5rem;
+  }
+
+  .title__ofAsked{
+    text-align: start;
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 725px){
+  .ul__listPosterLinks{
+    flex-wrap: wrap;
+  }
+
+  .ul__listPosterLinks li{
+    margin: 0.5rem 0
+  }
+
+  .list__buttonsMessage{
+    flex-direction: column-reverse;
+    align-items: start;
+  }
+
+  .button__askedFavorite{
+    margin: 0.5rem 0;
+  }
+
+  .message__askedC{
+    flex-direction: row;
+    align-items: start;
+  }
+
+  .button__reply{
+    margin: 1rem 0 0 0;
+  }
+
+}
+
+
+@media (max-width: 500px){
+  .information__timeLine{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .information__publishPerfil--margin{
+    margin: 0;
+  }
+}
+
+@media (max-width: 440px){
+  .list__informationPerfilUser{
+    flex-direction: column;
+  }
+
+  .title__namePosterAndComment{
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .title__valueResponse::after{
+    bottom: -5px;
+  }
+
+  .button__perfilUser{
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 385px){
+  .buttons__perfilUser{
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .buttons__perfilUser--orange{
+    margin: 0.5rem 0 0 0 !important;
+  }
+}

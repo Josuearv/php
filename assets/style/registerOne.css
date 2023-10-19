@@ -1,0 +1,143 @@
+.orang {
+  color: orange;
+  font-weight: 800;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+
+.slinks{
+    color: #5283ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .2s;
+    outline:0;
+}
+
+.slinks:hover{
+    text-decoration:underline;
+    transition: .2s;
+}
+
+
+.displayFlex{
+  display: flex;
+  justify-content: center;
+}
+
+.containerBody {
+  align-items: center;
+  background-image: url('../images/background-signup.png');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.containerRegister {
+  align-items: center;
+  background-color: white;
+  border-radius:6px;
+  display: grid;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+  width: 320px;
+}
+
+.titleRegister {
+  font-size: 19px;
+}
+
+.imgLogo {
+  width: 102px;
+  height: 28px;
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+}
+
+.lineOne {
+  background-color: #3FF300;
+  border: none;
+  border-radius: 0.5vw 0 0 0.5vw;
+  height: 6.39px;
+  width: 89.59px;
+}
+
+.lineTwo {
+  background-color: #C4C4C4;
+  border: none;
+  border-radius: 0 0.5vw 0.5vw 0;
+  height: 6.39px;
+  width: 89.59px;
+}
+
+.lineTwoo {
+  background-color: #3FF300;
+}
+
+.displayCheck {
+  display: flex;
+  text-align: center;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.displayCheck div{
+  margin: 0 0 0 0.5vw;
+}
+
+.btnNext {
+
+  text-align: center;
+  background-color: #5283FF;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  width:100%;
+  padding: 12.8px 32px;
+  font-size: 17.2px;
+  font-weight: 600;
+  outline:0;
+  
+}
+
+.marginImg {
+  margin-left: 10px;
+}
+
+.return {
+  color: black;
+}
+
+
+
+.ihr{
+    border-style: dotted;    
+}
+.spn{
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+.ulink{
+    text-decoration: none;
+    color: #5283FF;
+    font-family: 'Montserrat';
+    font-weight: 500;   
+}
+

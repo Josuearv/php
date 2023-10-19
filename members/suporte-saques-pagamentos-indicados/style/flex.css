@@ -1,0 +1,45 @@
+.AlignItemsCenter{
+    display: flex;
+    align-items: center;
+}
+
+.AlignItemsEnd{
+    display: flex;
+    align-items: flex-end;
+}
+
+.AlignItemsStart{
+    display: flex;
+    align-items: flex-start;
+}
+
+.justifyContentSpaceBetween{
+    display: flex;
+    justify-content: space-between;
+}
+
+.justifyContentCenter{
+    display: flex;
+    justify-content: center;
+}
+
+.justifyContentEnd{
+    display: flex;
+    justify-content: end;
+}
+
+.justifyContentSpaceEvenly{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.flexDirectionColumn{
+    display: flex;
+    flex-direction: column;
+}
+
+.flexWrap{
+    display: flex;
+    flex-wrap: wrap;
+}

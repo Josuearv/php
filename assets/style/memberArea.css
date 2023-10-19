@@ -1,0 +1,803 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+}
+
+main {
+  background-color: rgb(234, 234, 234);
+  display: grid;
+}
+
+.msg {
+  margin-left: auto;
+}
+
+.iconClose {
+  margin-left: auto;
+  margin-right: 0.5vw;
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
+  width: 1vw;
+  height: 1vw;
+}
+
+.displayNone {
+  display: none;
+}
+
+/* seção 1 */
+
+.secao {
+  width: 80vw;
+  margin: auto;
+  margin-top: 2vw;
+  display: flex;
+}
+
+.containerSectionOne  {
+  display: block;
+  margin-right: 2vw;
+  width: 60vw;
+
+}
+
+.containerDivOne {
+  border-radius: 0.5vw;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 1vw;
+}
+
+.containerDivOne hr {
+  background-color: black;
+  border: none;
+  width: 0.2vw;
+  border-radius: 5vw;
+}
+
+.conteudoResult {
+  margin: 0 1vw;
+}
+
+.paragrafoTitulo {
+  margin: 0 0 1vw 0;
+  width: 5vw;
+  font-weight: 700;
+  font-size: 0.8vw;
+}
+
+.paragrafoSpa {
+  font-size: 29px;
+  font-weight: 700;
+}
+
+.containerDivTwo {
+  padding: 1vw;
+  border-radius: 0.5vw;
+  margin-top: 2vw;
+  background-color: white;
+  text-align: center;
+}
+
+.containerDivTwo h2 {
+  font-size: 1.5vw;
+  color: #717171;
+}
+
+.spacoGrafico {
+  border: 0.1vw solid black;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  height: 20.5vw;
+}
+
+/* seção 2 */
+
+.cardOne {
+  border-radius: 0.5vw;
+  padding: 2vw;
+  background-color: white;
+  margin-bottom: 2vw;
+}
+
+.cardOne h2 {
+  font-size: 1.5vw;
+  color: #5283FF;
+  margin-bottom: 1vw;
+}
+
+.cardOne p {
+  font-size: 0.9vw;
+  margin-bottom: 1vw;
+}
+
+.cardOne button {
+  cursor: pointer;
+  border: none;
+  background-color: #F3992E;
+  color: white;
+  padding: 0.3vw 0.8vw;
+  border-radius: 5vw;
+  font-size: 0.9vw;
+}
+
+/* card 2 */
+
+.cardTwo {
+  background-color: #5283FF;
+  padding: 2vw;
+  border-radius: 0.5vw;
+}
+
+.containerProfile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.containerProfile img {
+  width: 2.5vw;
+  height: 2.5vw;
+}
+
+.containerProf {
+  display: flex;
+  align-items: center;
+}
+
+.containerName {
+  display: grid;
+  margin-left: 0.4vw;
+}
+
+.containerName h3 {
+  color: white;
+  font-size: 1vw;
+}
+
+.containerName img {
+  width: 0.5vw;
+  height: 0.5vw;
+}
+
+.containerProfile button {
+  background-color: #F3992E;
+  color: wheat;
+  border-radius: 5vw;
+  border: none;
+  padding: 0.2vw 1vw;
+  font-size: 1vw;
+  font-weight: 800;
+}
+
+.containerInfoCardTwo {
+  font-size: 0.8vw;
+  display: flex;
+  margin-top: 1vw;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.containerInfoCardTwo img {
+  width: 0.8vw;
+  height: 0.8vw;
+  margin-left: 0.2vw;
+}
+
+.bold {
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.InforCardTwoValue {
+  align-items: center;
+  display: grid;
+}
+
+/* card 3 */
+
+.containerCardTree {
+  text-align: center;
+  margin-top: 2vw;
+  background-color: white;
+  padding: 2vw;
+  border-radius: 0.5vw;
+}
+
+.CardTreeInfoOneTitle {
+  font-size: 1.1vw;
+}
+
+.CardTreeTrace {
+  display: flex;
+  justify-content: center;
+  margin-top: 1vw;
+}
+
+
+.traceOne {
+  border-radius: 5vw 0 0 5vw;
+  width: 40%;
+  height: 0.5vw;
+  background-color: #5EDD2D;
+  border: none;
+}
+
+.traceTwo {
+  border-radius: 0 5vw 5vw 0;
+  width: 40%;
+  height: 0.5vw;
+  background-color: #C4C4C4;
+  border: none;
+}
+
+.CardTreeInfoTwo {
+  margin-top: 1vw;
+  font-size: 1vw;
+}
+
+.CardTreeInfoTwo label {
+  display: grid;
+  color: #717171;
+}
+
+.CardTreeInfoTwo input {
+  background-color: #F5F5F5;
+  border: none;
+  padding: 0.5vw 0.3vw;
+  margin: 0.3vw;
+  font-size: 1vw;
+}
+
+.gridLabel {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1vw;
+}
+
+.CardTreeInfoTree {
+  margin-top: 1vw;
+}
+
+.CardTreeInfoTreeTitle {
+  margin-top: 0.8vw;
+  font-size: 1.1vw;
+}
+
+.CardTreeInfoTreeContent {
+  font-size: 1vw;
+}
+
+/* card 4 */
+
+.cardFour {
+  background-color: white;
+  border-radius: 0.5vw;
+  padding: 2vw;
+  margin-top: 2vw;
+}
+
+.cardFourInfoOne {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.cardFourInfoTwo {
+  justify-content: space-between;
+  display: flex;
+  margin-top: 2vw;
+}
+
+.cardContent {
+  font-size: 1vw;
+  width: 30%;
+}
+.cardContent span {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.buttons {
+  margin-top: 2vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons button {
+  font-size: 0.8vw;
+  border-radius: 5vw;
+  padding: 0.8vw 1vw;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.buttonsOne {
+  background-color: #5EDD2D;
+}
+
+.buttonsOne img {
+  width: 0.5vw;
+  margin-right: 0.5vw;
+}
+
+.buttonsTwo {
+  background-color: #5283FF;
+}
+
+.buttonsTwo img {
+  width: 0.8vw;
+  margin-right: 0.5vw;
+}
+
+.orange {
+  color: #CD7F32;
+}
+
+.grey {
+  color: #717171;
+  font-size: 0.8vw;
+}
+
+/* seção 2 */
+
+.secaoTwo {
+  width: 80vw;
+  margin: auto;
+  margin-top: 2vw;
+  display: flex;
+}
+
+.secTwo {
+  width: 40%;
+}
+
+.secaoTwoCardOne {
+  background-image: url("icon/raio.jpeg");
+  background-repeat: no-repeat, repeat;
+  background-color: #3A7FFF;
+  padding: 3vw 2vw;
+  background-size: contain;
+  background-position: 85%;
+  margin-bottom: 2vw;
+  border-radius: 0.5vw;
+
+}
+
+.secaoTwoCardOneSpan {
+  background-color: white;
+  color: #3A7FFF;
+  padding: 0.2vw 1vw;
+  border-radius: 5vw;
+  font-size: 0.8vw;
+}
+
+.secaoTwoCardOneTitle {
+  margin-top: 2vw;
+  font-size: 1.5vw;
+  color: white;
+}
+
+.secaoTwoCardOneParagraph {
+  margin-top: 2vw;
+  color: white;
+  font-size: 0.9vw;
+  width: 90%;
+}
+
+.secaoTwoCardOneButton {
+  margin-top: 2vw;
+  font-size: 0.8vw;
+  background-color: #375398;
+  border-radius: 5vw;
+  border: none;
+  color: white;
+  padding: 0.3vw 1vw ;
+}
+
+/* Card 2 - NellBux Score 3.0 */
+
+.secaoTwoCardTwo {
+  background-color: white;
+  padding: 2.5vw 2vw;
+  border-radius: 0.5vw;
+}
+
+.secaoTwoCardTwoTitle {
+  font-size: 1.5vw;
+}
+
+.secaoTwoCardTwoParagraph {
+  margin-top: 0.5vw;
+  font-size: 1.5vw;
+}
+
+.containerCenter {
+  display: grid;
+  justify-content: center;
+}
+
+.secaoTwoCardTwoScore {
+  margin-top: 2vw;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 1vw;
+}
+
+.secaoTwoCardTwoProfile {
+  margin-top: 2vw;
+  font-weight: 800;
+  font-size: 1.2vw;
+}
+
+.secaoTwoCardTwoRank {
+  margin-top: 1vw;
+  font-size: 1.2vw;
+  font-weight: 800;
+  color: #CD7F32;
+}
+
+.secaoTwoCardTwoIcon {
+  margin-top: 0.2vw;
+}
+
+.icon {
+  width: 2vw;
+}
+
+.secaoTwoCardTwoPoints {
+  margin-top: 0.5vw;
+  font-size: 1.5vw;
+}
+
+.secaoTwoCardTwoPoints span {
+  font-size: 1.5vw;
+  color: lime;
+}
+
+.secaoTwoCardTwoPointsPrev {
+  margin-top: 0.5vw;
+  font-size: 1.5vw;
+}
+
+.secaoTwoCardTwoPointsPrev span {
+  color: orangered;
+  font-size: 1.5vw;
+}
+
+.secaoTwoCardTwoRequest {
+  margin-top: 0.5vw;
+  font-size: 1.5vw;
+}
+
+.secaoTwoCardTwoRequest span {
+  font-size: 1.5vw;
+  font-weight: 800;
+}
+
+/* seção 2 inferior */
+
+.secTree {
+  margin-left: 2vw;
+  width: 58%;
+}
+
+/* seção 2 inferior - card 1 */
+
+.secTreeCardOneTitle {
+  font-size: 1.7vw;
+}
+
+.secTreeCardOneContainer {
+  margin-top: 1vw;
+  padding: 2vw 1.5vw;
+  background-color: white;
+  border-radius: 0.5vw;
+}
+
+.secTreeCardOneContainerCard {
+  display: flex;
+  justify-content: space-between;
+}
+
+.secTreeCardOneContainerCard button {
+  border: none;
+  background: none;
+}
+
+.secTreeCardOneContainerCard button img {
+  width: 1.5vw;
+}
+
+.secTreeCardOneContainerDescription {
+  font-size: 0.8vw;
+}
+
+.marginTop {
+  margin-top: 0.5vw;
+  color: rgb(71, 71, 71);
+}
+
+.secTreeCardOneContainerTwo {
+  margin-top: 1vw;
+  text-align: right;
+}
+
+.secTreeCardOneContainerTwo p {
+  font-size: 0.8vw;
+  margin-top: 0.5vw;
+}
+
+.analyzing span{
+  background-color: #f3ec2e;
+  color: #b37f20 ;
+  padding: 0.2vw 0.5vw;
+  border-radius: 5vw;
+}
+
+.interest span {
+  color: rgb(46, 168, 255);
+}
+
+/* seção 2 inferior - card 2 */
+
+.secTreeCardTwo {
+  margin-top: 2vw;
+}
+
+.proposta {
+ color: #3A7FFF;
+}
+
+.colorB {
+  color: black;
+}
+
+.investiment span{
+  background-color: #ffa3a3;
+  color: #983737 ;
+  padding: 0.2vw 0.5vw;
+  border-radius: 5vw;
+}
+
+/* seção 2 inferior - double DIV */
+
+.doubleDiv {
+  display: flex;
+  margin-top: 2vw;
+  justify-content: space-between;
+}
+
+/* seção 2 inferior - doubleDivOne */
+.doubleDivOne {
+  width: 47.5%;
+}
+
+/* div 1 */
+.divOne {
+  background-color: white;
+  border-radius: 0.5vw;
+  padding: 1vw;
+}
+
+.divOneTitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.divOneTitle button {
+  border: none;
+  background: none;
+}
+
+.divOneTitle img{
+  width: 1vw;
+}
+
+.divOne h2 {
+  font-size: 1vw;
+}
+
+.divOneContainerOne {
+  margin-top: 1vw;
+  display: flex;
+  align-items: center;
+  font-size: 0.8vw;
+}
+
+.divOneContainerOne img{
+  width: 0.8vw;
+}
+
+.divOneContainerOne p {
+  margin-left: 0.3vw;
+}
+
+.divOneContainerOne p span {
+  color: #3A7FFF;
+}
+
+.divOneContainerTwo {
+  margin-top: 1vw;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8vw;
+}
+
+.divOneContainerTree {
+  margin-top: 1vw;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8vw;
+}
+
+.doubleDivBtn {
+  display: grid;
+  justify-content: center;
+  margin-top: 1.5vw;
+}
+
+.doubleDivBtn button {
+  border-radius: 5vw;
+  padding: 0.6vw 7vw;
+  font-size: 0.8vw;
+  border: none;
+  background-color: #C1C1C1;
+  color: white;
+}
+
+/* div 2*/
+
+.divTwo {
+  background-color: white;
+  padding: 1vw;
+  margin-top: 2vw;
+}
+
+.divTwo img {
+  margin: auto;
+  width: 100%;
+  border-radius: 0.5vw;
+}
+
+.divTwoDescript {
+  margin-top: 1vw;
+  font-size: 0.8vw;
+}
+
+.divTwoDescriptTwo {
+  font-size: 0.8vw;
+  margin-top: 1vw;
+}
+
+.divTwoContainerNav {
+  margin-top: 1.5vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.divTwoContainerNav button {
+  color: #3A7FFF;
+  border: none;
+  font-size: 0.8vw;
+  background: none;
+}
+
+.divTwoContainerNav img {
+  width: 0.4vw;
+}
+
+/* seção 2 inferior - double DIV 2 */
+.doubleDivTwo {
+  width: 47.5%;
+  /* margin-left: 2vw; */
+}
+
+/* doubleDivTwo*/
+.doubleDivTwo {
+  background-color: white;
+  border-radius: 0.5vw;
+  padding: 1vw;
+  margin-bottom: 3vw;
+}
+
+.doubleDivTwoTitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.doubleDivTwoTitle button {
+  border: none;
+  background: none;
+}
+
+.doubleDivTwoTitle img{
+  width: 1vw;
+}
+
+.doubleDivTwo h2 {
+  font-size: 1vw;
+}
+
+.doubleDivTwoHero {
+  color: #3A7FFF;
+  margin-top: 2vw;
+  font-size: 0.8vw;
+}
+
+.doubleDivTwoRendimento {
+  margin-top: 2vw;
+}
+
+.rendimento {
+  font-size: 0.8vw;
+  color: #4F4F4F;
+  font-weight: 800;
+}
+
+.doubleDivTwoValue {
+  margin-top: 1vw;
+  font-size: 0.8vw;
+}
+
+.doubleDivTwoVal {
+  font-size: 0.8vw;
+  display: flex;
+  justify-content: right;
+  margin-top: 0.5vw;
+}
+
+/* barra de progresso */
+.container {
+  border-radius: 5vw;
+  height: 0.5vw;
+  background-color: #CCC;
+  position: relative;
+  margin-top: 0.5vw;
+  background-color: #b6d0ff;
+}
+.container .progress-bar{
+  border-radius: 5vw;
+  position: absolute;
+  height: 100%;
+  background-color: #3A7FFF;
+  animation: progress-animation 5s infinite;
+}
+@keyframes progress-animation{
+  0% { width: 0%; } 
+  100% { width: 100%}
+}
+
+/* Final */
+
+.doubleDivTwoPragraph {
+  font-size: 0.9vw;
+  display: flex;
+  align-items: baseline;
+}
+
+.doubleDivTwoPragraph img {
+  width: 1.2vw;
+  margin-left: 0.5vw;
+  margin-top: 1vw;
+}
+
+.doubleDivTwoPragraphObs {
+  font-size: 0.9vw;
+  margin-top: 2vw;
+}
+
+.doubleDivTwoPragraphObs button {
+  background: none;
+  border: none;
+  color: #3A7FFF;
+  font-size: 0.9vw;
+}

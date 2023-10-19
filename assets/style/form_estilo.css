@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* FONTS das paginas */
+
+h3{
+  font-weight: 500;
+}
+
+p{
+  font-weight: 300;
+}
+
+                /* FORM PAGE 01 */
+
+form{
+  padding: 30px;
+}
+
+label{
+  font-size: 16px;
+}
+
+
+span{
+  font-size: 12px;
+}
+
+input[type=text]{
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+
+input[type=file]{
+  width: auto;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #c1c1c1;
+}
+
+input[type=date]{
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #c1c1c1;
+}
+
+input[type=radio] {
+  height: 20px;
+  width: 20px;
+  border: solid 1px #000;
+  margin-left: auto;
+}
+  
+  input[type=radio]:active{
+    height: 20px;
+    width: 20px;
+    border: solid 1px #f19d2e;
+    margin-left: auto;
+  }
+
+
+select{
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #c1c1c1;
+}
+
+
+textarea{
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+
+/*IMGs da pagina*/
+
+.img_info{
+  margin-top: auto;
+  width: 100%;
+}
+
+/* DIVs da pagina */
+
+.div_margin{
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 25px;
+}
+
+
+.div_logo{
+  width: 100%;
+  background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.div_display{
+  display: flex;
+}
+
+.div_box_form{
+  padding: 10px;
+  background-color: #f0f0f0;
+  flex: 2;
+}
+
+.div_box_info{
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  background-color: #3a7fff;
+  flex: 1;
+  display: inline-grid;
+}
+
+.div_progresso{
+  width: 100%;
+  text-align: end;
+  display: flex;
+}
+
+.btn_proximo{
+  background-color: #F3992E;
+  border: none;
+  border-radius: 50px;
+  padding: 13px;
+  color: white;
+}
+
+.div_porcentagem{
+  background: #7da67d;
+  padding: 2px;
+  width: 99%;
+  height: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+                /* FORM PAGE 02 */
+
+/* RADIO DA PAGINA */
+
+.div_radio{
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  padding: 5px;
+  border: solid 1px #000;
+  background-color: #fff;
+  }
+
+  .div_radio:hover{
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    border: solid 1px #f19d2e;
+    background-color: #fff;
+  }
+  .radio:checked {
+    content: "\2022";
+    color: #f3f3f3;
+    background: yellow;
+    font-size: 30px;
+    text-align: center;
+    line-height: 18px;
+}
+
+
+                /* FORM PAGE 03 */
+
+.div_anexo{
+  background-color: #c1c1c1;
+  width: max-content;
+  border: 1px #000 dashed;
+}
+
+        /* FORM PAGE 04 */
+
+.div_display_auto{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.div_width{
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+  .div_width:hover{
+    border: 1px solid #f19d2e;
+  }
+
+.div_width_1{
+  width: 150px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+  .div_width_1:hover{
+    border: 1px solid #f19d2e;
+  }
+
+.div_display_form{
+  display: flex;
+}
+
+.div_radio_box_1{
+  flex: 2;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.div_radio_box_2{
+  flex: 0.5;
+  text-align: right;
+}
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+/* FONTs */
+h2{
+  font-weight: 500;
+  font-size: 36px;
+  color: #515352;
+}
+
+h3{
+  margin-left: 6px;
+  font-weight:500;
+  font-size: 24px;
+  color: #666867;
+}
+
+p{
+  font-weight:500;
+  font-size: 16px;
+  color: #757575;
+}
+
+/* IMGs */
+.icons_pedido{
+  width: auto;
+  margin: 5px;
+}
+
+/* LINKs */
+.btn_pedidos_c{
+  color: #fff;
+  background-color: #fb5465;
+  text-decoration: none;
+  padding: 10px 30px 10px 30px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.btn_pedidos_c:hover{
+  background: #b62f3d;
+}
+
+.btn_pedidos_a{
+  color: #fff;
+  background-color: #F3992E;
+  text-decoration: none;
+  padding: 10px 30px 10px 30px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.btn_pedidos_a:hover{
+  background-color: #b97623;
+}
+
+.a_servico{
+  text-decoration: none;
+  color: #000;
+  flex: 1;
+}
+
+
+/* DIVs */
+.div_container{
+  width: 100%;
+  margin: 0px;
+  padding: 50px 0px 50px 0px;
+  background-color: #F0F0F0;
+}
+
+.div_margin{
+  width: 80%;
+  max-width: 1200px;
+}
+
+.div_pedidos{
+  margin-bottom: 60px;
+}
+
+.div_container_pedidos{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: #a4a4a4 3px 3px 3px;
+}
+
+.div_display_pedidos{
+  padding: 10px 20px 10px 20px;
+  display: flex;
+}
+
+.div_icon_pedidos{
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 10%;
+  padding: 10px;
+}
+
+.div_text_pedidos{
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 7px;
+  width: 78%;
+  padding: 10px;
+}
+
+.div_btn_pedidos{
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: right;
+  padding: 10px;
+  width: 15%;
+}
+
+
+
+.div_display_servico{
+  display: flex;
+}
+
+.div_box_servico{
+  flex: 1;
+  margin: 10px;
+  padding: 30px 15px;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: #a4a4a4 3px 3px 3px;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+
+
+.div_box_servico:hover{
+  border:  2px solid orange;
+}
+
+.titleClient{
+  color: #C6C6C6 !important;
+}
+
+.idClient{
+  font-weight: 600;
+  color: black !important;
+}
+
+.title__subNameLi{
+  color: black !important;
+  font-weight: 600;
+  font-size:  17px;
+}
+
+/* EDIÇÃO DO SITE RESPONSIVIDADE */
+
+
+@media (max-width: 1200px) {
+
+/* DIVs */
+
+  .div_display_pedidos{
+    padding: 10px 20px 10px 20px;
+    display: inline-flex;
+  }
+
+  .div_display_servico{
+    display: block;
+  }
+
+  .div_icon_pedidos{
+      display: block;
+      margin-top: auto;
+      margin-bottom: auto;
+      width: 50%;
+      padding: 10px;
+    }
+
+  .div_text_pedidos{
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 7px;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .div_btn_pedidos{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+    padding: 10px;
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 812px){
+
+/* DIVs */
+
+  .div_display_pedidos{
+    padding: 10px 20px 10px 20px;
+    display: block;
+  }
+
+  .div_display_servico{
+    display: block;
+  }
+
+  .div_icon_pedidos{
+      display: block;
+      margin-top: auto;
+      margin-bottom: auto;
+      width: 100%;
+      padding: 10px;
+    }
+
+  .div_text_pedidos{
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 7px;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .div_btn_pedidos{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+    padding: 10px;
+    width: 100%;
+  }
+
+}
+
+
+
+

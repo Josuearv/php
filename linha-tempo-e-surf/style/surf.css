@@ -1,0 +1,707 @@
+body{
+  background: #5283ff url(https://nellbux.com/to/mobile/img/box/news/f3.png);
+}
+
+
+
+/* header__container */
+
+.header__container{
+  width: 90%;
+  height: 4rem;
+  max-width: 1500px;
+  padding: 0.5rem 0;
+}
+
+
+.nav__moneyAndCredits,
+.cards__credits,
+.card__allCredits,
+.screen__selectItem{
+  height: 100%;
+}
+
+/* card__allCredits */
+
+.card__allCredits{
+  background: #38589F;
+  padding: 0.3rem 3rem;
+}
+
+.title__valueMoneyCredit{
+  color: #F2F6FF;
+  font-weight: 600;
+  letter-spacing:1px;
+  margin: 0 0 0 0.3rem;
+}
+
+.screen__selectItem{
+  background: #CBDAE1;
+  border: 1px solid #8AA4D4;
+  padding: 0 1rem;
+}
+
+/* my__acountMoneyAll */
+
+.my__acountMoneyAll{
+  margin: 0 4rem 0 0;
+}
+
+.my__investmentAndMyMoneySurf,
+.my__memberAndWithdraw{
+  list-style: none;
+}
+
+.my__investmentAndMyMoneySurf li,
+.my__memberAndWithdraw li{
+  font-size: 14px;
+  color: #fff;
+}
+
+.my__investmentAndMyMoneySurf li:first-child::after,
+.my__memberAndWithdraw li:first-child::after{
+  content: "|";
+  margin: 0 0.5rem;
+}
+
+.title__valueMoneyOrange,
+.title__valueMoneyWhite{
+  font-weight: 600;
+  font-size: 15px;
+  color: #FFFF00;
+}
+
+.title__valueMoneyWhite{
+  color: #fff;
+}
+
+.information__UserAccountHome{
+  margin: 0.5rem 0 0 0;
+}
+
+/* title__getBackMyAccount */
+
+.title__getBackMyAccount{
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0.5rem 0 0 0;
+}
+
+.title__initialSurf,
+.title__inicialSurfPrimary{
+  font-weight: 500;
+  background: #EBEBEB;
+  font-size: 16px;
+  padding: 0.2rem 0.5rem;
+}
+
+.title__inicialSurfPrimary{
+  margin: 0 0 0 0.5rem;
+  font-size: 14px;
+}
+
+
+.main-container{
+  max-width: 1500px;
+  margin: 1.5rem 0 4rem 0;
+}
+
+.main__containerWhite{
+  background: #fff;
+  border-radius: 0.5rem;
+}
+
+.title__interestOnInterest {
+  font-weight: 700;
+  font-size: 17px;
+  color: #FFA500;
+}
+
+
+.section__primaryMainInformation{
+  width: 100%;
+  border-right: 1px solid #8296A8;
+  padding: 1.5rem;
+}
+
+.screen__selectItem select{
+  border: none;
+  background: transparent;
+  outline: none;
+  font-weight: 600;
+  display: block;
+}
+
+.cards__credits{
+  margin: 0 3rem 0 0;
+}
+
+.ul__accountLogout{
+  list-style: none;
+}
+
+.ul__accountLogout li{
+  font-weight: 600;
+  color: #fff;
+  font-size: 15px;
+}
+
+.ul__accountLogout li a{
+  color: #fff;
+  text-decoration: none;
+  margin: 0 0 0 1.5rem;
+}
+
+.title__earnedInterest{
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  width: 100%;
+}
+
+.select__languageInterest{
+  background: #7393AE;
+  border: none;
+  font-weight: 600;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  padding: 0 0.5rem 0 0;
+}
+
+/* interestOnInterest */
+
+.interestOnInterest{
+  padding: 0 0 1rem 0;
+}
+
+/* ul__linksInterest */
+
+.ul__linksInterest{
+  list-style: none;
+}
+
+.ul__linksInterest li{
+  display: flex;
+  align-items: center;
+  margin: 0 1rem 0 0;
+  padding: 0 1rem 0 0;
+  border-right: 1px solid #CCCCCC;
+}
+
+.ul__linksInterest li a{
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: #2156C0;
+}
+
+.ul__linksInterest li img{
+  margin: 0 0.5rem;
+}
+
+.li__myaccount a{
+  text-decoration: none;
+}
+
+.li__myaccount{
+  border: none !important;
+}
+
+.li__myCredit select{
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 15px;
+  color: #2156C0;
+}
+
+.li__myCredit button{
+  padding: 0.3rem 0.7rem;
+  margin: 0 0 0 0.5rem;
+  background: #EAF4F9;
+  border: 1px solid #A8B6BF;
+  font-weight: 500;
+  color: #7B868C;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.li__myCredit button:hover{
+  background: #b5d3e2;
+}
+
+/* bar */
+
+.bar{
+  width: 100%;
+  height: 55px;
+  border-top: 6px solid #E1EBF0;
+  background: #F5EEE1;
+}
+
+.bar__value{
+  background: #FFA500;
+  width: 25%;
+  height: 100%;
+  transition: 10s;
+}
+
+/* ul__listUserInformation */
+
+.ul__listUserInformation,
+.ul__listUserResult{
+  list-style: none;
+}
+
+
+/* ul__listUserInformation */
+
+.ul__listUserInformation{
+  margin: 0 0.5rem;
+}
+
+.ul__listUserInformation li{
+  padding: 0.3rem;
+  background: #EAF4F9;
+  display: flex;
+  align-items: center;
+  border: 1px solid #BDC8CF;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ul__listUserInformation li:hover{
+  background: #bae7fd;
+}
+
+/* ul__listUserResult */
+
+.ul__listUserResult li{
+  display: flex;
+  align-items: center;
+  margin: 0 0.5rem;
+  color: #869298;
+  font-weight: 500;
+}
+
+.ul__listUserResult li img{
+  margin: 0 0.5rem 0 0;
+}
+
+/* ul__nextLink */
+
+.ul__nextLink{
+  list-style: none;
+}
+
+.ul__nextLink li{
+  padding: 0.7rem 0;
+  border-bottom: 1px solid #EDECFD;
+  font-weight: 500;
+}
+
+/* ul__LinksShows */
+
+.ul__LinksShows{
+  list-style: none;
+  border-bottom: 1px solid #EDECFD;
+  padding: 1rem 0;
+}
+
+.ul__LinksShows li{
+  padding: 1rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 0 0 0.5rem 0;
+}
+
+.title__linkShow{
+  font-weight: 600;
+  font-size: 15px;
+  padding: 0 0 0.5rem 0;
+}
+
+.title__infoInformation{
+  color: #FFA60F;
+  font-weight: 700;
+  font-size: 19px;
+}
+
+.ul__LinksShows li a{
+  color: #8FA7C1;
+  font-weight: 500;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.titles__informationA{
+  margin: 0 0 0 12.5rem;
+}
+
+.a__linkRedirectReportAndBlock{
+  margin: 0.5rem 0 0 0;
+  text-decoration: none;
+}
+
+.title__aboutLink{
+  margin: 0 1.5rem;
+}
+
+.title__aboutLink:last-child{
+  border-left: 1px solid #B6C1D8;
+  padding: 0 1rem;
+}
+
+/* table__analyzeMoney */
+
+.table__analyzeMoney{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.all__money,
+.title__BorderGray{
+  text-align: start;
+  border-bottom: 1px solid #EDECFD;
+}
+.title__BorderGray{
+  height: 35px;
+}
+
+.table__analyzeMoney tr th{
+  height: 40px;
+}
+
+.table__analyzeMoney tr td{
+  padding: 0.2rem 0;
+}
+
+.th__widthMoney{
+  width: 450px;
+}
+
+.title__thBlack,
+.title__thGray{
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.title__thGray{
+  color: #95A4BC;
+}
+
+.title__thGray img{
+  margin: 0 0 0 0.5rem;
+}
+
+.td__heightText{
+  padding: 1rem 0 0.2rem 0 !important;
+}
+
+/* title__myLinks */
+
+.title__myLinks{
+  margin: 0.5rem 0;
+  color: #FFA348;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 0 0 0.5rem 0;
+  border-bottom: 2px solid #91A9BE;
+}
+
+/* table__myLinks */
+
+.table__myLinks{
+  border-collapse: collapse;
+  width: 66%;
+}
+
+.th__textRight{
+  text-align: start;
+}
+
+.tr__header th{
+  width: 130px;
+}
+
+/* self__distribution */
+
+.self__distribution{
+  margin: 2rem 0;
+  border-top: 1px solid #EDECFD;
+  border-bottom: 1px solid #EDECFD;
+  padding: 0.7rem 0;
+}
+
+.title__selfDistribution img{
+  margin: 0 0 0 0.5rem;
+}
+
+.input__checkSelfDistribution[type="checkbox"]{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* aside__main */
+
+.aside__main{
+  width: 300px;
+  padding: 1.5rem;
+}
+
+.title__topSurf{
+  text-align: center;
+  color: #FFA500;
+  border-bottom:1px solid #91A9BE;
+  padding: 0 0 0.5rem 0;
+}
+
+/* title__timeLong */
+
+.title__timeLong{
+  color: #FFA500;
+  font-size: 18px;
+  margin: 1rem 0 0.5rem 0;
+  text-align: center;
+}
+
+.table__userToday{
+  width: 100%;
+}
+
+.title__user,
+.title__userLinks{
+  text-align: start;
+}
+
+.title__salary{
+  width: 30px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.title__user{
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.title__userPerson,
+.td__seeMore{
+  color: #91A9BE;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.title__valueLink{
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.td__seeMore{
+  text-align: center;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.ul__tableMobile,
+.back__myAccountMobile{
+  display: none;
+}
+
+.avatar__myPerfil,
+.back__myAccountMobile{
+  display: none !important;
+}
+
+@media (max-width: 1500px) {
+  .my__acountMoneyAll {
+    margin: 0 1rem 0 0;
+  }
+}
+
+@media (max-width: 1445px) {
+  .cards__credits {
+    margin: 0 1rem 0 0;
+  }
+
+  .title__valueMoneyCredit {
+    font-size: 13px !important;
+  }
+
+  .title__valueMoneyCredit {
+    padding: 0.3rem 1rem !important;
+  }
+
+  .card__allCredits {
+    padding: 0.3rem 1rem;
+  }
+
+  .my__investmentAndMyMoneySurf li,
+  .my__memberAndWithdraw li,
+  .title__valueMoneyOrange,
+  .title__valueMoneyWhite {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 990px){
+  .main__containerWhite{
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .title__userLinks,
+  .title__valueLink{
+    text-align: end;
+  }
+  
+
+  .aside__main,
+  .td__seeMore{
+    width: 100%;
+  }
+
+  .tr__header,
+  .tr__titleURL,
+  .tr__invesmentAbout,
+  .table__myLinks tr{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .nav__moneyAndCredits{
+    display: none;
+  }
+
+  .interestOnInterest{
+    flex-direction: column;
+  }
+
+  .ul__linksInterest{
+    flex-wrap: wrap;
+  }
+
+  .nav__links{
+    margin: 1rem 0 0 0;
+    flex-wrap: wrap;
+  }
+
+  .header__container{
+    justify-content: center;
+  }
+
+  .table__myLinks{
+    display: none;
+  }
+
+  .ul__tableMobile{
+    display: block;
+    list-style: none;
+    border-bottom: 2px solid #91A9BE;
+  }
+
+  .ul__tableMobile li{
+    font-weight: 600;
+    margin: 1rem 0;
+  }
+
+  .title__subLi{
+    color: #95A4BC;
+    font-weight: 600;
+    margin: 0.5rem 0 0 0;
+  }
+
+  .back__myAccountMobile{
+    display: block;
+  }
+
+  .ul__linksInterest li{
+    border: none;
+    margin: 0 0.5rem 0 0;
+    padding: 0;
+  }
+
+  .nav__links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (max-width: 740px){
+  .a__linkRedirectReportAndBlock{
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .titles__informationA{
+    margin: 0.5rem 0;
+  }
+
+  .title__aboutLink{
+    margin: 0 0.5rem;
+  }
+
+}
+
+@media (max-width: 725px){
+
+  .back__myAccount{
+    display: none;
+  }
+
+  .ul__linksInterest li{
+    margin: 0.5rem 0;
+    border: none;
+  }
+
+  .ul__linksInterest li img{
+    margin: 0;
+  }
+
+  .information__UserAccountHome,
+  .list__perfilUserInformation{
+    flex-direction: column;
+  }
+
+  .list__perfilUserInformation{
+    align-items: start;
+  }
+
+  .list__perfilColumn{
+    margin: 0.5rem 0;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+  }
+
+  .back__myAccount{
+    margin: 1.5rem 0;
+  }
+
+  .li__myCredit select,
+  .li__myCredit button,
+  .ul__linksInterest li a span,
+  .avatar__perfil{
+    display: none;
+  }
+
+  .ul__linksInterest li{
+    margin: 0 0.5rem;
+  }
+
+  .back__myAccountMobile,
+  .avatar__myPerfil{
+    display: block !important;
+  }
+
+  .back__myAccount{
+    margin: 0;
+  }
+}

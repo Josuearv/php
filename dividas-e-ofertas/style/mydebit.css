@@ -1,0 +1,133 @@
+.my__debit{
+  margin:2rem 0;
+}
+
+.ul__detailsMyDebit{
+  border-radius: 0.5rem;
+}
+
+.title__myDebit,
+.title__searchpartner{
+  font-size: 30px;
+  color: #303650;
+}
+
+.title__myDebit{
+  font-size: clamp(25px, 2vw, 32px);
+}
+
+.search__partner{
+  margin: 1rem 0;
+}
+
+.title__searchpartner{
+  font-size: clamp(16px, 2vw,20px);
+}
+
+.button__renegotiateDebt{
+  background: #F49A2C;
+  border: 1px solid #FFEBBE;
+  color: #fff;
+  font-weight: 500;
+  padding: 0.7rem 1rem;
+  border-radius: 2rem;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button__renegotiateDebt:hover{
+  background: #b86e15;
+}
+
+.ul__detailsMyDebit{
+  background: #fff;
+  padding: 2rem;
+  list-style: none;
+}
+
+.ul__detailsMyDebit li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #B0AEAF;
+  margin: 0 0 1rem 0;
+}
+
+.ul__detailsMyDebit li:last-child{
+  margin: 0 !important;
+}
+
+.ul__detailsMyDebit li span{
+  color: #7D8286;
+  font-weight: 600;
+}
+
+.deatilsInfo__names{
+  margin: 0 0 0 0.5rem;
+}
+
+.title__deatislInfoName,
+.title__deatislInfoStatus{
+  font-weight: 600;
+  color: #7D8285;
+  font-size: 15px;
+}
+
+.circle__details{
+  background: #7D8285;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 0.3rem 0 0;
+}
+
+.title__deatislInfoStatus{
+  font-weight: 400;
+}
+
+.less__details{
+  color: #CF5681 !important;
+  font-weight: 700;
+}
+
+.less__details img{
+    transform: rotate(-90deg);
+}
+
+@media (max-width: 990px){
+  .search__partner{
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .button__renegotiateDebt{
+    margin: 1rem 0 0 0;
+  }
+}
+
+@media (max-width: 725px){
+  .ul__detailsMyDebit li:first-child{
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .ul__detailsMyDebit li:first-child .detailsInfo__perfil{
+    margin: 0 0 0.5rem 0;
+  }
+
+  .ul__detailsMyDebit li{
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .ul__detailsMyDebit li .span__date{
+    margin: 0.5rem 0 0 0;
+  }
+
+  .ul__detailsMyDebit li:last-child{
+    justify-content: space-between !important;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,1364 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.exit__menu{
+    display: none;
+}
+
+.header__block--height{
+    height: 4rem;
+    position: fixed;
+    width: 100%;
+    transition: .6s;
+    background: #fff;
+}
+
+.header__block--width{
+    width: 80%;
+}
+
+
+.dropDown-block:hover .dropDown-content{
+    background: rgb(255, 255, 255);
+    display: flex;
+    transition: .3s;
+    width: 200px;
+    border-radius: 0 0 0.4rem 0.4rem;
+    z-index: 3;
+    box-shadow: rgba(123, 130, 141, 0.1) 0px 10px 10px -10px;
+}
+
+
+
+
+.dropDown-ul-block{
+    list-style: none;
+    width: 100%;
+}
+
+.dropDown-content li a{
+    padding: 0.5rem 0.5rem;
+    cursor: pointer;
+    transition: .1s ease;
+    color: rgb(43, 43, 43);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.dropDown-content li:hover{
+    background: rgb(230, 230, 230);
+    width: 100%;
+}
+
+.dropDown-content{
+    display: none;
+    position: absolute;
+    top: 40px;
+    padding: 0.5rem;
+    transition: .3s;
+
+}
+
+
+/* ######## main__investment-block ##########  */
+
+
+.main__investment-block{
+     background: #4B7DEC;
+     background-image: url("../images/index-4PrimaryHome/figma.png");
+     background-size:contain;
+     background-repeat: no-repeat;
+     background-position: left top;
+
+}
+
+.main__investmentContainer-block{
+    width: 80%;
+    max-width: 1440px;
+    margin: 6rem 0;
+}
+
+.text__primaryHome-element{
+    background: #3B5BA6;
+    text-align: center;
+    padding: 0.4rem 0;
+    border-radius: 1.5rem;
+    color: #fff;
+    opacity: 0.9;
+}
+
+.text__attencion-element{
+    font-weight: 700;
+    color: #fff;
+}
+
+.text__primary-home-elemnet--yellow{
+    color: rgb(255, 208, 0);
+    font-weight: 700;
+}
+
+
+.investmentTime__day-block{
+    margin: 2.5rem 0 0 0;
+}
+
+.title__investmentTimeDay-element{
+    color: #fff;
+    font-size: clamp(30px, 2.5vw, 35px);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+
+}
+
+.investment__informationDay-block{
+    width: 550px;
+    padding: 7rem 0 0 0;
+}
+
+.text__aboutInvestmentTimeDay-element{    
+    font-weight: 400;
+    padding: 1.5rem 0;
+    color: #fff;
+    opacity: 0.8;
+    font-size: clamP( 14px,1.5vw,18px);
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.nav__aplication-block a{
+    margin: 0 1rem 0 0;
+    transition: all .3s ease;
+    border-radius: 0.4rem;
+}
+
+.nav__aplication-block a:hover{
+    transform: scale(1.1);
+}
+
+/* ######## calc__investment-block ##########  */
+
+
+.calc__investment-block{
+    background-color: rgba(0, 0, 0, 0.138);
+    padding: 3rem;
+    width: 400px;
+    border-radius: 10px;
+    
+}
+
+.form__titleInvestment-element{
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.inputForm__typeRange-element{
+    margin: 1rem 0 0.3rem 0;
+}
+
+
+
+input,
+output {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+}
+
+output {
+  background: #ff4500;
+  padding: 5px 16px;
+  border-radius: 3px;
+  color: #fff;
+}
+
+
+/* input[type="range"]:focus,
+input[type="number"]:focus {
+  box-shadow: 0 0 3px 1px #4b81dd;
+  outline: none;
+} */
+
+input[type="range"] {
+  -webkit-appearance: none;
+  margin-right: 15px;
+  width: 100%;
+  height: 7px;
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  background-image: linear-gradient(orange, orange);
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  margin: 1rem 0 0.5rem 0;
+}
+
+/* Input Thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid orange;
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background .3s ease-in-out;
+}
+
+input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: orange;
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background .3s ease-in-out;
+}
+
+input[type="range"]::-ms-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: orange;
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background .3s ease-in-out;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: orange;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+  background: orange;
+}
+
+input[type="range"]::-ms-thumb:hover {
+  background: orange;
+}
+
+/* Input Track */
+input[type=range]::-webkit-slider-runnable-track  {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+input[type=range]::-moz-range-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+input[type="range"]::-ms-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+.select__block{
+    height: 2.5rem;
+}
+
+
+.money{
+    margin: 0 0 1rem 0;
+}
+
+.money__minMax-element{
+    font-weight: 600;
+    color: #fff;
+    font-size: 15px;
+}
+
+.input__number-element, .select__options-block{
+    border: none;
+    outline: none;
+    border-radius: 0.2rem;
+    height: 2.5rem;
+    padding: 0 0.5rem;
+
+}
+
+.input__number-element::placeholder{
+    padding: 0 0 0 0.5rem;
+    font-size: 15px;
+}
+
+.title__nameTime-element{
+    color: white;
+    display: grid;
+    font-size: 17px;
+    font-weight: 700;
+    margin: 1.2rem 0 0.5rem 0 ;
+
+}
+
+.select__block{
+    background: #fff;
+}
+
+.arrow__selectBlue-element{
+    background: #fff;
+    border-radius: 0.3rem;
+    height: 45px;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.select__options-block{
+    font-size: 15px;
+    color: rgb(53, 53, 53);
+    appearance: none;
+    width: 100%;
+    background: #fff;
+    padding: 0 0.5rem;
+}
+
+.container__checkbox-block{
+    color: #fff;
+    font-size: 12px !important;
+    margin: 1rem 0 0 0;
+}
+
+.text__orangeNe-block{
+    color: orange;
+    margin: 0 0.3rem;
+}
+
+
+.container__checkbox-block {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+/* Hide the browser's default checkbox */
+
+.container__checkbox-block input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+/* Create a custom checkbox */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: transparent;
+    border: 3px solid #F3992E;
+    border-radius: 0.3rem;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container__checkbox-block input:checked ~ .checkmark {
+    background-color: transparent;
+}
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container__checkbox-block input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container__checkbox-block .checkmark:after {
+    left:5px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid #F3992E;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.calc__now-element{
+    border: none;
+    padding: 0.7rem 0;
+    margin: 2.5rem 0 0 0;
+    border-radius: 2rem;
+    background-color: #F3992E;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all .2s
+}
+
+.calc__now-element:hover{
+    border: 2px solid #F3992E;
+    background: transparent;
+    color: #F3992E;
+}
+
+/* ######## advantage__nellbux-block ##########  */
+
+.advantage__nellbux-block, 
+.how__itWorks-block, 
+.get__loans-block, 
+.nellbux__IsSafe-block
+.frequently__askedQuestiion-block{
+    background: #F5F5F5;
+}
+
+.container-advantage-block{
+    width: 80%;
+    max-width: 1440px;
+    margin: 5rem 0;
+}
+
+.advantage__nellbuxList-block{
+    margin: 1rem 0 0 9rem;
+}
+
+.text__whyChooseNellbux-element, .title__itWorkds-element, .card__textGetLoans-element{
+    font-size: 2rem;
+    color: #212529;
+    font-weight: 700;
+}
+
+.advantage__ulList-block{
+    margin: 2rem 0;
+}
+
+.advantage__ulList-block li{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: clamp(1.1rem, 1.5vw, 1.4rem);
+    margin: 1rem 0;
+}
+
+.advantage__ulList-block img{
+    margin: 0 0.5rem 0 0 ;
+}
+
+/* ######## advantage__nellbux-block ##########  */
+
+
+.container__itWorks-block{
+    width: 80%;
+    max-width: 1440px;
+
+}
+
+.title__itWorkds-element{
+    font-size: clamp(28px, 1.5vw,35px);
+}
+
+.cards__itWorkds-block{
+    margin: 3rem 0;
+
+}
+
+.card__itWorks-block{
+    width: 530px;
+    height: 270px;
+    padding: 3rem;
+    margin: 0 0 1.5rem 0;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.text__cardItWorks-element{
+    margin: 0.5rem 0;
+    font-size: 18px;
+}
+
+.text__afterRegistration-element::after, .text__afterOffers-element::after, .text__afterdata-element::after, .text__cardItWorks-element--bold{
+    content: "Cadastro";
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0.3rem;
+}
+
+.text__cardItWorks-element--bold{
+    margin: 0;
+}
+
+.text__afterOffers-element::after{
+    content: "ofertas"
+}
+
+.text__afterdata-element::after{
+    content: "dados"
+}
+
+.text__informationCardItWorkds-element{
+    color: black;
+    font-size: clamp(15px, 1.5vw, 18px);
+}
+
+/* ######## get__loans-block  ##########  */
+
+.get__loans-block{
+    background: #fff;
+}
+
+.container__getLoans-block{
+    width: 80%;
+    max-width: 1440px;
+    margin: 2rem 0;
+}
+
+.card__informationGetLoans-block img{
+    margin-left: 10vw;
+    height: 24vw;
+    width: 28vw;
+    margin-top: -30px;
+}
+
+.card__textGetLoans-element{
+    font-size: 25px;
+}
+
+.list__textInformationGetLoans-block{    
+    margin: 3rem 0 0 0;
+}
+
+.list__textInformationGetLoans-block li{
+    margin: 1rem 0 0 0;
+    max-width: 500px;
+    font-size: clamp(14px, 1.5vw, 18px) !important;
+}
+
+.container__getLoans-block p{
+    margin: 1.5rem 0 0 0;
+    font-size: clamp(15px, 1.5vw, 18px);
+    font-weight: 500;
+
+}
+
+/* ######## nellbux__warranty ##########  */
+
+
+.nellbux__warranty{
+    background: radial-gradient(83.47% 83.47% at 16.53% 16.53%,#365497 0,#5283ff 100%);
+    padding: 2rem 0;
+}
+
+.container__nellBuxWarranty-block{
+    width: 80%;
+
+}
+
+.card__textGetLoans-element--white{
+    color: #fff;
+    font-size: clamp(20px, 2vw, 25px);
+    text-align: center;
+}
+
+.button__openAcount-element{
+    padding: 0.7rem 3rem;
+    background-color: #f7982e;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    font-size: 20px;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin: 0 0 0 4rem;
+    transition: .2s ease;
+    border: 2px solid transparent;
+}
+
+.button__openAcount-element:hover{
+    border: 2px solid #f7982e;
+    color: #f7982e;
+    background: transparent;
+}
+
+/* ######## nellbux__IsSafe-block ##########  */
+
+
+
+.nellbux__IsSafe-block{
+    padding: 5rem 0;
+}
+
+.text__nellbuxSafe-element{
+    text-align: center;
+    max-width: 1100px;
+    margin: 1.5rem 0 0 0;
+    font-size: clamp(17px, 1.5vw,18px);
+}
+
+.text__nellbuxSafe-element strong{
+    font-weight: bolder;
+}
+
+.title__primary-element{
+    font-weight: 500;
+    font-size: clamp(17px, 1.5vw, 20px);
+    text-align: center;
+    
+}
+
+.title__secondary-element{
+    font-weight: 600;
+    font-size: clamp(20px, 2vw,25px);
+    margin: 1.5rem 0;
+    color: #212529;
+}
+
+
+/* ######## people__opinions-block ##########  */
+
+.people__opinions-block{
+    background: radial-gradient(83.47% 83.47% at 16.53% 16.53%,#365497 0,#5283ff 100%);
+    padding: 4rem 0;
+}
+
+
+
+.container__peopleOpnions-block{
+    width: 80%;
+}
+
+.header__peopleOpnions-block{
+    width: 100%;
+}
+
+.title__headerOpnios-element{
+    margin: 0;
+    font-size: clamp(20px, 2vw, 25px);
+    color: #fff;
+    max-width: 400px;
+}
+
+.text__evalution-element{
+    color: #fff;
+    font-weight: 500;
+    font-size: 17px;
+    margin: 0 0 0.5rem 0;
+}
+
+.text__evalution-element--bold{
+    font-weight: 700;
+    color: yellow;
+}
+
+.text__evalution-element--bold img{
+    margin: 0 0 0 0.2rem;
+}
+
+.cards__peoplesOpnios-block{
+    margin: 3rem 0 0 0;
+    overflow-x: auto;
+}
+
+.card__peoplesOpnies-block{
+    background: #fff;
+    height: 400px !important;
+    width: 301px;
+
+    border-radius: 3px;
+    padding: 1.5rem;
+    margin: 0;
+}
+
+.text__evalution-element--marginNone{
+    margin: 0;
+}
+
+.informationPeoplesOpnies__profile-block{
+    margin: 0 0 0 0.5rem;
+}
+
+.title__perfilInformationPeoplesOpnies-element{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.start__text-element{
+    color: #A28DD0;
+    font-size: 3vw;
+    margin: 1.5rem 0 0 0;
+}
+
+.text__messagerMe-element{
+    font-size: 16px;
+    margin: 0 0 2.5rem 0;
+    overflow: auto;
+    overflow-x: hidden;
+    text-align: start;
+}
+
+.choose__PeopleMessager-block{
+    margin: 3rem 0 0 0;
+}
+
+.checkout__href-element{
+    color: #4A7CEB;
+    font-size: 15px;
+}
+.divs__terceary-block{
+    display: flex;
+}
+
+.divs__terceary-block div{
+    width: 1vw;
+    background-color: white;
+    height: 0.5vw;
+    border-radius: 5vw;
+    margin: 0 0.2vw;
+}
+
+.arrow__choose-block{
+    display: flex;
+}
+
+.arrow__disable-element, .arrow__activeArr-element{
+    border-radius: 50%;
+    background: #f8f8f8;
+    opacity: 0.8;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;    
+    transition: all .3s;
+}
+
+.arrow__activeArr-element{
+    background: #fff !important;
+    opacity: 1;
+    margin: 0 0 0 1rem;
+}
+
+.arrow__disable-element:hover{
+    opacity: 1;
+}
+
+.arrow__activeArr-element:hover{
+    opacity: 0.8;
+
+}
+
+/* ######## people__opinions-block ##########  */
+
+
+.frequently__askedQuestiion-block{
+    background: #f5f5f5;
+}
+
+.container__askedQuestion-block{
+    width: 80%;
+    max-width: 1440px;
+    margin:  4rem 0;
+
+}
+.header__askedQuestion{
+    width: 100%;
+}
+
+.header__askedQuestion h2{
+    color: #212529;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    margin: 0;
+}
+
+.ul__askedQuestions{
+    margin: 2rem 0 0 0;
+}
+
+.ul__askedQuestions li{
+    margin: 1.5rem 0 0 0;
+    padding: 1.5rem;
+    background: #fff;
+    color: #444;
+    border-radius: 0.1rem;
+    box-shadow: rgb(33 35 38 / 10%) 0px 10px 10px -10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.li__namesQuestions-element{
+    width: 100%;
+    font-weight:bold;
+    transition:.3s
+    
+
+}
+
+.li__askedQuestions-element{
+    display: flex;
+    flex-direction: column;
+    align-items: start !important;
+}
+
+.li__active-element{
+    margin: 1rem 0 0 0;
+    display: none;
+    transition: .3s ease;
+}
+
+.close__element{
+    display: none;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+#open__view-cards .li__namesQuestions-element img{
+    display: none;
+    transition: .3s
+}
+
+#open__view-cards .close__element{
+    display: flex;
+}
+
+#open__view-cards .li__active-element{
+    display: flex;
+}
+
+/* ######## people__opinions-block ##########  */
+
+.footer__aboutNellb-block {
+    padding: 3rem 0;
+}
+
+.container__aboutNellb-block{
+    width: 80%;
+    max-width: 1440px;
+}
+
+
+.text__primaryli-element{
+    font-size: 20px !important;
+    font-weight: 600;
+    color: #212529;
+}
+
+.nav__aboutNellb-block li{
+    font-size: 17px;
+    max-width: 230px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.nav__aboutNellb-block li:hover{
+    color: orange;
+}
+
+.li__boldText-element{
+    font-weight: 600;
+}
+
+.text__spacing-element{
+    margin: 1rem 0;
+}
+
+.text__followingNetwork-element{
+    color: #212529;
+}
+
+.border__orangeLi-element,.border__babyBlueLi-element{
+    border: 2px solid #e79438;
+    border-radius: 50px;
+    background-color: #e79438;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    opacity: .50;
+}
+
+
+.border__babyBlueLi-element{
+    background-color: #507bec;
+    border: 2px solid #507bec;
+}
+
+.nellbux__companyFooter-block{
+    padding: 1rem 0 0 0;
+    /*border-top: 1px solid black;*/
+    margin: 1rem 0 0 0;
+}
+
+.footer__sac-block {
+    padding: 2rem 0 0 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text__sac-element{
+    font-weight: 400;
+    font-size: 11px;
+    font-family: 'Poppins';
+}
+
+
+/* ########### SLIDER MESSAGER ##########*/
+
+
+.mySwiper{
+    margin: 2rem 0 0 0;
+}
+
+.swiper {
+    width: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.card__peoplesOpnies-block{
+    display: flex;
+    align-items: start !important;
+    height: 500px !important;
+    margin-right: 20px;
+    width: auto;
+}
+
+
+.swiper-pagination span{
+    margin: 1rem 0;
+    width: 20px;
+    height: 10px;
+    border-radius: 1rem;
+}
+
+.swiper-pagination-bullet{
+    background: rgb(255, 255, 255);
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+    background: orange !important;
+}
+
+.divs__terceary-block div{
+    margin: 0;
+    height: auto;
+    background: transparent;
+    display: flex;
+}
+
+.divs__terceary-block{
+    margin: 2.5rem 0 0 0;
+}
+
+
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+  }
+  .slide-content{
+    margin: 0px 91px;
+    overflow: hidden;
+  }
+
+  
+
+  .swiper-navBtn{
+    color: #6E93f7;
+    transition: color 0.3s ease;
+  }
+  .swiper-navBtn:hover{
+    color: #4070F4;
+  }
+  .swiper-navBtn::before,
+  .swiper-navBtn::after{
+    font-size: 35px;
+  }
+  .swiper-button-next{
+    right: 0;
+  }
+  .swiper-button-prev{
+    left: 0;
+  }
+  .swiper-pagination-bullet{
+    background-color: #ffffff;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active{
+    background-color: #ffffff;
+  }
+  
+  .swiper-button-prev, .swiper-button-next{
+    background: rgb(255, 255, 255) !important; 
+    padding: 1.5rem 1.5rem;
+    border-radius: 50%; 
+    color: rgb(209, 209, 209);
+}
+
+
+.header__block.sticky{
+    color: #fff;
+    display: none;
+    height:60px;
+    transition: 0.5s;
+  }
+  
+
+.header__termsNellbux-block{
+    max-width: 460px;
+    padding: 0 0 0 0rem;
+    text-align: center;
+}
+
+#fotter__logoCompany-element{
+    margin: 15px;
+}
+
+@media (max-width: 1350px){
+    .card__itWorks-block{
+        width: 520px;
+    }
+}
+
+@media (max-width: 1334px){
+    .card__itWorks-block{
+        width: 510px;
+    }
+}
+
+@media (max-width: 1300px){
+    .card__itWorks-block{
+        width: 500px;
+    }
+}
+
+@media (max-width: 1279px){
+    .card__itWorks-block{
+        width: 490px;
+    }
+}
+
+@media (max-width: 1250px){
+    .card__itWorks-block{
+        width: 480px;
+    }
+}
+
+@media (max-width: 1225px){
+    .card__itWorks-block{
+        width: 470px;
+    }
+}
+
+@media (max-width: 1202px){
+    .card__itWorks-block{
+        width: 465px;
+    }
+}
+
+@media (max-width: 1187px){
+
+    .card__itWorks-block{
+        width: 455px;
+    }
+}
+
+@media (max-width: 1159px){
+    .card__itWorks-block{
+        width: 445px;
+    }
+}
+
+@media (max-width: 1138px){
+    .card__itWorks-block{
+        width: 435px;
+    }
+}
+
+@media (max-width: 1115px){
+
+    .card__itWorks-block{
+        width: 425px;
+    }
+
+    .text__sac-element{
+        max-width: 500px;
+    }
+
+    .header__termsNellbux-block{
+        max-width: 325px;
+    }
+
+    .header__termsNellbux-block span{
+        font-size: 13px;
+    }
+
+    .li__boldText-element{
+        font-size: 13px;
+
+    }
+}
+
+@media (max-width: 1100px){
+    .card__itWorks-block{
+        width: 410px;
+    }
+}
+
+@media (max-width: 1061px){
+    .card__itWorks-block{
+        width: 400px;
+    }
+}
+
+@media (max-width: 1043px){
+    .card__itWorks-block{
+        width: 390px;
+    }
+}
+
+@media (max-width: 1018px){
+    .card__itWorks-block{
+        width: 385px;
+    }
+}
+
+
+@media (max-width: 1032px){
+    .ul__block li{
+        margin: 0 1rem 0 0;
+    }
+}
+
+@media (max-width: 990px){
+
+    .nav__block{
+        display: none;
+    }
+
+    .exit__menu{
+        display: flex;
+        cursor: pointer;
+    }
+    .investmentTime__day-block, .footer__sac-block{
+        flex-wrap: wrap;
+    }
+
+    .investment__informationDay-block{
+        padding: 0;
+        width: 100%;
+    }
+
+    .investmentTime__day-block{
+        justify-content: center !important;
+    }
+
+    .calc__investment-block{
+        margin: 3rem 0;
+    }
+
+    .main__investment-block{
+        background-size: cover;
+    }
+
+    .container-advantage-block, .nellbux__warranty{
+        flex-direction: column;
+    }
+    
+    .advantage__nellbuxList-block{
+        margin: 1.5rem 0 0 0;
+    }
+
+    .text__whyChooseNellbux-element{
+        font-size: clamp(25px, 3vw, 32px);
+    }
+
+    .card__itWorks-block, 
+    .advantage__nellbuxList-block{
+        width: 100%;
+    }
+
+    .header__block--width, 
+    .main__investmentContainer-block,
+    .container-advantage-block,
+    .container__itWorks-block,
+    .container__getLoans-block,
+    .container__peopleOpnions-block,
+    .evaluation__play-block
+    {
+        width: 85% !important;
+    }
+
+    .button__openAcount-element{
+        margin: 1rem 0 0 0;
+        padding: 0.5rem 2.5rem;
+    }
+
+    .nellbux__IsSafe-block{
+        margin: 0px 1rem;
+    }
+
+    .nav__aboutNellb-block, .header__nellbux-comapanyFooter,.header__termsNellbux-block{
+        flex-direction: column;
+    }
+
+    .nav__aboutNellb-block li{
+        max-width: 100%;
+    }
+
+    .header__termsNellbux-block{
+        margin: 1.5rem 0 0 0;
+        text-align: center;
+    }
+
+    .payment__platform-element{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .payment__platform-element img{
+        margin: 0.5rem 0;
+    }
+
+    .container-advantage-block{
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 770px){
+    .header__peopleOpnions-block{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }   
+    
+    .evaluation__play-block{
+        flex-direction: row !important;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 3rem 0 0 0;
+    }
+
+    .title__headerOpnios-element{
+        max-width:100%;
+    }
+
+
+}
+
+
+@media (max-width: 670px){
+    
+    .card__informationGetLoans-block{    
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    
+    .card__informationGetLoans-block img {
+        margin: 0;
+        width: 300px;
+        height: 300px;
+    }
+
+    .cards__itWorkds-block {
+        margin: 3rem 0 0 0;
+    }
+}
+
+@media (max-width: 570px){
+    .slide-content{
+        margin: 0 !important;
+    }
+}
+
+
+@media (max-width: 480px){
+    
+    .calc__investment-block{
+        padding: 2rem;
+    }
+    
+    .card__itWorks-block{
+        height: auto !important;
+        padding: 1rem;
+    }
+
+    .text__informationCardItWorkds-element{
+        font-size: 14px;
+    }
+
+    .card__peoplesOpnies-block{
+        width: 100% !important;
+    }
+    .nav__aplication-block{
+        flex-direction: column;
+        justify-content: center !important;
+    }
+
+    .nav__aplication-block a{
+        
+        margin: 0.5rem 0 0 0;
+    }
+
+}
+
+@media (max-width: 425px){
+    .text__whyChooseNellbux-element{
+        text-align: center;
+    }   
+}
+
+
+.salink{
+ color: #5283FF;
+ text-decoration: none;  
+ transition: .3s;
+}
+.salink:hover{
+ color: orange;
+ text-decoration: none;   
+}

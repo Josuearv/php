@@ -1,0 +1,468 @@
+.divConfirmaEmail {
+  font-size: 2vw;
+  width: 90%;
+  padding: 2vw;
+}
+
+.iconClose {
+  width: 2vw;
+  height: 2vw;
+}
+
+.secao {
+  display: grid;
+  width: 90%;
+}
+
+.containerSectionOne {
+  width: 100%;
+  margin-bottom: 2vw;
+}
+
+.containerDivOne {
+  display: grid;
+}
+
+.conteudoResult {
+  margin: 0;
+  width: 80vw;
+  margin: 2vw;
+}
+
+.paragrafoTitulo {
+  font-size: 3vw;
+}
+
+.paragrafoSpa {
+  font-size: 4vw;
+}
+
+.containerDivOne hr {
+  width: 100%;
+  height: 0.2vw;
+}
+
+.containerDivTwo {
+  padding: 4vw;
+}
+
+.containerDivTwo h2 {
+  font-size: 3vw;
+  margin-bottom: 3vw;
+}
+
+.spacoGrafico {
+  height: 40vw;
+}
+
+/* seção 2 */
+
+.cardOne {
+  padding: 4vw;
+}
+
+.cardOne h2 {
+  font-size: 4vw;
+  margin-bottom: 2vw;
+}
+
+.cardOne p {
+  font-size: 2vw;
+  margin-bottom: 2vw;
+}
+
+.cardOne button {
+  font-size: 3vw;
+  padding: 0.9vw 3vw;
+}
+
+/* card 2 */
+
+.cardTwo {
+  padding: 4vw;
+}
+
+.containerProfile img {
+  width: 7vw;
+  height: 7vw;
+}
+
+.containerName {
+  margin-left: 0.8vw;
+}
+
+.containerName h3 {
+  font-size: 3vw;
+}
+
+.containerName img {
+  width: 1.2vw;
+  height: 1.2vw;
+}
+
+.containerProfile button {
+  padding: 0.6vw 3vw;
+  font-size: 2vw;
+}
+
+.containerInfoCardTwo {
+  font-size: 2vw;
+  margin-top: 2vw;
+}
+
+.containerInfoCardTwo img {
+  width: 1.6vw;
+  height: 1.6vw;
+}
+
+/* card 3 */
+
+.CardTreeInfoOneTitle {
+  font-size: 2.5vw;
+}
+
+.CardTreeTrace {
+  margin-top: 2vw;
+}
+
+.traceOne {
+  height: 1vw;
+}
+
+.traceTwo {
+  height: 1vw;
+}
+
+.CardTreeInfoTwo {
+  font-size: 2vw;
+  margin-top: 2vw;
+}
+
+.CardTreeInfoTree {
+  margin-top: 2vw;
+}
+
+.CardTreeInfoTreeTitle {
+  margin-top: 1.6vw;
+  font-size: 2.2vw;
+}
+
+.CardTreeInfoTreeContent {
+  font-size: 2vw;
+}
+
+.CardTreeInfoTwo input {
+  font-size: 2vw;
+}
+
+/* card 4 */
+
+.cardContent {
+  font-size: 2vw;
+}
+
+.buttons {
+  margin-top: 3vw;
+}
+
+.buttons button {
+  font-size: 1.6vw;
+}
+
+.buttonsOne img {
+  width: 1vw;
+}
+
+.buttonsTwo img {
+  width: 1vw;
+}
+
+.grey {
+  font-size: 1.6vw;
+}
+
+/* seção 2 */
+
+.secaoTwo {
+  width: 90%;
+  display: grid;
+}
+
+.secTwo {
+  width: 100%;
+}
+
+.secaoTwoCardOneSpan {
+  font-size: 1.6vw;
+  padding: 0.4vw 2vw;
+}
+
+.secaoTwoCardOneTitle {
+  font-size: 4vw;
+  margin-top: 4vw;
+}
+
+.secaoTwoCardOneParagraph {
+  font-size: 2vw;
+}
+
+.secaoTwoCardOneButton {
+  font-size: 2vw;
+  margin-top: 4vw;
+  padding: 0.6vw 3vw;
+}
+
+/* Card 2 - NellBux Score 3.0 */
+
+.secaoTwoCardTwo {
+  text-align: center;
+}
+
+.secaoTwoCardTwoTitle {
+  font-size: 4vw;
+}
+
+.secaoTwoCardTwoParagraph {
+  margin-top: 1vw;
+  font-size: 3vw;
+}
+
+.secaoTwoCardTwoScore {
+  margin-top: 4vw;
+  font-size: 3vw;
+}
+
+.secaoTwoCardTwoProfile {
+  margin-top: 4vw;
+  font-size: 2.4vw;
+}
+
+.secaoTwoCardTwoRank {
+  margin-top: 2vw;
+  font-size: 2.4vw;
+}
+
+.secaoTwoCardTwoIcon {
+  margin-top: 0.8vw;
+}
+.icon {
+  width: 4vw;
+}
+
+.secaoTwoCardTwoPoints {
+  margin-top: 2vw;
+  font-size: 3vw;
+}
+
+.secaoTwoCardTwoPoints span {
+  font-size: 3vw;
+}
+
+.secaoTwoCardTwoPointsPrev {
+  margin-top: 2vw;
+  font-size: 3vw;
+}
+
+.secaoTwoCardTwoPointsPrev span {
+  font-size: 3vw;
+}
+
+.secaoTwoCardTwoRequest {
+  margin-top: 2vw;
+  font-size: 3vw;
+}
+
+.secaoTwoCardTwoRequest span {
+  font-size: 3vw;
+}
+
+/* seção 2 inferior */
+
+.secTree {
+  width: 100%;
+  margin-left: 0;
+  margin-top: 4vw;
+}
+
+/* seção 2 inferior - card 1 */
+
+.secTreeCardOneTitle {
+  font-size: 3.2vw;
+}
+
+.secTreeCardOneContainerCard button img {
+  width: 3vw;
+}
+
+.secTreeCardOneContainerDescription {
+  font-size: 1.8vw;
+}
+
+.marginTop {
+  margin-top: 1vw;
+}
+
+.secTreeCardOneContainerTwo {
+  margin-top: 3vw;
+}
+
+.secTreeCardOneContainerTwo p {
+  margin-top: 1.5vw;
+  font-size: 2vw;
+}
+
+/* seção 2 inferior - card 2 */
+
+.secTreeCardTwo {
+  margin-top: 4vw;
+}
+
+/* seção 2 inferior - double DIV */
+
+.doubleDiv {
+  display: grid;
+}
+
+.divOne {
+  width: 100%;
+  padding: 4vw;
+}
+
+.doubleDivOne {
+  width: 100%;
+}
+
+.divOne h2 {
+  font-size: 2vw;
+}
+
+.divOneContainerOne {
+  margin-top: 2vw;
+}
+
+.divOneContainerOne img {
+  width: 2vw;
+}
+
+.divOneContainerOne p {
+  margin-left: 0.6vw;
+  font-size: 1.6vw;
+}
+
+.divOneContainerTwo {
+  margin-top: 2vw;
+  font-size: 1.6vw;
+}
+
+.divOneContainerTree {
+  margin-top: 2vw;
+  font-size: 1.6vw;
+}
+
+.doubleDivBtn {
+  font-size: 3vw;
+}
+
+.doubleDivBtn button {
+  font-size: 1.6vw;
+  margin-top: 3vw;
+}
+
+/* div 2*/
+
+.divTwo {
+  padding: 2vw;
+}
+
+.divTwoDescript {
+  font-size: 2vw;
+  margin-top: 2vw;
+}
+
+.divTwoDescriptTwo {
+  font-size: 2vw;
+  margin-top: 2vw;
+}
+
+.divTwoContainerNav {
+  margin-top: 3vw;
+}
+
+.divTwoContainerNav button {
+  font-size: 1.6vw;
+}
+
+.divTwoContainerNav img {
+  width: 0.8vw;
+}
+
+/* seção 2 inferior - double DIV 2 */
+
+.doubleDivTwo {
+  width: 100%;
+  margin-top: 2vw;
+}
+
+/* doubleDivTwo*/
+
+.doubleDivTwo {
+  padding: 2vw;
+  margin-bottom: 5vw;
+}
+
+.doubleDivTwoTitle img {
+  width: 2vw;
+}
+
+.doubleDivTwoTitle h2 {
+  font-size: 3vw;
+}
+
+.doubleDivTwoHero {
+  margin-top: 4vw;
+  font-size: 2vw;
+}
+
+.doubleDivTwoRendimento {
+  margin-top: 4vw;
+}
+
+.rendimento {
+  font-size: 2vw;
+}
+
+.doubleDivTwoValue {
+  margin-top: 2vw;
+  font-size: 2vw;
+}
+
+.doubleDivTwoVal {
+  font-size: 2vw;
+  margin-top: 1vw;
+}
+
+/* barra de progresso */
+.container {
+  margin-top: 1vw;
+  height: 1vw;
+}
+
+/* Final */
+
+.doubleDivTwoPragraph {
+  font-size: 2.4vw;
+}
+
+.doubleDivTwoPragraph img {
+  width: 2.4vw;
+  margin-left: 1vw;
+}
+
+.doubleDivTwoPragraphObs {
+  font-size: 2.5vw;
+  margin-top: 4vw;
+}
+
+.doubleDivTwoPragraphObs button {
+  font-size: 2.5vw;
+}

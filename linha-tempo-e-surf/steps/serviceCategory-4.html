@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/flex.css" />
+    <link rel="stylesheet" href="../style/globalStyles.css" />
+    <link rel="stylesheet" href="../style/steps/serviceCategory-1.css" />
+    <link rel="stylesheet" href="../style/steps/serviceCategory-4.css" />
+
+    <title>Nell bux</title>
+
+    <script src="./script/jquery.js"></script>
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="header">
+      <img src="../assets/imagesHeader/logo.png" alt="" />
+    </header>
+
+    <!-- main -->
+    <main class="main">
+      <div class="main__container">
+        <section class="section__aboutService alignItemsCenter">
+          <img
+            src="../assets/steps/pessoaSegurandoEncomenda.png"
+            alt=""
+            width="130"
+            height="130"
+          />
+          <div class="information__stepsAboutService">
+            <p class="title__stepsOne">Etapa 1 de 2</p>
+            <h1 class="title__aboutService">
+              Comece descrevendo tudo sobre o seu serviço
+            </h1>
+          </div>
+        </section>
+
+        <form class="form">
+          <div class="card__chooseService">
+            <div class="sub__informationChooseService">
+              <h2 class="title__chooseService">
+                Qual é o endereço exato onde você oferece o serviço
+              </h2>
+              <p class="title__descriptionShowAddress">
+                O endereço será mostrado no seu anúncio. Você pode escolher
+                apenas mostrar uma referência.
+              </p>
+            </div>
+
+            <div class="add__address flexDirectionColumn">
+              <label class="title__label">Endereço</label>
+              <input
+                class="input__address"
+                type="text"
+                placeholder="Av.José Pinheiro Borges - Vila Campanela, São Paulo - SP, Brasil"
+              />
+              <label class="title__includesAddress"
+                >Inclua a rua, número, bairro e cidade.</label
+              >
+              <div class="checkbox__address alignItemsCenter">
+                <input type="checkbox" />
+                <span class="show__Address alignItemsCenter">
+                  Não mostrar endereço exato
+                  <img
+                    src="../assets/steps/information.png"
+                    alt=""
+                    width="20"
+                    height="20"
+                  />
+                </span>
+              </div>
+            </div>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.005544269977!2d-46.5289009!3d-23.532303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59ac6f3606f1%3A0xcea8517f73e78573!2sAv.%20Radial%20Leste%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1678270516505!5m2!1spt-BR!2sbr"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+            <div class="information__date">
+              <h4 class="title__chooseService">
+                Precisamos de mais alguns dados.
+              </h4>
+              <p class="title__descriptionShowAddress">
+                Dessa forma, você alcançará mais pessoas interessadas.
+              </p>
+
+              <div class="cards__inputs alignItemsCenter">
+                <div class="card__input flexDirectionColumn">
+                  <label>Estado</label>
+                  <select>
+                    <option>São Paulo</option>
+                    <option>teste 1</option>
+                    <option>teste 2</option>
+                    <option>teste 3</option>
+                    <option>teste 4</option>
+                    <option>teste 5</option>
+                  </select>
+                </div>
+
+                <div class="card__input flexDirectionColumn">
+                  <label>Cidade</label>
+                  <select>
+                    <option>São Paulo</option>
+                    <option>teste 1</option>
+                    <option>teste 2</option>
+                    <option>teste 3</option>
+                    <option>teste 4</option>
+                    <option>teste 5</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="card__neighborhood flexDirectionColumn">
+                <label class="show__Address">Bairro</label>
+                <select>
+                  <option></option>
+                </select>
+              </div>
+            </div>
+
+            <div class="div_progresso alignItemsCenter">
+              <img
+                src="../assets/steps/arrowLeft.png"
+                alt=""
+                width="40"
+                height="40"
+              />
+
+              <div class="bar">
+                <div></div>
+              </div>
+
+              <div class="submitDiv" style="text-align: right">
+                <input
+                  type="submit"
+                  name=""
+                  class="btn_proximo"
+                  value="Próxima"
+                />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

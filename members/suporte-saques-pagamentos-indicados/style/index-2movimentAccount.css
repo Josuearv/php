@@ -1,0 +1,276 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  background: #F0F0F0;
+}
+
+/*################## main */
+
+.main__movimentAccount-block{
+
+  margin: 4rem 0;
+}
+
+.container__movimentAccount-block{
+  max-width: 1400px;
+  width: 85%;
+}
+
+.header__confirmEmail-element{
+  background: #fff;
+  padding: 0.7rem;
+  border-radius: 2rem;
+  position: relative;
+
+}
+.header__confirmEmail-element strong{
+  padding: 0 1rem;
+}
+
+.header__confirmEmail-element strong a{
+  color: #000000;
+}
+
+#exit__menus-element{
+  position: absolute;
+  right: 1px;
+  margin: 0 1rem 0 0
+}
+
+/*################## section__movimentAccountBg-block */
+
+.section__movimentAccountBg-block{
+  background: #fff;
+  margin: 1.5rem 0 0 0;
+  padding: 3rem;
+  border-radius: 0.5rem;
+
+}
+
+
+.title__movimentAccountBg-element{
+  max-width: 350px;
+  font-size: clamp(20px, 2.5vw, 30px);
+}
+
+.information__moneyInvestment-block{
+  display: flex;
+}
+
+.card__moneyInvestment-block{
+  text-align: end;
+  margin: 0 0 0 1rem;
+}
+.card__titleMoneyInvestment-element{
+  color: #F3992E;
+  font-size: 27px;
+}
+
+.card__titleSecondary-element{
+  color: #757575;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card__buttonMoneyInvestment-element{
+  border: none;
+  padding: 1rem;
+  background: #E6E6E6;
+  font-weight:700;
+  color: #000000;
+  margin: 1rem 0 0 0;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  font-size: clamp(10px, 1vw, 16px);
+  transition: .2s;
+}
+
+.card__buttonMoneyInvestment-element:hover{
+  background: rgb(202, 202, 202);
+}
+
+.card__titleMoneyInvestment-element--blue{
+  color: #5283FF;
+}
+.card__buttonMoneyInvestment-element--blue:hover{
+  background: #3655a5;  
+}
+
+.card__buttonMoneyInvestment-element--blue{
+  color: #fff;
+  background: #5283FF;
+}
+
+.table__block{
+  width: 100%;
+  margin: 5rem 0 0 0;
+  border-collapse: collapse;
+}
+
+.tr__header{
+  height: 3.5rem;
+  background: #E6E6E6;
+}
+
+.tr__header th, .table__trow td{
+  text-align: start;
+  padding: 1rem;  
+
+}
+
+.table__trow{
+  height: 3.5rem;
+  background: #F5F5F5;
+}
+
+.table__trow td{
+  font-weight: 500;  
+}
+
+.span__tdcolumn-element{
+  font-weight: 600;
+}
+
+.title__span-element--green{
+  color: #75E04C;
+  font-size: 18px;  
+}
+
+#move__download-element{
+  cursor: pointer;
+}
+
+.border__left-element{
+  border-top-left-radius: 0.5rem;
+}
+
+.border__right-element{
+  border-top-right-radius: 0.5rem;
+}
+
+
+.nav__links-block{
+  margin: 3rem 0 0 0;
+}
+
+.ul__pages-block {
+  padding: 1rem 0 0 0;
+}
+
+.ul__pages-block li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 0.1rem
+}
+
+.ul__pages-block li a:hover{
+  background: #505050;
+  border-radius: 0.2rem; 
+  color: #fff;
+}
+
+
+.ul__pages-block li a{
+  font-size: 18px;
+  color: #000000;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.4rem 0.9rem; 
+
+}
+
+.li__primary-element{
+  background: #505050;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2rem; 
+}
+
+.li__primary-element a{
+  color: #fff !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 0.9rem; 
+  
+}
+
+.ul__pages-block li a{
+  text-decoration: none;
+}
+
+.nav__table-block{
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  display: none;
+  margin: 1rem 0 0 0;
+}
+
+.ul__navTable-block{
+  list-style: none;
+  width: 100%;
+}
+
+.ul__navTable-block li{
+  border-bottom: 1px solid #e0e0e0;
+  padding: 1rem;
+}
+
+.ul__navTable-block li a{
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 13px;
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 1115px){
+  .title__movimentAccountBg-element{
+    max-width: 334px;
+  }
+}
+
+@media (max-width: 990px){
+
+  .information__moneyInvestment-block{
+    margin: 1rem 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .header__movimentAccountBg-block{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card__moneyInvestment-block{
+    margin: 0 1rem 1rem 0;
+    text-align: start;
+  }
+
+  .section__movimentAccountBg-block{
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 570px){
+  .card__moneyInvestment-block{
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px){
+  .nav__table-block{
+    display: flex;
+  }
+  .table__block{
+    display: none;
+  }
+}

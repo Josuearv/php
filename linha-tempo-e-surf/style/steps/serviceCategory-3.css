@@ -1,0 +1,67 @@
+.title__chooseService{
+  border: none;
+}
+
+.ul__navigantionRoute{
+  padding: 0 1.5rem;
+  list-style: none;
+}
+
+.ul__navigantionRoute li{
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.ul__navigantionRoute li img{
+  margin: 0 0.5rem;
+}
+
+.ul__navigantionRoute li:first-child{
+  color: #3A85FB;
+}
+
+/* card__confirmCategory */
+
+
+.card__confirmCategory{
+  margin: 2rem 1.5rem 4rem 1.5rem;
+  background: #EDEDED;
+  padding: 1.5rem 1rem;
+  border-left: 4px solid #2968C8;
+  border-radius: 0.3rem 0.5rem 0.5rem 0.3rem;
+}
+
+.card__informationConfirmCategory{
+  margin: 0 0 0 1.5rem;
+}
+
+.title__confirmCategoryChoose{
+  font-weight: 600;
+  font-size: 16px;
+  border-bottom: 1px solid #EEEEEE;
+  color: #000000;
+}
+
+.title__descriptionCard{
+  margin:0.8rem 0 0 0;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* div_progresso */
+.div_progresso {
+  padding: 1.5rem;
+}
+
+@media (max-width: 425px){
+  .card__confirmCategory{
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .card__informationConfirmCategory{
+    margin: 0.5rem 0 0 0;
+  }
+}

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap&family=Poppins:wght@300');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+hr{
+  border: 2px solid #e79438;
+  border-radius: 50px;
+  background-color: #e79438;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  opacity: .50;
+}
+
+.hr_azul{
+  background-color: #507bec;
+  border: 2px solid #507bec;
+}
+
+/* LINKs do site */
+
+
+
+
+p{
+  font-size: 17px;
+  color: #000;
+  font-family: 'poppins';
+}
+
+a{
+  text-decoration: none;
+  font-size: 16px;
+  color: #000;
+}
+  a:hover{
+    color: #e79438;
+  }
+
+/* IMGs do Rodapé */
+
+.img_redes{
+  width: 30px;
+}
+
+.img_logo{
+  width: 120px;
+  float:left;
+}
+
+.img_pagamento{
+    width: 200px;
+    margin-top: -15px;
+}
+
+
+/* TEXTOs do rodapé */
+
+h2{
+  font-size: 20px;
+  font-family:'Lato';
+  font-weight: bold;
+}
+
+h3{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* DIVs do rodapé */
+
+.div_container{
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+  background: white;
+}
+
+.div_margin{
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.div_display{
+  display: flex;
+}
+
+.div_display_2{
+  display: flex;
+  border-top: solid 1px #000;
+}
+
+.div_box{
+  flex: 1;
+  padding: 20px;
+}
+
+.div_redes_sociais{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.div_box_2{
+  text-align: center;
+  padding: 20px;
+}
+
+
+@media (max-width: 1000px){
+  .div_display{
+    display: block;
+  }
+
+  .div_display_2{
+    display: block;
+    border-top: solid 1px #000;
+  }
+}
+
+ .header-fixed{
+      position:relative !important;   
+     } 

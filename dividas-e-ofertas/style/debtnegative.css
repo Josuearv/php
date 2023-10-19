@@ -1,0 +1,186 @@
+
+/* ########## debt_negative */ 
+
+.title__debtNegative{
+  font-weight: 600;
+  font-size: clamp(25px, 2vw, 32px);
+  color: #343539;
+}
+
+.ul__debit{
+  list-style: none;
+  margin: 2rem 0;
+}
+
+.li__background{
+  padding: 0.5rem 0.8rem;
+  border-radius: 2rem;
+  margin: 0 0.5rem 0 0;
+}
+
+.li__background--yellow{
+  background: #F6F7E9;
+}
+
+.li__background--orange{
+  background: #F9F0E9;
+}
+
+.li__background--purple{
+  background: #F3E8F6;
+}
+
+.span__backgroundImage{
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+
+.span__backgroundImage--yellow{
+  background: #B1B918;
+}
+
+.span__backgroundImage--orange{
+  background: #FF8A1C;
+}
+
+.span__backgroundImage--purple{
+  background: #AE30DA;
+}
+
+.span__titleScore{
+  padding: 0 0 0 0.5rem;
+  color: #A8A89C;
+}
+
+.span__titleScore b{
+  color: #585853
+}
+
+/* ########## section__cardsAboutOffers */
+
+.cardOffers{
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  transition: 0.3s;
+}
+
+.section__cardsAboutOffers .cardOffers:first-child{
+  margin: 0 2rem 0 0;
+  width: 70%;
+}
+
+.section__cardsAboutOffers .cardOffers:hover{
+  border: 1px solid #ca8642;
+}
+
+
+.section__cardsAboutOffers .cardOffers:last-child{
+  width: 500px;
+}
+
+.title__cardOffers{
+  margin: 1rem 0;
+  font-size: 20px;
+  color: #4D5256;
+}
+
+.title__descriptionCardOffers{
+  font-size: 18px;
+  max-width: 750px;
+  color: #8D9099;
+}
+
+.texts__violation{
+  margin: 1rem 0 0 0;
+  font-weight: 600;
+  color: #E1A04E;
+}
+
+.texts__violation--rose{
+  color: #BC5282;
+}
+
+/* ########## donot__divide */
+
+.donot__divide{
+  margin: 8rem 0;
+}
+
+.title__donotDivide{
+  font-size: clamp(25px, 2vw, 30px);
+  margin: 1rem 0;
+  color: #303650;
+  text-align: center;
+}
+
+.title__descriptionDonotDivide{
+  color: #6E6F74;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* ########## footer__divideDonot */
+
+.footer__divideDonot{
+  background: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.title__primaryFooter,
+.title__secondaryFooter{
+  color: #303650;
+  margin: 1.5rem 0;
+  font-size: 22px;
+}
+
+.text__descriptionFooter{
+  color: #A8A8AA;
+  font-size: 17px;
+}
+
+.title__secondaryFooter{
+  font-size: 17px;
+}
+
+.ul__footer{
+  list-style: none;
+}
+
+.ul__footer li{
+  margin: 1rem 0;
+  color: #A8A8AA;
+}
+
+
+@media (max-width: 990px){
+  .section__cardsAboutOffers{
+    flex-direction: column;
+  }
+
+  .cardOffers{
+    margin: 0 0 1rem 0!important;
+    width: 100% !important;
+  }
+
+  .section__cardsAboutOffers .cardOffers:first-child {
+    margin: 0 2rem 1rem 0;
+  }
+}
+
+
+@media (max-width: 725px){
+  .ul__debit{
+    margin: 1rem 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .li__background{
+    margin: 0.3rem 0;
+    width: 100%;
+  }
+}

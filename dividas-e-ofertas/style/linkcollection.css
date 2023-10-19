@@ -1,0 +1,318 @@
+.main-container{
+  margin: 1.5rem 0;
+}
+
+/* ############# create__link */
+
+
+.title__createLink{
+  margin: 0 0 2rem 0;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.link__prices{
+  background: #fff;
+  padding: 2rem;
+}
+
+.inputs__types{
+  width: 65%;
+}
+
+.input__prices{
+  margin: 0 0 2.5rem 0;
+}
+
+
+.input__prices input{
+  padding: 1rem;
+  border: 1px solid #CACACA;
+  border-radius: 0.4rem;
+  margin: 0.5rem 0 0 0;
+  outline: none;
+}
+
+.input__prices input::placeholder{
+  color: #D0D0D0;
+  font-size: 16px;
+}
+
+.text__helpEnd,
+.text__caracterEnd{
+  margin: 0.5rem 0 0 0;
+  color: #A2A2A2;
+  font-size: 14px;
+}
+
+.text__caracterEnd{
+  text-align: end;
+}
+
+.module__photo{
+  width: 250px;
+  height: 250px;
+  border: 2px dotted #EA9A45;
+  position: relative;
+  border-radius: 0.5rem;
+}
+
+#help__radios{
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  margin: 0.5rem;
+}
+
+.title__addPhoto{
+  font-size: 14px;
+  margin: 0.5rem 0;
+  color: #EA9A45;
+  text-align: center;
+}
+
+.title__descriptionPhoto{
+  color: #B0B4B7;
+  font-size: 15px;
+  text-align: center;
+}
+
+/* ############ choose__setting */ 
+
+
+.choose__setting{
+  margin: 2rem 0;
+}
+
+.title__chooseSetting{
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+}
+
+.choose__payments{
+  background: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.more__options{
+  color: #4296BA;
+  font-weight: 500;
+}
+
+.more__options img{
+  transform: rotate(-180deg);
+  transition: 0.3s;
+}
+
+.payment__options{
+  padding: 2.5rem;
+  display: none;
+}
+
+.title__paymentOptions{
+  margin: 2rem 0;
+}
+
+.texts__label{
+  margin: 0 0 0 0.5rem;
+  font-weight: 500;
+  color: #3d3d3d;
+  font-size: 17px;
+}
+
+.text__descriptionlabel{
+  color: #BCBEBD;
+  font-weight: 400;
+  font-size: 15px;
+  margin: 0.5rem 0 0 0;
+}
+
+.balance__options{
+  margin: 2rem 0 2rem 0;
+}
+
+.balance__options input[type="checkbox"]{
+  width: 18px;
+  height: 18px;
+  border: 1px solid #BCBEBD;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.title__paymentOptions--margin{
+  margin: 0;
+}
+
+.inputs__date{
+  margin: 1.5rem 0 0 0;
+}
+
+.label__inputDate{
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.input__date input,
+.select{
+  margin: 0.5rem 0 0 0;
+  width: 200px;
+  padding: 0.5rem;
+  height: 50px;
+  border-radius: 0.5rem;
+  border: 1px solid #DBDBDB;
+  outline: none;
+}
+
+
+.input__hour{
+  margin: 0 0 0 6rem;
+}
+
+.select{
+  width: 150px;  
+  padding: 0;
+}
+
+.select img{
+  margin: 0 0.5rem 0 0;
+  transform: rotate(-180deg);
+}
+
+.select select{
+  height: 100%;
+  border: none;
+  appearance: none;
+  width: 100%;
+  padding: 0 0.5rem;
+  outline: none;
+}
+
+
+/* ############### section__clientHref */
+
+.section__clientHref{
+  margin: 3rem 0;
+}
+
+.input__clientHref{
+  margin: 1rem 0 0 0;
+}
+
+.label__clientHref{
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.input__clientHref input{
+  height: 50px;
+  margin: 0.5rem 0 0 0;
+  padding: 0 1rem;
+  outline: none;
+  border: 1px solid #C4C4C4;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+
+.input__clientHref input::placeholder{
+  font-size: 14px;
+  font-weight: 500;
+  color: #E3E3E1;
+}
+
+
+/* ############### buttons__save */
+
+.button__cancel,
+.button__create{
+  background: #f8c786;
+  color: #ffffff;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.button__cancel:hover{
+  background: #e0a956;
+  color: #fff;
+}
+
+.button__create{
+  margin: 0 0 0 1.5rem;
+  background: #DCDCDC;
+  color: #ffff;
+}
+
+.button__create:hover{
+  background: #5c5c5c;
+}
+
+.div__codeRef{
+  margin: 3rem 0;
+}
+
+.activeH img{
+  transform: rotate(0deg);
+  transition: 0.3s;
+}
+
+.activeMoreOptions{
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 990px){
+  .link__prices{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .module__photo,
+  .inputs__types{
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 725px){
+  .inputs__date{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .input__hour{
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .input__date{
+    width: 100%;
+  }
+
+  .input__date input,
+  .select{
+    width: 100%;
+  }
+
+  .activeMoreOptions{
+    padding: 0;
+  }
+}
+
+
+@media (max-width: 425px){
+  .buttons__save{
+    flex-direction: column;
+  }
+
+  .button__create{
+    margin: 1rem 0 0 0;
+  }
+
+}

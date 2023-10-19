@@ -1,0 +1,1637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
+  <link rel="stylesheet" href="./style/cssStyleModal/estilo.css"/>
+  <link rel="stylesheet" href="./style/flex.css"/>
+  <link rel="stylesheet" href="./style/headerTwo.css"/>
+  <link rel="stylesheet" href="./style/globalStyles.css"/>
+  <link rel="stylesheet" href="./style/offersHome.css"/>
+
+  <title>Nell bux</title>
+
+  <script src="./script/jquery.js"></script>
+
+</head>
+
+<body>
+
+  <!-- aside -->
+  <aside id="menu-mobile" class="menu-mobile-fecado">
+      <div class="container">
+        <div id="fechar-menu-mobile">
+          <span class="material-icons">cancel</span>
+        </div>
+      </div>
+
+      <ul id="menu-principal">
+        <li><a href="#">Area Membro</a></li>
+        <li><a href="#">Meus Projetos</a></li>
+        <li><a href="#">Minhas Finanças</a></li>
+      </ul>
+
+      <div class="espaco20"></div>
+
+      <a
+        href="#pesquisa-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <span class="material-icons">search</span>
+          <div>Pesquisar</div>
+        </div>
+      </a>
+
+      <a
+        href="#notificacoes-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <span class="material-icons">notifications</span>
+          <div>Notificações</div>
+        </div>
+      </a>
+
+      <a
+        href="#mensagens-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <span class="material-icons">sms</span>
+          <div>Mensagens</div>
+        </div>
+      </a>
+
+      <a
+        href="#usuario-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <div id="logo-tb" class="menu-usuario">TB</div>
+        </div>
+      </a>
+  </aside> 
+
+  <!-- header --> 
+  <header class="header justifyContentCenter alignItemsCenter">
+    <div class="container justifyContentBetween alignItemsCenter">
+          
+          <img
+            id="logo"
+            src="./assets/imagesHeader/logo.png"
+            alt="nell bux logo image"
+            width="120"
+            height="40"
+          />
+  
+          <nav class="nav">
+  
+            <div class="search__nav justifyContentBetween alignItemsCenter">
+              <div class="search__container"></div>
+              <input
+                type="text"
+                placeholder="Pesquisar no nellbux     "
+                name="search"
+              />
+  
+              <div class="filter__result justifyContentBetween">
+                <span id="result__filter" value="">Investidores</span>
+              </div>
+  
+              <img
+                class="filter__seta"
+                src="./assets/imagesHeader/seta.png"
+                alt="arrow that looks like a downward facing triangle"
+                width="15px"
+                height="15px"
+              />
+              <img
+                src="./assets/imagesHeader/search.png"
+                alt="lupa de pesquisa"
+                width="25px"
+                height="25px"
+              />
+              
+              <div class="nav__filter">
+                <ul class="filter__search justifyContentBetween directionColumn alignItemsEnd">
+                </ul>
+              </div>          
+                        
+            </div>
+          
+  
+            <div class="hrefs-blocks justifyContentBetween alignItemsCenter">
+              <div class="block__Communication justifyContentEvenly alignItemsCenter">
+  
+                <li class="button__nav localizationModal openModal li__remove-list">
+  
+                  <a href="#notification">
+                    <span>
+                        <img
+                          
+                          src="./assets/imagesHeader/sino.png"
+                          alt="orange bell icon receive notification"
+                          width="30"
+                          height="30"
+                        />
+                    </span>
+                  </a>
+  
+                  <div class="messageNotification flexDirectionColumn modal__active-element">
+                    
+                    <header
+                      class="header__notification header__messageModal justifyContentSpaceBetween alignItemsCenter"
+                    >
+                      <span class="text__message">Notificações</span>
+                      <span class="text__message">Ver todos</span>
+                    </header>
+                    
+                    <nav class="nav__notification flexDirectionColumn alignItemsCenter">
+                      
+                      <li class="card__notification justifyContentCenter">
+                        <div class="block__text__notification flexDirectionColumn justifyContentCenter">
+                          
+                          <a class="card__notificationt__text card__notificationt__text--weight" >
+                            Rejeitamos seu projeto
+                            <span class="card__notificationt__text card__notificationt__text--margin">Ontem</span>
+                          </a>
+  
+                          <a class="notifications__about justifyContentSpaceBetween AlignItemsCenter"
+                            >Em criar uma plataforma para reclamação
+                            <img
+                              src="./assets/imagesHeader/trash.png"
+                              alt="trash can"
+                              width="35"
+                              height="35"
+                            />
+                          </a>
+  
+                        </div>
+                      </li>
+                                 
+                      <li class="card__notification justifyContentCenter">
+                        <div class="block__text__notification flexDirectionColumn justifyContentCenter">
+                          
+                          <a class="card__notificationt__text card__notificationt__text--weight" >
+                            Rejeitamos seu projeto
+                            <span class="card__notificationt__text card__notificationt__text--margin">Ontem</span>
+                          </a>
+  
+                          <a class="notifications__about justifyContentSpaceBetween AlignItemsCenter"
+                            >Em criar uma plataforma para reclamação
+                            <img
+                              src="./assets/imagesHeader/trash.png"
+                              alt="trash can"
+                              width="35"
+                              height="35"
+                            />
+                          </a>
+  
+                        </div>
+                      </li>
+  
+                      <li class="card__notification justifyContentCenter">
+                        <div class="block__text__notification flexDirectionColumn justifyContentCenter">
+                          
+                          <a class="card__notificationt__text card__notificationt__text--weight" >
+                            Rejeitamos seu projeto
+                            <span class="card__notificationt__text card__notificationt__text--margin">Ontem</span>
+                          </a>
+  
+                          <a class="notifications__about justifyContentSpaceBetween AlignItemsCenter"
+                            >Em criar uma plataforma para reclamação
+                            <img
+                              src="./assets/imagesHeader/trash.png"
+                              alt="trash can"
+                              width="35"
+                              height="35"
+                            />
+                          </a>
+  
+                        </div>
+                      </li>
+  
+                    </nav>
+  
+                  </div>
+  
+                </li>
+  
+  
+                <li class="message localizationModal openModal li__remove-list">
+  
+                  <a href="#message">
+                    <div class="message__mobile">
+                      <img
+                        src="./assets/imagesHeader/message.png"
+                        alt="message icon, orange color with 3 dots in the middle"
+                        width="30"
+                        height="30"
+                      />
+                      <div class="voice__message justifyContentCenter alignItemsCenter">2</div>
+                    </div>
+                  </a>
+  
+                  <div class="messageModalss flexDirectionColumn modal__active-element">
+                    <header class="header__notification header__messageModal justifyContentSpaceBetween alignItemsCenter">
+                      <span class="text__message">Mensagens</span>
+                      <span class="text__message">Ver todos</span>
+                    </header>
+                    <nav class="nav__notification alignItemsCenter flexDirectionColumn">
+                      
+                      <li class="messager__card justifyContentCenter">
+                        <img
+                          src="./assets/imagesHeader/avatar.png"
+                          alt="faceless person with border"
+                          width="40"
+                          height="40"
+                        />
+                        <div class="messager__block__text block__text__notification">
+                          <div class="text__card__mensager justifyContentSpaceBetween">
+                            <span>Repasso Franquia - Oportunidade...</span>
+                            <span id="text__new__mensager">Nova Mensagem</span>
+                          </div>
+      
+                          <span class="text__faq"
+                            >Em criar uma plataforma para reclamação
+                          </span>
+                        </div>
+  
+                      </li>
+  
+                      <li class="messager__card justifyContentCenter">
+                        <img
+                          src="./assets/imagesHeader/avatar.png"
+                          alt="faceless person with border"
+                          width="40"
+                          height="40"
+                        />
+                        <div class="messager__block__text block__text__notification">
+                          <div class="text__card__mensager justifyContentSpaceBetween">
+                            <span>Repasso Franquia - Oportunidade...</span>
+                            <span id="text__new__mensager">Nova Mensagem</span>
+                          </div>
+      
+                          <span class="text__faq"
+                            >Em criar uma plataforma para reclamação
+                          </span>
+                        </div>
+  
+                      </li>
+  
+                      <li class="messager__card justifyContentCenter">
+                        <img
+                          src="./assets/imagesHeader/avatar.png"
+                          alt="faceless person with border"
+                          width="40"
+                          height="40"
+                        />
+                        <div class="messager__block__text block__text__notification">
+                          <div class="text__card__mensager justifyContentSpaceBetween">
+                            <span>Repasso Franquia - Oportunidade...</span>
+                            <span id="text__new__mensager">Nova Mensagem</span>
+                          </div>
+      
+                          <span class="text__faq"
+                            >Em criar uma plataforma para reclamação
+                          </span>
+                        </div>
+  
+                  </div>
+  
+                </li>
+                      
+          
+            </div>
+  
+              <div class="total__investment-block alignItemsCenter">
+                
+                <span class="total__investment-element">Total investido carregando...</span>
+                
+                <button class="modal__h perfil__button openModal">
+  
+                  <div class="modal__eyes">
+                    <span id="balance">Saldo: R$ 0,00</span>
+                  </div>
+                  
+                  <img src="./assets/imagesHeader/eyes.png"  id="modal__get" alt="eyes" width="35" height="35" />
+                </button>
+  
+                <hr id="row__separator">
+              </div>
+              
+  
+              <div class="perfil__account-block total__investment-block alignItemsCenter">
+            
+                <button class="modal__h perfil__button openModal">
+  
+                  <span class="tb__perfil">tb</span>
+                
+                  <div class="perfil__modal modal__active-element justifyContentCenter alignItemsCenter">
+                    <div class="perfil__container">
+                      <div class="perfil__title__block">
+                        <span class="perfil__title">
+                          olá,
+                          <span class="perfil__title__bold">marcos,</span>
+                          seja bem-vindo.
+                        </span>
+                      </div>
+      
+                      <div class="account__config flexDirectionColumn justifyContentSpaceEvenly">
+                        <span class="account__title justifyContentBetween">
+                          Configurações Conta
+                          <span> Meu perfil </span>
+                        </span>
+                        <span class="account__title justifyContentBetween"> Rank do Dia </span>
+                      </div>
+      
+                      <div class="block__offers justifyContentSpaceEvenly flexDirectionColumn">
+                        <span class="title__offers__primary">Ofertas e pedidos</span>
+                        <div class="block__text__offers justifyContentBetween">
+                          <span class="block__text__offers__invest"
+                            >Abrir uma oferta de investimento</span
+                          >
+                          <span class="block__text__offers__invest"
+                            >Encontrar Pedidos</span
+                          >
+                        </div>
+                        <span
+                          class="block__text__offers__invest block__text__offers__invest--text"
+                          >Abrir um pedido de credito</span
+                        >
+                      </div>
+      
+                      <div class="block__Information__offers flexDirectionColumn justifyContentSpaceEvenly">
+                        <span class="title__offers__primary"
+                          >Informações da Conta</span
+                        >
+                        <div class="block__text__offers__account justifyContentSpaceBetween">
+                          <div class="block__text__offers__text flexDirectionColumn">
+                            <span class="block__text__offers__invest"
+                              >Lista de Indicados</span
+                            >
+                            <span class="block__text__offers__invest"
+                              >Histórico de Conta</span
+                            >
+                          </div>
+      
+                          <div class="block__end__offers  flexDirectionColumn">
+                            <span class="block__text__offers__invest"
+                              >Lista de Seguidores</span
+                            >
+                            <span class="block__text__offers__invest"
+                              >Faças uma pergunta</span
+                            >
+                          </div>
+                        </div>
+                        <span class="block__text__offers__invest"
+                          >Minhas Apostas</span
+                        >
+                      </div>
+      
+                      <div class="user__offers justifyContentSpaceBetween AlignItemsCenter">
+                        <div class="block__title__user justifyContentSpaceBetween flexDirectionColumn">
+                          <span class="block__text__offers__invest"
+                            >Conta Nell bux</span
+                          >
+                          <span class="perfil__title__bold">1211451-1</span>
+                        </div>
+                        <div class="block__title__user justifyContentSpaceBetween flexDirectionColumn">
+                          <span class="block__text__offers__invest block__text__user"
+                            >Meu Usuario</span
+                          >
+                          <span class="perfil__title__bold">@eduardoon</span>
+                        </div>
+                      </div>
+  
+                  </div>
+  
+                
+                </button>
+  
+                <span class="perfil__name-element">
+                    Olá Tássio 
+                    <span class="perfil__code-element">55077188</span>
+                </span>
+  
+                <hr id="row__separator">    
+              </div>
+  
+                
+              <span class="leave__element">SAIR</span>      
+          </nav>
+            
+            
+            
+          <div class="exit__menu alignItemsCenter">
+            <span id="bt-abrir-menu-mobile" class="material-icons color__orange">menu</span>
+          </div>
+  
+  
+    </div>
+  </header>
+  
+  <!--Navegação  -->
+  <nav class="nav__hrefs-block justifyContentCenter">
+          <ul class="nav__links-container justifyContentBetween alignItemsCenter">
+            <li>
+              <img src="./assets/imagesNav/home.png" alt="home color orange" width="20" height="20"/>
+              <a href="#">
+                Área de Membro
+              </a>
+            </li>
+
+            <li>
+              <img src="./assets/imagesNav/money.png" alt="orange money bag with s in the middle" width="20" height="20"/>
+              <a href="#">Minhas finanças</a>
+            </li>
+
+            <li>
+              <img src="./assets/imagesNav/investiment.png" alt="investment growing" width="20" height="20" />
+              <a href="#">Investimentos</a>
+            </li>
+
+            <li class="nav__links-element">
+              <img src="./assets/imagesNav/handmoney.png" alt="hand on top has a coin floating" width="20" height="20" />
+              <a href="#">Ofertas</a>
+            </li>
+
+            <li>
+              <img src="./assets/imagesNav/groupPeoples.png" alt="several people one after the other"  width="20" height="20" />
+              <a href="#">Comunidade</a>
+            </li>
+
+            <li>
+              <img src="./assets/imagesNav/foneOuvido.png" alt="Earphone" width="20" height="20"/>
+              <a href="#">Suporte</a>
+            </li>
+
+            <li>
+              <img src="./assets/imagesNav/jornal.png" alt="several sheets of newspaper stacked" width="20" height="20"/>
+              <a href="#">Serviços</a>
+            </li>
+
+          </ul>
+  </nav>
+
+  <!-- main -->
+  <main class="main__block justifyContentCenter">
+    <div class="main__container justifyContentBetween">
+
+      <aside class="aside__block justifyContentCenter alignItemsCenter">
+        <div class="aside__container">
+
+          <div class="aside__text-block">
+            <h1 class="aside__title-element">Coloque sua Oferta Aqui!</h1>
+            <button class="button button--orange">Publique uma oferta. É gratis</button>
+          </div>
+
+          <div class="aside__mainMobile__Background">
+            <div>
+              <h3 class="aside__weBorrow-element alignItemsCenter">Compartilhe as ofertas! 
+                <img src="./assets/imagesAside/coracao.png" alt="" width="25" height="25"/>
+              </h3>
+              <div class="alignItemsCenter">
+                <img  src="./assets/imagesAside/cifrao.png" alt="" width="30"  height="30"/>
+                <p class="aside__texting-element">favorite as ofertas que você gostou seja remuneado em sua conta NellBux!</p>           
+              </div>
+            </div>
+    
+            <div class="category__products">
+              <div class="title__searchOffers justifyContentBetween alignItemsCenter">
+                <h3 class="aside__weBorrow-element alignItemsCenter">Busque por categorias</h3>
+                <img src="./assets/arrow.png" alt="" width="25" height="25"/>
+              </div>
+                <ul class="ul__categoryProducts">
+                  <li>
+                    <img src="./assets/imagesAside/casa.png" alt="" width="40" height="40"/>
+                    <div class="title__nameCategory">
+                      Imoveis
+                    </div>
+                  </li>
+    
+                  <li>
+                    <img src="./assets/imagesAside/carro.png" alt="" width="40" height="40"/>
+                    <div class="title__nameCategory">
+                      Autos e peças
+                    </div>
+                  </li>
+    
+                  <li>
+                    <img src="./assets/imagesAside/comercio.png" alt="" width="40" height="40"/>
+                    <div class="title__nameCategory">
+                      Comércio e escritório
+                    </div>
+                  </li>
+    
+                  <li>
+                    <img src="./assets/imagesAside/abajur.png" alt="" width="40" height="40"/>
+                    <div class="title__nameCategory">
+                      Para a sua casa
+                    </div>
+                  </li>
+                  
+                  <li>
+                    <img src="./assets/imagesAside/celular.png" alt="" width="40" height="40"/>
+                    <div class="title__nameCategory">
+                      Eletrônicos e celulalres
+                    </div>
+                  </li>
+    
+                  <li>
+                    <img src="./assets/imagesAside/cracha.png" alt="" width="40" height="40"/>
+                    <div class="title__nameCategory">
+                      Vagas de emprego
+                    </div>
+                  </li>
+    
+                  <li>
+                    <img src="./assets/imagesAside/cabide.png" alt="" width="40" height="40"/>
+                    <div class="title__nameCategory">
+                      Moda e beleza
+                    </div>
+                  </li>
+                  
+                  <li>
+                    <img src="./assets/imagesAside/bola.png" alt="" width="40" height="40"/>
+                    <div class="title__nameCategory">
+                      Esportes e lazer
+                    </div>
+                  </li>
+    
+                  <li>
+                    <img src="./assets/imagesAside/comercio.png" alt="" width="40" height="40"/>
+                    <div class="title__nameCategory">
+                      serviços
+                    </div>
+                  </li>
+                  
+                  <li>
+                    <img src="./assets/imagesAside/carrinhobebe.png" alt="" width="40" height="40"/>
+                    <div class="title__nameCategory">
+                      Artigos infantis
+                    </div>
+                  </li>
+                  
+                  <li>
+                    <img src="./assets/imagesAside/pata.png" alt="" width="40" height="40"/>
+                    <div class="title__nameCategory">
+                      Animais de estimação
+                    </div>
+                  </li>
+    
+                  <li>
+                    <img src="./assets/imagesAside/carroRoof.png" alt="" width="40" height="40"/>
+                    <div class="title__nameCategory">
+                      Agro e Indústria 
+                    </div>
+                  </li>          
+                </ul>
+
+            </div>
+
+            <div class="main__allRestContent">
+              <div class="invest-block data__Publication-block">
+                <h3 class="primary__buget-element">Quero investir em</h3>
+    
+                <div class="block__radius justifyContentBetween flexWrap">
+                  <div class="radius__block">
+                    <input type="radio" name="sizes" id="todas" checked/>
+                    <label for="todas">Todas</label>
+                  </div>
+        
+                  <div class="radius__block">
+                    <input type="radio" name="sizes" id="pessoaF" />
+                    <label for="pessoaF">Pessoa Física</label>
+                  </div>
+    
+                </div>
+              </div>
+    
+              <div class="data__time-block data__time invest-block data__Publication-block">
+                <h3 class="primary__buget-element">Em quanto tempo?</h3>
+                        <p class="label__text-element label__text-element--size">emprestimos sem garantia possui taxas de juros altas chegando até 30% do mês</p>
+        
+        
+                        <div class="select-block">
+        
+                          <select>
+                            <option value>Todos</option>
+                            <option>teste1</option>
+                            <option>teste2</option>
+                            <option>teste3</option>
+                            <option>teste4</option>
+                            <option>teste5</option>
+                          </select>
+        
+                          <div class="right"></div>
+                        </div>
+        
+              </div>
+        
+              <div class="data__portion-block invest-block data__Publication-block">
+                        <h3 class="primary__buget-element">Em quantas parcelas?</h3>
+                        <p class="label__text-element label__text-element--size">marque o parcelamento que você deseja emprestar lembrando quando o menor parcelamento menor será o rendimento</p>
+        
+        
+                        <div class="select-block">
+        
+                          <select>
+                            <option value>Todos</option>
+                            <option>teste1</option>
+                            <option>teste2</option>
+                            <option>teste3</option>
+                            <option>teste4</option>
+                            <option>teste5</option>
+                          </select>
+        
+                          <div class="right"></div>
+                        </div>
+        
+              </div>
+            
+              <div class="data__localization-block  data__Publication-block">
+                        <h3 class="primary__buget-element">Localização?</h3>
+        
+                        <div class="select-block">
+        
+                          <select>
+                            <option value>Todos os estados brasileiros</option>
+                            <option>teste1</option>
+                            <option>teste2</option>
+                            <option>teste3</option>
+                            <option>teste4</option>
+                            <option>teste5</option>
+                          </select>
+        
+                          <div class="right"></div>
+                        </div>
+        
+                        <div class="select-block">
+        
+                          <select>
+                            <option value>Todas cidades e municipios</option>
+                            <option>teste1</option>
+                            <option>teste2</option>
+                            <option>teste3</option>
+                            <option>teste4</option>
+                            <option>teste5</option>
+                          </select>
+        
+                          <div class="right"></div>
+                        </div>
+        
+              </div>
+    
+              <div class="reputation-block">
+                        <h3 class="primary__buget-element--black">Reputação</h3>
+                        <div class="reputation__filter-block">
+                          <div class="reputatation__stars-block">
+                            <input type="radio" name="stars" id="stars5" checked/>
+                            
+                            <label class="reputation__stars-block" for="stars5">
+                              5
+                              <img src="./assets/imagesAside/star.png" alt="start" width="20" height="20"/>
+                              <img src="./assets/imagesAside/star.png" alt="start" width="20" height="20"/>
+                              <img src="./assets/imagesAside/star.png" alt="start" width="20" height="20"/>
+                              <img src="./assets/imagesAside/star.png" alt="start" width="20" height="20"/>
+                              <img src="./assets/imagesAside/star.png" alt="start" width="20" height="20"/>
+                            </label>
+        
+                          </div>
+          
+                          <div class="reputatation__stars-block">
+                            <input type="radio" name="stars" id="stars4"/>
+        
+                            <label class="reputation__stars-block" for="stars4">
+                              4
+                              <img src="./assets/imagesAside/star.png" alt="start" width="20" height="20"/>
+                              <img src="./assets/imagesAside/star.png" alt="start" width="20" height="20"/>
+                              <img src="./assets/imagesAside/star.png" alt="start" width="20" height="20"/>
+                              <img src="./assets/imagesAside/star.png" alt="start" width="20" height="20"/>
+                              <img src="./assets/imagesAside/starOpacity.png" alt="starOpacity" width="20" height="20" />
+                            </label>
+                          </div>
+                        
+                          <div class="reputatation__stars-block">
+                            <input type="radio" name="stars" id="stars3"/>
+                            <label class="reputation__stars-block" for="stars3">
+                              3
+                              <img src="./assets/imagesAside/star.png" alt="start" width="20" height="20"/>
+                              <img src="./assets/imagesAside/star.png" alt="start" width="20" height="20"/>
+                              <img src="./assets/imagesAside/star.png" alt="start" width="20" height="20"/>
+                              <img src="./assets/imagesAside/starOpacity.png" alt="starOpacity" width="20" height="20" />
+                              <img src="./assets/imagesAside/starOpacity.png" alt="starOpacity" width="20" height="20" />
+                            </label>
+                          </div>
+                        </div>
+        
+              </div>
+        
+              <div class="invest-secondary-block data__Publication-block">
+                <h3 class="primary__buget-element">Forma</h3>
+                <div class="block__radius block__radius--wrap justifyContentBetween flexWrap">
+                  <div class="radius__blocks">
+                    <input type="radio" name="invest__secondary" id="invest__propost--todas" />
+                    <label for="invest__propost--todas">A vista</label>
+                  </div>
+        
+                  <div class="radius__blocks">
+                    <input type="radio" name="invest__secondary" id="invest__propost--0-10" />
+                    <label for="invest__propost--0-10">parcelamento</label>
+                  </div>
+        
+                </div>
+              </div>    
+        
+        
+              <div class="invest-tertiary-block data__Publication-block">
+                        <h3 class="primary__buget-element">Usuário certificados</h3>
+                        <p class="label__text-element">usuarios certificados são aqueles que comprovaram documentos exigidos pela NellBux</p>
+                        <div class="block__radius-size flexWrap">
+        
+                          <div class="radius__blocks--primary">
+                            <input type="radio" name="invest__secondarys" id="invest__allUser-element" checked/>
+                            <label for="invest__allUser-element">Todaos os usuarios</label>
+                          </div>
+        
+                          <div class="radius__blocks--primary">
+                            <input type="radio" name="invest__secondarys" id="invest__allCertificate-element" />
+                            <label for="invest__allCertificate-element">Somente usuarios certificados</label>
+                          </div>
+        
+        
+                        </div>
+              </div>
+
+            </div>
+  
+            <button class="button button--orange">Salvar busca</button>
+
+          </div>
+
+        </div>
+      </aside>
+
+      <section>
+        <div class="section__productsMain">
+          <div class="filter__productsMain">
+            <div class="filter__productsNames">
+              <ul class="ul__filterProduct alignItemsCenter">
+                <li>Brasil</li>
+                <li class="add__imageFilter">
+                  <img src="./assets/add.png" class="active__imagePrimary"alt="" width="15" height="15"/>
+                  <img src="./assets/menos.png" class="active__imageSecondary" alt="" width="15" height="15"/>
+                </li>
+              </ul>
+              <div class="border__filterProducts justifyContentBetween">
+                <ul>
+                  <li>Acre,
+                    <span>26.402</span>
+                  </li>
+                  <li>Alagoas,
+                    <span>128.764</span>
+                  </li>
+                  <li>Amapá,
+                    <span>26.125</span>
+                  </li>
+                  <li>Amazonas,
+                    <span>678.178</span>
+                  </li>
+                  <li>Bahia,
+                    <span>508.883</span>
+                  </li>
+                  <li>Ceará ,
+                    <span>422.507</span>
+                  </li>
+                  <li>Distrito Federal,
+                    <span>669.000</span>
+                  </li>
+                </ul>
+  
+                <ul>
+                  <li>Espírito Santo,
+                    <span>307.787</span>
+                  </li>
+                  <li>Goiás,
+                    <span>566.814</span>
+                  </li>
+                  <li>Maranhão,
+                    <span>234.629</span>
+                  </li>
+                  <li>Mato Grosso,
+                    <span>82.302</span>
+                  </li>
+                  <li>Mato Grosso do Sul,
+                    <span>93.724</span>
+                  </li>
+                  <li>Minas Gerais,
+                    <span>950.543</span>
+                  </li>
+                  <li>Pará,
+                    <span>314.986</span>
+                  </li>
+                </ul>
+  
+                <ul>
+                  <li>Paraíba,
+                    <span>181.622</span>
+                  </li>
+                  <li>Paraná,
+                    <span>803.186</span>
+                  </li>
+                  <li>Pernambuco,
+                    <span>411.973</span>
+                  </li>
+                  <li>Piauí,
+                    <span>65.429</span>
+                  </li>
+                  <li>Rio de Janeiro,
+                    <span>1.246.957</span>
+                  </li>
+                  <li>Rio Grande do Norte,
+                    <span>117.8</span>
+                  </li>
+                  <li>Rio Grande do Sul,
+                    <span>632.876</span>
+                  </li>
+                </ul>
+  
+                <ul>
+                  <li>Rondônia,
+                    <span>56.834</span>
+                  </li>
+                  <li>Roraima,
+                    <span>105.212</span>
+                  </li>
+                  <li>Santa Catarina,
+                    <span>26.402</span>
+                  </li>
+                  <li>São Paulo,
+                    <span>4.896.250</span>
+                  </li>
+                  <li>Sergipe,
+                    <span>210.423</span>
+                  </li>
+                  <li>Tocantins,
+                    <span>35.532</span>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+            
+            <p class="title__resultCountry">1 - 50 de 14.287.520 resultados</p>
+            <h2 class="title__offersBrazil">Ofertas no Brasil</h2>
+          </div>
+  
+          <section class="featured__category">
+  
+            <div class="titles__featuredCategory justifyContentBetween alignItemsCenter">
+              <h3 class="title__featuredCategory">Destaque nessa categoria</h3>
+              <a href="" class="title__hrefAnnouncement">Colocar anúncio aqui</a>
+            </div>
+  
+          <div class="swiper swiper-initialized swiper-horizontal swiperDesktop swiper-backface-hidden">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper" id="swiper-wrapper-aa710584fb43329e8" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">
+                  <!-- Slides -->
+                  <div class="swiper-slide   swiper-slide-active" style="width: 600px;" role="group" aria-label="1 / 3" data-swiper-slide-index="0">
+                    <div class="card__itemProduct">
+                          <div class="background__itemProduct justifyContentCenter">
+                            <img src="./assets/carro.webp" alt="" height="100%" width="58%">
+                          </div>
+                          <h4 class="title__nameProduct">Sucata voyage 1.6 2012</h4>
+                    </div>
+                    <div class="card__itemProduct">
+                          <div class="background__itemProduct justifyContentCenter">
+                            <img src="./assets/iphone.webp" alt="" height="100%" width="58%">
+                          </div>
+                          <h4 class="title__nameProduct">iPhone 11 64GB RED</h4>
+                          <h5 class="title__moneyAmount">R$ 2.650</h5>
+                    </div>
+                    <div class="card__itemProduct">
+                          <div class="background__itemProduct justifyContentCenter">
+                            <img src="./assets/drone.jpg" alt="" height="100%" width="58%">
+                          </div>
+                          <h4 class="title__nameProduct">Drone DJI AIR 2s Fly More (5 baterias)</h4>
+                          <h5 class="title__moneyAmount">R$ 7.500</h5>              
+                        </div>
+                  </div>
+
+                  <div class="swiper-slide   swiper-slide-active" style="width: 600px;" role="group" aria-label="1 / 3" data-swiper-slide-index="0">
+                    <div class="card__itemProduct">
+                          <div class="background__itemProduct justifyContentCenter">
+                            <img src="./assets/carro.webp" alt="" height="100%" width="58%">
+                          </div>
+                          <h4 class="title__nameProduct">Sucata voyage 1.6 2012</h4>
+                    </div>
+                    <div class="card__itemProduct">
+                          <div class="background__itemProduct justifyContentCenter">
+                            <img src="./assets/iphone.webp" alt="" height="100%" width="58%">
+                          </div>
+                          <h4 class="title__nameProduct">iPhone 11 64GB RED</h4>
+                          <h5 class="title__moneyAmount">R$ 2.650</h5>
+                    </div>
+                    <div class="card__itemProduct">
+                          <div class="background__itemProduct justifyContentCenter">
+                            <img src="./assets/drone.jpg" alt="" height="100%" width="58%">
+                          </div>
+                          <h4 class="title__nameProduct">Drone DJI AIR 2s Fly More (5 baterias)</h4>
+                          <h5 class="title__moneyAmount">R$ 7.500</h5>              
+                        </div>
+                  </div>
+
+                  <div class="swiper-slide   swiper-slide-active" style="width: 600px;" role="group" aria-label="1 / 3" data-swiper-slide-index="0">
+                    <div class="card__itemProduct">
+                          <div class="background__itemProduct justifyContentCenter">
+                            <img src="./assets/carro.webp" alt="" height="100%" width="58%">
+                          </div>
+                          <h4 class="title__nameProduct">Sucata voyage 1.6 2012</h4>
+                    </div>
+                    <div class="card__itemProduct">
+                          <div class="background__itemProduct justifyContentCenter">
+                            <img src="./assets/iphone.webp" alt="" height="100%" width="58%">
+                          </div>
+                          <h4 class="title__nameProduct">iPhone 11 64GB RED</h4>
+                          <h5 class="title__moneyAmount">R$ 2.650</h5>
+                    </div>
+                    <div class="card__itemProduct">
+                          <div class="background__itemProduct justifyContentCenter">
+                            <img src="./assets/drone.jpg" alt="" height="100%" width="58%">
+                          </div>
+                          <h4 class="title__nameProduct">Drone DJI AIR 2s Fly More (5 baterias)</h4>
+                          <h5 class="title__moneyAmount">R$ 7.500</h5>              
+                        </div>
+                  </div>
+                  ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" aria-current="true"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-aa710584fb43329e8"></div>
+                <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-aa710584fb43329e8"></div>
+
+                <!-- If we need scrollbar -->
+          
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+          </div>
+        
+          <div class="swiper swiper-initialized swiperMobile swiper-horizontal swiper-backface-hidden">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper" id="swiper-wrapper-aa710584fb43329e8" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">
+                  <!-- Slides -->
+                  <div class="swiper-slide justifyContentCenter swiper-slide-active" style="width: 600px;" role="group" aria-label="1 / 3" data-swiper-slide-index="0">
+                    <div class="card__itemProduct card__itemProductMobile">
+                          <div class="background__itemProduct justifyContentCenter">
+                            <img src="./assets/carro.webp" alt="" height="100%" width="58%">
+                          </div>
+                          <h4 class="title__nameProduct">Sucata voyage 1.6 2012</h4>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide justifyContentCenter swiper-slide-active" style="width: 600px;" role="group" aria-label="1 / 3" data-swiper-slide-index="0">
+                    <div class="card__itemProduct card__itemProductMobile">
+                          <div class="background__itemProduct justifyContentCenter">
+                            <img src="./assets/iphone.webp" alt="" height="100%" width="58%">
+                          </div>
+                          <h4 class="title__nameProduct">iPhone 11 64GB RED</h4>
+                          <h5 class="title__moneyAmount">R$ 2.650</h5>
+                    </div>
+
+                  </div>
+
+                  <div class="swiper-slide justifyContentCenter  swiper-slide-active" style="width: 600px;" role="group" aria-label="1 / 3" data-swiper-slide-index="0">
+                    <div class="card__itemProduct card__itemProductMobile">
+                          <div class="background__itemProduct justifyContentCenter">
+                            <img src="./assets/drone.jpg" alt="" height="100%" width="58%">
+                          </div>
+                          <h4 class="title__nameProduct">Drone DJI AIR 2s Fly More (5 baterias)</h4>
+                          <h5 class="title__moneyAmount">R$ 7.500</h5>              
+                        </div>
+                  </div>
+                  ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" aria-current="true"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-aa710584fb43329e8"></div>
+                <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-aa710584fb43329e8"></div>
+
+                <!-- If we need scrollbar -->
+          
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+          </div>
+
+          </section>
+  
+          <section class="section__filterChoose justifyContentBetween alignItemsCenter">
+  
+            <div class="filter__typeItem">
+              <h4 class="title__nameFilter">Tipos de anúncio</h4>
+              <div class="select alignItemsCenter">
+                <select>
+                  <option value>Todos os anúncios</option>
+                  <option>teste 1</option>
+                  <option>teste 2</option>
+                  <option>teste 3</option>
+                  <option>teste 4</option>
+                  <option>teste 5</option>
+                </select>
+                <img src="./assets/setaBaixo.png" alt="" width="15" height="15"/>
+              </div>
+            </div>
+  
+            <div class="filter__typeItem">
+              <h4 class="title__nameFilter">Ordenar por</h4>
+              <div class="select alignItemsCenter">
+                <select>
+                  <option value>Mais Relevantes</option>
+                  <option>teste 1</option>
+                  <option>teste 2</option>
+                  <option>teste 3</option>
+                  <option>teste 4</option>
+                  <option>teste 5</option>
+                </select>
+                <img src="./assets/setaBaixo.png" alt="" width="15" height="15"/>
+              </div>
+            </div>
+  
+          </section>
+  
+          <section class="section__itemProduct">
+            <div class="card__itemProductProposal justifyContentBetween">
+              <div class="background__photo justifyContentCenter">
+                <img src="./assets/espreguicadeira.jpg" alt="" height="100%" width="55%"/>
+                
+                <div class="full__view alignItemsCenter">
+                  <img src="./assets/camera.png" alt="" width="20" height="20"/>
+                  <span class="title__valueView">5</span>
+                </div>
+              </div>
+  
+              <div class="information__proposalProduct flexDirectionColumn justifyContentBetween">
+                <div class="information__makeProposal justifyContentBetween">
+                  <div class="titles__information alignItemsStart flexDirectionColumn">
+                    <h3 class="title__nameProduct">Espreguiçadeira inflavel</h3>
+                    <p class="location__product">Rio de Janeiro - RJ</p>
+                    <div class="emphasis justifyContentCenter alignItemsCenter">
+                      <img src="./assets/estrela.png" alt="" width="20" height="20"/>
+                      DESTACADO
+                    </div>
+                  </div>
+  
+                  <div class="Info__makeProposal">
+                    <button class="button__makeProposal">Fazer uma proposta</button>
+                    <div class="info__valueProposal justifyContentBetween">
+  
+                      <div class="info__moneyProposal">
+                        <h3 class="title__valuePrice">R$ 20</h3>
+                        <p class="price__inInstallments">2x de R$ 10,00</p>
+                      </div>
+  
+                      <div class="icons__proposal">
+                        <img src="./assets/info.png" alt="" width="30" height="30"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" class="heart__red" viewBox="0 96 960 960" width="48"><path d="m480 935-41-37q-106-97-175-167.5t-110-126Q113 549 96.5 504T80 413q0-90 60.5-150.5T290 202q57 0 105.5 27t84.5 78q42-54 89-79.5T670 202q89 0 149.5 60.5T880 413q0 46-16.5 91T806 604.5q-41 55.5-110 126T521 898l-41 37Z"/></svg>
+                        <div class="card__aboutNameProject">
+                          <div class="titles__nameProject justifyContentBetween alignItemsCenter">
+                            <h3 class="title__nameItem">Você ganhou R$0,00001 por favoritar essa oferta.</h3>
+                            <img src="./assets/exit.png" alt="" class="exit__cardAboutNameProject" width="20" height="20"/>
+                          </div>
+                        </div>
+                      </div>
+  
+                    </div>
+                  </div>
+                </div>
+  
+                <ul class="ul__perfil alignItemsCenter">
+                  <li>
+                    <img src="./assets/avatar.png" alt="" width="40" height="40"/>
+                    <div class="Titlename__perfil">P.P</div>
+                  </li>
+                  <li>
+                    <img src="./assets/star.png" alt="" width="25" height="25"/>
+                    <img src="./assets/star.png" alt="" width="25" height="25"/>
+                    <img src="./assets/star.png" alt="" width="25" height="25"/>
+                    <img src="./assets/star.png" alt="" width="25" height="25"/>
+                    <img src="./assets/estrelameia.png" alt="" width="25" height="25"/>
+                    <div class="title__assessment">4.58 / 5</div>
+                  </li>
+                  <li>
+                    <img src="./assets/brasil.png" alt="" width="25" height="25"/>
+                    <div class="title__typeCountry">Brasil</div>
+                  </li>
+                  <li>Ontem, 02:57</li>
+                </ul>
+
+                <div class="ul_perfil--mobile alignItemsStart">
+                  <img src="./assets/avatar.png" alt="" width="40" height="40"/>
+                  <div class="images__listPerfilMobile ">
+                    <ul class="ul__perfilMobile alignItemsCenter">
+                      <li>
+                        <div class="Titlename__perfil">P.P</div>
+                      </li>
+                      <li>
+                        <img src="./assets/brasil.png" alt="" width="25" height="25"/>
+                        <div class="title__typeCountry">Brasil</div>
+                      </li>
+                    </ul>
+  
+                    <ul class="ul__perfilMobile">
+                      <li>
+                      <img src="./assets/star.png" alt="" width="25" height="25"/>
+                      <img src="./assets/star.png" alt="" width="25" height="25"/>
+                      <img src="./assets/star.png" alt="" width="25" height="25"/>
+                      <img src="./assets/star.png" alt="" width="25" height="25"/>
+                      <img src="./assets/estrelameia.png" alt="" width="25" height="25"/>
+                      <div class="title__assessment">4.58 / 5</div>
+                      </li>
+                    </ul>
+  
+                    <ul class="ul__perfilMobile">
+                      <li>Ontem, 02:57</li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            
+            <div class="card__itemProductProposal justifyContentBetween">
+              <div class="background__photo justifyContentCenter">
+                <img src="./assets/dvd.jpg" alt="" height="100%" width="55%"/>
+                
+                <div class="full__view alignItemsCenter">
+                  <img src="./assets/camera.png" alt="" width="20" height="20"/>
+                  <span class="title__valueView">5</span>
+                </div>
+              </div>
+  
+              <div class="information__proposalProduct flexDirectionColumn justifyContentBetween">
+                <div class="information__makeProposal justifyContentBetween">
+                  <div class="titles__information alignItemsStart flexDirectionColumn">
+                    <h3 class="title__nameProduct">DVD: Língua Portuguesa.<br>
+                    Ensino Fundamental. DV... 
+                    </h3>
+                    <p class="location__product">Boa Vista - RR</p>
+                    <ul class="ul__cardTypes">
+                      <li>
+                        <img src="./assets/escudo.png" alt="" width="25" height="25"/>
+                        Compra Segura
+                      </li>
+  
+                      <li>
+                        <img src="./assets/cartao.png" alt="" width="25" height="25"/>
+                        Parcelamento sem juros
+                      </li>
+  
+                      <div class="card__Right alignItemsCenter">
+                        <li>
+                          <img src="./assets/porcentagem.png" alt="" width="25" height="25"/>
+                          Desconto no frete
+                        </li>
+                        <li>
+                          <img src="./assets/transito.png" alt="" width="25" height="25"/>
+                          Delivery
+                        </li>
+                      </div>
+                    </ul>
+                  </div>
+  
+                  <div class="Info__makeProposal">
+                    <button class="button__makeProposal">Fazer uma proposta</button>
+                    <div class="info__valueProposal justifyContentBetween">
+  
+                      <div class="info__moneyProposal">
+                        <h3 class="title__valuePrice">R$ 20</h3>
+                        <p class="price__inInstallments">2x de R$ 10,00</p>
+                      </div>
+  
+                      <div class="icons__proposal">
+                        <img src="./assets/info.png" alt="" width="30" height="30"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" class="heart__red" viewBox="0 96 960 960" width="48"><path d="m480 935-41-37q-106-97-175-167.5t-110-126Q113 549 96.5 504T80 413q0-90 60.5-150.5T290 202q57 0 105.5 27t84.5 78q42-54 89-79.5T670 202q89 0 149.5 60.5T880 413q0 46-16.5 91T806 604.5q-41 55.5-110 126T521 898l-41 37Z"/></svg>
+                        <div class="card__aboutNameProject">
+                          <div class="titles__nameProject justifyContentBetween alignItemsCenter">
+                            <h3 class="title__nameItem">Você ganhou R$0,00001 por favoritar essa oferta.</h3>
+                            <img src="./assets/exit.png" alt="" class="exit__cardAboutNameProject" width="20" height="20"/>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <ul class="ul__perfil alignItemsCenter">
+                  <li>
+                    <img src="./assets/avatar.png" alt="" width="40" height="40"/>
+                    <div class="Titlename__perfil">P.P</div>
+                  </li>
+  
+                  <li>
+                    <img src="./assets/star.png" alt="" width="25" height="25"/>
+                    <img src="./assets/star.png" alt="" width="25" height="25"/>
+                    <img src="./assets/star.png" alt="" width="25" height="25"/>
+                    <img src="./assets/star.png" alt="" width="25" height="25"/>
+                    <img src="./assets/estrelameia.png" alt="" width="25" height="25"/>
+                    <div class="title__assessment">4.58 / 5</div>
+                  </li>
+  
+                  <li>
+                    <img src="./assets/brasil.png" alt="" width="25" height="25"/>
+                    <div class="title__typeCountry">Brasil</div>
+                  </li>
+  
+                  <li>Ontem, 02:57</li>
+                </ul>
+                
+                <div class="ul_perfil--mobile alignItemsStart">
+                  <img src="./assets/avatar.png" alt="" width="40" height="40"/>
+                  <div class="images__listPerfilMobile ">
+                    <ul class="ul__perfilMobile alignItemsCenter">
+                      <li>
+                        <div class="Titlename__perfil">P.P</div>
+                      </li>
+                      <li>
+                        <img src="./assets/brasil.png" alt="" width="25" height="25"/>
+                        <div class="title__typeCountry">Brasil</div>
+                      </li>
+                    </ul>
+  
+                    <ul class="ul__perfilMobile">
+                      <li>
+                      <img src="./assets/star.png" alt="" width="25" height="25"/>
+                      <img src="./assets/star.png" alt="" width="25" height="25"/>
+                      <img src="./assets/star.png" alt="" width="25" height="25"/>
+                      <img src="./assets/star.png" alt="" width="25" height="25"/>
+                      <img src="./assets/estrelameia.png" alt="" width="25" height="25"/>
+                      <div class="title__assessment">4.58 / 5</div>
+                      </li>
+                    </ul>
+  
+                    <ul class="ul__perfilMobile">
+                      <li>Ontem, 02:57</li>
+                    </ul>
+                  </div>
+                </div>                
+              </div>
+            </div>
+  
+            <div class="card__itemProductProposal justifyContentBetween">
+              <div class="background__photo justifyContentCenter">
+                <img src="./assets/espreguicadeira.jpg" alt="" height="100%" width="55%"/>
+                
+                <div class="full__view alignItemsCenter">
+                  <img src="./assets/camera.png" alt="" width="20" height="20"/>
+                  <span class="title__valueView">5</span>
+                </div>
+              </div>
+  
+              <div class="information__proposalProduct flexDirectionColumn justifyContentBetween">
+                <div class="information__makeProposal justifyContentBetween">
+                  <div class="titles__information alignItemsStart flexDirectionColumn">
+                    <h3 class="title__nameProduct">Espreguiçadeira inflavel</h3>
+                    <p class="location__product">Rio de Janeiro - RJ</p>
+                    <div class="emphasis justifyContentCenter alignItemsCenter">
+                      <img src="./assets/estrela.png" alt="" width="20" height="20"/>
+                      DESTACADO
+                    </div>
+                  </div>
+  
+                  <div class="Info__makeProposal">
+                    <button class="button__makeProposal">Fazer uma proposta</button>
+                    <div class="info__valueProposal justifyContentBetween">
+  
+                      <div class="info__moneyProposal">
+                        <h3 class="title__valuePrice">R$ 20</h3>
+                        <p class="price__inInstallments">2x de R$ 10,00</p>
+                      </div>
+  
+                      <div class="icons__proposal">
+                        <img src="./assets/info.png" alt="" width="30" height="30"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" class="heart__red" viewBox="0 96 960 960" width="48"><path d="m480 935-41-37q-106-97-175-167.5t-110-126Q113 549 96.5 504T80 413q0-90 60.5-150.5T290 202q57 0 105.5 27t84.5 78q42-54 89-79.5T670 202q89 0 149.5 60.5T880 413q0 46-16.5 91T806 604.5q-41 55.5-110 126T521 898l-41 37Z"/></svg>
+                        <div class="card__aboutNameProject">
+                          <div class="titles__nameProject justifyContentBetween alignItemsCenter">
+                            <h3 class="title__nameItem">Você ganhou R$0,00001 por favoritar essa oferta.</h3>
+                            <img src="./assets/exit.png" alt="" class="exit__cardAboutNameProject" width="20" height="20"/>
+                          </div>
+                        </div>
+                      </div>
+  
+                    </div>
+                  </div>swiper
+                </div>
+  
+                <ul class="ul__perfil alignItemsCenter">
+                  <li>
+                    <img src="./assets/avatar.png" alt="" width="40" height="40"/>
+                    <div class="Titlename__perfil">P.P</div>
+                  </li>
+  
+                  <li>
+                    <img src="./assets/star.png" alt="" width="25" height="25"/>
+                    <img src="./assets/star.png" alt="" width="25" height="25"/>
+                    <img src="./assets/star.png" alt="" width="25" height="25"/>
+                    <img src="./assets/star.png" alt="" width="25" height="25"/>
+                    <img src="./assets/estrelameia.png" alt="" width="25" height="25"/>
+                    <div class="title__assessment">4.58 / 5</div>
+                  </li>
+  
+                  <li>
+                    <img src="./assets/brasil.png" alt="" width="25" height="25"/>
+                    <div class="title__typeCountry">Brasil</div>
+                  </li>
+  
+                  <li>Ontem, 02:57</li>
+                </ul>
+
+                <div class="ul_perfil--mobile alignItemsStart">
+                  <img src="./assets/avatar.png" alt="" width="40" height="40"/>
+                  <div class="images__listPerfilMobile ">
+                    <ul class="ul__perfilMobile alignItemsCenter">
+                      <li>
+                        <div class="Titlename__perfil">P.P</div>
+                      </li>
+                      <li>
+                        <img src="./assets/brasil.png" alt="" width="25" height="25"/>
+                        <div class="title__typeCountry">Brasil</div>
+                      </li>
+                    </ul>
+  
+                    <ul class="ul__perfilMobile">
+                      <li>
+                      <img src="./assets/star.png" alt="" width="25" height="25"/>
+                      <img src="./assets/star.png" alt="" width="25" height="25"/>
+                      <img src="./assets/star.png" alt="" width="25" height="25"/>
+                      <img src="./assets/star.png" alt="" width="25" height="25"/>
+                      <img src="./assets/estrelameia.png" alt="" width="25" height="25"/>
+                      <div class="title__assessment">4.58 / 5</div>
+                      </li>
+                    </ul>
+  
+                    <ul class="ul__perfilMobile">
+                      <li>Ontem, 02:57</li>
+                    </ul>
+                  </div>
+                </div>                
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <ul class="ul__listProx flexWrap">
+          <li>
+            <a href="#">
+              <img src="./assets/voltar.png" alt="" width="30" height="30">
+              Anterior
+            </a>
+          </li>
+          <li class="active__pageProx">
+            <a href="#">1</a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li>
+            <a href="#">4</a>
+          </li>
+          <li>
+            <a href="#">5</a>
+          </li>
+          <li>
+            <a href="#">...</a>
+          </li>
+          <li>
+            <a href="#">312</a>
+          </li>
+          <li>
+            <a href="#">
+              Próxima
+              <img src="./assets/prox.png" alt="" width="30" height="30">
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <!-- main -->
+
+  <!-- jQuery Modal -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+    />
+    
+    <div id="pesquisa-modal" class="modal">
+      <div class="modal-header">
+        <span class="material-icons">search</span>
+      </div>
+      <div class="modal-body">
+        <input
+          type="text"
+          name="campo-pesquisa-modal"
+          id="campo-pesquisa-modal"
+          value=""
+          placeholder="O que você está procurando?"
+        />
+      </div>
+      <div class="modal-buttons">
+        <a href="#" rel="modal:close" class="botao-modal">Sair</a>
+      </div>
+    </div>
+
+    <div id="notificacoes-modal" class="modal">
+      <div class="modal-header">
+        <span class="material-icons">notifications</span>
+      </div>
+      <div class="modal-body">
+        <div class="lista">
+          <div class="item-notificacao">
+            <div class="mensagem">
+              <div class="titulo">Rejeitamos seu projeto</div>
+              <div class="descricao">Em criar plataforma para reclamação</div>
+            </div>
+            <div class="icone">
+              <span class="material-icons">delete</span>
+            </div>
+          </div>
+
+          <div class="item-notificacao">
+            <div class="mensagem">
+              <div class="titulo">Rejeitamos seu projeto</div>
+              <div class="descricao">Em criar plataforma para reclamação</div>
+            </div>
+            <div class="icone">
+              <span class="material-icons">delete</span>
+            </div>
+          </div>
+
+          <div class="item-notificacao">
+            <div class="mensagem">
+              <div class="titulo">Rejeitamos seu projeto</div>
+              <div class="descricao">Em criar plataforma para reclamação</div>
+            </div>
+            <div class="icone">
+              <span class="material-icons">delete</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-buttons">
+        <a href="#" rel="modal:close" class="botao-modal margin-right5"
+          >Ver todos</a
+        >
+        <a href="#" rel="modal:close" class="botao-modal">Sair</a>
+      </div>
+    </div>
+
+    <div id="mensagens-modal" class="modal">
+      <div class="modal-header">
+        <span class="material-icons">sms</span>
+      </div>
+      <div class="modal-body">
+        <div class="lista">
+          <div class="item-mensagem">
+            <div class="avatar"></div>
+            <div class="mensagem">
+              <div class="titulo">Rejeitamos seu projeto</div>
+              <div class="descricao">Em criar plataforma para reclamação</div>
+            </div>
+            <div class="icone">
+              <span class="material-icons">delete</span>
+            </div>
+          </div>
+
+          <div class="item-mensagem">
+            <div class="avatar"></div>
+            <div class="mensagem">
+              <div class="titulo">Rejeitamos seu projeto</div>
+              <div class="descricao">Em criar plataforma para reclamação</div>
+            </div>
+            <div class="icone">
+              <span class="material-icons">delete</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-buttons">
+        <a href="#" rel="modal:close" class="botao-modal margin-right5"
+          >Ver todos</a
+        >
+        <a href="#" rel="modal:close" class="botao-modal">Sair</a>
+      </div>
+    </div>
+
+    <div id="usuario-modal" class="modal">
+      <div class="modal-header">
+        <div id="logo-tb" class="menu-usuario">TB</div>
+      </div>
+      <div class="modal-body">
+        <div id="box-menu-usuario-modal">
+          <div class="dados">
+            Olá <span class="font-bold">Marcos</span>, seja Bem-Vindo.
+          </div>
+
+          <div class="dados">
+            <ul>
+              <li><a href="#">Configurações da Conta</a></li>
+              <li><a href="#">Meu Perfil</a></li>
+              <li><a href="#">Rank do Dia</a></li>
+            </ul>
+          </div>
+
+          <div class="dados">
+            <div class="header">Ofertas e Pedidos</div>
+
+            <ul>
+              <li><a href="#">Abrir Uma Oferta de Investimento</a></li>
+              <li><a href="#">Encontrar Pedidos</a></li>
+              <li><a href="#">Abrir um Pedido de Crédito</a></li>
+            </ul>
+          </div>
+
+          <div class="dados">
+            <div class="header">Informações da Conta</div>
+
+            <ul>
+              <li><a href="#">Lista de Indicativos</a></li>
+              <li><a href="#">Lista de Seguidores</a></li>
+              <li><a href="#">Histórico de Conta</a></li>
+              <li><a href="#">Faça uma Pergunta</a></li>
+              <li><a href="#">Minhas Apostas</a></li>
+            </ul>
+          </div>
+
+          <div class="dados">
+            <div class="header">Informações da Conta</div>
+
+            <ul>
+              <li>Conta NellBux</li>
+              <li>Meu Usuário</li>
+              <li>1211451-1</li>
+              <li>@eduardoon</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="modal-buttons">
+        <a href="#" rel="modal:close" class="botao-modal">Sair</a>
+      </div>
+    </div>
+
+    <script src="./script/menu-mobile.js"></script>
+    <script src="./script/GlobalTelaFrame11.js"></script>
+    <script src="./script/openModalsHeader.js"></script>
+
+    <script>
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+      });
+    </script>
+</body>
+</html>

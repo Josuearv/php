@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style/cssStyleModal/estilo.css" />
+    <link rel="stylesheet" href="./style/flex.css" />
+    <link rel="stylesheet" href="./style/header.css" />
+    <link rel="stylesheet" href="./style/globalStyles.css" />
+    <link rel="stylesheet" href="./style/proposal.css" />
+
+    <title>Nell bux</title>
+
+    <script src="./script/jquery.js"></script>
+  </head>
+
+  <body>
+    <!-- aside -->
+    <aside id="menu-mobile" class="menu-mobile-fecado">
+      <div class="container">
+        <div id="fechar-menu-mobile">
+          <span class="material-icons">cancel</span>
+        </div>
+      </div>
+
+      <ul id="menu-principal">
+        <li><a href="#">Area Membro</a></li>
+        <li><a href="#">Meus Projetos</a></li>
+        <li><a href="#">Minhas Finanças</a></li>
+      </ul>
+
+      <div class="espaco20"></div>
+
+      <a
+        href="#pesquisa-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <span class="material-icons">search</span>
+          <div>Pesquisar</div>
+        </div>
+      </a>
+
+      <a
+        href="#notificacoes-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <span class="material-icons">notifications</span>
+          <div>Notificações</div>
+        </div>
+      </a>
+
+      <a
+        href="#mensagens-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <span class="material-icons">sms</span>
+          <div>Mensagens</div>
+        </div>
+      </a>
+
+      <a
+        href="#usuario-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <div id="logo-tb" class="menu-usuario">TB</div>
+        </div>
+      </a>
+    </aside>
+
+    <!-- header -->
+    <header class="header justifyContentCenter">
+        <div class="containerHeader__block justifyContentSpaceBetween alignItemsCenter">
+          <img
+            id="logo"
+            src="./assets/imagesHeader/logo.png"
+            alt="nell bux logo image"
+            width="120"
+            height="40"
+          />
+  
+          <nav class="nav justifyContentSpaceBetween">
+            <ul class="nav__ul justifyContentSpaceBetween">
+              <li><a href="#">area membro</a></li>
+              <li><a href="#">meus projetos</a></li>
+              <li><a href="#">minhas finanças</a></li>
+            </ul>
+  
+            <div class="search__nav justifyContentSpaceBetween alignItemsCenter">
+
+              <div class="search__container"></div>
+              <input
+                type="text"
+                placeholder="Pesquisar no nellbux"
+                name="search"
+              />
+  
+              <div class="filter__result">
+                <span id="result__filter" value="">Investidores</span>
+              </div>
+  
+              <div class="filter__Arrow-block">
+                <img
+                  class="filter__seta"
+                  src="./assets/imagesHeader/seta.png"
+                  alt="arrow that looks like a downward facing triangle"
+                  width="15px"
+                  height="15px"
+                />
+          
+                <div class="nav__filter">
+                  <ul class="filter__search">
+                  </ul>
+                </div>
+                  
+              </div>
+              <img
+                src="./assets/imagesHeader/search.png"
+                alt="lupa de pesquisa"
+                width="25px"
+                height="25px"
+              />
+  
+                        
+            </div>
+              
+          
+            </nav>
+  
+            <div class="block__Communication">
+
+
+              <li class="button__nav localizationModal openModal li__remove-list">
+
+                <a href="#notification">
+                  <span>
+                      <img
+                        
+                        src="./assets/imagesHeader/sino.png"
+                        alt="orange bell icon receive notification"
+                        width="30"
+                        height="30"
+                      />
+                  </span>
+                </a>
+
+                <div class="messageNotification flexDirectionColumn modal__active-element">
+                  
+                  <header
+                    class="header__notification header__messageModal justifyContentSpaceBetween alignItemsCenter"
+                  >
+                    <span class="text__message">Notificações</span>
+                    <span class="text__message">Ver todos</span>
+                  </header>
+                  
+                  <nav class="nav__notification flexDirectionColumn alignItemsCenter">
+                    
+                    <li class="card__notification justifyContentCenter">
+                      <div class="block__text__notification flexDirectionColumn justifyContentCenter">
+                        
+                        <a class="card__notificationt__text card__notificationt__text--weight" >
+                          Rejeitamos seu projeto
+                          <span class="card__notificationt__text card__notificationt__text--margin">Ontem</span>
+                        </a>
+
+                        <a class="notifications__about justifyContentSpaceBetween alignItemsCenter"
+                          >Em criar uma plataforma para reclamação
+                          <img
+                            src="./assets/imagesHeader/trash.png"
+                            alt="trash can"
+                            width="35"
+                            height="35"
+                          />
+                        </a>
+
+                      </div>
+                    </li>
+                               
+                    <li class="card__notification justifyContentCenter">
+                      <div class="block__text__notification flexDirectionColumn justifyContentCenter">
+                        
+                        <a class="card__notificationt__text card__notificationt__text--weight" >
+                          Rejeitamos seu projeto
+                          <span class="card__notificationt__text card__notificationt__text--margin">Ontem</span>
+                        </a>
+
+                        <a class="notifications__about justifyContentSpaceBetween alignItemsCenter"
+                          >Em criar uma plataforma para reclamação
+                          <img
+                            src="./assets/imagesHeader/trash.png"
+                            alt="trash can"
+                            width="35"
+                            height="35"
+                          />
+                        </a>
+
+                      </div>
+                    </li>
+
+                    <li class="card__notification justifyContentCenter">
+                      <div class="block__text__notification flexDirectionColumn justifyContentCenter">
+                        
+                        <a class="card__notificationt__text card__notificationt__text--weight" >
+                          Rejeitamos seu projeto
+                          <span class="card__notificationt__text card__notificationt__text--margin">Ontem</span>
+                        </a>
+
+                        <a class="notifications__about justifyContentSpaceBetween alignItemsCenter"
+                          >Em criar uma plataforma para reclamação
+                          <img
+                            src="./assets/imagesHeader/trash.png"
+                            alt="trash can"
+                            width="35"
+                            height="35"
+                          />
+                        </a>
+
+                      </div>
+                    </li>
+
+                  </nav>
+
+                </div>
+
+              </li>
+  
+              <li class="message localizationModal openModal li__remove-list">
+
+                <a href="#message">
+                  <span>
+                    <img
+                      src="./assets/imagesHeader/message.png"
+                      alt="message icon, orange color with 3 dots in the middle"
+                      width="40"
+                      height="40"
+                    />
+                  </span>
+                </a>
+
+                <div class="messageModalss flexDirectionColumn modal__active-element">
+                  <header class="header__notification header__messageModal justifyContentSpaceBetween alignItemsCenter">
+                    <span class="text__message">Mensagens</span>
+                    <span class="text__message">Ver todos</span>
+                  </header>
+                  <nav class="nav__notification alignItemsCenter flexDirectionColumn">
+                    
+                    <li class="messager__card justifyContentCenter">
+                      <img
+                        src="./assets/imagesHeader/avatar.png"
+                        alt="faceless person with border"
+                        width="40"
+                        height="40"
+                      />
+                      <div class="messager__block__text block__text__notification">
+                        <div class="text__card__mensager justifyContentSpaceBetween">
+                          <span>Repasso Franquia - Oportunidade...</span>
+                          <span id="text__new__mensager">Nova Mensagem</span>
+                        </div>
+    
+                        <span class="text__faq"
+                          >Em criar uma plataforma para reclamação
+                        </span>
+                      </div>
+
+                    </li>
+
+                    <li class="messager__card justifyContentCenter">
+                      <img
+                        src="./assets/imagesHeader/avatar.png"
+                        alt="faceless person with border"
+                        width="40"
+                        height="40"
+                      />
+                      <div class="messager__block__text block__text__notification">
+                        <div class="text__card__mensager justifyContentSpaceBetween">
+                          <span>Repasso Franquia - Oportunidade...</span>
+                          <span id="text__new__mensager">Nova Mensagem</span>
+                        </div>
+    
+                        <span class="text__faq"
+                          >Em criar uma plataforma para reclamação
+                        </span>
+                      </div>
+
+                    </li>
+
+                    <li class="messager__card justifyContentCenter">
+                      <img
+                        src="./assets/imagesHeader/avatar.png"
+                        alt="faceless person with border"
+                        width="40"
+                        height="40"
+                      />
+                      <div class="messager__block__text block__text__notification">
+                        <div class="text__card__mensager justifyContentSpaceBetween">
+                          <span>Repasso Franquia - Oportunidade...</span>
+                          <span id="text__new__mensager">Nova Mensagem</span>
+                        </div>
+    
+                        <span class="text__faq"
+                          >Em criar uma plataforma para reclamação
+                        </span>
+                      </div>
+
+                </div>
+
+              </li>
+
+              <hr id="row__separator"/>
+
+              <li class="perfil__tb-element localizationModal openModal li__remove-list">
+                <a href="#perfil">
+                  <span class="justifyContentCenter alignItemsCenter tb__perfil"> tb </span>
+                </a>
+    
+                <div class="perfil__modal justifyContentCenter alignItemsCenter modal__active-element">
+                  <div class="perfil__container">
+                    <div class="perfil__title__block">
+                      <span class="perfil__title">
+                        olá,
+                        <span class="perfil__title__bold">marcos,</span>
+                        seja bem-vindo.
+                      </span>
+                    </div>
+    
+                    <div class="account__config flexDirectionColumn justifyContentSpaceEvenly">
+                      <span class="account__title justifyContentSpaceBetween">
+                        Configurações Conta
+                        <span> Meu perfil </span>
+                      </span>
+                      <span class="account__title justifyContentSpaceBetween"> Rank do Dia </span>
+                    </div>
+    
+                    <div class="block__offers justifyContentSpaceEvenly flexDirectionColumn">
+                      <span class="title__offers__primary">Ofertas e pedidos</span>
+                      <div class="block__text__offers justifyContentSpaceBetween">
+                        <span class="block__text__offers__invest"
+                          >Abrir uma oferta de investimento</span
+                        >
+                        <span class="block__text__offers__invest"
+                          >Encontrar Pedidos</span
+                        >
+                      </div>
+                      <span
+                        class="block__text__offers__invest block__text__offers__invest--text"
+                        >Abrir um pedido de credito</span
+                      >
+                    </div>
+    
+                    <div class="block__Information__offers flexDirectionColumn justifyContentSpaceEvenly">
+                      <span class="title__offers__primary"
+                        >Informações da Conta</span
+                      >
+                      <div class="block__text__offers__account justifyContentSpaceBetween">
+                        <div class="block__text__offers__text flexDirectionColumn">
+                          <span class="block__text__offers__invest block__textListIndi-element"
+                            >Lista de Indicados</span
+                          >
+                          <span class="block__text__offers__invest"
+                            >Histórico de Conta</span
+                          >
+                        </div>
+    
+                        <div class="block__end__offers flexDirectionColumn">
+                          <span class="block__text__offers__invest"
+                            >Lista de Seguidores</span
+                          >
+                          <span class="block__text__offers__invest"
+                            >Faças uma pergunta</span
+                          >
+                        </div>
+                      </div>
+                      <span class="block__text__offers__invest"
+                        >Minhas Apostas</span
+                      >
+                    </div>
+    
+                    <div class="user__offers justifyContentSpaceBetween alignItemsCenter">
+                      <div class="block__title__user justifyContentSpaceBetween flexDirectionColumn">
+                        <span class="block__text__offers__invest"
+                          >Conta Nell bux</span
+                        >
+                        <span class="perfil__title__bold">1211451-1</span>
+                      </div>
+                      <div class="block__title__user justifyContentSpaceBetween flexDirectionColumn">
+                        <span class="block__text__offers__invest block__text__user"
+                          >Meu Usuario</span
+                        >
+                        <span class="perfil__title__bold">@eduardoon</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+            </div>
+          </nav>
+  
+          <div id="bt-abrir-menu-mobile" class="exit__menu">
+            <span class="material-icons">menu</span>
+          </div>
+          
+        </div>
+    </header>
+
+    <!-- main -->
+    <main class="main justifyContentCenter">
+      <div class="main-container">
+        <h1 class="title__searchName">Procuro Sócio Investidor para Oficina de Conversão de Veículo Elétrico</h1>
+      
+        <section class="section_navInformation">
+
+          <ul class="ul__infoNav">
+            <li class="li__activeNav">Mais informações</li>
+            <li>Convidar investidores</li>
+            <li>Projeto</li>
+          </ul>
+
+          <div class="proposal__information justifyContentSpaceBetween alignItemsStart">
+
+            <div class="proposal__informationMoney alignItemsStart">
+              
+              <div class="card__proposalInformationMoney">
+                <h3 class="title__cardProposalValue">3</h3>
+                <p class="title__nameDescription">Investidores</p>
+                <p class="title__nameSubDescription">Interessados</p>
+              </div>
+
+              <div class="card__proposalInformationMoney">
+                <h3 class="title__cardProposalValue">
+                  BRL 3,853
+                  <span class="title__subProposalValue">(25% a.m)</span>
+                </h3>
+                <p class="title__nameDescription">Ate 180 x de R$ 99,00</p>
+                <p class="title__nameSubDescription">Proposta media</p>
+              </div>
+
+            </div>
+
+            <div class="buttons__proposalInformation">
+              <button class="button__proposal button__proposal--orange">
+                <img src="./assets/mainProposal/sms.png" alt="" width="25" height="25"/>
+                Enviar mensagem para todos
+              </button>
+              <button class="button__proposal button__proposal--blue">
+                <img src="./assets/mainProposal/caderno.png" alt="" width="25" height="25"/>
+                Melhore seu projeto
+              </button>
+            </div>
+          </div>
+
+        </section>
+
+
+        <section class="section__aboutPropostInfo">
+          <div class="section__headerChoosePropost justifyContentSpaceBetween">
+            <ul class="ul__headerChoosePropost alignItemsCenter">
+              <li class="li__activeChoosePropost">Todos</li>
+              <li>Convites</li>
+            </ul>
+            <select class="select">
+              <option>Relevância</option>
+              <option>teste 1</option>
+              <option>teste 2</option>
+              <option>teste 3</option>
+              <option>teste 4</option>
+              <option>teste 5</option>
+            </select>
+          </div>
+
+          <div class="background__aboutProject">
+
+            <div class="achievements__aboutProject justifyContentSpaceBetween">
+              <ul class="ul__achievments alignItemsCenter">
+
+                <li class="li__activeStart">
+                  <span class="background__apple alignItemsCenter justifyContentCenter">
+                    <img src="./assets/cardProposal/apple.png" alt="" width="20" height="20"/>
+                  </span>
+                  <h3 class="title__nameValueApple">Américo T.</h3>
+                  <img src="./assets/cardProposal/brasil.png" alt="" width="30" height="30"/>
+                  <img src="./assets/cardProposal/flags.png" alt="" width="30" height="30"/>
+                </li>
+
+                <div class="content__imagesPerfilPeople alignItemsCenter">
+                  <li class="li__activeStart">
+                    <img src="./assets/cardProposal/trofeu.png" alt="" width="40" height="40"/>
+                    <div>
+                      <h3>Gold</h3>
+                      <p class="title__opacityAssessment">Score</p>
+                    </div>
+                  </li>
+  
+                  <li class="li__assessment flexDirectionColumn alignItemsStart justifyContentStart">
+                    <div>
+                      <img src="./assets/cardProposal/star.png" alt="" width="20" height="20"/>
+                      <img src="./assets/cardProposal/star.png" alt="" width="20" height="20"/>
+                      <img src="./assets/cardProposal/star.png" alt="" width="20" height="20"/>
+                      <img src="./assets/cardProposal/star.png" alt="" width="20" height="20"/>
+                      <img src="./assets/cardProposal/estrelameia.png" alt="" width="20" height="20"/>
+  
+                    </div>
+                    <p class="title__opacityAssessment">Avaliação</p>
+                  </li>
+  
+                  <li class="li__activeStart">
+                    <img src="./assets/cardProposal/circulo.png" alt="" width="50" height="50"/>
+                    <div>
+                      <h3>100%</h3>
+                      <p class="title__opacityAssessment">projetos bem sucedidos</p>
+                    </div>
+                  </li>
+                </div>
+
+              </ul>
+
+              <div class="menu__openAchievments alignItemsCenter">
+                <img src="./assets/cardProposal/menu.png" alt="" width="20" height="20" class="open__modalConfig"/>
+                <div class="modal__configOptionsBackground">
+                  <ul class="modal__configOptions">
+                    <li>Denunciar</li>
+                    <li>Bloquear</li>
+                  </ul>
+                  <div class="rightTriangle"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="title__clientConfiguration justifyContentSpaceBetween">
+
+              <div>
+                <p class="text__descriptionProject">
+                  Mensagem <br>
+                  <br>
+                  Olá prezados Eduardo, tudo bem?<br>
+                  Entendi o conceito geral da plataforma e estamos disposição para trabalhar em seu projeto
+                  <br>
+                  <br>
+                  Gostaria de apenas esclarecer alguns pontos, são eles:<br>
+                  1- O usuário vai... <span class="title__detailsBlue">Ver mais detalhes</span>
+                </p>
+              </div>
+
+              <div>
+
+                <ul class="ul__timeAchievements">
+                  <li>
+                    <h4 class="title__valuePrimaryTimeAchievements">37</h4>
+                    <p class="title__opacityAssessment">Classificações dos clientes</p>
+                  </li>
+                  <li>
+                    <h4 class="title__valuePrimaryTimeAchievements">8 horas</h4>
+                    <p class="title__opacityAssessment">Tempo de resposta</p>
+                  </li>
+                </ul>
+
+                <div class="image__timeAchivements">
+                  <img src="./assets/cardProposal/ok.png" alt="" width="30" height="30"/>
+                  <img src="./assets/cardProposal/rotate.png" alt="" width="30" height="30"/>
+                  <img src="./assets/cardProposal/nota.png" alt="" width="30" height="30"/>
+                </div>
+
+              </div>
+
+            </div>
+            
+            <div class="buttons__showMessageAndLikes alignItemsCenter">
+              <button class="button__showMessage">Ver mensagens</button>
+              <div class="images__linksMessage alignItemsCenter">
+
+                <div class="background__color background__color--grayOpacity alignItemsCenter justifyContentCenter">
+                  <img src="./assets/cardProposal/camera.png" alt="" width="20" height="20"/>
+                </div>
+
+                <div class="background__color background__color--gray alignItemsCenter justifyContentCenter">
+                  <img src="./assets/cardProposal/like.png" alt="" width="20" height="20"/>
+                </div>
+                <div class="background__color background__color--gray alignItemsCenter justifyContentCenter">
+                  <img src="./assets/cardProposal/disLike.png" alt="" width="20" height="20"/>
+                </div>
+                <div class="background__color alignItemsCenter justifyContentCenter">
+                  <img src="./assets/cardProposal/info.png" alt="" width="30" height="30"/>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="section__aboutPropostInfo">
+          <div class="background__aboutProject">
+
+            <div class="achievements__aboutProject justifyContentSpaceBetween">
+              <ul class="ul__achievments alignItemsCenter">
+
+                <li class="li__activeStart">
+                  <span class="background__apple alignItemsCenter justifyContentCenter">
+                    <img src="./assets/cardProposal/apple.png" alt="" width="20" height="20"/>
+                  </span>
+                  <h3 class="title__nameValueApple">Américo T.</h3>
+                  <img src="./assets/cardProposal/brasil.png" alt="" width="30" height="30"/>
+                  <img src="./assets/cardProposal/flags.png" alt="" width="30" height="30"/>
+                </li>
+                <div class="content__imagesPerfilPeople alignItemsCenter">
+                  <li class="li__activeStart">
+                    <img src="./assets/cardProposal/trofeu.png" alt="" width="40" height="40"/>
+                    <div>
+                      <h3>Gold</h3>
+                      <p class="title__opacityAssessment">Score</p>
+                    </div>
+                  </li>
+  
+                  <li class="li__assessment flexDirectionColumn alignItemsStart justifyContentStart">
+                    <div>
+                      <img src="./assets/cardProposal/star.png" alt="" width="20" height="20"/>
+                      <img src="./assets/cardProposal/star.png" alt="" width="20" height="20"/>
+                      <img src="./assets/cardProposal/star.png" alt="" width="20" height="20"/>
+                      <img src="./assets/cardProposal/star.png" alt="" width="20" height="20"/>
+                      <img src="./assets/cardProposal/estrelameia.png" alt="" width="20" height="20"/>
+  
+                    </div>
+                    <p class="title__opacityAssessment">Avaliação</p>
+                  </li>
+  
+                  <li class="li__activeStart">
+                    <img src="./assets/cardProposal/circulo.png" alt="" width="50" height="50"/>
+                    <div>
+                      <h3>66%</h3>
+                      <p class="title__opacityAssessment">projetos bem sucedidos</p>
+                    </div>
+                  </li>
+                </div>
+                
+
+              </ul>
+
+              <div class="menu__openAchievments alignItemsCenter">
+                <img src="./assets/cardProposal/menu.png" alt="" width="20" height="20" class="open__modalConfig"/>
+                
+                <div class="modal__configOptionsBackground">
+                  <ul class="modal__configOptions">
+                    <li>Denunciar</li>
+                    <li>Bloquear</li>
+                  </ul>
+                  <div class="rightTriangle"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="title__clientConfiguration justifyContentSpaceBetween">
+
+              <div class="proposal__cardInfoNew">
+                <div class="div__proposalAbout justifyContentSpaceBetween">
+                  <h2>Proposta</h2>
+                  <div class="money__aboutInfoProject alignItemsStart">
+                    <img src="./assets/cardProposal/money.png" alt="" width="60" height="60"/>
+                    <div class="card__proposalInformationMoney">
+
+                      <h3 class="title__cardProposalValue title__cardProposalValue--green">BRL 4,500
+                        <span class="title__subProposalValue title__subProposalValue--gray">(45% a.m)</span>
+                      </h3>
+                      <p class="title__nameDescription title__nameDescription--size">Ate 360 x de R$ 99,00</p>
+                      <p class="title__nameSubDescription title__nameSubDescription-size">financiamento liberado</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="text__descriptionProject text__descriptionProject--size">
+                  Mensagem <br>
+                  <br>
+                  Somos um Grupo valor oferecemos Crédito de até R$ 5 milhões Somos um Grupo valor oferecemos Crédito
+                  de até R$ 5 milhões 
+                  Somos um Grupo valor oferecemos Crédito de até R$ 5 milhões Somos um Grupo valor oferecemos Crédito
+                  de até R$ 5 milhões 
+                  Somos um Grupo valor oferecemos Crédito de até R$ 5 milhões Somos um Grupo valor oferecemos Crédito
+                  de até R$ 5 milhões 
+                  <span class="title__detailsBlue">Ver mais detalhes</span>
+                </p>
+                
+              </div>
+
+              <div>
+
+                <ul class="ul__timeAchievements">
+                  <li>
+                    <h4 class="title__valuePrimaryTimeAchievements">37</h4>
+                    <p class="title__opacityAssessment">Classificações dos clientes</p>
+                  </li>
+                  <li>
+                    <h4 class="title__valuePrimaryTimeAchievements">8 horas</h4>
+                    <p class="title__opacityAssessment">Tempo de resposta</p>
+                  </li>
+                </ul>
+
+                <div class="image__timeAchivements">
+                  <img src="./assets/cardProposal/ok.png" alt="" width="30" height="30"/>
+                  <img src="./assets/cardProposal/rotate.png" alt="" width="30" height="30"/>
+                  <img src="./assets/cardProposal/nota.png" alt="" width="30" height="30"/>
+                </div>
+
+              </div>
+
+            </div>
+            
+            <div class="buttons__showMessageAndLikes alignItemsCenter">
+              <button class="button__showMessage button__acceptPropost">Aceitar proposta</button>
+              <button class="button__showMessage">Ver mensagens</button>
+              <div class="images__linksMessage alignItemsCenter">
+
+                <div class="background__color background__color--grayOpacity alignItemsCenter justifyContentCenter">
+                  <img src="./assets/cardProposal/camera.png" alt="" width="20" height="20"/>
+                </div>
+
+                <div class="background__color background__color--gray alignItemsCenter justifyContentCenter">
+                  <img src="./assets/cardProposal/like.png" alt="" width="20" height="20"/>
+                </div>
+                <div class="background__color background__color--gray alignItemsCenter justifyContentCenter">
+                  <img src="./assets/cardProposal/disLike.png" alt="" width="20" height="20"/>
+                </div>
+                <div class="background__color alignItemsCenter justifyContentCenter">
+                  <img src="./assets/cardProposal/info.png" alt="" width="30" height="30"/>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+        
+      </div>
+    </main>
+    
+    <script src="./script/GlobalTelaFrame10.js"></script>
+  </body>
+</html>

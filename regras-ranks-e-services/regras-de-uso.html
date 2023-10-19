@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/style/index.css" />
+    <link rel="stylesheet" href="assets/style/regras-de-uso.css" />
+    <link rel="stylesheet" href="./style/contact.css" />
+    <link rel="stylesheet" href="./style/cssStyleModal/estilo.css" />
+    <link rel="stylesheet" href="./style/flex.css" />
+
+    <script src="https://nellbux.com/js/jquery.js"></script>
+    <title>Nell Bux</title>
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header class="header justifyContentCenter">
+      <div class="containerHeader justifyContentSpaceBetween alignItemsCenter">
+        <img
+          id="logo"
+          src="./assets/imagesHeader/logo.png"
+          alt="nell bux logo image"
+          width="120"
+          height="40"
+        />
+
+        <nav class="nav justifyContentSpaceBetween">
+          <ul class="nav__ul justifyContentSpaceBetween">
+            <li><a href="#">Principal</a></li>
+            <li><a href="#">Abrir uma Conta</a></li>
+            <li><a href="#">Regras de uso</a></li>
+            <li><a href="#">Ranks</a></li>
+            <li><a href="#">Contato</a></li>
+            <li class="login__buttonRedirect"><a href="#">Login</a></li>
+          </ul>
+        </nav>
+
+        <div id="bt-abrir-menu-mobile" class="exit__menu">
+          <span class="material-icons">menu</span>
+        </div>
+      </div>
+    </header>
+
+    <style>
+      #menuMobile {
+        display: none;
+      }
+
+      @media (max-width: 1160px) {
+        #menuDesktop {
+          display: none;
+        }
+        #menuMobile {
+          display: block;
+        }
+      }
+
+      .menu-toggle {
+        width: 122% !important;
+        height: 85%;
+        position: absolute !important;
+        left: -6px;
+        top: 2.5px;
+        padding: 0.5em;
+        padding-bottom: 0.15em !important;
+        padding-top: 0.15em !important;
+      }
+
+      div#content div.menu-trigger {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 42.63px !important;
+        height: 41.72px !important;
+        background: #f3992e;
+        cursor: pointer;
+        border-radius: 5px;
+        z-index: 2 !important;
+      }
+
+      div#content div.menu-trigger:hover {
+        background: #d27e1b;
+        transition: 500ms;
+      }
+    </style>
+
+    <link rel="stylesheet" href="assets/responsive/regras-de-uso.css" />
+    <!-- Conteudo -->
+    <div class="contain justifyContentCenter">
+      <div class="containerRegras">
+        <h2 class="titleUse">Regras de Uso</h2>
+        <div class="containerDiv">
+          <h3>Conta</h3>
+          <p>- Você deve manter sua senha segura e desconhecida para todos.</p>
+          <p>
+            - Você pode ter apenas uma conta. permitimos uma conta por pessoa ou
+            por cpf.
+          </p>
+          <p>
+            - Contas não são transferíveis, cada conta é única exclusiva do seu
+            usuário.
+          </p>
+          <p>
+            - Qualquer conta que estiver usando dados falsos será suspensa
+            automaticamente.
+          </p>
+        </div>
+
+        <div class="containerDiv">
+          <h3>Referidos</h3>
+          <p>- Você poderá convidar qualquer pessoa para ser seu indicado.</p>
+          <p>
+            - Você poderá convidar qualquer um de sua casa, desde que não seja o
+            mesmo computador que você.
+          </p>
+        </div>
+
+        <div class="containerDiv">
+          <h3>Saques</h3>
+          <p>
+            - Todos os meios de pagamentos são disponibilizado ao usuário
+            conforme seu país.
+          </p>
+          <p>
+            - Todos membros poderão pedir pagamento quando chegar ao mínimo de
+            saque variando conforme tipo de conta.
+          </p>
+          <p>
+            - A quantidade de dias para seu pagamento dependerá do seu tipo de
+            conta.
+          </p>
+          <p>
+            - Quaisquer questões, devido a processadores de pagamento serão
+            abordados, nós não assumimos responsabilidade por quaisquer avarias
+            externas ou terceiros.
+          </p>
+          <p>
+            - Pagamentos serão enviados conforme informação registrada pelo
+            usuário.
+          </p>
+        </div>
+
+        <div class="containerDiv">
+          <h3>Contas especiais</h3>
+          <p>
+            - Para manter nível usuário deverá cumprir um dos requisitos durante
+            cada período de tempo.
+          </p>
+          <p>
+            - Contas especiais podem ter ganhos diferenciados e funções
+            exclusivas das demais, variando conforme nível entretanto necessário
+            cumprir os requisitos durante período , podendo subir ou regredir de
+            nível
+          </p>
+        </div>
+
+        <div class="containerDiv">
+          <h3>Programa de afiliados</h3>
+          <p>
+            - Não aceitamos sites com conteúdo ilegal (como Warez, Pornografia,
+            Drogas, etc).
+          </p>
+          <p>- Não aceitaremos sites poluídos ou com links quebrados</p>
+          <p>
+            - Os cliques e views são contabilizados cada 24 horas por acesso
+            único.
+          </p>
+          <p>
+            - Todos os sites são monitorados por nossa equipe, que se reserva no
+            direito de suspender sites que violem as regras previstas neste
+            Termo &amp; Condições.
+          </p>
+        </div>
+
+        <div class="containerDiv">
+          <h3>Pagamentos</h3>
+          <p>
+            - Você só pode adicionar saldo em sua conta na pagina de checkout
+            nos meios de pagamentos permitidos
+          </p>
+          <p>- Será contabilizado saldo equivalente que você paga.</p>
+        </div>
+
+        <div class="containerDiv">
+          <h3>Suspensão de conta</h3>
+          <p>
+            - Reservamos o direito de suspender qualquer conta que esteja
+            violando termos e condições.
+          </p>
+          <p>- Você poderá recorrer a uma suspensão de conta.</p>
+        </div>
+
+        <div class="containerDiv">
+          <h3>Responsabilidade</h3>
+          <p>
+            - Não somos responsáveis por falhas que estejam além de nosso
+            controle.
+          </p>
+          <p>
+            - Qualquer problema relacionado a hospedagem, processadores de
+            pagamento, ISP, ou por terceiros não são de nossa responsabilidade.
+          </p>
+          <p>- Estamos à disposição para solucionar as demais dúvidas.</p>
+          <p>
+            - Entre em contato:
+            <a href="mailto:support@nellbux.com">support@nellbux.com</a>
+          </p>
+        </div>
+        <p class="atencao">
+          Atenção ao criar sua conta, você está aceitando os termos de serviço e
+          a política de privacidade do NellBux.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <link rel="stylesheet" type="text/css" href="./assets/style/rodape.css" />
+      <div class="div_container">
+        <div class="div_margin">
+          <div class="div_display">
+            <div class="div_box">
+              <h2>Atendimento</h2>
+              <hr />
+              <a href=""><b>suporte@nellbux.com</b></a
+              ><br />
+              <a href="">WhatsApp: (47) 99659-0077</a><br />
+              <p>Atendimento 24H</p>
+              <p>Rua aveiro, 812 sala 12</p>
+              <p>Aventureiro Joinville/SC - 89226-420</p>
+              <p>
+                Parcerias de conteúdo e assessoria de impressa:
+                <b>redacao@nellbux.com</b>
+              </p>
+              <br />
+              <h3>Siga-nos nas redes sociais</h3>
+              <div class="div_redes_sociais">
+                <a href=""
+                  ><img src="./assets/images/facebook.png" class="img_redes"
+                /></a>
+                <a href=""
+                  ><img src="./assets/images/instagram.png" class="img_redes"
+                /></a>
+                <a href=""
+                  ><img src="./assets/images/twiter.png" class="img_redes"
+                /></a>
+                <a href=""
+                  ><img src="./assets/images/whatsapp.png" class="img_redes"
+                /></a>
+                <a href=""
+                  ><img src="./assets/images/youtube.png" class="img_redes"
+                /></a>
+              </div>
+            </div>
+            <div class="div_box">
+              <h2>O NellBux</h2>
+              <hr />
+              <a href="">Simulador de investimento</a><br />
+              <a href="afiliado.php">Programas de afiliados</a><br />
+              <a href="pages/tickets.php">Suporte</a><br />
+              <a href="">Link de cobrança</a><br />
+              <a href="">Quero ser um investidor</a><br />
+              <a href="">Comunidade</a><br /><br />
+              <h3>Links úteis</h3>
+              <br />
+              <a href="">Planos</a><br />
+              <a href="">Maquinhas</a><br />
+              <a href="">Para empresas</a><br />
+              <a href="">Cartões de crédito</a><br />
+            </div>
+            <div class="div_box">
+              <h2>Para Você</h2>
+              <hr class="hr_azul" />
+              <a href="">Empréstimo para pagar dívidas</a><br />
+              <a href="">Empréstimo para reforma ou mudança</a><br />
+              <a href="">Empréstimo sem burocracia</a><br />
+              <a href="">Empréstimo urgente</a><br />
+              <a href="">Empréstimo com débito em conta</a><br />
+              <a href="">Empréstimo com nome sujo</a><br />
+              <a href="">Empréstimo rápido</a><br />
+              <a href="">Empréstimo para microempreendedor individual</a><br />
+              <a href="">Empréstimo para casamento</a><br />
+              <a href="">Empréstimo para aposentado</a><br />
+              <a href="">Empréstimo para assalariado</a><br />
+              <a href="">Empréstimo para autônomo</a><br />
+              <a href="">Empréstimo para funcionário público</a><br />
+              <a href="">Empréstimo sem comprovação de renda</a><br />
+            </div>
+            <div class="div_box">
+              <h2>Outras Soluções</h2>
+              <hr class="hr_azul" />
+              <a href="">Hipoteca</a><br />
+              <a href="">Refinanciamento de imóvel</a><br />
+              <a href="">Refinanciamento de veiculo</a><br />
+              <a href="">Empréstimo consignado privado</a><br />
+              <a href="">Empréstimo consignado para funcionário público</a
+              ><br />
+              <a href="">Empréstimo consignado INSS</a><br />
+              <a href="">Tipos de crédito PF</a><br />
+              <a href="">Tipos de crédito PJ</a><br />
+            </div>
+          </div>
+          <div class="div_display_2">
+            <div class="div_box">
+              <p class="LineP">
+                O NellBux é uma empresa intemediadora do processo de concessão
+                de crédito e investimento entre terceiros. Somos uma financeira.
+                Atualmente atuamos apenas em território Brasileiro.
+              </p>
+              <br />
+              <p class="LineP">
+                SAC: (47) 3278-0748 | Todos planos de investimento do NellBux
+                são asegurados.
+              </p>
+            </div>
+            <div class="div_box_2">
+              <a href=""><b>Termos e condições de uso</b></a> |
+              <a href=""><b>Política de privacidade</b></a>
+              <p class="subLineP">
+                Copyrigth 2022 NellBux - Todos Direitos Reservados
+              </p>
+              <br />
+              <img src="./assets/images/logo.png" class="img_logo" />
+              <img
+                src="./assets/images/formas-de-pagamento.png"
+                class="img_pagamento"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      jQuery(function () {
+        jQuery(window).scroll(function () {
+          if (jQuery(window).scrollTop() > 250) {
+            jQuery(".header").addClass("header-fixed");
+          } else {
+            jQuery(".header").removeClass("header-fixed");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

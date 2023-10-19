@@ -1,0 +1,431 @@
+.account__received--background--orange{
+    background: #F4992E;
+}
+.receipts__text::after{
+    content: "Veja como esta seus emprestimos em terceiros"
+}
+
+.select__primary--width{
+    border: 2px solid #505050;
+}
+
+.select__primary--width select{
+    color: #505050;
+}
+
+.money__moviment span{
+    text-align: start;
+    justify-content: flex-start;
+}
+
+.money__moviment{
+    border-left: 1px solid #A8A8A8;
+    padding: 0 0 0 1.5rem;
+    margin: 0 0 1rem 0;
+    width: 229px;;
+}
+
+.card__text-information{
+    display: flex;
+    margin: 1rem 0 0 0;
+}
+
+.card__text-information p{
+    font-size: 13px;
+    margin: 0 0 0 0.5rem;
+
+}
+
+.card__text-information p a{
+    color: rgb(82, 131, 255);
+}
+.block__confirm label{
+    padding: 0 0 0.5rem 0;
+}
+.block__confirm input[type="radio"]:checked + label{
+    color: rgb(90, 90, 90);
+    border-bottom: 3px solid #5982EB;
+}
+
+.nav-background{
+    padding: 1rem 0 1rem 0;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container-block{
+    display: flex;
+}
+
+.nav-background-button button{
+    border: none;
+    padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+    border-radius: 2rem;
+    background: #5183FE;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: .2s;
+}
+
+.nav-background-button button:hover{
+    border: 2px solid #5183FE;
+    color: #5183fe;
+    background: white;
+}
+
+.text__warning{
+    font-weight: 500;
+    font-size: 25px;
+}
+.warning{
+    padding: 0;
+}
+
+.warning{
+    justify-content: space-between;
+    color: rgb(44, 41, 33);
+}
+
+.nav-text span{
+    color: rgb(44, 41, 33);
+
+}
+.nav-text nav{
+    justify-content: flex-end;
+    display: flex;
+}
+
+.nav-text a{
+    color: #5183fe;
+    font-weight: 600;
+
+}
+.nav-text hr{
+    margin: 0 1rem 0 1rem;
+
+    border: 1px solid #54504D;
+}
+
+.information__money-background{
+    display: flex;
+    justify-content: space-between !important;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.date__time{
+    display: flex;
+    flex-direction: column;
+}
+
+.date__time-block{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 2rem 0;
+}
+
+.date__title-time{
+    font-weight: 500;
+    font-size: 30px;
+    color: #524E4D;
+}
+
+.title__date{
+    font-weight: 400;
+    color: rgb(54, 54, 54);   
+}
+
+.date__title-time--size{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.section__transaction-background{
+    width: 88%;
+}
+
+.section__today-request{
+    background: #fff;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    border-left: 3px solid #5D5852;
+
+}
+
+.section__today-request img{
+    margin: 0 0 0 1rem;
+}
+
+.date__title-time--padding{
+    padding: 0 0 0 1.5rem;
+}
+
+.section__today-request hr{
+    border: 1px solid #505050;
+    height: 25px;
+    margin: 0 1rem 0 1rem;
+}
+
+.real__time-charges{
+    opacity: 0.8;
+    font-size: 15px;
+}
+.real__time-charges a{
+    color: #5183fe;
+    font-weight: 600;
+}
+
+.investment__card h1{
+    margin: 3rem 0 3rem 0;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.card__background{
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.card__block-title{
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.card__block-money{
+    font-weight: 600;
+    font-size: 23px;
+    color: #333333;
+}
+
+.card__background{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.card__block-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.card__main{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.card__main img{
+    cursor: pointer;
+}
+
+.card__container-main{
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+}
+
+
+.card__container-main hr{
+    margin: 1rem 0 1rem 0;
+}
+
+.card__block-align{
+    display: flex;
+    align-items: center;
+}
+
+.card__main button{
+    border: none;
+    background: #F5992C;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 1rem;
+    color: #fff;
+    font-weight: 600;
+    border: 2px solid transparent;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.card__main button:hover{
+    border: 2px solid #F5992C;
+    color: #F5992C;
+    background: #fff;
+}
+
+.card__block-money--size{
+    font-size: 13px;
+}
+
+.charges__textt{
+    display: none;
+    font-weight: 500;
+}
+#open__view .card__block-text{
+    display: flex !important;
+}
+#open__view .charges__textt img{
+    transform: rotateX(180deg);
+    transition: .3s;
+}
+
+.block__card-mains, .image-nones{
+    display: none;
+}
+
+.nav-background-buttons{
+    display: none;
+}
+
+@media (max-width: 1115px){
+    .section__transaction-background{
+        width: 85%;
+    }
+    .net__received{
+        margin: 0 1rem 0 0;
+    }
+}
+
+
+@media (max-width: 985px){
+
+    .no__receipts-container{
+        margin: 0;
+    }
+    .money__block{
+        width: 100%;
+        padding: 1rem;
+    }
+    .card__text-information{
+        display: flex;
+        align-items: center;
+    }
+    .information__money-background{
+        flex-direction: column;
+    }
+    .date__time{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    .card__background{
+        padding: 0;
+    }
+
+    .section__transaction-background{
+        width: 100%;
+        margin: 2rem 0 0 0;
+    }
+
+    .card__block-text{
+        display: none;
+    }
+
+    .charges__textt{
+        display: flex;
+    }
+    .button__block-text, .image-none{
+        display: none;
+    }
+    .charges__textt{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .card__block-textt{
+        display: none !important;
+    }
+    
+    .card__main{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .block__card-mains{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card__block-text{
+        margin: 1rem 1rem 1rem 0rem;
+    }
+    
+    .section__today-request{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .date__title-time--padding, .section__today-request img{
+        padding: 0;
+        margin: 0;
+    }
+    .section__today-request hr{
+        margin: 0;
+        height: 1px;
+        width: 100%;
+        margin: 1rem 0 1rem 0;
+    }
+    .receipts__text{
+        padding: 0 0 0 1rem;
+    }
+    .date__time-block{
+        padding: 0 1.5rem 0 0;
+    }
+    .nav-background-button{
+        display: flex;
+        align-items: center;
+        display: none;
+    }
+    .nav-background-button button{
+        padding: 0.5rem 0.3rem 0.5rem 0.3rem;
+    }
+    .block__confirms input[type="radio"]:checked + label{
+        border-bottom: 3px solid #5982EB ;
+    }
+
+    .nav-background-buttons{
+        display: flex;
+        justify-content: center;
+        padding: 1.5rem 0 1.5rem 0;
+        background: #fff;
+    }
+    .nav-background-buttons button{
+        padding: 0.5rem 0.3rem 0.5rem 0.3rem;
+        border: none;
+        padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+        border-radius: 2rem;
+        background: #5183FE;
+        color: #fff;
+        font-weight: 600;
+        font-size: 14px;
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: .2s;
+
+    }
+    .nav-background-buttons button:hover{
+        border: 2px solid #5183FE;
+        color: #5183fe;
+        background: white;
+    }
+}
+
+@media (max-width: 709px){
+    .nav-background-button{
+        margin: 1rem 0 0 0;
+    }
+}
+
+@media (max-width: 551px){
+    .date__time{
+        flex-wrap: wrap;
+    }
+}

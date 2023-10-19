@@ -1,0 +1,325 @@
+.section__news{
+  background: #fff;
+}
+
+.card__newsInformation{
+  background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(0, 0, 0, 0.7) 100%), url("../assets/dinsey.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 16rem 1.5rem 1.5rem 1.5rem;
+  border-radius: 1rem  1rem  0 0;
+  position: relative;
+}
+
+.title__newsInformation,
+.title__newsDescription{
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.title__newsPrimary{
+  font-size: 30px;
+  margin: 0.5rem 0;
+  color: #fff;
+  font-weight: 600;
+}
+
+.Ul__listInformationNews{
+  padding: 1.5rem;
+  list-style: none;
+}
+
+.Ul__listInformationNews li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0 0 0;
+}
+
+.Ul__listInformationNews li:first-child{
+  margin: 0;
+}
+
+.title__subject,
+.title__subTextfollow{
+  color: #505050;
+  font-weight: 500;
+}
+
+.title__subject span{
+  color: #5283FF;
+}
+
+.title__namePrimary{
+  margin: 0.4rem 0;
+  color: #505050;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.title__emphasis{
+  margin: 0.5rem 0 0 0;
+  font-size: 15px;
+  font-weight:600;
+}
+
+.title__emphasis img{
+  margin: 0 0.5rem 0 0;
+}
+
+.title__response{
+  margin: 0.5rem 0 0 0; 
+  color: #A8A8A8;
+  font-weight: 500;
+}
+
+#background__imageBorder{
+  border-radius: 0.5rem;
+}
+
+.section__news{
+  border-radius: 1rem;
+}
+
+.card__perfilPostAsked,
+.title__namePosterAndComment{
+  width: 100%;
+}
+
+.title__userId{
+  margin: 0.3rem 0 0 0;
+  color: #A8A8A8;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.title__descriptionAsked{
+  margin: 0;
+}
+
+.information__aboutTextDescription{
+  margin: 0.5rem 0 0 0 ;
+}
+
+.button__followPoster{
+  padding: 0 1rem;
+  border: none;
+  border-radius: 2rem;
+  background: #505050;
+  color: #fff;
+  font-size: 16px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 80px;
+}
+
+.button__followPoster:hover{
+  background: #2e2e2e;
+}
+
+.section__postAsked{
+  background: #fff;
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
+}
+
+.card__posterAsked{
+  padding: 0;
+  margin: 2.5rem 0 0 0;
+}
+
+.card__posterAsked:first-child{
+  margin: 0;
+}
+
+.title__followPoster{
+  margin: 0 0 2.5rem 0;
+  font-size: 25px;
+}
+
+.button__showMore,
+.button__showMoreResponse{
+  width: 100%;
+  margin: 2rem 0 0 0;
+}
+
+.button__showMore button,
+.button__showMoreResponse button{
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  background: #5283FF;
+  border: 1px solid #BED0FF;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.button__showMore button:hover,
+.button__showMoreResponse button:hover{
+  background: #2d5bce;
+}
+
+.title__chatAnswers--gray{
+  color: #707070;
+}
+
+.title__userId--size{
+  font-size: 16px;
+  margin: 0;
+}
+
+.title__descriptionChatAnswers--gray{
+  font-weight: 500;
+  color: #707070;
+}
+
+.button__arrowRedirect,
+.button__messagePerson{
+  border: none;
+  background: transparent;
+  margin: 0 1rem 0 0;
+  color: #505050;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.button__arrowRedirect img,
+.button__messagePerson img{
+  margin: 0 0.5rem 0 0;
+}
+
+.buttons__redirect{
+  margin: 0;
+}
+
+.sub__Content{
+  margin: 1.5rem 0 0 0;
+}
+
+.title__valueResponse::after {
+  content: "";
+  width: 40px;
+  height: 2px;
+  border: 1px solid #F9CC96;
+  border-radius: 0.5rem;
+  background: #F3992E;
+  position: absolute;
+  bottom: -6px;
+  left: 1px;
+}
+
+.ul__chatAnswers li:first-child{
+  margin: 0;
+}
+
+.ul__chatAnswers li{
+  margin: 3.5rem 0 0 0;
+}
+
+.title__chatAnswers--size18{
+  font-size: 18px;
+}
+
+.title__descriptionChatAnswers{
+  font-weight: 500;
+}
+
+.avatar__chatAnswers--size45{
+  width: 45px;
+  height: 45px;
+}
+
+.button__askedFavorite {
+  padding: 0.4rem 1rem;
+  border-radius: 2rem;
+  border: none;
+  background: #5EDD2D;
+  cursor: pointer;
+}
+
+
+@media (max-width: 725px){
+  .card__posterAsked,
+  .ul__chatAnswers li{
+    flex-direction: column;
+  }
+
+  .information__poster,
+  .ul__chatAnswers{
+    margin: 1rem 0 0 0;
+  }
+
+  .button__followPoster{
+    margin: 0.5rem 0;
+  }
+
+  .info__chatAnswers{
+    margin: 0 !important;
+  }
+  
+  .information__userPerson{
+    flex-direction: column;
+    align-items: start;
+    margin: 0.5rem 0 0 0;
+  }
+
+  .buttons__redirect{
+    flex-wrap: wrap;
+  }
+
+  .titles__Response{
+    margin: 1rem 0 0 0;
+  }
+
+}
+
+@media (max-width: 600px){
+  .card__posterAsked,
+  .text__nameButtonFollow,
+  .ul__chatAnswers li,
+  .sub__ContentTwo{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title__userId,
+  .title__descriptionAsked,
+  .title__descriptionChatAnswers{
+    text-align: center;
+  }
+
+  .information__userPerson,
+  .sub__ContentTwo{
+    align-items: center;
+  }
+
+  .title__chatAnswers{
+    width: 100%;
+    align-items: center;
+  }
+
+  .buttons__redirect{
+    width: 100%;
+  }
+
+  .buttons__redirect{
+    margin: 1rem 0 0 0;
+  }
+  
+  .buttons__redirect{
+    justify-content: center;
+  }
+}
+
+@media (max-width: 525px){
+  .Ul__listInformationNews li{
+    flex-wrap: wrap;
+  }
+
+  .title__response{
+    margin:  0.5rem 0 1rem 0;
+  }
+}

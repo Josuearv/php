@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style/cssStyleModal/estilo.css" />
+    <link rel="stylesheet" href="./style/flex.css" />
+    <link rel="stylesheet" href="./style/globalStyles.css" />
+    <link rel="stylesheet" href="./style/contact.css" />
+
+    <title>Nell bux</title>
+
+    <script src="./script/jquery.js"></script>
+  </head>
+
+  <body>
+    <!-- aside -->
+    <aside id="menu-mobile" class="menu-mobile-fecado">
+      <div class="container">
+        <div id="fechar-menu-mobile">
+          <span class="material-icons">cancel</span>
+        </div>
+      </div>
+
+      <ul id="menu-principal">
+        <li><a href="#">Area Membro</a></li>
+        <li><a href="#">Meus Projetos</a></li>
+        <li><a href="#">Minhas Finanças</a></li>
+      </ul>
+
+      <div class="espaco20"></div>
+
+      <a
+        href="#pesquisa-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <span class="material-icons">search</span>
+          <div>Pesquisar</div>
+        </div>
+      </a>
+
+      <a
+        href="#notificacoes-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <span class="material-icons">notifications</span>
+          <div>Notificações</div>
+        </div>
+      </a>
+
+      <a
+        href="#mensagens-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <span class="material-icons">sms</span>
+          <div>Mensagens</div>
+        </div>
+      </a>
+
+      <a
+        href="#usuario-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <div id="logo-tb" class="menu-usuario">TB</div>
+        </div>
+      </a>
+    </aside>
+
+    <!-- header -->
+    <header class="header justifyContentCenter">
+      <div
+        class="containerHeader__block justifyContentSpaceBetween alignItemsCenter"
+      >
+        <img
+          id="logo"
+          src="./assets/imagesHeader/logo.png"
+          alt="nell bux logo image"
+          width="120"
+          height="40"
+        />
+
+        <nav class="nav justifyContentSpaceBetween">
+          <ul class="nav__ul justifyContentSpaceBetween">
+            <li><a href="#">Principal</a></li>
+            <li><a href="#">Abrir uma Conta</a></li>
+            <li><a href="#">Regras de uso</a></li>
+            <li><a href="#">Ranks</a></li>
+            <li><a href="#">Contato</a></li>
+            <li class="login__buttonRedirect"><a href="#">Login</a></li>
+          </ul>
+        </nav>
+
+        <div id="bt-abrir-menu-mobile" class="exit__menu">
+          <span class="material-icons">menu</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- background -->
+    <div class="background__blue"></div>
+
+    <!-- nav -->
+    <nav class="nav__centralHelp justifyContentCenter">
+      <h1 class="title__centralHelp">Central de Ajuda</h1>
+    </nav>
+
+    <!-- main -->
+
+    <main class="main justifyContentCenter">
+      <div class="main-container justifyContentSpaceBetween">
+        <form class="form__backgroundWhite justifyContentCenter">
+          <div class="container__form">
+            <h2 class="title__formNamePrimary">Entre em Contato</h2>
+            <p class="title__descriptionFormNamePrimary">
+              Campos marcados com * são obrigatórios
+            </p>
+
+            <div class="inputs__formNames">
+              <div class="input__formName flexDirectionColumn">
+                <label class="title__nameInput">Nome</label>
+                <input type="text" placeholder="Digite seu nome" />
+              </div>
+
+              <div class="input__formName flexDirectionColumn">
+                <label class="title__nameInput">Email</label>
+                <input type="text" placeholder="Digite seu email" />
+              </div>
+
+              <div class="input__formName flexDirectionColumn">
+                <label class="title__nameInput">Assunto</label>
+                <input type="text" placeholder="Diga-nos qual o assunto" />
+              </div>
+
+              <div
+                class="input__formName input__formnameTextArea flexDirectionColumn"
+              >
+                <label class="title__nameInput">Assunto</label>
+                <textarea placeholder="Digite sua mensagem"></textarea>
+              </div>
+            </div>
+
+            <div class="captcha__form">espaço de CAPTCHA</div>
+
+            <button class="button__sendMessage">
+              ENVIAR MENSAGEM
+              <img
+                src="./assets/main/form/flecha.png"
+                alt=""
+                width="30"
+                height="30"
+              />
+            </button>
+          </div>
+        </form>
+
+        <aside class="aside__backgroundCards flexDirectionColumn">
+          <div
+            class="card__aside justifyContentCenter flexDirectionColumn alignItemsCenter"
+          >
+            <img src="./assets/main/card/relogio.png" alt="" />
+            <h3 class="title__cardAside title__cardAside--red">
+              Precisa de Urgência?
+            </h3>
+            <p class="title__descriptionAside">Atendimento em menos de 24hs</p>
+            <button
+              class="button__cardAside button__cardAside--red justifyContentCenter alignItemsCenter"
+            >
+              <img
+                src="./assets/main/form/flecha.png"
+                alt=""
+                width="20"
+                height="20"
+              />
+              Abrir Chamado
+            </button>
+          </div>
+
+          <div
+            class="card__aside justifyContentCenter flexDirectionColumn alignItemsCenter"
+          >
+            <img src="./assets/main/card/atendimento.png" alt="" />
+            <h3 class="title__cardAside title__cardAside--orange">
+              Atendimento
+            </h3>
+            <p class="title__descriptionAside">Atendimento em menos de 24hs</p>
+            <button
+              class="button__cardAside button__cardAside--orange justifyContentCenter alignItemsCenter"
+            >
+              Visualizar
+            </button>
+          </div>
+        </aside>
+      </div>
+    </main>
+  </body>
+</html>

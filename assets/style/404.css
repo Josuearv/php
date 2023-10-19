@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Oswald&family=Poppins:wght@300&family=Roboto:ital,wght@0,300;1,400&family=Work+Sans:wght@500&display=swap');
+
+
+.elipse {
+    width: 90px;
+height: 90px;
+left: 219px;
+top: 0px;
+
+border-radius: 100px;
+text-align: center;
+padding: 10px;
+/* Orange */
+
+background: #F3992E;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    margin-left: 150px;
+
+    margin-top: 120px;
+    position: absolute;
+    width: 528px;
+    height: 302px;
+    left: 456px;
+    top: 60px;
+}
+.txt {
+    font-family: 'Helvetica';
+font-style: normal;
+font-weight: 700;
+font-size: 33.12px;
+line-height: 35px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+.txt-2 {
+    font-family: 'Helvetica';
+font-style: normal;
+font-weight: 100;
+font-size: 18px;
+line-height: 23px;
+/* identical to box height */
+
+margin-top: 180px;
+
+text-align: center;
+
+color: #FFFFFF;
+}

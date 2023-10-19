@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./style/cssStyleModal/estilo.css" />
+    <link rel="stylesheet" href="./style/form_projeto_02.css" />
+    <link rel="stylesheet" href="./style/flex.css" />
+
+    <title>Nell bux</title>
+
+    <script src="./script/jquery.js"></script>
+  </head>
+  <body>
+    <!-- aside -->
+    <aside id="menu-mobile" class="menu-mobile-fecado">
+      <div class="container">
+        <div id="fechar-menu-mobile">
+          <span class="material-icons">cancel</span>
+        </div>
+      </div>
+
+      <ul id="menu-principal">
+        <li><a href="#">Area Membro</a></li>
+        <li><a href="#">Meus Projetos</a></li>
+        <li><a href="#">Minhas Finanças</a></li>
+      </ul>
+
+      <div class="espaco20"></div>
+
+      <a
+        href="#pesquisa-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <span class="material-icons">search</span>
+          <div>Pesquisar</div>
+        </div>
+      </a>
+
+      <a
+        href="#notificacoes-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <span class="material-icons">notifications</span>
+          <div>Notificações</div>
+        </div>
+      </a>
+
+      <a
+        href="#mensagens-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <span class="material-icons">sms</span>
+          <div>Mensagens</div>
+        </div>
+      </a>
+
+      <a
+        href="#usuario-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <div id="logo-tb" class="menu-usuario">TB</div>
+        </div>
+      </a>
+    </aside>
+
+    <!-- header -->
+    <header class="header justifyContentCenter">
+      <div
+        class="header__container justifyContentSpaceBetween alignItemsCenter"
+      >
+        <img src="./assets/imagesHeader/logo.png" />
+        <div id="bt-abrir-menu-mobile" class="exit__menu">
+          <span class="material-icons">menu</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main class="main justifyContentCenter">
+      <div class="main__container">
+        <section class="div_display div__height sectionPrimary">
+          <!-- DIV DO FORMULARIO -->
+          <div
+            class="div_box_form justifyContentSpaceBetween flexDirectionColumn"
+          >
+            <h3 class="title__name">Publique seu projeto gratuitamente</h3>
+            <h3 class="title__name title__name--margin">
+              Escolha a modalidade que mais se adapta às suas necessidades
+            </h3>
+            <span class="title__name--marginTwo"
+              >Nesse projeto você vai disponibilizar garantia de bens
+              parainvestidor?</span
+            >
+            <form method="POST" action="">
+              <div
+                class="title__name form__containerInputs flexDirectionColumn justifyContentSpaceBetween"
+              >
+                <div class="div_display flexWrap">
+                  <div class="card__check">
+                    <label for="noWarranty" class="alignItemsCenter label__s">
+                      <span class="title__inputType">Não sem garantia</span>
+                      <input type="radio" id="noWarranty" name="radio" />
+                      <div class="custom-radio">
+                        <span></span>
+                      </div>
+                    </label>
+
+                    <p class="title__l">
+                      Projetos sem garantia possuem juros mais altos maior
+                      dificuldade de aprovação
+                    </p>
+                  </div>
+
+                  <div class="card__check">
+                    <label
+                      for="withguarantee"
+                      class="alignItemsCenter label__s"
+                    >
+                      <span class="title__inputType">Sim Com Garantia</span>
+                      <input type="radio" id="withguarantee" name="radio" />
+                      <div class="custom-radio">
+                        <span></span>
+                      </div>
+                    </label>
+
+                    <p class="title__l">
+                      Projetos com garantia possuem juros mais baixos maior
+                      facilidade de sucesso
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Botão da pagina -->
+                <div class="div_progresso alignItemsCenter">
+                  <img
+                    src="./assets/formProject/arrowLeft.png"
+                    alt=""
+                    width="40"
+                    height="40"
+                  />
+                  <div class="bar">
+                    <div></div>
+                  </div>
+
+                  <div class="submitDiv" style="text-align: right">
+                    <input
+                      type="submit"
+                      name=""
+                      class="btn_proximo"
+                      disable="disable"
+                      value="Próxima"
+                    />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- DIV DE INFOEMAÇÕES LATERIAS -->
+          <aside class="div_box_info asideL">
+            <h3 class="title__primaryAside">
+              Utilize as categorias e subcategorias para encontrar
+              investidoresde cada área.
+            </h3>
+            <p class="text__infoAside">
+              Quanto mais precisar for a sua solução, mais fácil será para o
+              investidor ideal encontrar o seu projeto.
+            </p>
+            <p class="text__infoAside">
+              Quanto mais precisar for a sua solução, mais fácil será para o
+              investidor ideal encontrar o seu projeto.
+            </p>
+            <p class="text__infoAside">
+              Quanto mais precisar for a sua solução, mais fácil será para o
+              investidor ideal encontrar o seu projeto.
+            </p>
+            <img
+              src="./assets/formProject/imageProjeto2.png"
+              class="img_info"
+              height="250px"
+            />
+          </aside>
+        </section>
+      </div>
+    </main>
+    <!-- jQuery Modal -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+    />
+    <script type="module" src="./script/menu-mobile.js"></script>
+
+    <div id="pesquisa-modal" class="modal">
+      <div class="modal-header">
+        <span class="material-icons">search</span>
+      </div>
+      <div class="modal-body">
+        <input
+          type="text"
+          name="campo-pesquisa-modal"
+          id="campo-pesquisa-modal"
+          value=""
+          placeholder="O que você está procurando?"
+        />
+      </div>
+      <div class="modal-buttons">
+        <a href="#" rel="modal:close" class="botao-modal">Sair</a>
+      </div>
+    </div>
+
+    <div id="notificacoes-modal" class="modal">
+      <div class="modal-header">
+        <span class="material-icons">notifications</span>
+      </div>
+      <div class="modal-body">
+        <div class="lista">
+          <div class="item-notificacao">
+            <div class="mensagem">
+              <div class="titulo">Rejeitamos seu projeto</div>
+              <div class="descricao">Em criar plataforma para reclamação</div>
+            </div>
+            <div class="icone">
+              <span class="material-icons">delete</span>
+            </div>
+          </div>
+
+          <div class="item-notificacao">
+            <div class="mensagem">
+              <div class="titulo">Rejeitamos seu projeto</div>
+              <div class="descricao">Em criar plataforma para reclamação</div>
+            </div>
+            <div class="icone">
+              <span class="material-icons">delete</span>
+            </div>
+          </div>
+
+          <div class="item-notificacao">
+            <div class="mensagem">
+              <div class="titulo">Rejeitamos seu projeto</div>
+              <div class="descricao">Em criar plataforma para reclamação</div>
+            </div>
+            <div class="icone">
+              <span class="material-icons">delete</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-buttons">
+        <a href="#" rel="modal:close" class="botao-modal margin-right5"
+          >Ver todos</a
+        >
+        <a href="#" rel="modal:close" class="botao-modal">Sair</a>
+      </div>
+    </div>
+
+    <div id="mensagens-modal" class="modal">
+      <div class="modal-header">
+        <span class="material-icons">sms</span>
+      </div>
+      <div class="modal-body">
+        <div class="lista">
+          <div class="item-mensagem">
+            <div class="avatar"></div>
+            <div class="mensagem">
+              <div class="titulo">Rejeitamos seu projeto</div>
+              <div class="descricao">Em criar plataforma para reclamação</div>
+            </div>
+            <div class="icone">
+              <span class="material-icons">delete</span>
+            </div>
+          </div>
+
+          <div class="item-mensagem">
+            <div class="avatar"></div>
+            <div class="mensagem">
+              <div class="titulo">Rejeitamos seu projeto</div>
+              <div class="descricao">Em criar plataforma para reclamação</div>
+            </div>
+            <div class="icone">
+              <span class="material-icons">delete</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-buttons">
+        <a href="#" rel="modal:close" class="botao-modal margin-right5"
+          >Ver todos</a
+        >
+        <a href="#" rel="modal:close" class="botao-modal">Sair</a>
+      </div>
+    </div>
+
+    <div id="usuario-modal" class="modal">
+      <div class="modal-header">
+        <div id="logo-tb" class="menu-usuario">TB</div>
+      </div>
+      <div class="modal-body">
+        <div id="box-menu-usuario-modal">
+          <div class="dados">
+            Olá <span class="font-bold">Marcos</span>, seja Bem-Vindo.
+          </div>
+
+          <div class="dados">
+            <ul>
+              <li><a href="#">Configurações da Conta</a></li>
+              <li><a href="#">Meu Perfil</a></li>
+              <li><a href="#">Rank do Dia</a></li>
+            </ul>
+          </div>
+
+          <div class="dados">
+            <div class="header">Ofertas e Pedidos</div>
+
+            <ul>
+              <li><a href="#">Abrir Uma Oferta de Investimento</a></li>
+              <li><a href="#">Encontrar Pedidos</a></li>
+              <li><a href="#">Abrir um Pedido de Crédito</a></li>
+            </ul>
+          </div>
+
+          <div class="dados">
+            <div class="header">Informações da Conta</div>
+
+            <ul>
+              <li><a href="#">Lista de Indicativos</a></li>
+              <li><a href="#">Lista de Seguidores</a></li>
+              <li><a href="#">Histórico de Conta</a></li>
+              <li><a href="#">Faça uma Pergunta</a></li>
+              <li><a href="#">Minhas Apostas</a></li>
+            </ul>
+          </div>
+
+          <div class="dados">
+            <div class="header">Informações da Conta</div>
+
+            <ul>
+              <li>Conta NellBux</li>
+              <li>Meu Usuário</li>
+              <li>1211451-1</li>
+              <li>@eduardoon</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="modal-buttons">
+        <a href="#" rel="modal:close" class="botao-modal">Sair</a>
+      </div>
+    </div>
+
+    <script>
+      const checkInput = document.querySelectorAll(".card__check label input");
+      const card__check = document.querySelectorAll(".card__check");
+
+      let checkInputActive = false;
+      const setCheckInput = (value) => (checkInputActive = !value);
+
+      checkInput.forEach((element, index) => {
+        element.addEventListener("click", () => {
+          setCheckInput(checkInputActive);
+          for (let i = 0; i <= card__check.length; i++) {
+            index === i && card__check
+              ? card__check[i].classList.add("activeCheck")
+              : card__check[i].classList.remove("activeCheck");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

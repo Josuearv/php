@@ -1,0 +1,129 @@
+.title__chooseService{
+  border: none;
+  padding: 0;
+}
+
+.sub__informationChooseService{
+  padding: 0;
+}
+
+.title__descriptionShowAddress{
+  font-size: 15.5px;
+  margin: 0.2rem 0 0 0;
+  color: #97A0AD;
+}
+
+.sub__informationChooseService,
+.add__address,
+iframe{
+  padding: 1.5rem;
+}
+
+.title__label{
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.input__address{
+  margin: 0.5rem 0;
+  height: 50px;
+  padding: 0 1rem;
+  border: 1px solid #BFBFBF;
+  border-radius: 0.5rem;
+  outline: none;
+  font-weight: 500;
+}
+
+.input__address::placeholder{
+  font-size: 15px;
+}
+
+.add__address{
+  margin: 2rem 0;
+}
+
+.title__includesAddress{
+  color: #929292;
+  font-size: 14px;
+}
+
+.checkbox__address{
+  margin: 1.5rem 0 0 0;
+}
+
+.checkbox__address input[type=checkbox]{
+  width: 20px;
+  height: 20px;
+  margin: 0 0.5rem 0 0;
+}
+
+
+.show__Address{
+  color: #BFBFBF;
+}
+
+.show__Address img{
+  margin: 0 0 0 0.5rem;
+}
+
+.information__date{
+  padding: 4rem 1.5rem;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.cards__inputs{
+  margin: 4rem 0;
+  width: 100%;
+}
+
+.card__input,
+.card__neighborhood{
+  width: 300px;
+  height: 75px;
+  margin: 0 3rem 0 0;
+}
+
+.card__input select,
+.card__neighborhood select{
+  height: 100%;
+  outline: none;
+  margin: 0.5rem 0 0 0;
+  border: 1px solid #BFBFBF;
+  padding: 0 0.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+}
+
+.card__neighborhood{
+  margin: 0;
+}
+
+.card__neighborhood select{
+  background: #F2F2F2;
+  border: 1px dotted #B5B5B5;
+}
+
+
+.div_progresso{
+  padding: 1.5rem;
+}
+
+@media (max-width: 725px){
+  .cards__inputs{
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .card__input{
+    width: 100%;
+    margin: 1.5rem 0 0 0;
+  }
+
+  .card__input:first-child{
+    margin: 0;
+  }
+
+  .card__neighborhood{
+    width: 100%;
+  }
+}

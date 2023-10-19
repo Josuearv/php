@@ -1,0 +1,458 @@
+.nav-container{
+    display: flex;
+    align-items: center;
+}
+.nav-container span{
+    margin: 0 0 0 0.9rem;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+hr{
+    height: 4px;
+    background: white;
+    border: 1px solid #EEEEEE;
+}
+
+.nav-background{
+    border: 0px solid #EEEEEE;
+    height: 3rem;
+}
+
+.no__receipts-background{
+    padding: 0 0 1.5rem 0;
+}
+
+.no__receipts-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem 0 0 0;
+}
+
+
+/* ######################## */ 
+
+/* ############## calender -> global */
+.calender{
+    background: white;
+    box-shadow: rgb(0 0 0 / 4%) 0px 3px 5px;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.calender__container{
+    max-width: 1440px;
+    width: 95%;
+}
+
+/* ######################## */ 
+
+/* ############## header__calender*/
+
+.header__calender{
+    padding: 2rem 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__calender{
+    display: flex;
+    align-items: center;
+}
+
+.handle__choice{
+    display: flex;
+}
+
+.select__calender{
+    border: 2px solid #282828;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    border-radius: 2rem;
+    background: #282828;
+    display: flex;
+    align-items: center;
+
+}
+.select__calender select{
+    background: transparent;
+    color: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    padding: 0 1.5rem 0 0;
+    font-size: 15px;
+}
+
+
+.nav__calender{
+    height: 100%;
+}
+.nav__calender a{
+    color: #5283FF;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0 2rem 0 0;
+    width: 100%;
+}
+
+.handle__choice{
+    background: #F9F2EA;
+    padding: 0.7rem 0 0.7rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 2rem;
+    width: 70%;
+}
+
+.chip__calender input[type="radio"]{
+    display: none;
+}
+
+.chip__calender label{
+    color: rgb(59, 59, 59);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 1rem 0 1rem;
+    cursor: pointer;
+    transition: .10s;
+    border-radius: 2rem;
+
+    padding: 0.6rem 1.5rem 0.6rem 1.5rem;
+
+}
+.chip__calender input[type="radio"]:checked + label{
+    background-image: linear-gradient(to left, #DE7700,#E75E0D);
+    padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+    border-radius: 2rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+/* ######################## */ 
+
+/* ############## table__calender*/
+
+.table__calender{
+    width: 100%;
+    margin: 2rem 0 0 0;
+    border-collapse: collapse;
+
+
+}
+
+.row__top{
+    height: 45px;
+    border-top: 1px solid #EAEAEA;
+    padding: 1rem 0 1rem 0;
+}
+
+.table__calender tr{
+    width: 100%;
+
+
+}
+
+.dary__row-calender{
+    border: none !important;
+}
+
+.dary__row-calender td{
+    width: 125px;
+    height: 100px;
+    text-align: end;
+    padding: 1rem 1rem 4rem 0.5rem;
+    border: 1px solid #ebebe9
+
+}
+
+.dary__background-red{
+    background: #FAF6F5;
+    color: rgb(85, 85, 85);
+    font-weight: 400;
+    border-left: 1px solid #EBEBE9;
+}
+
+
+.dary__row-top--margin{
+    margin: 0.3rem 0 0 0;
+}
+.dary__color-gray{
+    color: rgb(133, 133, 133);
+    opacity: 0.7;
+}
+
+
+.dary__block--left{
+    text-align: start;
+    height: 30px;
+    font-size: clamp(10px, 2vw, 15px);
+    color: rgb(61, 59, 59);
+    font-weight: 500;
+}
+
+.dary__block--top{
+    text-align: start;
+    padding: 0 0 0 0;
+    font-size: clamp(5px, 1.5vw ,13px);
+    color: rgb(61, 59, 59);
+    font-weight: 500; 
+}
+
+.dary__image-left{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-size: 13px;
+
+}
+
+.bary__border-radius{
+    background: #EF7001;
+
+    color: #fff;
+    font-weight: 700;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+    right: -80px;
+
+}
+
+
+.border__orange--active{
+    border:3px solid #BC7B41 !important;
+}
+
+.children__color-gray{
+    display: flex;
+    flex-direction: column;
+    color: rgb(66, 66, 66);
+}
+.children__color-gray::before{
+    content: "feriado";
+    color: #ff7700;
+    font-weight: 500;
+}
+
+
+.block__buttons-calender{
+    padding: 2rem 0 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block__buttons-calender a{
+    color: #5283FF;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.block__buttons-calender a img{
+    margin: 0 0.5rem 0 0;
+}
+
+.color--gray{
+    color: #838383 !important;
+    font-weight: 600;
+}
+
+.aside__bar{
+    box-shadow: rgb(0 0 0 / 4%) 0px 3px 5px;
+    height: 100%;
+    width: 235px;
+    background: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text__details-weight{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.aside__row{
+
+    height: 1px;
+    margin: 1rem 0 1rem 0;
+    border: 1px solid #E9E9E9;
+}
+
+.bloc__day-tel{
+    display: flex;
+    align-items: center;
+    border-left: 5px solid #5D5852;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.bloc__day-tel img{
+    margin: 0 0.5rem 0 0.5rem;
+}
+
+.text__charges{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.text__checkout{
+    color: rgb(94, 90, 90);
+    font-size: 13px;
+    max-width: 230px;
+}
+
+.color-green{
+    color: #5283FF;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+}
+
+
+@media (max-width: 1238.89px){
+    .calender{
+        width: 77%;
+    }
+}
+@media (max-width: 1159.50px){
+    .aside__bar{
+        width: 213px;
+    }
+}
+@media (max-width: 1115px){
+    .calender{
+        width: 74%;
+    }
+    .bary__border-radius{
+        right: -55px;
+        top: 5px;
+        width: 25px;
+        height: 25px;
+        font-size: 10px;
+    }
+    .dary__row-calender td{
+        padding: 0;
+
+    }
+}
+
+
+@media (max-width: 985px){
+    .aside__bar{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 880px){
+    .bary__border-radius{
+        right: -45px;
+        top: 5px;
+    }
+}
+
+@media (max-width: 775px){
+    .bary__border-radius{
+        right: 0;
+        top: 0;
+    }
+    .dary__image-left{
+        font-size: 9px;
+    }
+    .dary__block--top, .dary__block--left{
+        display: none ;
+    }
+    .calender__container{
+        overflow: auto;
+        height: 538px;
+    }
+
+}
+
+@media (max-width: 578px){
+    .dary__image-left{
+
+        font-size: 0px;
+    }
+    .dary__row-calender td{
+    text-align: center !important;
+    }
+    
+    
+}
+
+@media (max-width: 1060px){
+    .calender{
+        width: 72%;
+    }
+}
+@media (max-width: 985px){
+    .no__receipts-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .calender{
+        width: 100%;
+    }
+    .aside__bar{
+        margin: 2rem 0 0 0;
+    }
+    .dary__row-calender td{
+        padding: 0;
+        height: 76px;
+    }
+    .table__calender{
+        width: 100%;
+        box-sizing: border-box;
+        table-layout: fixed;
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    .dary__row-calender{
+        vertical-align: inherit;
+        border-color: inherit;
+    }
+
+}
+
+@media (max-width: 730px){
+    .header__calender{
+        padding: 2rem 0 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .nav__calender{
+        margin: 1rem 0 1rem 0;
+        flex-direction: column;
+    }
+    .nav__calender a{
+        text-align: center;
+        margin: 0 !important;
+    }
+    .handle__choice{
+        margin: 1rem 0 0 0;
+        width: auto;
+    }
+}

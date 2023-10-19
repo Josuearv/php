@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('icomoon.eot?nov1hl');
+  src:  url('icomoon.eot?nov1hl#iefix') format('embedded-opentype'),
+    url('icomoon.ttf?nov1hl') format('truetype'),
+    url('icomoon.woff?nov1hl') format('woff'),
+    url('icomoon.svg?nov1hl#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-info-circulo:before {
+  content: "\e900";
+}
+.icon-escudo:before {
+  content: "\e905";
+}
+.icon-exclamacao:before {
+  content: "\e906";
+}
+.icon-sorriso:before {
+  content: "\e907";
+}
+.icon-chat:before {
+  content: "\e908";
+}
+.icon-servicos:before {
+  content: "\e909";
+}
+.icon-suporte:before {
+  content: "\e90a";
+}
+.icon-comunidade:before {
+  content: "\e90b";
+}
+.icon-ofertas:before {
+  content: "\e90c";
+}
+.icon-financas:before {
+  content: "\e90d";
+}
+.icon-investimentos:before {
+  content: "\e90e";
+}
+.icon-home:before {
+  content: "\e90f";
+}
+.icon-olho-fechado:before {
+  content: "\e910";
+}

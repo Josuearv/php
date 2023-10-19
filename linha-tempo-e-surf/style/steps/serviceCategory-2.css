@@ -1,0 +1,33 @@
+.sub__informationChooseService{
+  border-bottom: 1px solid #EEEEEE;
+  padding: 1.5rem;
+}
+
+.title__chooseService{
+  border: none;
+  padding: 0;
+}
+
+.title__othersService{
+  color: #3A85FB;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 1.5rem 0 0 0;
+}
+
+.title__categoryOfService img{
+  transform: rotate(180deg)
+} 
+
+.title__categoryOfService img{
+  margin: 0 0.5rem 0 0;
+}
+
+.ul__categoryOfService li:first-child{
+  background: #F5F5F5;
+}
+
+/* div_progresso */
+.div_progresso{
+  padding: 1.5rem;
+}

@@ -1,0 +1,178 @@
+.section__aboutProduct{
+  padding: 0.5rem;
+  width: 1600px;
+  margin: 0 1rem 3rem 0;
+}
+
+.title__checkProduct{
+  color: #333333;
+  padding: 2rem 1rem 3rem 1rem;
+  font-weight: 600;
+}
+
+.background__informationService{
+  background: #fff;
+  border-radius: 0.5rem;
+}
+
+/* title__serviceInformation */
+
+.div__serviceInformation{
+  padding: 2.5rem;
+  border-bottom: 1px solid #EDEDED;
+}
+
+.title__informationService{
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.title__edit{
+  color: #2483FA;
+  font-weight: 500;
+}
+
+/* ul__informationAboutPurchase */
+
+.ul__informationAboutPurchase{
+  padding: 1.5rem;
+  list-style: none;
+}
+
+.ul__informationAboutPurchase li:first-child{
+  border-top: none;
+}
+
+.ul__informationAboutPurchase li{
+  padding: 2.5rem 0;
+  border-top: 1px solid #EDED;
+  font-weight: 500;
+  color: #999999;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title__otherService{
+  font-weight: 500; 
+  color: #333333;
+  margin: 0.5rem 0 0 0;
+}
+
+.title__otherService img{
+  margin: 0 1rem;
+}
+
+.images__packet img{
+  margin: 1rem 0 0 0;
+}
+
+/* background__conditions */
+
+.background__conditions{
+  background: #fff;
+  margin: 2rem 0 0 0;
+  border-radius: 0.5rem;
+}
+
+.title__character{
+  font-weight: 500;
+  margin: 0.5rem 0.5rem 0 0;
+  color: #999999;
+}
+
+.li__activeTitleBlack h3{
+  color: #000000;
+  font-weight: 500;
+}
+
+/* aside__resumeProduct */
+
+.aside__resumeProduct{
+  background: #fff;
+  right: 1px;
+  width: 550px;
+  padding: 0 3rem;
+}
+
+.title__costsSummary{
+  margin: 10rem 0 0 0;
+  font-weight: 600;
+  color: #333333;
+}
+
+.title__freeExposure{
+  margin: 3rem 0 0 0;
+  color: #333333;
+}
+
+.title__freeExposureMoney{
+  color: #929292;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* buttons__resumeProductAside */
+
+.buttons__resumeProductAside{
+  margin: 4rem 0 0 0;
+}
+
+.buttonResume:first-child{
+  margin: 0;
+}
+
+.buttonResume{
+  margin: 1.5rem 0 0 0;
+  height: 60px;
+  border-radius: 0.5rem;
+  border: none;
+  font-weight: 600;
+  font-size: 15px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buttonResume--blue{
+  background: #3483FA;
+}
+
+.buttonResume--blue:hover{
+  background: #104da8;
+}
+
+.buttonResume--orange{
+  background: #FFA500;
+}
+
+.buttonResume--orange:hover{
+  background: #c07d00;
+}
+
+
+@media (max-width: 990px){
+  .main{
+    flex-direction: column;
+  }
+
+  .title__costsSummary{
+    margin: 4rem 0 0 0;
+  }
+
+  .section__aboutProduct,
+  .aside__resumeProduct{
+    width: 100%;
+  }
+  .aside__resumeProduct{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin: 0 0 3rem 0;
+  }
+
+  .buttons__resumeProductAside{
+    margin: 0; 
+    padding: 4rem 0;
+  }
+  
+}

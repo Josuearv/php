@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="./style/cssStyleModal/estilo.css" />
+  <link rel="stylesheet" href="./style/globalStyles.css" />
+  <link rel="stylesheet" href="./style/flex.css" />
+  <link rel="stylesheet" href="./style/header.css" />
+  <link rel="stylesheet" href="./style/home.css" />
+
+  <title>Nell bux</title>
+
+  <script src="./script/jquery.js"></script>
+
+</head>
+<body>
+
+
+  <!-- aside -->
+  <aside id="menu-mobile" class="menu-mobile-fecado">
+      <div class="container">
+        <div id="fechar-menu-mobile">
+          <span class="material-icons">cancel</span>
+        </div>
+      </div>
+
+      <ul id="menu-principal">
+        <li><a href="#">Area Membro</a></li>
+        <li><a href="#">Meus Projetos</a></li>
+        <li><a href="#">Minhas Finanças</a></li>
+      </ul>
+
+      <div class="espaco20"></div>
+
+      <a
+        href="#pesquisa-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <span class="material-icons">search</span>
+          <div>Pesquisar</div>
+        </div>
+      </a>
+
+      <a
+        href="#notificacoes-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <span class="material-icons">notifications</span>
+          <div>Notificações</div>
+        </div>
+      </a>
+
+      <a
+        href="#mensagens-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <span class="material-icons">sms</span>
+          <div>Mensagens</div>
+        </div>
+      </a>
+
+      <a
+        href="#usuario-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <div id="logo-tb" class="menu-usuario">TB</div>
+        </div>
+      </a>
+  </aside>    
+
+  <!-- header -->
+  <header class="header justifyContentCenter">
+        <div class="containerHeader__block justifyContentSpaceBetween alignItemsCenter">
+          <img
+            id="logo"
+            src="./assets/imagesHeader/logo.png"
+            alt="nell bux logo image"
+            width="120"
+            height="40"
+          />
+  
+          <nav class="nav justifyContentSpaceBetween">
+            <ul class="nav__ul justifyContentSpaceBetween">
+              <li><a href="#">area membro</a></li>
+              <li><a href="#">meus projetos</a></li>
+              <li><a href="#">minhas finanças</a></li>
+            </ul>
+  
+            <div class="search__nav justifyContentSpaceBetween alignItemsCenter">
+
+              <div class="search__container"></div>
+              <input
+                type="text"
+                placeholder="Pesquisar no nellbux"
+                name="search"
+              />
+  
+              <div class="filter__result">
+                <span id="result__filter" value="">Investidores</span>
+              </div>
+  
+              <div class="filter__Arrow-block">
+                <img
+                  class="filter__seta"
+                  src="./assets/imagesHeader/seta.png"
+                  alt="arrow that looks like a downward facing triangle"
+                  width="15px"
+                  height="15px"
+                />
+          
+                <div class="nav__filter">
+                  <ul class="filter__search">
+                  </ul>
+                </div>
+                  
+              </div>
+              <img
+                src="./assets/imagesHeader/search.png"
+                alt="lupa de pesquisa"
+                width="25px"
+                height="25px"
+              />
+  
+                        
+            </div>
+              
+          
+            </nav>
+  
+            <div class="block__Communication">
+
+
+              <li class="button__nav localizationModal openModal li__remove-list">
+
+                <a href="#notification">
+                  <span>
+                      <img
+                        
+                        src="./assets/imagesHeader/sino.png"
+                        alt="orange bell icon receive notification"
+                        width="30"
+                        height="30"
+                      />
+                  </span>
+                </a>
+
+                <div class="messageNotification flexDirectionColumn modal__active-element">
+                  
+                  <header
+                    class="header__notification header__messageModal justifyContentSpaceBetween alignItemsCenter"
+                  >
+                    <span class="text__message">Notificações</span>
+                    <span class="text__message">Ver todos</span>
+                  </header>
+                  
+                  <nav class="nav__notification flexDirectionColumn alignItemsCenter">
+                    
+                    <li class="card__notification justifyContentCenter">
+                      <div class="block__text__notification flexDirectionColumn justifyContentCenter">
+                        
+                        <a class="card__notificationt__text card__notificationt__text--weight" >
+                          Rejeitamos seu projeto
+                          <span class="card__notificationt__text card__notificationt__text--margin">Ontem</span>
+                        </a>
+
+                        <a class="notifications__about justifyContentSpaceBetween alignItemsCenter"
+                          >Em criar uma plataforma para reclamação
+                          <img
+                            src="./assets/imagesHeader/trash.png"
+                            alt="trash can"
+                            width="35"
+                            height="35"
+                          />
+                        </a>
+
+                      </div>
+                    </li>
+                               
+                    <li class="card__notification justifyContentCenter">
+                      <div class="block__text__notification flexDirectionColumn justifyContentCenter">
+                        
+                        <a class="card__notificationt__text card__notificationt__text--weight" >
+                          Rejeitamos seu projeto
+                          <span class="card__notificationt__text card__notificationt__text--margin">Ontem</span>
+                        </a>
+
+                        <a class="notifications__about justifyContentSpaceBetween alignItemsCenter"
+                          >Em criar uma plataforma para reclamação
+                          <img
+                            src="./assets/imagesHeader/trash.png"
+                            alt="trash can"
+                            width="35"
+                            height="35"
+                          />
+                        </a>
+
+                      </div>
+                    </li>
+
+                    <li class="card__notification justifyContentCenter">
+                      <div class="block__text__notification flexDirectionColumn justifyContentCenter">
+                        
+                        <a class="card__notificationt__text card__notificationt__text--weight" >
+                          Rejeitamos seu projeto
+                          <span class="card__notificationt__text card__notificationt__text--margin">Ontem</span>
+                        </a>
+
+                        <a class="notifications__about justifyContentSpaceBetween alignItemsCenter"
+                          >Em criar uma plataforma para reclamação
+                          <img
+                            src="./assets/imagesHeader/trash.png"
+                            alt="trash can"
+                            width="35"
+                            height="35"
+                          />
+                        </a>
+
+                      </div>
+                    </li>
+
+                  </nav>
+
+                </div>
+
+              </li>
+  
+              <li class="message localizationModal openModal li__remove-list">
+
+                <a href="#message">
+                  <span>
+                    <img
+                      src="./assets/imagesHeader/message.png"
+                      alt="message icon, orange color with 3 dots in the middle"
+                      width="40"
+                      height="40"
+                    />
+                  </span>
+                </a>
+
+                <div class="messageModalss flexDirectionColumn modal__active-element">
+                  <header class="header__notification header__messageModal justifyContentSpaceBetween alignItemsCenter">
+                    <span class="text__message">Mensagens</span>
+                    <span class="text__message">Ver todos</span>
+                  </header>
+                  <nav class="nav__notification alignItemsCenter flexDirectionColumn">
+                    
+                    <li class="messager__card justifyContentCenter">
+                      <img
+                        src="./assets/imagesHeader/avatar.png"
+                        alt="faceless person with border"
+                        width="40"
+                        height="40"
+                      />
+                      <div class="messager__block__text block__text__notification">
+                        <div class="text__card__mensager justifyContentSpaceBetween">
+                          <span>Repasso Franquia - Oportunidade...</span>
+                          <span id="text__new__mensager">Nova Mensagem</span>
+                        </div>
+    
+                        <span class="text__faq"
+                          >Em criar uma plataforma para reclamação
+                        </span>
+                      </div>
+
+                    </li>
+
+                    <li class="messager__card justifyContentCenter">
+                      <img
+                        src="./assets/imagesHeader/avatar.png"
+                        alt="faceless person with border"
+                        width="40"
+                        height="40"
+                      />
+                      <div class="messager__block__text block__text__notification">
+                        <div class="text__card__mensager justifyContentSpaceBetween">
+                          <span>Repasso Franquia - Oportunidade...</span>
+                          <span id="text__new__mensager">Nova Mensagem</span>
+                        </div>
+    
+                        <span class="text__faq"
+                          >Em criar uma plataforma para reclamação
+                        </span>
+                      </div>
+
+                    </li>
+
+                    <li class="messager__card justifyContentCenter">
+                      <img
+                        src="./assets/imagesHeader/avatar.png"
+                        alt="faceless person with border"
+                        width="40"
+                        height="40"
+                      />
+                      <div class="messager__block__text block__text__notification">
+                        <div class="text__card__mensager justifyContentSpaceBetween">
+                          <span>Repasso Franquia - Oportunidade...</span>
+                          <span id="text__new__mensager">Nova Mensagem</span>
+                        </div>
+    
+                        <span class="text__faq"
+                          >Em criar uma plataforma para reclamação
+                        </span>
+                      </div>
+
+                </div>
+
+              </li>
+
+              <hr id="row__separator"/>
+
+              <li class="perfil__tb-element localizationModal openModal li__remove-list">
+                <a href="#perfil">
+                  <span class="justifyContentCenter alignItemsCenter tb__perfil"> tb </span>
+                </a>
+    
+                <div class="perfil__modal justifyContentCenter alignItemsCenter modal__active-element">
+                  <div class="perfil__container">
+                    <div class="perfil__title__block">
+                      <span class="perfil__title">
+                        olá,
+                        <span class="perfil__title__bold">marcos,</span>
+                        seja bem-vindo.
+                      </span>
+                    </div>
+    
+                    <div class="account__config flexDirectionColumn justifyContentSpaceEvenly">
+                      <span class="account__title justifyContentSpaceBetween">
+                        Configurações Conta
+                        <span> Meu perfil </span>
+                      </span>
+                      <span class="account__title justifyContentSpaceBetween"> Rank do Dia </span>
+                    </div>
+    
+                    <div class="block__offers justifyContentSpaceEvenly flexDirectionColumn">
+                      <span class="title__offers__primary">Ofertas e pedidos</span>
+                      <div class="block__text__offers justifyContentSpaceBetween">
+                        <span class="block__text__offers__invest"
+                          >Abrir uma oferta de investimento</span
+                        >
+                        <span class="block__text__offers__invest"
+                          >Encontrar Pedidos</span
+                        >
+                      </div>
+                      <span
+                        class="block__text__offers__invest block__text__offers__invest--text"
+                        >Abrir um pedido de credito</span
+                      >
+                    </div>
+    
+                    <div class="block__Information__offers flexDirectionColumn justifyContentSpaceEvenly">
+                      <span class="title__offers__primary"
+                        >Informações da Conta</span
+                      >
+                      <div class="block__text__offers__account justifyContentSpaceBetween">
+                        <div class="block__text__offers__text flexDirectionColumn">
+                          <span class="block__text__offers__invest block__textListIndi-element"
+                            >Lista de Indicados</span
+                          >
+                          <span class="block__text__offers__invest"
+                            >Histórico de Conta</span
+                          >
+                        </div>
+    
+                        <div class="block__end__offers flexDirectionColumn">
+                          <span class="block__text__offers__invest"
+                            >Lista de Seguidores</span
+                          >
+                          <span class="block__text__offers__invest"
+                            >Faças uma pergunta</span
+                          >
+                        </div>
+                      </div>
+                      <span class="block__text__offers__invest"
+                        >Minhas Apostas</span
+                      >
+                    </div>
+    
+                    <div class="user__offers justifyContentSpaceBetween alignItemsCenter">
+                      <div class="block__title__user justifyContentSpaceBetween flexDirectionColumn">
+                        <span class="block__text__offers__invest"
+                          >Conta Nell bux</span
+                        >
+                        <span class="perfil__title__bold">1211451-1</span>
+                      </div>
+                      <div class="block__title__user justifyContentSpaceBetween flexDirectionColumn">
+                        <span class="block__text__offers__invest block__text__user"
+                          >Meu Usuario</span
+                        >
+                        <span class="perfil__title__bold">@eduardoon</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+            </div>
+          </nav>
+  
+          <div id="bt-abrir-menu-mobile" class="exit__menu">
+            <span class="material-icons">menu</span>
+          </div>
+          
+        </div>
+  </header>
+
+  <!-- nav-->
+  <nav class="nav__searchProject justifyContentCenter">
+    <div class="container__searchProject justifyContentSpaceBetween alignItemsCenter">
+      <Ul class="ul__links alignItemsCenter">
+        <li class="li__active">
+          <a href="#">Encontrar usuarios</a>
+        </li>
+        <li>
+          <a href="#">Encontrar Projetos</a>
+        </li>
+        <li>
+          <a href="#">Encontrar Ofertas</a>
+        </li>
+        <li>
+          <a href="#">Meus seguidores</a>
+        </li>
+  
+      </Ul>
+      <button class="button__sendProject">Publique um projeto</button>
+    </div>
+  </nav>
+
+  <!-- main -->
+  <main class="main__home justifyContentCenter">
+    <div class="home__container justifyContentSpaceBetween">
+      <div class="aside__background-opactiy add__background--active"></div>
+
+      <!-- aside mobile-->
+      <aside class="aside__mobile">
+        <h2 class="title__asideMobile">Filtrar por: </h2>
+        <div class="line__rowMobileAside"></div>
+        
+        <nav class="nav__asideMobile">
+          <ul class="ul__asideMobile">
+            <li class="li__elementType">
+
+              <div class="li__name justifyContentSpaceBetween alignItemsCenter">
+                Atividade Comercial
+                <img src="./assets/setaTop.png" alt="" width="20" height="20" />
+              </div>
+
+              <div class="selectMobile">
+                <select>
+                  <option value>Todas as profissoes</option>
+                  <option>teste 1</option>
+                  <option>teste 2</option>
+                  <option>teste 3</option>
+                  <option>teste 4</option>
+                  <option>teste 5</option>
+                </select>
+              </div>
+            </li>
+
+            <li class="li__elementType">
+              
+              <div class="li__name justifyContentSpaceBetween alignItemsCenter">
+                Nivel do Score
+                <img src="./assets/setaTop.png" alt="" width="20" height="20" />
+              </div>
+
+              <div class="selectMobile">
+                <select>
+                  <option value>Todos os niveis</option>
+                  <option>teste 1</option>
+                  <option>teste 2</option>
+                  <option>teste 3</option>
+                  <option>teste 4</option>
+                  <option>teste 5</option>
+                </select>
+              </div>
+            </li>   
+              
+            <li class="li__elementType">
+              
+              <div class="li__name justifyContentSpaceBetween alignItemsCenter">
+                Tipo de conta
+                <img src="./assets/setaTop.png" alt="" width="20" height="20" />
+              </div>
+
+              <div class="selectMobile ">
+                <div class="label__list">
+                  <label for="all">
+                    <input type="radio" id="all" class="radio" name="radio1"/>
+                    Todas 
+                  </label>
+                  
+                  <label for="4propost">
+                    <input type="radio" id="all" class="radio" name="radio1"/>
+                    0-4 propostas 
+                  </label>
+  
+                  <label for="5propost">
+                    <input type="radio" id="all" class="radio" name="radio1" />
+                    5+ propostas
+                  </label>
+                </div>
+              </div>
+            </li>   
+
+            <li class="li__elementType">
+              
+              <div class="li__name justifyContentSpaceBetween alignItemsCenter">
+                Nivel do Score
+                <img src="./assets/setaTop.png" alt="" width="20" height="20" />
+              </div>
+
+              <div class="selectMobile">
+                <select class="select__primary">
+                  <option value>Todas os estados</option>
+                  <option>teste 1</option>
+                  <option>teste 2</option>
+                  <option>teste 3</option>
+                  <option>teste 4</option>
+                  <option>teste 5</option>
+                </select>
+                <select class="select__secondary">
+                  <option value>Todas cidade e municipios</option>
+                  <option>teste 1</option>
+                  <option>teste 2</option>
+                  <option>teste 3</option>
+                  <option>teste 4</option>
+                  <option>teste 5</option>
+                </select>
+              </div>
+            </li> 
+
+            <li class="li__elementType">
+              
+              <div class="li__name justifyContentSpaceBetween alignItemsCenter">
+                Avaliacao
+                <img src="./assets/setaTop.png" alt="" width="20" height="20" />
+              </div>
+
+              <div class="selectMobile">
+                <div class="check__review">
+                  <label class="label__stars">
+                    <input type="radio" />
+                    <span>5+</span>
+                  </label>
+                  <img src="./assets/star.png" alt="start" width="15" height="15"/>
+                  <img src="./assets/star.png" alt="start" width="15" height="15"/>
+                  <img src="./assets/star.png" alt="start" width="15" height="15"/>
+                  <img src="./assets/star.png" alt="start" width="15" height="15"/>
+                  <img src="./assets/star.png" alt="start" width="15" height="15"/>
+                </div>
+
+                <div class="check__review">
+                  <label class="label__stars">
+                    <input type="radio" />
+                    <span>4+</span>
+                  </label>
+                  <img src="./assets/star.png" alt="start" width="15" height="15"/>
+                  <img src="./assets/star.png" alt="start" width="15" height="15"/>
+                  <img src="./assets/star.png" alt="start" width="15" height="15"/>
+                  <img src="./assets/star.png" alt="start" width="15" height="15"/>
+                  <img src="./assets/starOpacity.png" alt="starOpacity" width="15" height="15" />
+                </div>
+
+                <div class="check__review">
+                  <label class="label__stars">
+                    <input type="radio" />
+                    <span>3+</span>
+                  </label>
+                  <img src="./assets/star.png" alt="start" width="15" height="15"/>
+                  <img src="./assets/star.png" alt="start" width="15" height="15"/>
+                  <img src="./assets/star.png" alt="start" width="15" height="15"/>
+                  <img src="./assets/starOpacity.png" alt="starOpacity" width="15" height="15" />
+                  <img src="./assets/starOpacity.png" alt="starOpacity" width="15" height="15" />
+                </div>
+              </div>
+            </li> 
+              
+            <li class="li__elementType">
+              
+              <div class="li__name justifyContentSpaceBetween alignItemsCenter">
+                Projetos finalizados
+                <img src="./assets/setaTop.png" alt="" width="20" height="20" />
+              </div>
+
+              <div class="selectMobile">
+                <div class="label__list">
+                  <label for="all">
+                    <input type="radio" id="all" name="radio3" />
+                    Todos
+                  </label>
+                  
+                  <label for="all2">
+                    <input type="radio" id="all1" name="radio3" />
+                    0 - 10
+                  </label>
+                  
+                  <label for="all3">
+                    <input type="radio" id="all1" name="radio3" />
+                    +10
+                  </label>
+
+                </div> 
+              </div>
+            </li>  
+            
+            <li class="li__elementType">
+              
+              <div class="li__name justifyContentSpaceBetween alignItemsCenter">
+                Taxa de juros
+                <img src="./assets/setaTop.png" alt="" width="20" height="20" />
+              </div>
+
+              <div class="selectMobile">
+
+                <div class="input__messageError input__margin input__messageError-right">
+                  <div class="Input__Nmb alignItemsCenter">
+                    <span class="title__porcent alignItemsCenter justifyContentCenter">%</span>
+                    <input type="number" />
+                  </div>
+                  <span class="title__messageError">Este campo deve ser maior que 0%</span>
+                </div>
+
+                <div class="input__messageError input__margin input__messageError-right">
+                  <div class="Input__Nmb alignItemsCenter">
+                    <span class="title__porcent alignItemsCenter justifyContentCenter">%</span>
+                    <input type="number" />
+                  </div>
+                  <span class="title__messageError">Este campo deve ser maior que 0%</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="li__elementType">
+              
+              <div class="li__name justifyContentSpaceBetween alignItemsCenter">
+                Tipo de conta
+                <img src="./assets/setaTop.png" alt="" width="20" height="20" />
+              </div>
+
+              <div class="selectMobile">
+                <div class="label__list">
+                  <label for="all">
+                    <input type="radio" id="all" name="radio" />
+                    Todos os usuarios
+                  </label>
+                  
+                  <label for="all1">
+                    <input type="radio" id="all1" name="radio" />
+                    apenas usuarios verificados
+                  </label>
+
+                </div>
+              </div>
+            </li>   
+
+          </ul>
+        </nav>
+
+        <button class="aside__buttonSave">Salvar busca</button>
+      </aside>
+      <!-- ########## -->
+      <aside class="aside__block justifyContentStart alignItemsStart">
+        <div class="aside__container">
+    
+          <section class="section__filterScore justifyContentSpaceBetween alignItemsCenter">
+
+            <div class="filterScore__information">
+              <div class="names__background">
+                <span class="title__score">Score</span>
+                <div class="background__imagesFilterScore alignItemsCenter">
+                  <span class="background__white justifyContentCenter alignItemsCenter">
+                    <img src="./assets/trofeu.png" alt="" width="25"
+                     height="25"/>
+                  </span>
+                  <span class="name__hero">HERO</span>
+                </div>
+              </div>
+              <p class="Titlefilter__levelScore">filtrar o nivel de score?</p>
+            </div>
+            
+            <input type="checkbox" id="chk" />
+            <label for="chk" class="switch">
+              <span class="slider"></span>
+            </label>
+
+          </section>
+
+          <div class="data__Publication">
+            <h3 class="title__commercial">Atividade Comercial</h3>
+  
+            <div class="select-block">
+              <select>
+                <option value>Todas as profissões</option>
+                <option>teste1</option>
+                <option>teste2</option>
+                <option>teste3</option>
+                <option>teste4</option>
+                <option>teste5</option>
+              </select>
+
+              <img src="./assets/setaDown.png" alt="" width="20" height="25"/>
+            </div>
+          </div>
+    
+          <div class="data__Publication">
+            <h3 class="title__commercial">Nivel do score?</h3>
+  
+            <div class="select-block">
+              <select>
+                <option value>Todos os Niveis</option>
+                <option>teste1</option>
+                <option>teste2</option>
+                <option>teste3</option>
+                <option>teste4</option>
+                <option>teste5</option>
+              </select>
+
+              <img src="./assets/setaDown.png" alt="" width="20" height="25"/>
+            </div>
+          </div>         
+
+          <div class="offers__received data__Publication-block">
+            <h3 class="primary__buget-element">Tipo de conta</h3>
+            <div class="block__radius justifyContentSpaceBetween flexWrap">
+
+              <div class="radius__block">
+                <input type="radio" name="invest" id="invest__todas" />
+                <label for="invest__todas">Todas</label>
+              </div>
+    
+              <div class="radius__block">
+                <input type="radio" name="invest" id="invest__propostas4" />
+                <label for="invest__propostas4">0-4 propostas</label>
+              </div>
+    
+              <div class="radius__block">
+                <input type="radio" name="invest" id="invest__propostas5" />
+                <label for="invest__propostas5">5+ propostas</label>
+              </div>
+    
+                    
+            </div>
+          </div>
+
+          <div class="data__localization-block data__Publication-block">
+            <h3 class="primary__buget-element">Localização</h3>
+
+            <div class="select-block">
+              <select>
+                <option value>Todos os estados</option>
+                <option>teste1</option>
+                <option>teste2</option>
+                <option>teste3</option>
+                <option>teste4</option>
+                <option>teste5</option>
+              </select>
+    
+              <img src="./assets/setaDown.png" alt="" width="20" height="25"/>
+            </div>
+    
+            <div class="select-block">
+              <select>
+                <option value>Todas cidades e municipios</option>
+                <option>teste1</option>
+                <option>teste2</option>
+                <option>teste3</option>
+                <option>teste4</option>
+                <option>teste5</option>
+              </select>
+    
+            </div>
+    
+          </div>
+
+
+          <div class="reputation-block">
+            <h3 class="primary__buget-element--black">Avaliação</h3>
+            <div class="reputation__filter-block">
+              <div class="reputatation__stars-block alignItemsCenter">
+                <input type="radio" name="stars" id="stars5" checked/>
+
+                <label class="reputation__stars-block reputation__childrenOne alignItemsCenter" for="stars5">5
+                  <img src="./assets/star.png" alt="start" width="20" height="20"/>
+                  <img src="./assets/star.png" alt="start" width="20" height="20"/>
+                  <img src="./assets/star.png" alt="start" width="20" height="20"/>
+                  <img src="./assets/star.png" alt="start" width="20" height="20"/>
+                  <img src="./assets/star.png" alt="start" width="20" height="20"/>
+                </label>
+
+              </div>
+      
+              <div class="reputatation__stars-block  alignItemsCenter">
+                <input type="radio" name="stars" id="stars4"/>
+                <label class="reputation__stars-block reputation__MarginOne alignItemsCenter" for="stars4">4+
+                  <img src="./assets/star.png" alt="start" width="20" height="20"/>
+                  <img src="./assets/star.png" alt="start" width="20" height="20"/>
+                  <img src="./assets/star.png" alt="start" width="20" height="20"/>
+                  <img src="./assets/star.png" alt="start" width="20" height="20"/>
+                  <img src="./assets/starOpacity.png" alt="starOpacity" width="20" height="20" />
+                </label>
+              </div>
+                  
+                    
+              <div class="reputatation__stars-block  alignItemsCenter">
+                <input type="radio" name="stars" id="stars4"/>
+                <label class="reputation__stars-block reputation__MarginOnes alignItemsCenter" for="stars4">3+
+                  <img src="./assets/star.png" alt="start" width="20" height="20"/>
+                  <img src="./assets/star.png" alt="start" width="20" height="20"/>
+                  <img src="./assets/star.png" alt="start" width="20" height="20"/>
+                  <img src="./assets/starOpacity.png" alt="starOpacity" width="20" height="20" />
+                  <img src="./assets/starOpacity.png" alt="starOpacity" width="20" height="20" />
+                </label>
+              </div>
+
+            </div>
+          </div>          
+          
+    
+          <div class="invest-secondary-block data__Publication-block">
+            <h3 class="primary__buget-element">Projetos finalizados</h3>
+            <div class="block__radius justifyContentSpaceBetween alignItemsCenter">
+              <div class="radius__blocks">
+                <input type="radio" name="invest__secondary" id="invest__propost--todas" />
+                <label for="invest__propost--todas">Todos</label>
+              </div>
+    
+              <div class="radius__blocks">
+                  <input type="radio" name="invest__secondary" id="invest__propost--0-10" />
+                  <label for="invest__propost--0-10">0 - 10</label>
+              </div>
+    
+              <div class="radius__blocks">
+                <input type="radio" name="invest__secondary" id="invest__propost--10" />
+                <label for="invest__propost--10">+10</label>
+              </div>
+    
+            </div>
+          </div>
+
+    
+          <div class="interest__rate">
+            <h3 class="primary__buget-element" >Taxa de juros</h3>
+            <div class="inputs__error justifyContentSpaceBetween">
+
+              <div class="input__messageError input__messageError-right">
+                <div class="Input__Nmb alignItemsCenter">
+                  <span class="title__porcent alignItemsCenter justifyContentCenter">%</span>
+                  <input type="number" /> 
+                </div>
+                <span class="title__messageError">Este campo deve ser maior que 0%</span>
+
+              </div>
+
+               <div class="input__messageError input__messageError-left">
+                <div class="Input__Nmb alignItemsCenter">
+                  <span class="title__porcent alignItemsCenter justifyContentCenter">%</span>
+                  <input type="number" /> 
+                </div>
+                <span class="title__messageError">Este campo deve ser maior que 0%</span>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="invest-tertiary-block data__Publication-block">
+            <h3 class="primary__buget-element">Apenas verificados?</h3>
+            <div class="block__radius-size flexWrap">
+
+              <div class="radius__blocks--primary">
+                <input type="radio" name="invest__secondarys" id="invest__allUser-element" checked/>
+                <label for="invest__allUser-element">Todaos os usuarios</label>
+              </div>
+    
+              <div class="radius__blocks--primary">
+                <input type="radio" name="invest__secondarys" id="invest__allCertificate-element" />
+                <label for="invest__allCertificate-element">apenas usuarios verificados</label>
+              </div>
+
+            </div>
+          </div>
+    
+          <button class="button button--orange button--orangeHover">Salvar busca</button>
+        </div>
+      </aside>      
+
+      <section class="section__mainProject">
+        <div class="mainProject__container">
+
+          <div class="input__search alignItemsCenter justifyContentSpaceBetween">
+            <input type="text" placeholder="Buscar" />
+            <img src="./assets/lupa.png" alt="" id="visibledPrimary" width="30" height="30"/>
+            <img src="./assets/config.png" alt="" width="35" class="visibledImage configOpen" id="input__aside-element" height="35" />
+            <img src="./assets/lupaOrange.png" alt="" width="35" class="visibledImage" height="35" />
+          </div>
+
+          <span class="name__filterSearch">JoinVille/SC</span>
+
+          <section class="project__information">
+
+            <div class="name___authorProject alignItemsStart">
+              <span class="border__authorProject justifyContentCenter alignItemsCenter">
+                <img src="./assets/perfilPhoto.jpg" alt="" width="75" height="75"/>
+              </span>
+                <div class="list__rowAuthorName">
+                  <div class="perfil__information alignItemsCenter">
+                    <div class="perfil__nameClass alignItemsCenter">
+                      <span class="title__typePerfil">HERO</span>
+                      <h1 class="title__nameAuthor">Lais H.</h1>
+                      <img src="./assets/flags.png" alt="" width="30" height="30" />
+                    </div>
+                    <div class="buttons__href">
+                      <button class="button__href button__href--orange">Mensagem</button>
+                      <button class="button__href button__href--green">Enviar Oferta</button>
+                    </div>
+                  </div>
+                  <div class="images__author">
+                    <span class="title__namePerson">Locutora e Atriz</span>
+                    <div class="images__achievements alignItemsCenter">
+                      <span class="span__itemsHome alignItemsCenter">
+                        <div class="background__imageAchievements alignItemsCenter justifyContentCenter">
+                          <img src="./assets/apertoMaos.png" alt="" width="25" height="25"/>
+                        </div>
+                        <img src="./assets/coroa.png" alt="" width="25" height="25"/>
+                        <img src="./assets/moeda.png" alt="" width="25" height="25"/>
+                        <img src="./assets/trofeu.png" alt="" width="25" height="25"/>
+                        <img src="./assets/moeda2.png" alt="" width="25" height="25"/>
+                      </span>
+                      
+                      <span class="span__stars">
+                        <img src="./assets/star.png" alt="" width="25" height="25"/>
+                        <img src="./assets/star.png" alt="" width="25" height="25"/>
+                        <img src="./assets/star.png" alt="" width="25" height="25"/>
+                        <img src="./assets/star.png" alt="" width="25" height="25"/>
+                        <img src="./assets/star.png" alt="" width="25" height="25"/>
+                      </span>
+
+                      <span class="span__titlesHome alignItemsCenter">
+                        <img src="./assets/brasil.png" alt="" width="25" height="25"  />
+                        <span>Brasil</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="div__centerC text__align justifyContentSpaceBetween">
+
+              <div class="text__description flexDirectionColumn justifyContentSpaceBetween">
+                <p>Sou formada em Letras pela USP, atriz desde 2014 e atuo como locutora, tendo como destaque um projeto áudio peças, ondee além da locução, atuei em dois espetáculos teatrais em áudio 3D. Tenho um perfil de voz feminino e cativante, e possuo facilidade para vozes caricatas.</p>
+                <span class="end_textMoreInformation">Tambem já realizei tra...
+                  <a href="#">Ver mais detalhes</a>
+                </span>
+              </div>
+
+              <ul class="list__informationProject">
+                <li class="title__liInformationProject flexDirectionColumn">Renda Mensal:
+                  <span class="title__informationMoney">R$ 1.200,00</span>
+                </li>
+
+                <li class="project__Finished title__liInformationProject">Projetos realizados: 274</li>
+                <li class="warning__Text title__liInformationProject">Violações: 0</li>
+
+
+                <li class="title__liInformationProject">Ultimo acesso: há 13 horas</li>
+                <li class="title__liInformationProject">Registrado desde: Há um ano</li>
+
+
+              </ul>
+
+            </div>
+            
+            <div class="type__projectInformation">
+              <button>Empréstimo para autônomo</button>
+              <button>Empréstimo urgente</button>
+              <button>Empréstimo para reforma ou mudança</button>
+              <a href="#">Ver mais</a>
+            </div>
+
+          </section>
+
+          <section class="project__information">
+
+            <div class="name___authorProject alignItemsStart">
+              <span class="border__authorProject justifyContentCenter alignItemsCenter">
+                <img src="./assets/perfilPhoto.jpg" alt="" width="75" height="75"/>
+              </span>
+                <div class="list__rowAuthorName">
+                  <div class="perfil__information alignItemsCenter">
+
+                    <div class="perfil__nameClass alignItemsCenter">
+                      <span class="title__typePerfil">HERO</span>
+                      <h1 class="title__nameAuthor">Lais H.</h1>
+                      <img src="./assets/flags.png" alt="" width="30" height="30" />
+                    </div>
+
+                    <div class="buttons__href">
+                      <button class="button__href button__href--orange">Mensagem</button>
+                      <button class="button__href button__href--green">Enviar Oferta</button>
+                    </div>
+                  </div>
+                  <div class="images__author">
+                    <span class="title__namePerson">Locutora e Atriz</span>
+                    <div class="images__achievements alignItemsCenter">
+                      <span class="span__itemsHome alignItemsCenter">
+                        <div class="background__imageAchievements alignItemsCenter justifyContentCenter">
+                          <img src="./assets/apertoMaos.png" alt="" width="25" height="25"/>
+                        </div>
+                        <img src="./assets/coroa.png" alt="" width="25" height="25"/>
+                        <img src="./assets/moeda.png" alt="" width="25" height="25"/>
+                        <img src="./assets/trofeu.png" alt="" width="25" height="25"/>
+                        <img src="./assets/moeda2.png" alt="" width="25" height="25"/>
+                      </span>
+                      
+                      <span class="span__stars">
+                        <img src="./assets/star.png" alt="" width="25" height="25"/>
+                        <img src="./assets/star.png" alt="" width="25" height="25"/>
+                        <img src="./assets/star.png" alt="" width="25" height="25"/>
+                        <img src="./assets/star.png" alt="" width="25" height="25"/>
+                        <img src="./assets/star.png" alt="" width="25" height="25"/>
+                      </span>
+
+                      <span class="span__titlesHome alignItemsCenter">
+                        <img src="./assets/brasil.png" alt="" width="25" height="25"  />
+                        <span>Brasil</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="div__centerC text__align justifyContentSpaceBetween">
+
+              <div class="text__description flexDirectionColumn justifyContentSpaceBetween">
+                <p>Sou formada em Letras pela USP, atriz desde 2014 e atuo como locutora, tendo como destaque um projeto áudio peças, ondee além da locução, atuei em dois espetáculos teatrais em áudio 3D. Tenho um perfil de voz feminino e cativante, e possuo facilidade para vozes caricatas.</p>
+                <span class="end_textMoreInformation">Tambem já realizei tra...
+                  <a href="#">Ver mais detalhes</a>
+                </span>
+              </div>
+
+              <ul class="list__informationProject">
+                <li class="title__liInformationProject flexDirectionColumn">Renda Mensal:
+                  <span class="title__informationMoney">R$ 1.200,00</span>
+                </li>
+
+                <li class="project__Finished title__liInformationProject">Projetos realizados: 274</li>
+                <li class="warning__Text title__liInformationProject">Violações: 0</li>
+
+
+                <li class="title__liInformationProject">Ultimo acesso: há 13 horas</li>
+                <li class="title__liInformationProject">Registrado desde: Há um ano</li>
+
+
+              </ul>
+
+            </div>
+            
+            <div class="type__projectInformation">
+              <button>Empréstimo para autônomo</button>
+              <button>Empréstimo urgente</button>
+              <button>Empréstimo para reforma ou mudança</button>
+              <a href="#">Ver mais</a>
+            </div>
+
+          </section>
+
+          
+          <section class="project__information border__remove">
+
+            <div class="name___authorProject alignItemsStart">
+              <span class="border__authorProject justifyContentCenter alignItemsCenter">
+                <img src="./assets/perfilPhoto.jpg" alt="" width="75" height="75"/>
+              </span>
+                <div class="list__rowAuthorName">
+                  <div class="perfil__information alignItemsCenter">
+                    <div class="perfil__nameClass alignItemsCenter">
+                      <span class="title__typePerfil">HERO</span>
+                      <h1 class="title__nameAuthor">Lais H.</h1>
+                      <img src="./assets/flags.png" alt="" width="30" height="30" />
+                    </div>
+
+                    <div class="buttons__href">
+                      <button class="button__href button__href--orange">Mensagem</button>
+                      <button class="button__href button__href--green">Enviar Oferta</button>
+                    </div>
+
+                  </div>
+                  <div class="images__author">
+                    <span class="title__namePerson">Locutora e Atriz</span>
+                    <div class="images__achievements alignItemsCenter">
+                      <span class="span__itemsHome alignItemsCenter">
+                        <div class="background__imageAchievements alignItemsCenter justifyContentCenter">
+                          <img src="./assets/apertoMaos.png" alt="" width="25" height="25"/>
+                        </div>
+                        <img src="./assets/coroa.png" alt="" width="25" height="25"/>
+                        <img src="./assets/moeda.png" alt="" width="25" height="25"/>
+                        <img src="./assets/trofeu.png" alt="" width="25" height="25"/>
+                        <img src="./assets/moeda2.png" alt="" width="25" height="25"/>
+                      </span>
+                      
+                      <span class="span__stars">
+                        <img src="./assets/star.png" alt="" width="25" height="25"/>
+                        <img src="./assets/star.png" alt="" width="25" height="25"/>
+                        <img src="./assets/star.png" alt="" width="25" height="25"/>
+                        <img src="./assets/star.png" alt="" width="25" height="25"/>
+                        <img src="./assets/star.png" alt="" width="25" height="25"/>
+                      </span>
+
+                      <span class="span__titlesHome alignItemsCenter">
+                        <img src="./assets/brasil.png" alt="" width="25" height="25"  />
+                        <span>Brasil</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="div__centerC text__align justifyContentSpaceBetween">
+
+              <div class="text__description flexDirectionColumn justifyContentSpaceBetween">
+                <p>Sou formada em Letras pela USP, atriz desde 2014 e atuo como locutora, tendo como destaque um projeto áudio peças, ondee além da locução, atuei em dois espetáculos teatrais em áudio 3D. Tenho um perfil de voz feminino e cativante, e possuo facilidade para vozes caricatas.</p>
+                <span class="end_textMoreInformation">Tambem já realizei tra...
+                  <a href="#">Ver mais detalhes</a>
+                </span>
+              </div>
+
+              <ul class="list__informationProject">
+                <li class="title__liInformationProject flexDirectionColumn">Renda Mensal:
+                  <span class="title__informationMoney">R$ 1.200,00</span>
+                </li>
+
+                <li class="project__Finished title__liInformationProject">Projetos realizados: 274</li>
+                <li class="warning__Text title__liInformationProject">Violações: 0</li>
+
+
+                <li class="title__liInformationProject">Ultimo acesso: há 13 horas</li>
+                <li class="title__liInformationProject">Registrado desde: Há um ano</li>
+
+
+              </ul>
+
+            </div>
+            
+            <div class="type__projectInformation">
+              <button>Empréstimo para autônomo</button>
+              <button>Empréstimo urgente</button>
+              <button>Empréstimo para reforma ou mudança</button>
+              <a href="#">Ver mais</a>
+            </div>
+
+          </section>
+
+          <section class="project__information border__remove">
+
+            <div class="name___authorProject alignItemsStart">
+              <span class="border__authorProject justifyContentCenter alignItemsCenter">
+                <img src="./assets/perfilPhoto.jpg" alt="" width="75" height="75"/>
+              </span>
+                <div class="list__rowAuthorName">
+                  <div class="perfil__information alignItemsCenter">
+                    <div class="perfil__nameClass alignItemsCenter">
+                      <span class="title__typePerfil">HERO</span>
+                      <h1 class="title__nameAuthor">Lais H.</h1>
+                      <img src="./assets/flags.png" alt="" width="30" height="30" />
+                    </div>
+                    
+                    <div class="buttons__href">
+                      <button class="button__href button__href--orange">Mensagem</button>
+                      <button class="button__href button__href--green">Enviar Oferta</button>
+                    </div>
+
+                  </div>
+                  <div class="images__author">
+                    <span class="title__namePerson">Locutora e Atriz</span>
+                    <div class="images__achievements alignItemsCenter">
+                      <span class="span__itemsHome alignItemsCenter">
+                        <div class="background__imageAchievements alignItemsCenter justifyContentCenter">
+                          <img src="./assets/apertoMaos.png" alt="" width="25" height="25"/>
+                        </div>
+                        <img src="./assets/coroa.png" alt="" width="25" height="25"/>
+                        <img src="./assets/moeda.png" alt="" width="25" height="25"/>
+                        <img src="./assets/trofeu.png" alt="" width="25" height="25"/>
+                        <img src="./assets/moeda2.png" alt="" width="25" height="25"/>
+                      </span>
+                      
+                      <span class="span__stars">
+                        <img src="./assets/star.png" alt="" width="25" height="25"/>
+                        <img src="./assets/star.png" alt="" width="25" height="25"/>
+                        <img src="./assets/star.png" alt="" width="25" height="25"/>
+                        <img src="./assets/star.png" alt="" width="25" height="25"/>
+                        <img src="./assets/star.png" alt="" width="25" height="25"/>
+                      </span>
+
+                      <span class="span__titlesHome alignItemsCenter">
+                        <img src="./assets/brasil.png" alt="" width="25" height="25"  />
+                        <span>Brasil</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="div__centerC text__align justifyContentSpaceBetween">
+
+              <div class="text__description flexDirectionColumn justifyContentSpaceBetween">
+                <p>Sou formada em Letras pela USP, atriz desde 2014 e atuo como locutora, tendo como destaque um projeto áudio peças, ondee além da locução, atuei em dois espetáculos teatrais em áudio 3D. Tenho um perfil de voz feminino e cativante, e possuo facilidade para vozes caricatas.</p>
+                <span class="end_textMoreInformation">Tambem já realizei tra...
+                  <a href="#">Ver mais detalhes</a>
+                </span>
+              </div>
+
+              <ul class="list__informationProject">
+                <li class="title__liInformationProject flexDirectionColumn">Renda Mensal:
+                  <span class="title__informationMoney">R$ 1.200,00</span>
+                </li>
+
+                <li class="project__Finished title__liInformationProject">Projetos realizados: 274</li>
+                <li class="warning__Text title__liInformationProject">Violações: 0</li>
+
+
+                <li class="title__liInformationProject">Ultimo acesso: há 13 horas</li>
+                <li class="title__liInformationProject">Registrado desde: Há um ano</li>
+
+
+              </ul>
+
+            </div>
+            
+            <div class="type__projectInformation">
+              <button>Empréstimo para autônomo</button>
+              <button>Empréstimo urgente</button>
+              <button>Empréstimo para reforma ou mudança</button>
+              <a href="#">Ver mais</a>
+            </div>
+
+          </section>
+
+        </div>
+      </section>
+    </div>
+  </main>
+
+
+    <!-- jQuery Modal -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+    />
+    <script type="module" src="./script/menu-mobile.js"></script>
+
+    <div id="pesquisa-modal" class="modal">
+      <div class="modal-header">
+        <span class="material-icons">search</span>
+      </div>
+      <div class="modal-body">
+        <input
+          type="text"
+          name="campo-pesquisa-modal"
+          id="campo-pesquisa-modal"
+          value=""
+          placeholder="O que você está procurando?"
+        />
+      </div>
+      <div class="modal-buttons">
+        <a href="#" rel="modal:close" class="botao-modal">Sair</a>
+      </div>
+    </div>
+
+    <div id="notificacoes-modal" class="modal">
+      <div class="modal-header">
+        <span class="material-icons">notifications</span>
+      </div>
+      <div class="modal-body">
+        <div class="lista">
+          <div class="item-notificacao">
+            <div class="mensagem">
+              <div class="titulo">Rejeitamos seu projeto</div>
+              <div class="descricao">Em criar plataforma para reclamação</div>
+            </div>
+            <div class="icone">
+              <span class="material-icons">delete</span>
+            </div>
+          </div>
+
+          <div class="item-notificacao">
+            <div class="mensagem">
+              <div class="titulo">Rejeitamos seu projeto</div>
+              <div class="descricao">Em criar plataforma para reclamação</div>
+            </div>
+            <div class="icone">
+              <span class="material-icons">delete</span>
+            </div>
+          </div>
+
+          <div class="item-notificacao">
+            <div class="mensagem">
+              <div class="titulo">Rejeitamos seu projeto</div>
+              <div class="descricao">Em criar plataforma para reclamação</div>
+            </div>
+            <div class="icone">
+              <span class="material-icons">delete</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-buttons">
+        <a href="#" rel="modal:close" class="botao-modal margin-right5"
+          >Ver todos</a
+        >
+        <a href="#" rel="modal:close" class="botao-modal">Sair</a>
+      </div>
+    </div>
+
+    <div id="mensagens-modal" class="modal">
+      <div class="modal-header">
+        <span class="material-icons">sms</span>
+      </div>
+      <div class="modal-body">
+        <div class="lista">
+          <div class="item-mensagem">
+            <div class="avatar"></div>
+            <div class="mensagem">
+              <div class="titulo">Rejeitamos seu projeto</div>
+              <div class="descricao">Em criar plataforma para reclamação</div>
+            </div>
+            <div class="icone">
+              <span class="material-icons">delete</span>
+            </div>
+          </div>
+
+          <div class="item-mensagem">
+            <div class="avatar"></div>
+            <div class="mensagem">
+              <div class="titulo">Rejeitamos seu projeto</div>
+              <div class="descricao">Em criar plataforma para reclamação</div>
+            </div>
+            <div class="icone">
+              <span class="material-icons">delete</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-buttons">
+        <a href="#" rel="modal:close" class="botao-modal margin-right5"
+          >Ver todos</a
+        >
+        <a href="#" rel="modal:close" class="botao-modal">Sair</a>
+      </div>
+    </div>
+
+    <div id="usuario-modal" class="modal">
+      <div class="modal-header">
+        <div id="logo-tb" class="menu-usuario">TB</div>
+      </div>
+      <div class="modal-body">
+        <div id="box-menu-usuario-modal">
+          <div class="dados">
+            Olá <span class="font-bold">Marcos</span>, seja Bem-Vindo.
+          </div>
+
+          <div class="dados">
+            <ul>
+              <li><a href="#">Configurações da Conta</a></li>
+              <li><a href="#">Meu Perfil</a></li>
+              <li><a href="#">Rank do Dia</a></li>
+            </ul>
+          </div>
+
+          <div class="dados">
+            <div class="header">Ofertas e Pedidos</div>
+
+            <ul>
+              <li><a href="#">Abrir Uma Oferta de Investimento</a></li>
+              <li><a href="#">Encontrar Pedidos</a></li>
+              <li><a href="#">Abrir um Pedido de Crédito</a></li>
+            </ul>
+          </div>
+
+          <div class="dados">
+            <div class="header">Informações da Conta</div>
+
+            <ul>
+              <li><a href="#">Lista de Indicativos</a></li>
+              <li><a href="#">Lista de Seguidores</a></li>
+              <li><a href="#">Histórico de Conta</a></li>
+              <li><a href="#">Faça uma Pergunta</a></li>
+              <li><a href="#">Minhas Apostas</a></li>
+            </ul>
+          </div>
+
+          <div class="dados">
+            <div class="header">Informações da Conta</div>
+
+            <ul>
+              <li>Conta NellBux</li>
+              <li>Meu Usuário</li>
+              <li>1211451-1</li>
+              <li>@eduardoon</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="modal-buttons">
+        <a href="#" rel="modal:close" class="botao-modal">Sair</a>
+      </div>
+    </div>
+
+    <script src="./script/GlobalTelaFrame8.js"></script>
+</body>
+</html>

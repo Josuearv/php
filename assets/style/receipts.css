@@ -1,0 +1,498 @@
+/*     font-family: 'Poppins', sans-serif; */ 
+
+
+/* ############## account__received--background */
+
+.account__received--background{
+    background: #5283FF;
+    display: flex;
+    justify-content: center; 
+    padding: 1rem 0 1rem 0;
+}
+
+.account__received--container{
+    max-width: 90%;
+    width: 90%;
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+}
+
+.receipts__text{
+    font-family: 'Poppins', sans-serif;
+    padding: 0 0 0 2rem;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.receipts__text::after{
+    content: "o que caiu na minha conta.";
+    padding: 0 0 0 1rem;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* ######################## */ 
+
+/* ############## account-background */
+.account-background-container{
+    width: 90%;
+    max-width: 1440px;
+}
+.account-background{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.account-container{
+    max-width: 1440px;
+    width: 90%;
+}
+
+.select__block{
+    padding: 1.5rem 0 1.5rem 0;
+    display: flex;
+}
+
+.select{
+    display: flex;
+    align-items: center;
+    border: 2px solid #5283FF;
+    border-radius: 1.5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    width: 360px;
+    margin: 0 1rem 0 0;
+    font-size: 14px;
+
+}
+.select select{
+    padding: 0 0.5rem 0 0;
+}
+
+.select__primary--width{
+    width: 320px;
+}
+
+.select--width{
+    width: 120px;
+}
+
+.select__secondary--width{
+    width: 140px;
+}
+
+.select__tri--width{
+    width: 100px;
+}
+
+.select__block select{
+    background: transparent;
+    color: #5283FF;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+}
+
+/* ######################## */ 
+
+/* ############## money__acount*/
+
+.money__account{
+    width: 100%;
+    display: flex;
+    padding: 1rem 0 0.5rem 0;
+}
+
+.money__account-container{
+    display: flex;
+    width: 90%;
+    max-width: 1440px;
+}
+
+.money__block{
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    padding-bottom: 15px;
+}
+
+.net__received{
+    margin:  0 7rem 0 0;
+}
+
+.period__charges{
+    margin: 0 3rem 0 0;
+}
+
+.receive__period{
+    margin: 0 1rem 0 0;
+
+}
+
+.money__result{
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    padding: 0.5rem 0 0 0;
+    font-weight: 300;
+
+}
+
+
+.title__result--moviment{
+    display: flex;
+    justify-content: center;
+}
+
+.title__moviment{
+    text-align: center;
+}
+
+.title__money{
+    font-weight: 500;
+    color: rgb(114, 114, 114);
+    letter-spacing: -1px;
+}
+
+.money__block a{
+    color: #F3992E;
+    font-weight: 700;
+    width: 220px;
+    text-align: center;
+    font-size:13px;
+
+}
+
+/* ######################## */ 
+
+/* ############## .nav-background*/
+
+
+.nav-background{
+    display: flex;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+    padding: 1.5rem 0 1.5rem 0;
+    border: 1px solid #EEEEEE;
+}
+
+.nav-background-visibled{
+    display: none;
+    background: rgb(255, 255, 255);
+    padding: 1.5rem 0 1.5rem 0;
+    justify-items: flex-start;
+}
+
+.nav-container, .nav-background-container{
+    max-width: 1440px;
+    width: 90%;
+    display: flex;
+}
+
+.nav-background-container{
+    padding: 1rem; 
+    width: 100% !important;
+    background: #f8f6f5;
+}
+
+.block__confirm{
+    margin: 0 2rem 0 0;
+}
+.block__confirms{
+    margin: 0.5rem 0 0.5rem 0;
+    padding: 0.5rem 0 0.3rem 0;
+}
+.block__confirm{
+    height: 100%;
+}
+.block__confirm label, .block__confirms label{
+    font-weight: 400;
+    color: rgb(90, 90, 90);
+    cursor: pointer;
+    padding: 0.5rem 0 1.3rem 0;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s;
+}
+
+.block__confirms label{
+    margin: 0 1rem  0 0;
+}
+
+.block__confirm input[type="radio"], .block__confirms input[type="radio"]{
+    display: none;
+}
+
+.block__confirm input[type="radio"]:checked + label{
+    color: black;
+    border-bottom: 3px solid #5283FF;
+    font-weight: 600;
+}
+
+.block__confirms input[type="radio"]:checked + label{
+    color: black;
+    border-bottom: 3px solid #5283FF;
+    font-weight: 600;
+}
+
+/* ######################## */ 
+
+
+/* ############## no__receipts-background*/
+
+.no__receipts-background{
+    background: #F8F4F2;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 5rem 0;
+}
+
+.no__receipts-container{
+    max-width: 1440px;
+    width: 90%;
+}
+
+.warning{
+    margin: 1.5rem 0 1rem 0;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.block__warning-text{
+    background: #FDF6EA;
+    border: 1px solid #C08B25;
+    box-shadow: 0 1px 0 0 #877B6F;
+    width: 100%;
+    margin: 0 0 0 1.5rem;
+    padding: 0.8rem 0 0.8rem 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    color: rgb(31, 31, 31);
+    font-size: 13px;
+}
+
+.block__warning-text img{
+    margin: 0 1rem 0 0;
+}
+
+.text__warning{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.account__background-container{
+    width: 90%;
+    max-width: 1440px;
+}
+
+.information__money-background{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 0 0 0;
+}
+
+.border__background-book{
+    background: #D7CCC8;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.border__background-book img{
+    z-index: 1;
+}
+
+.text__information-receipt{
+    font-weight: 300;
+    font-size: 20px;
+    padding: 1rem 0 0.5rem 0;
+}
+
+.title__money--bold{
+    color: rgb(32, 32, 32);
+    font-size: 14px;
+}
+
+.button__receipt{
+    border: none;
+    background: #5283FF;
+    color: #ffff;
+    font-weight: 600;
+    width: 290px;
+    height: 40px;
+    margin: 1rem 0 0 0;
+    transition: .2s;
+    cursor: pointer;
+    border-radius: 0.3rem;
+
+}
+.button__receipt:hover{
+    border: 2px solid #5283FF;
+    background: #fff;
+    color: #5283FF;
+}
+
+.warning--nones{
+    display: none;
+}
+
+#nav__background--visibled{
+    display: none;
+}
+
+
+
+
+@media (max-width: 985px){
+
+
+    .no__receipts-background{
+        background: #fff;
+    }
+    .no__receipts-container{
+        border: 1px solid #c1c1c1;
+        margin:1.5rem 0 0 0px;
+        padding: 2rem;
+        border-radius: 1rem;
+        width: 80%;
+    }
+    .text__warning, .warning--disable{
+        display: none !important;
+    }
+
+    .nav-background-container{
+        flex-wrap: wrap;
+    }
+
+    .block__confirms label{
+        padding: 0.5rem 0 0.5rem 0;
+    }
+    .nav-background-container{
+        width: auto;
+    }
+    .account-background, .account-container, .money__account, .nav-background-visibled{
+        display: flex;
+    }
+    .account-background-container{
+        width: 80%;
+        border: 1px solid #BABABA;
+        margin: 2rem 0 0 0;
+        padding: 2rem;
+    }
+    .select__block{
+        flex-wrap: wrap;
+    }
+    .account__background-container{
+        border: 1px solid #BABABA;
+        padding: 1.5rem;
+        width: 80%;
+        margin: 2rem 0 0 0;
+        border-radius: 1rem;
+    }
+
+    .money__account-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .warning{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .block__warning-text{
+        width: 80%;
+        margin: 2rem 0 0 0; 
+        padding: 1rem;
+    }
+
+    .nav-background{
+        display: none;
+    }
+    .select__block{
+        padding: 0;
+
+    }
+    .select{
+        margin: 0.5rem 0.5rem 0 0;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        justify-content: space-between;
+    }
+    .title__moviment{
+        text-align: start;
+    }
+    .title__result--moviment{
+        justify-content: flex-start;
+    }
+    
+    .money__block{
+        width: 100%;
+        background: #F8F6F5;
+        margin: 1.5rem 0 1.5rem 0;
+        border-radius: 10px;
+        padding: 1.5rem;
+    }
+    .net__received{
+        margin: 0;
+    }
+
+    .select__block select{
+        font-size: 12px;
+    }
+    .money__block a{
+        width: auto;
+        text-align: left;
+    }
+    .text__information-receipt, .title__money--bold{
+        text-align: center;
+    }
+}
+
+@media (max-width: 483px){
+    .select__primary--width{
+        width: 93%;
+    }
+}
+@media (max-width: 394px){
+    .account__background-container,.no__receipts-container{
+        width: 90%;
+    }
+    .account__background-container, .no__receipts-container{
+        padding: 1rem;
+    }
+    .select__block{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .select{
+        justify-content: space-between;
+        width: 93%;
+    }
+    .select__block select{
+        font-size: 10px;
+    }
+    .select--width{
+        font-size: 15px !important;
+    }
+    .button__receipt{
+        width: 100%;
+    }
+}

@@ -1,0 +1,703 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+}
+
+
+
+
+:root {
+  --orange--color: #f3992e;
+  --blue--color: #5283ff;
+  --gray--color: #505050;
+  --bg--white: #ffffff;
+}
+
+.justifyContentBetween{
+  display: flex;
+  justify-content: space-between;
+}
+
+.justifyContentEvenly{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.justifyContentCenter{
+  display: flex;
+  justify-content: center;
+}
+
+.alignItemsCenter{
+  display: flex;
+  align-items: center;
+}
+
+.alignItemsStart{
+  display: flex;
+  align-items: flex-start;
+}
+
+.alignItemsEnd{
+  display: flex;
+  align-items: flex-end;
+}
+
+.directionColumn{
+  display: flex;
+  flex-direction: column;
+}
+
+.flexWrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.text__message {
+  color: white;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1100px;
+  width: 85%;
+}
+
+.container--w {
+  margin: 3.5rem 0 0 0;
+  background: var(--bg--white);
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+.button {
+  width: 100%;
+  padding: 0.8rem 0;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: .3s ease;
+  border: none;
+}
+.button__nav {
+  border: none;
+  background: transparent;
+  margin: 0 0.3rem 0 1rem;
+}
+
+/* //////////////// UTILS /////////////////// */
+
+#row__separator {
+  width: 2px;
+  height: 35px;
+  border: 1px solid #A4A4A4;
+  margin: 0 1rem 0 1rem;
+}
+
+.header {
+  background: var(--bg--white);
+  height: 4.5rem;
+  width: 100%;
+}
+
+.message {
+  border: none;
+  background: transparent;
+}
+
+.messager__card {
+  background: rgb(255, 255, 255);
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #d5d5d5;
+  padding: 1rem 0 1rem 0;
+}
+
+.text__card__mensager {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  color: #505050;
+}
+
+#text__new__mensager {
+  padding: 0 0 0 0.5rem;
+  border-left: 2px solid #656565;
+}
+
+.messageModalss {
+  background: rgb(255, 255, 255);
+  z-index: 5;
+  width: 400px;
+  z-index: 3000;
+  position: absolute;
+  margin: 0 0 0 0.5rem;
+  height: 20;
+  box-shadow: rgba(51, 51, 54, 0.2) 0px 7px 29px 0px;
+  display: none;
+}
+
+.header__messageModal {
+  background: #f3992e;
+  height: 3em;
+  padding: 0 1.5rem 0 1.5rem;
+}
+
+.text__message {
+  font-weight: 500;
+}
+
+.block__text {
+  width: 90%;
+  padding: 0 0 0 0.5rem;
+}
+
+.text__one--hr {
+  width: 68%;
+  height: 100%;
+  border-right: 2px solid #505050;
+}
+
+.text__one {
+  font-size: clamp(11px, 1vw, 12px);
+  font-weight: 600;
+  color: #474747;
+}
+
+.text__about {
+  font-size: 13px;
+  padding: 0.3rem 0 0 0;
+  font-weight: 500;
+  color: #5a5a5a;
+}
+
+/* ////////////////////// MODAL NOTIFICAÇÃO /////////////////// */
+
+.exit__menu {
+  display: none;
+}
+
+.messageNotification {
+  display: none;
+  position: absolute;
+  margin: 0;
+  box-shadow: rgba(51, 51, 54, 0.2) 0px 7px 29px 0px;
+  z-index: 5;
+  width: 395px; 
+
+}
+
+.header__notification {
+  width: 100%;
+}
+
+.card__notification {
+  padding: 1rem 0 1rem 0;
+  width: 100%;
+  border-bottom: 1px solid #d5d5d5;
+  background: white;
+}
+
+.card__notificationt__text {
+  display: flex;
+  color: #5a5a5a;
+  text-decoration: underline;
+  font-size: clamp(14px, 1vw, 14px);
+}
+
+.card__notificationt__text--margin {
+  margin: 0 0 0 1rem;
+  font-weight: 400;
+}
+
+.card__notificationt__text--weight {
+  font-weight: 600;
+}
+
+.notifications__about {
+  width: 100%;
+  height: 2rem;
+  color: #5a5a5a;
+}
+
+.block__text__notification {
+  width: 90%;
+}
+
+.messager__block__text {
+  padding: 0 0 0 0.5rem;
+}
+
+/* ////////////////////// MODAL DE PERFIL /////////////////// */
+
+.header__premium-block{
+  display: flex;   
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 0 0 4rem;
+}
+
+.title__element-name--orange b {
+  font-weight: 800;
+  color: #974700;
+  font-size: 20px;
+  padding: 0 0 0 0.3rem;
+  
+}
+
+.title__element-name--gray b {
+  font-weight: 800;
+  color: #555555;
+  font-size: 20px;
+  padding: 0 0 0 0.3rem;
+}
+
+.title__element-name--yellow b {
+  font-weight: 800;
+  color: rgb(162 159 0);
+  font-size: 20px;
+  padding: 0 0 0 0.3rem;
+}
+
+
+.search__nav {
+  background: #f5f6fa;
+  height: 35px;
+
+  margin: 0 0 0 0.5rem;
+}
+
+.filter__setas {
+  cursor: pointer;
+}
+
+.nav__filter {
+  position: absolute;
+  background: #f5f6fa;
+  display: none;
+  justify-content: flex-end;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 6px;
+  z-index: 4;
+  padding: 0 0 0 5rem;
+  margin: 6.5rem 0 0 10rem;
+}
+
+.filter__result span {
+  font-weight: 600;
+  font-size: 12px;
+  color: #a0a2a6;
+  text-transform: capitalize;
+  padding: 0 1rem 0 0;
+}
+
+.filter__search {
+  list-style: none;
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.filter__search li {
+  font-weight: 600;
+  font-size: 12px;
+  color: #a0a2a6;
+  text-transform: capitalize;
+  padding: 0 1rem 0.6rem 0;
+  cursor: pointer;
+}
+
+
+/* ######################### */
+
+.search__nav input {
+  height: 100%;
+  border: none;
+  background: transparent;
+  border-radius: 16px;
+  padding: 0 0 0 1.5rem;
+  outline: none;
+}
+
+.search__nav input::placeholder {
+  font-weight: 600;
+  font-size: 12px;
+  color: #a0a2a6;
+  text-transform: capitalize;
+}
+
+.search__nav img {
+  margin: 0 0.5rem 0 0;
+}
+
+.block__Communication {
+  height: 50%;
+}
+
+.block__Communication hr {
+  width: 2px;
+  height: 36px;
+}
+
+.block__Communication hr {
+  height: 100%;
+  border: 1px solid #a4a4a4;
+}
+
+.block__Communication img {
+  cursor: pointer;
+}
+
+.tb__perfil {
+  padding: 0.3rem;
+  text-align: center;
+  border-radius: 100%;
+  border: 2px solid var(--orange--color);
+  color: var(--orange--color);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.perfil__name-element{
+  text-align: center;
+}
+
+/* ############################ */
+
+/* ############## invest-background */
+
+.hrefs-blocks{
+  width: 100%;
+}
+
+.total__investment-block{
+  max-width: 183px;
+  margin: 0 0 0 1.5rem;
+}
+
+
+.total__investment-block img{
+  cursor: pointer;
+}
+
+.total__investment-element{
+  font-weight:500;
+  max-width: 140px;
+  font-size: 14px;
+  color: #A4A4A4;
+}
+
+.perfil__code-element{
+  font-weight: 600;
+}
+
+.leave__element{
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+}
+
+/* ############################# NAV__BLOCK2*/
+
+
+.nav__hrefs-block{
+  background: var(--bg--white);
+  width: 100%;
+  height: 3.5rem;
+}
+
+.nav__links-container{
+  max-width: 1100px;
+  width: 85%;
+  height: 100%;
+  list-style: none;
+}
+
+.nav__links-container li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  height: 100%;
+  transition: .1s ease;
+
+}
+
+.nav__links-container li:hover{
+  border-bottom: 3px solid orange;
+
+}
+
+.nav__links-container li a{
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(20, 20, 20);
+  padding: 0.5rem  0 0 0;
+  opacity: 0.9;
+}
+
+.nav__links-element{
+  border-bottom: 3px solid orange;
+}
+
+.modal__eyes{
+  display: none;
+}
+
+.perfil__button{
+  border: none;
+  background: transparent;
+}
+
+.perfil__modal{
+  display: none;  
+}
+
+.exit__menu{
+  cursor: pointer;
+}
+
+.active .modal__active-element{
+  display: flex !important;
+
+} 
+
+.messageNotification,
+.messageModalss{
+    display: none !important;
+}
+
+.li__remove-list{
+  list-style: none;
+}
+
+.active .modal__eyes{
+  display: flex !important;
+}
+
+.modal__eyes{
+  position: absolute;
+  background: rgb(252, 252, 252);
+  padding: 1rem 2rem;
+  margin: 2.5rem 0 0 -7rem;
+  box-shadow: rgb(51 51 54 / 20%) 0px 7px 29px 0px;
+}
+
+#balance{
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+
+.perfil__modal {
+  position: absolute;
+  background: white;
+  box-shadow: rgb(51 51 54 / 20%) 0px 7px 29px 0px;
+  height: 500px;
+  width: 350px;
+  z-index: 5;
+  margin: 0.7rem 0 0 -11.5rem;
+  display: none !important;
+}
+
+
+.perfil__container {
+  width: 90%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.perfil__title {
+  font-weight: 400;
+  text-transform: capitalize;
+  color: rgb(80, 80, 80);
+  font-size: 16px;
+}
+
+.perfil__title__block {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #f3992e;
+}
+
+.perfil__title__bold {
+  color: #505050;
+  font-weight: 600;
+}
+
+.wrapTexts-info-block{
+  width: 100%;
+}
+
+.account__config {
+  width: 100%;
+  height: 3rem;
+  border-bottom: 2px solid #f3992e;
+  height: 27%;
+}
+
+.account__title{
+  font-weight: 400;
+  color: #505050;
+  width: 80%;
+  font-size: 16px;
+}
+
+.account__title span{
+  font-weight: 400;
+  color: #505050;
+  font-size: 16px;
+}
+
+.block__offers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 32%;
+  border-bottom: 2px solid #f3992e;
+}
+
+.block__Information__offers {
+  height: 35%;
+  border-bottom: 2px solid #f3992e;
+}
+
+.block__text__offers{
+  text-align: start;
+  font-weight: 400 !important;
+  color: #505050;
+  font-size: 16px !important;
+  
+}
+
+.title__offers__primary{
+  color: #f3a447;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: start;
+}
+
+
+.user__offers {
+  height: 25%;
+}
+
+.block__title__user {
+  height: 55%;
+  width: 40%;
+}
+
+.block__text__offers__invest--text, .block__text__offers__invest, .perfil__title__bold{
+  text-align: start;
+  font-size: 16px;
+}
+
+.block__Information__offers{
+  height: 35% ;
+  border-bottom: 2px solid #f3992e ;
+}
+
+.block__text__offers__invest {
+  color: #505050;
+}
+
+.block__text__offers__text span {
+  padding: 0.4rem 0 1rem 0;
+}
+
+.block__end__offers span {
+  padding: 0.4rem 0 0 0;
+}
+
+
+.title__element-name--orange b {
+  font-weight: 800;
+  color: #974700;
+  font-size: 20px;
+  padding: 0 0 0 0.3rem;
+}
+
+.title__element-name--gray b {
+  font-weight: 800;
+  color: #555555;
+  font-size: 20px;
+  padding: 0 0 0 0.3rem;
+}
+
+.title__element-name--yellow b {
+  font-weight: 800;
+  color: rgb(162 159 0);
+  font-size: 20px;
+  padding: 0 0 0 0.3rem;
+}
+
+.account__title {
+  font-weight: 400;
+  color: #505050;
+  width: 80%;
+  font-size: 16px;
+}
+
+
+@media (max-width: 1200px){
+  .perfil__modal{
+    margin: 1.5rem 0 0 -15rem !important;
+  }
+}
+
+@media (max-width: 1115px){
+  .nav, .total__investment-block {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .perfil__modal,
+  .messageNotification{
+    margin: 1.5rem 0 0 -17rem !important;
+  }
+  
+}
+
+@media (max-width: 1175px){
+  .messageModalss,
+  .messageNotification{
+    margin: 1.5rem 0 0 -1rem !important;
+  }
+}
+
+@media (max-width: 1060px){
+  .messageModalss {
+      margin: 1.5rem 0 0 -10rem !important;
+  }
+}
+
+@media (max-width: 990px){
+  .nav,
+  .leave__element,
+  .nav__hrefs-block{
+    display: none !important;
+  }
+
+  .exit__menu{
+    display: flex;
+  }
+}

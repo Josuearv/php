@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="./assets/style/services.css" />
+
+    <style>
+      .servicos {
+        border-bottom: 0.2vw solid #f3992e;
+      }
+    </style>
+  </head>
+
+  <body>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./assets/style/index.css" />
+    <link rel="stylesheet" href="./assets/style/cod_menu.css" />
+    <link rel="stylesheet" href="./style/headerTwo.css" />
+    <title>Nell Bux</title>
+
+    <style>
+      body {
+        font-family: "helvetica";
+      }
+
+      .icon {
+        font-size: 55px;
+      }
+      p {
+        font-size: 15px;
+      }
+      @media only screen and (max-width: 700px) {
+        .justify {
+          height: 50px;
+          position: absolute;
+          display: flex;
+          justify-content: space-between;
+        }
+        .links {
+          margin-top: 15px;
+          padding: 10px;
+          display: flex;
+          justify-content: space-between;
+          width: 120%;
+          overflow-y: hidden;
+          overflow-x: scroll;
+          margin-left: -35px;
+        }
+        .links p {
+          font-size: 9px;
+        }
+        .div {
+          margin-left: 15px;
+        }
+        .margin {
+          width: 100%;
+          margin: 0px;
+          overflow-x: scroll;
+        }
+        .logo {
+          width: 50px;
+        }
+      }
+    </style>
+
+    <header class="header justifyContentCenter alignItemsCenter">
+      <div class="container justifyContentBetween alignItemsCenter">
+        <img
+          id="logo"
+          src="./assets/imagesHeader/logo.png"
+          alt="nell bux logo image"
+          width="120"
+          height="40"
+        />
+
+        <nav class="nav">
+          <div class="search__nav justifyContentBetween alignItemsCenter">
+            <div class="search__container"></div>
+            <input
+              type="text"
+              placeholder="Pesquisar no nellbux     "
+              name="search"
+            />
+
+            <div class="filter__result justifyContentBetween">
+              <span id="result__filter" value="">Investidores</span>
+            </div>
+
+            <img
+              class="filter__seta"
+              src="./assets/imagesHeader/seta.png"
+              alt="arrow that looks like a downward facing triangle"
+              width="15px"
+              height="15px"
+            />
+            <img
+              src="./assets/imagesHeader/search.png"
+              alt="lupa de pesquisa"
+              width="25px"
+              height="25px"
+            />
+
+            <div class="nav__filter">
+              <ul
+                class="filter__search justifyContentBetween directionColumn alignItemsEnd"
+              >
+                <li name="Investimentos" class="filter__li-element">
+                  Investimentos
+                </li>
+                <li name="landingPage" class="filter__li-element">
+                  landingPage
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="hrefs-blocks justifyContentBetween alignItemsCenter">
+            <div
+              class="block__Communication justifyContentEvenly alignItemsCenter"
+            >
+              <li
+                class="button__nav localizationModal openModal li__remove-list"
+              >
+                <a href="#notification">
+                  <span>
+                    <img
+                      src="./assets/imagesHeader/sino.png"
+                      alt="orange bell icon receive notification"
+                      width="30"
+                      height="30"
+                    />
+                  </span>
+                </a>
+
+                <div
+                  class="messageNotification flexDirectionColumn modal__active-element"
+                >
+                  <header
+                    class="header__notification header__messageModal justifyContentSpaceBetween AlignItemsCenter"
+                  >
+                    <span class="text__message">Notificações</span>
+                    <span class="text__message">Ver todos</span>
+                  </header>
+
+                  <nav
+                    class="nav__notification flexDirectionColumn AlignItemsCenter"
+                  >
+                    <li class="card__notification justifyContentCenter">
+                      <div
+                        class="block__text__notification flexDirectionColumn justifyContentCenter"
+                      >
+                        <a
+                          class="card__notificationt__text card__notificationt__text--weight"
+                        >
+                          Rejeitamos seu projeto
+                          <span
+                            class="card__notificationt__text card__notificationt__text--margin"
+                            >Ontem</span
+                          >
+                        </a>
+
+                        <a
+                          class="notifications__about justifyContentSpaceBetween AlignItemsCenter"
+                          >Em criar uma plataforma para reclamação
+                          <img
+                            src="./assets/imagesHeader/trash.png"
+                            alt="trash can"
+                            width="35"
+                            height="35"
+                          />
+                        </a>
+                      </div>
+                    </li>
+
+                    <li class="card__notification justifyContentCenter">
+                      <div
+                        class="block__text__notification flexDirectionColumn justifyContentCenter"
+                      >
+                        <a
+                          class="card__notificationt__text card__notificationt__text--weight"
+                        >
+                          Rejeitamos seu projeto
+                          <span
+                            class="card__notificationt__text card__notificationt__text--margin"
+                            >Ontem</span
+                          >
+                        </a>
+
+                        <a
+                          class="notifications__about justifyContentSpaceBetween AlignItemsCenter"
+                          >Em criar uma plataforma para reclamação
+                          <img
+                            src="./assets/imagesHeader/trash.png"
+                            alt="trash can"
+                            width="35"
+                            height="35"
+                          />
+                        </a>
+                      </div>
+                    </li>
+
+                    <li class="card__notification justifyContentCenter">
+                      <div
+                        class="block__text__notification flexDirectionColumn justifyContentCenter"
+                      >
+                        <a
+                          class="card__notificationt__text card__notificationt__text--weight"
+                        >
+                          Rejeitamos seu projeto
+                          <span
+                            class="card__notificationt__text card__notificationt__text--margin"
+                            >Ontem</span
+                          >
+                        </a>
+
+                        <a
+                          class="notifications__about justifyContentSpaceBetween AlignItemsCenter"
+                          >Em criar uma plataforma para reclamação
+                          <img
+                            src="./assets/imagesHeader/trash.png"
+                            alt="trash can"
+                            width="35"
+                            height="35"
+                          />
+                        </a>
+                      </div>
+                    </li>
+                  </nav>
+                </div>
+              </li>
+
+              <li class="message localizationModal openModal li__remove-list">
+                <a href="#message">
+                  <div class="message__mobile">
+                    <img
+                      src="./assets/imagesHeader/message.png"
+                      alt="message icon, orange color with 3 dots in the middle"
+                      width="30"
+                      height="30"
+                    />
+                    <div
+                      class="voice__message justifyContentCenter alignItemsCenter"
+                    >
+                      2
+                    </div>
+                  </div>
+                </a>
+
+                <div
+                  class="messageModalss flexDirectionColumn modal__active-element"
+                >
+                  <header
+                    class="header__notification header__messageModal justifyContentSpaceBetween AlignItemsCenter"
+                  >
+                    <span class="text__message">Mensagens</span>
+                    <span class="text__message">Ver todos</span>
+                  </header>
+                  <nav
+                    class="nav__notification AlignItemsCenter flexDirectionColumn"
+                  >
+                    <li class="messager__card justifyContentCenter">
+                      <img
+                        src="./assets/imagesHeader/avatar.png"
+                        alt="faceless person with border"
+                        width="40"
+                        height="40"
+                      />
+                      <div
+                        class="messager__block__text block__text__notification"
+                      >
+                        <div
+                          class="text__card__mensager justifyContentSpaceBetween"
+                        >
+                          <span>Repasso Franquia - Oportunidade...</span>
+                          <span id="text__new__mensager">Nova Mensagem</span>
+                        </div>
+
+                        <span class="text__faq"
+                          >Em criar uma plataforma para reclamação
+                        </span>
+                      </div>
+                    </li>
+
+                    <li class="messager__card justifyContentCenter">
+                      <img
+                        src="./assets/imagesHeader/avatar.png"
+                        alt="faceless person with border"
+                        width="40"
+                        height="40"
+                      />
+                      <div
+                        class="messager__block__text block__text__notification"
+                      >
+                        <div
+                          class="text__card__mensager justifyContentSpaceBetween"
+                        >
+                          <span>Repasso Franquia - Oportunidade...</span>
+                          <span id="text__new__mensager">Nova Mensagem</span>
+                        </div>
+
+                        <span class="text__faq"
+                          >Em criar uma plataforma para reclamação
+                        </span>
+                      </div>
+                    </li>
+
+                    <li class="messager__card justifyContentCenter">
+                      <img
+                        src="./assets/imagesHeader/avatar.png"
+                        alt="faceless person with border"
+                        width="40"
+                        height="40"
+                      />
+                      <div
+                        class="messager__block__text block__text__notification"
+                      >
+                        <div
+                          class="text__card__mensager justifyContentSpaceBetween"
+                        >
+                          <span>Repasso Franquia - Oportunidade...</span>
+                          <span id="text__new__mensager">Nova Mensagem</span>
+                        </div>
+
+                        <span class="text__faq"
+                          >Em criar uma plataforma para reclamação
+                        </span>
+                      </div>
+                    </li>
+                  </nav>
+                </div>
+              </li>
+            </div>
+
+            <div class="total__investment-block alignItemsCenter">
+              <span class="total__investment-element"
+                >Total investido carregando...</span
+              >
+
+              <button class="modal__h perfil__button openModal">
+                <div class="modal__eyes">
+                  <span id="balance">Saldo: R$ 0,00</span>
+                </div>
+
+                <img
+                  src="./assets/imagesHeader/eyes.png"
+                  id="modal__get"
+                  alt="eyes"
+                  width="35"
+                  height="35"
+                />
+              </button>
+
+              <hr id="row__separator" />
+            </div>
+
+            <div
+              class="perfil__account-block total__investment-block alignItemsCenter"
+            >
+              <button class="modal__h perfil__button openModal">
+                <span class="tb__perfil">tb</span>
+
+                <div
+                  class="perfil__modal modal__active-element justifyContentCenter alignItemsCenter"
+                >
+                  <div class="perfil__container">
+                    <div class="perfil__title__block">
+                      <span class="perfil__title">
+                        olá,
+                        <span class="perfil__title__bold">marcos,</span>
+                        seja bem-vindo.
+                      </span>
+                    </div>
+
+                    <div
+                      class="account__config flexDirectionColumn justifyContentSpaceEvenly"
+                    >
+                      <span class="account__title justifyContentBetween">
+                        Configurações Conta
+                        <span> Meu perfil </span>
+                      </span>
+                      <span class="account__title justifyContentBetween">
+                        Rank do Dia
+                      </span>
+                    </div>
+
+                    <div
+                      class="block__offers justifyContentSpaceEvenly flexDirectionColumn"
+                    >
+                      <span class="title__offers__primary"
+                        >Ofertas e pedidos</span
+                      >
+                      <div class="block__text__offers justifyContentBetween">
+                        <span class="block__text__offers__invest"
+                          >Abrir uma oferta de investimento</span
+                        >
+                        <span class="block__text__offers__invest"
+                          >Encontrar Pedidos</span
+                        >
+                      </div>
+                      <span
+                        class="block__text__offers__invest block__text__offers__invest--text"
+                        >Abrir um pedido de credito</span
+                      >
+                    </div>
+
+                    <div
+                      class="block__Information__offers flexDirectionColumn justifyContentSpaceEvenly"
+                    >
+                      <span class="title__offers__primary"
+                        >Informações da Conta</span
+                      >
+                      <div
+                        class="block__text__offers__account justifyContentSpaceBetween"
+                      >
+                        <div
+                          class="block__text__offers__text flexDirectionColumn"
+                        >
+                          <span class="block__text__offers__invest"
+                            >Lista de Indicados</span
+                          >
+                          <span class="block__text__offers__invest"
+                            >Histórico de Conta</span
+                          >
+                        </div>
+
+                        <div class="block__end__offers flexDirectionColumn">
+                          <span class="block__text__offers__invest"
+                            >Lista de Seguidores</span
+                          >
+                          <span class="block__text__offers__invest"
+                            >Faças uma pergunta</span
+                          >
+                        </div>
+                      </div>
+                      <span class="block__text__offers__invest"
+                        >Minhas Apostas</span
+                      >
+                    </div>
+
+                    <div
+                      class="user__offers justifyContentSpaceBetween AlignItemsCenter"
+                    >
+                      <div
+                        class="block__title__user justifyContentSpaceBetween flexDirectionColumn"
+                      >
+                        <span class="block__text__offers__invest"
+                          >Conta Nell bux</span
+                        >
+                        <span class="perfil__title__bold">1211451-1</span>
+                      </div>
+                      <div
+                        class="block__title__user justifyContentSpaceBetween flexDirectionColumn"
+                      >
+                        <span
+                          class="block__text__offers__invest block__text__user"
+                          >Meu Usuario</span
+                        >
+                        <span class="perfil__title__bold">@eduardoon</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </button>
+
+              <span class="perfil__name-element">
+                Olá Tássio
+                <span class="perfil__code-element">55077188</span>
+              </span>
+
+              <hr id="row__separator" />
+            </div>
+
+            <span class="leave__element">SAIR</span>
+          </div>
+        </nav>
+
+        <div class="exit__menu alignItemsCenter">
+          <span id="bt-abrir-menu-mobile" class="material-icons color__orange"
+            >menu</span
+          >
+        </div>
+      </div>
+    </header>
+
+    <nav class="nav__hrefs-block justifyContentCenter">
+      <ul class="nav__links-container justifyContentBetween alignItemsCenter">
+        <li class="nav__links-element">
+          <img
+            src="./assets/imagesNav/home.png"
+            alt="home color orange"
+            width="20"
+            height="20"
+          />
+          <a href="#"> Área de Membro </a>
+        </li>
+
+        <li>
+          <img
+            src="./assets/imagesNav/money.png"
+            alt="orange money bag with s in the middle"
+            width="20"
+            height="20"
+          />
+          <a href="#">Minhas finanças</a>
+        </li>
+
+        <li>
+          <img
+            src="./assets/imagesNav/investiment.png"
+            alt="investment growing"
+            width="20"
+            height="20"
+          />
+          <a href="#">Investimentos</a>
+        </li>
+
+        <li>
+          <img
+            src="./assets/imagesNav/handmoney.png"
+            alt="hand on top has a coin floating"
+            width="20"
+            height="20"
+          />
+          <a href="#">Ofertas</a>
+        </li>
+
+        <li>
+          <img
+            src="./assets/imagesNav/groupPeoples.png"
+            alt="several people one after the other"
+            width="20"
+            height="20"
+          />
+          <a href="#">Comunidade</a>
+        </li>
+
+        <li>
+          <img
+            src="./assets/imagesNav/foneOuvido.png"
+            alt="Earphone"
+            width="20"
+            height="20"
+          />
+          <a href="#">Suporte</a>
+        </li>
+
+        <li>
+          <img
+            src="./assets/imagesNav/jornal.png"
+            alt="several sheets of newspaper stacked"
+            width="20"
+            height="20"
+          />
+          <a href="#">Serviços</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="div_container justifyContentCenter">
+      <div class="div_margin">
+        <h2>Meus pedidos</h2>
+        <div class="div_pedidos">
+          <div class="div_container_pedidos">
+            <div class="div_display_pedidos">
+              <div class="div_icon_pedidos">
+                <img
+                  src="./assets/images/assinatura.png"
+                  class="icons_pedido"
+                />
+              </div>
+              <div class="div_text_pedidos">
+                <h3>Assinatura no plano gold</h3>
+                <p>Rentabilidade de até 25% a.a</p>
+              </div>
+              <div class="div_btn_pedidos">
+                <a href="" class="btn_pedidos_c">Cancelar</a>
+              </div>
+              <div class="div_btn_pedidos">
+                <a href="" class="btn_pedidos_a">Alterar</a>
+              </div>
+            </div>
+          </div>
+          <div class="div_container_pedidos">
+            <div class="div_display_pedidos">
+              <div class="div_icon_pedidos">
+                <img src="./assets/images/garantia.png" class="icons_pedido" />
+              </div>
+              <div class="div_text_pedidos">
+                <h3>Garantia de apartamento</h3>
+                <p>Imóvel com avaliação até R$180 mill</p>
+              </div>
+              <div class="div_btn_pedidos">
+                <a href="" class="btn_pedidos_c">Cancelar</a>
+              </div>
+              <div class="div_btn_pedidos">
+                <a href="" class="btn_pedidos_a">Alterar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <h2>Lista de Serviços</h2>
+        <br />
+        <div class="div_servico">
+          <div class="div_display_servico">
+            <div class="div_box_servico">
+              <a href="" class="a_servico">
+                <img
+                  src="./assets/images/documentos.png"
+                  class="icons_pedido"
+                />
+                <h3>Documentos</h3>
+                <p>
+                  Confirme seus documentos para enviar ou publicar propostas
+                  dentro da plataforma.
+                </p>
+              </a>
+            </div>
+            <div class="div_box_servico">
+              <a href="" class="a_servico">
+                <img
+                  src="./assets/images/minha_conta.png"
+                  class="icons_pedido"
+                />
+                <h3>Minha conta</h3>
+                <p>Saiba como alterar dados pessoais de sua conta.</p>
+              </a>
+            </div>
+            <div class="div_box_servico">
+              <a href="" class="a_servico">
+                <img
+                  src="./assets/images/inadiplencia.png"
+                  class="icons_pedido"
+                />
+                <h3>Inadiplência</h3>
+                <p>
+                  Acesse o relatório de pessoas que você negativou usando
+                  nelibux.
+                </p>
+              </a>
+            </div>
+            <div class="div_box_servico">
+              <a href="" class="a_servico">
+                <img
+                  src="./assets/images/renegociar.png"
+                  class="icons_pedido"
+                />
+                <h3>Renegociação</h3>
+                <p>
+                  Veja como renegociar dividas em atrasos dentro do nelibux.
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="div_display_servico">
+            <div class="div_box_servico">
+              <a href="" class="a_servico">
+                <img src="./assets/images/credito.png" class="icons_pedido" />
+                <h3>Meu crédito</h3>
+                <p>
+                  Saiba mais sobre seu limite de crédito dentro de sua conta.
+                </p>
+                <br />
+                <p style="font-size: 12px; color: #fb5465; text-align: right">
+                  Sujeito a aprovação
+                </p>
+              </a>
+            </div>
+            <div class="div_box_servico">
+              <a href="" class="a_servico">
+                <img src="./assets/images/taxas.png" class="icons_pedido" />
+                <h3>Planos e taxas</h3>
+                <p>Confira aqui taxas de rendimento do plano contratado.</p>
+              </a>
+            </div>
+            <div class="div_box_servico">
+              <a href="" class="a_servico">
+                <img src="./assets/images/garantias.png" class="icons_pedido" />
+                <h3>Garantias</h3>
+                <p>Coloque em garantia seus bens e aumente seu score.</p>
+                <br />
+                <p style="font-size: 12px; color: #fb5465; text-align: right">
+                  Sujeito a aprovação
+                </p>
+              </a>
+            </div>
+            <div class="div_box_servico">
+              <a href="" class="a_servico">
+                <img src="./assets/images/ofertas.png" class="icons_pedido" />
+                <h3>Ofertas</h3>
+                <p>
+                  Veja ofertas exclusivas de crédito recomendadas ao seu perfil.
+                </p>
+                <br />
+                <p style="font-size: 12px; color: #fb5465; text-align: right">
+                  Sujeito a aprovação
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="div_display_servico">
+            <div class="div_box_servico">
+              <a href="" class="a_servico">
+                <img src="./assets/images/links.png" class="icons_pedido" />
+                <h3>Link de cobrança</h3>
+                <p>Solicite cobranças e pagamentos avulsos ou recorrentes.</p>
+              </a>
+            </div>
+            <div class="div_box_servico">
+              <a href="" class="a_servico">
+                <img
+                  src="./assets/images/recebimentos.png"
+                  class="icons_pedido"
+                />
+                <h3>Recebimentos</h3>
+                <p>
+                  Confira aqui data de quando você vai receber os depósitos de
+                  seus projetos.
+                </p>
+              </a>
+            </div>
+            <div class="div_box_servico">
+              <a href="" class="a_servico">
+                <img src="./assets/images/open.png" class="icons_pedido" />
+                <h3>Open banking</h3>
+                <p>
+                  Saiba o que é e como funciona para solicitar suas maquininhas
+                  e cartões com taxa zero.
+                </p>
+                <br />
+                <p style="font-size: 12px; color: #fb5465; text-align: right">
+                  Sujeito a aprovação
+                </p>
+              </a>
+            </div>
+            <div class="div_box_servico">
+              <a href="" class="a_servico">
+                <img src="./assets/images/destaque.png" class="icons_pedido" />
+                <h3>Destaque</h3>
+                <p>
+                  Faça destaques e aumente sua visibilidade dentro da
+                  plataforma.
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

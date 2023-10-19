@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  background: #f5f5f5;
+}
+
+/* TABELAs DA PAGINA */
+
+table{
+  width: 100%;
+  background-color: #fff;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  border-collapse:collapse;
+  box-shadow: #bdb9b9 0px 0px 10px;
+}
+
+table, tr, td{
+  border: none;
+}
+thead {
+border-radius: 18px;
+}
+
+tr{
+  margin: 0px;
+}
+
+.tr_top{
+  color: #fff;
+  background-color: #365297;
+  border-radius: 8px;
+}
+
+.tr_primeiro{
+  background-color: #fee36c;
+}
+
+.tr_dez{
+  background-color: #fff;
+}
+
+.tr_demais{
+  background-color: #f5f5f5;
+}
+
+td{
+    padding: 10px;
+    margin: 0px;
+}
+
+.td_flex{
+  display: flex;
+}
+
+
+/* FONTEs DA PAGINA */
+
+h2{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h3{
+  color: #6691fd;
+  font-size: 22px;
+}
+
+h4{
+  font-weight: 400;
+}
+
+p span{
+  color: #5283ff;
+}
+
+p a{
+  text-decoration: none;
+  color: #5283ff;
+}
+
+.span_red{
+  color: #f46975;
+}
+
+/* IMGs DA PAGINA */
+
+.img_rank{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* DIVs DA PAGINA */
+
+.div_container{
+  background-color: #f5f5f5;
+}
+
+.div_margin{
+  width: 90%;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  max-width: 1200px;
+}
+
+.div_display{
+  display: flex;
+}
+
+.td__placing{
+  padding: 0 0 0 2rem;
+}
+
+.info__table{
+  margin: 3rem 0 0 0
+}
+
+.list__tableBox{
+  width: 800px;
+}
+
+.div_premios{
+  margin: 0 0 0 4rem;
+}
+
+.title__valueNeg{
+  font-weight: 600;
+}
+
+.div_prem{
+  width: 100%;
+  background-color: #fff;
+  border: 1px #000 solid;
+  margin: 40px 0px 40px 0px;
+  box-shadow: #bdb9b9 0px 0px 10px;
+}
+
+.box{
+  flex: 1;
+  padding: 10px;
+  border: 1px #000 solid;
+}
+
+.header{
+  background: #fff;
+}
+
+.value__tdBold{
+  font-weight: 600;
+}
+
+
+
+table{
+  border-top-right-radius: 0.4rem;
+  border-top-left-radius: 0.4rem;
+}
+
+.td__top--Leftborder{
+  border-top-left-radius: 0.5rem;
+}
+
+.td__top--Rightborder{
+  border-top-right-radius: 0.5rem;
+}
+
+.td_top{
+  height: 45px;
+}
+
+.name__tdTop{
+  font-weight: 500;
+  text-align: center;
+}
+
+.title__nameCrazyRace{
+  font-size: 30px;
+}
+
+.ul__listProx{
+  margin: 3rem 0 0 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+}
+
+.ul__listProx li a{
+  display: flex;
+  align-items: center;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+.ul__listProx li{
+  border-radius: 0.2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  margin: 0 0.1rem;
+}
+
+.ul__listProx li a:hover{
+  background: red;
+  color: #fff;
+  background: #5580FF;
+}
+
+.ul__listProx a{
+  text-decoration: none;
+  color: #222222;
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  width: 100%;
+  padding: 0.4rem 0.7rem;
+  transition: 0.2s;
+}
+
+.active__pageProx a{
+  background:#5580FF;
+  border: 1px solid #9CADFB;
+  color: #fff;
+}
+
+
+
+@media (max-width: 1125px){
+  
+  .div_premios{
+    margin: 0 0 0 2rem;
+  }
+
+  .sub__titleValueNeg{
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 990px){
+  .info__table{
+    flex-direction: column;
+  }
+
+  .list__tableBox{
+    width: 100%;
+  }
+
+  .div_premios{
+    margin: 0;
+  }
+}

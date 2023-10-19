@@ -1,0 +1,400 @@
+.main__container{
+  width: 90%;
+  max-width: 1400px;
+  margin: 4rem 0;
+}
+
+.section__linkPayment{
+  background: #fff;
+  padding: 3rem 2rem;
+  width: 70%;
+}
+
+.title__linkPayment{
+  color: #4E4E4E;
+  font-weight: 600;
+  max-width: 550px;
+  font-size: clamp(18px, 2vw, 25px)
+}
+
+.input{
+  width: 100%;
+  margin: 2rem 0 4rem 0;
+
+}
+
+.input input{
+  width: 85%;
+  padding: 0.8rem 1rem;
+  border-style:dotted;
+  border-color: #BFBFBF;
+  background: #F2F2F2;
+  outline: none;
+  border-radius: 0.3rem;
+}
+
+.input input::placeholder{
+  color: #B1B1B1;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+.input input:hover{
+  cursor: not-allowed;
+}
+
+.button__copy{
+  width: 14%;
+  border: 1px solid #FFF5D9;
+  background: #F49A2C;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button__copy:hover{
+  background: #b97b30;
+}
+
+.ul__links{
+  list-style: none;
+  max-width: 90%;
+}
+
+.ul__links li{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.border__center{
+  border: 1px solid #BABABA;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.border__center:hover{
+  background: rgb(247, 229, 209);
+  border: 2px solid orange;
+}
+
+.title__company{
+  padding: 0.5rem 0 0 0;
+  color: #646464;
+  font-size: 15px;
+}
+
+/* ################ aside */ 
+
+.aside{
+  width: 28%;
+}
+
+.image__right{
+  width: 100%;
+}
+
+.aside__information{
+}
+
+.square__white{
+  width: 180px;
+  height: 180px;
+  background: #fff;
+}
+
+.title__money{
+  font-size: 30px;
+  color: #65D73A;
+  margin: 0.5rem 0;
+}
+
+.title__description{
+  color: #4C4C4C;
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.line__row{
+  width: 100%;
+  height: 2px;
+  background: #505050;
+  margin: 2rem 0 1rem 0;
+}
+
+.title__dueDate{
+  font-size: 17px;
+  color: #4D4D4D;
+  font-weight: 500;
+}
+
+.title__date{
+  color: #515151;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* ################ footer */
+
+.footer__codeHtml{
+  background: #fff;
+  padding: 3rem 2rem;
+  margin: 5rem 0 0 0;
+  cursor: pointer;
+}
+
+.header__codeHtml img{
+  transition: 0.5s;
+}
+
+.title__primary{
+  color: #515151;
+  font-size: clamp(18px, 2vw, 24px);
+}
+
+.title__codeHtmlDescription{
+  color: #505050;
+  font-size: 18px;
+}
+
+.script__copy{
+  margin: 5rem 0;
+}
+
+.border__buttonPay{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.preview {
+  pointer-events: none;
+  width: 8em;
+}
+
+.button__pay {
+    padding: 0 1.7142857142857142em;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.875em;
+    line-height: 2.7142857142857144;
+    background: #5EDE29;
+    border-radius: 0.2857142857142857em;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+}
+
+
+.preview-container {
+  -webkit-align-items: center;
+  align-items: center;
+  background-image: url("../assets/positi.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  height: 9.25em;
+  width: 12.3125em;
+
+}
+
+.preview,
+.preview-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+
+
+
+.button__pay:hover{
+  background: #2c7a0b;
+}
+
+
+
+.button__copyCode{
+  background: #F49930;
+  color: #fff;
+  border-radius: 0.3rem;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button__copyCode:hover{
+  background: #af722c;
+}
+
+
+.code-container {
+  border: 1px solid #e5e5e5;;
+  -webkit-border-radius: 0.25em;
+  border-radius: 0.25em;
+  color: rgba(0, 0, 0, .55);
+  height: 9.25em;
+  margin-bottom: 1.5em;
+  overflow-y: scroll;
+  padding: 0.5em;
+  width: 450px;
+  margin: 0 5rem 0 0;
+}
+
+.code-container:hover {
+  border: 1px solid #009ee3;
+}
+
+pre {
+  background-color: #fff;
+  -webkit-border-radius: 0.25em;
+  border-radius: 0.25em;
+  counter-reset: line;
+  font-size: 14px;
+  line-height: 0;
+  margin: 0;
+  width: 26.375em;
+}
+pre span {
+  display: block;
+  line-height: 1.5;
+}
+pre span:before {
+  border-right: 0.0625em solid #e5e5e5;
+  color: rgba(0, 0, 0, .55);
+  content: counter(line);
+  counter-increment: line;
+  display: inline-block;
+  margin-right: 0.5em;
+  padding: 0 1em 0 0;
+  width: 15px;
+}
+
+/* Show information none */ 
+
+.show__information{
+  display: none;
+}
+
+.activeShow{
+  display: block;
+}
+
+
+.activeShow .header__codeHtml img{
+      transform: rotate(-180deg);
+}
+
+.ul__newLink{
+  margin: 4rem 0 0 0;
+  list-style: none;
+}
+
+.ul__newLink li{
+  padding:  1rem;
+  border-top: 1px solid #D5D5D5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+.imgRotate img{
+  transform: rotate(180de);
+}
+
+@media (max-width: 990px){
+  .card__link{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .section__linkPayment{
+    width: 100%;
+    margin: 2rem 0 0 0;
+  }
+
+  .aside{
+    width: 100%;
+  }
+
+  .section__linkPayment{
+    padding: 1rem;
+  }
+
+  .button__copy{
+    width: 110px;
+    margin: 0 0 0 0.5rem;
+  }
+
+  .script__copy{
+    flex-direction: column;
+  }
+
+  .code-container{
+    width: 100%;
+    margin: 0;
+  }
+  
+  .border__buttonPay{
+    margin: 1rem 0 0 0;
+  }
+
+  .preview-container,
+  .border__buttonPay{
+    width: 100%;
+  }
+
+
+}
+
+@media (max-width: 725px){
+  .input{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .input input,
+  .button__copy{
+    width: 100%;
+  }
+
+  .button__copy{
+    margin: 0;
+    margin: 0.5rem 0 0 0;
+    height: 50px;
+  }
+
+  .ul__links{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .ul__links li{
+    margin: 1rem 0 0 0;
+  }
+
+  .footer__codeHtml{
+    padding: 1.5rem;
+  }
+
+  .show__information{
+    margin: 1rem 0 0 0;
+  }
+}

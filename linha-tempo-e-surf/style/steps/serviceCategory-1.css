@@ -1,0 +1,160 @@
+body{
+  background: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 42%, #EDEDED 42%, #EDEDED 100%);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.header{
+  background: #5283FF;
+  position: absolute;
+  width: 100%;
+  padding: 0.5rem 2rem;
+}
+
+.main{
+  width: 800px;
+}
+
+.information__stepsAboutService{
+  margin: 0 0 0 1rem;
+}
+
+.title__stepsOne{
+  color: #8C8C8C;
+}
+
+.title__aboutService{
+  color: #333333;
+  max-width: 400px;
+  margin: 0.5rem 0 0 0;
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+
+/* form */
+
+.form{
+  margin: 3rem 0;
+}
+
+/* div_progresso */
+
+.bar {
+  width: 100%;
+  border-radius: 10px;
+  height: 10px;
+  background: #B2E1C1;
+  border: 1px solid #C9FFE0;
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.bar div {
+  height: 100%;
+  border-radius: 10px;
+  background: #14C24F;
+  width: 60%;
+  border: 1px solid #45A865;
+}
+
+.btn_proximo {
+  background-color: #F3992E;
+  border: none;
+  border-radius: 50px;
+  padding: 13px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn_proximo:hover{
+  background: #d17d17;
+}
+
+/* card__chooseService */
+
+.card__chooseService{
+  background: #fff;
+  border: 2px solid #EEEEEE;
+  margin: 1rem 0 0 0;
+  border-radius: 0.5rem;
+}
+
+.title__chooseService,
+.title__categoryOfService{
+  font-weight: 600;
+  font-size: 16px;
+  padding: 1.5rem;
+  border-bottom: 1px solid #EEEEEE;
+  color: #333333;
+}
+
+/* nav__listCategory */
+
+.title__categoryOfService{
+  padding: 0;
+  border: none;
+}
+
+.nav__listCategory{
+  padding: 2rem 3rem;
+}
+
+.ul__categoryOfService{
+  list-style: none;
+  margin: 1.5rem 0 0 0;
+  overflow: auto;
+  height: 310px;
+}
+
+.ul__categoryOfService li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #EDEDED;
+  color: #333333;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.ul__categoryOfService li:first-child{
+  border-top: 1px solid #EDEDED;
+}
+
+.main__container{
+  margin: 5rem 0;
+}
+
+
+@media (max-width: 990px){
+  .main{
+    width: 95%;
+  }
+
+}
+
+@media (max-width: 725px){
+  .section__aboutService{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .information__stepsAboutService{
+    width: 100%;
+    margin: 0;
+  }
+
+  body{
+    height: 100%;
+  }
+
+}
+
+@media (max-width: 430px){
+  .nav__listCategory{
+    padding: 1rem;
+  }
+}

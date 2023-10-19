@@ -1,0 +1,81 @@
+.content {
+    padding: 0px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-left: 250px;
+}
+
+.user {
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 30px;
+
+position: absolute;
+width: 348px;
+height: 645.62px;
+left: 165px;
+top: 116px;
+
+border-radius: 18px;
+
+background: white;
+}
+     .img-perfil {
+        position: absolute;
+width: 140px;
+height: 140px;
+left: 104px;
+top: 40px;
+     }
+     .dados {
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 239px;
+height: 22px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+margin-top: 200px;
+margin-left: 50px;     
+}
+     .nome-
+.alg-cards {
+    margin-top: -90px;
+    display: block;
+}
+.card {
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 20px;
+gap: 18px;
+
+width: 633px;
+height: 147px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+margin-top: 25px;
+}

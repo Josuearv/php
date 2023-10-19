@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Corrida Maluca</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/style/corrida_maluca.css"
+    />
+
+    <link rel="stylesheet" href="./style/cssStyleModal/estilo.css" />
+    <link rel="stylesheet" href="./style/flex.css" />
+    <link rel="stylesheet" href="./style/contact.css" />
+  </head>
+  <body>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oxygen:400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://nellbux.com/js/jquery.js"></script>
+    <title>Nell Bux</title>
+
+    <style>
+      #menuMobile {
+        display: none;
+      }
+
+      @media (max-width: 1160px) {
+        #menuDesktop {
+          display: none;
+        }
+        #menuMobile {
+          display: block;
+        }
+      }
+
+      .menu-toggle {
+        width: 122% !important;
+        height: 85%;
+        position: absolute !important;
+        left: -6px;
+        top: 2.5px;
+        padding: 0.5em;
+        padding-bottom: 0.15em !important;
+        padding-top: 0.15em !important;
+      }
+
+      div#content div.menu-trigger {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 42.63px !important;
+        height: 41.72px !important;
+        background: #f3992e;
+        cursor: pointer;
+        border-radius: 5px;
+        z-index: 2 !important;
+      }
+
+      div#content div.menu-trigger:hover {
+        background: #d27e1b;
+        transition: 500ms;
+      }
+    </style>
+
+    <!-- header -->
+    <header class="header justifyContentCenter">
+      <div
+        class="containerHeader__block justifyContentSpaceBetween alignItemsCenter"
+      >
+        <img
+          id="logo"
+          src="./assets/imagesHeader/logo.png"
+          alt="nell bux logo image"
+          width="120"
+          height="40"
+        />
+
+        <nav class="nav justifyContentSpaceBetween">
+          <ul class="nav__ul justifyContentSpaceBetween">
+            <li><a href="#">Principal</a></li>
+            <li><a href="#">Abrir uma Conta</a></li>
+            <li><a href="#">Regras de uso</a></li>
+            <li><a href="#">Ranks</a></li>
+            <li><a href="#">Contato</a></li>
+            <li class="login__buttonRedirect"><a href="#">Login</a></li>
+          </ul>
+        </nav>
+
+        <div id="bt-abrir-menu-mobile" class="exit__menu">
+          <span class="material-icons">menu</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="div_container justifyContentCenter">
+      <div class="div_margin">
+        <h2 class="title__nameCrazyRace">Corrida Maluca</h2>
+        <div class="div_display info__table justifyContentSpaceBetween">
+          <div class="div_box list__tableBox">
+            <table>
+              <thead>
+                <tr class="tr_top">
+                  <td class="td_top td__top--Leftborder">
+                    <h4 class="name__tdTop">RANK</h4>
+                  </td>
+                  <td class="td_top">
+                    <h4 class="name__tdTop name__tdTopCentral">NOME</h4>
+                    <h4></h4>
+                  </td>
+                  <td class="td_top td__top--Rightborder">
+                    <h4 class="name__tdTop">CLIQUES</h4>
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="tr_primeiro">
+                  <td class="td__placing">
+                    <h5>1º</h5>
+                  </td>
+                  <td class="td_flex">
+                    <img
+                      src="./assets/images/medals-hero 5.png"
+                      class="img_rank"
+                    /><img
+                      src="./assets/images/img-user.png"
+                      class="img_rank"
+                    />
+                    <h4 class="value__tdBold">Marcos Fernando</h4>
+                  </td>
+                  <td class="value__tdBold">4190</td>
+                </tr>
+
+                <tr class="tr_dez">
+                  <td class="td__placing"><h5>2º</h5></td>
+                  <td class="td_flex">
+                    <img
+                      src="./assets/images/medals-hero 5.png"
+                      class="img_rank"
+                    /><img
+                      src="./assets/images/img-user.png"
+                      class="img_rank"
+                    />
+                    <h4 class="value__tdBold">Marcos Fernando</h4>
+                  </td>
+                  <td class="value__tdBold">4190</td>
+                </tr>
+
+                <tr class="tr_dez">
+                  <td class="td__placing"><h5>3º</h5></td>
+                  <td class="td_flex">
+                    <img
+                      src="./assets/images/medals-hero 5.png"
+                      class="img_rank"
+                    /><img
+                      src="./assets/images/img-user.png"
+                      class="img_rank"
+                    />
+                    <h4 class="value__tdBold">Marcos Fernando</h4>
+                  </td>
+                  <td class="value__tdBold">4190</td>
+                </tr>
+
+                <tr class="tr_dez">
+                  <td class="td__placing"><h5>4º</h5></td>
+                  <td class="td_flex">
+                    <img
+                      src="./assets/images/medals-hero 5.png"
+                      class="img_rank"
+                    /><img
+                      src="./assets/images/img-user.png"
+                      class="img_rank"
+                    />
+                    <h4 class="value__tdBold">Marcos Fernando</h4>
+                  </td>
+                  <td class="value__tdBold">4190</td>
+                </tr>
+
+                <tr class="tr_dez">
+                  <td class="td__placing"><h5>5º</h5></td>
+                  <td class="td_flex">
+                    <img
+                      src="./assets/images/medals-hero 5.png"
+                      class="img_rank"
+                    /><img
+                      src="./assets/images/img-user.png"
+                      class="img_rank"
+                    />
+                    <h4 class="value__tdBold">Marcos Fernando</h4>
+                  </td>
+                  <td class="value__tdBold">4190</td>
+                </tr>
+
+                <tr class="tr_dez">
+                  <td class="td__placing"><h5>6º</h5></td>
+                  <td class="td_flex">
+                    <img
+                      src="./assets/images/medals-hero 5.png"
+                      class="img_rank"
+                    /><img
+                      src="./assets/images/img-user.png"
+                      class="img_rank"
+                    />
+                    <h4 class="value__tdBold">Marcos Fernando</h4>
+                  </td>
+                  <td class="value__tdBold">4190</td>
+                </tr>
+
+                <tr class="tr_dez">
+                  <td class="td__placing"><h5>7º</h5></td>
+                  <td class="td_flex">
+                    <img
+                      src="./assets/images/medals-hero 5.png"
+                      class="img_rank"
+                    /><img
+                      src="./assets/images/img-user.png"
+                      class="img_rank"
+                    />
+                    <h4 class="value__tdBold">Marcos Fernando</h4>
+                  </td>
+                  <td class="value__tdBold">4190</td>
+                </tr>
+
+                <tr class="tr_dez">
+                  <td class="td__placing"><h5>8º</h5></td>
+                  <td class="td_flex">
+                    <img
+                      src="./assets/images/medals-hero 5.png"
+                      class="img_rank"
+                    /><img
+                      src="./assets/images/img-user.png"
+                      class="img_rank"
+                    />
+                    <h4 class="value__tdBold">Marcos Fernando</h4>
+                  </td>
+                  <td class="value__tdBold">4190</td>
+                </tr>
+
+                <tr class="tr_dez">
+                  <td class="td__placing"><h5>9º</h5></td>
+                  <td class="td_flex">
+                    <img
+                      src="./assets/images/medals-hero 5.png"
+                      class="img_rank"
+                    /><img
+                      src="./assets/images/img-user.png"
+                      class="img_rank"
+                    />
+                    <h4 class="value__tdBold">Marcos Fernando</h4>
+                  </td>
+                  <td class="value__tdBold">4190</td>
+                </tr>
+
+                <tr class="tr_dez">
+                  <td class="td__placing"><h5>10º</h5></td>
+                  <td class="td_flex">
+                    <img
+                      src="./assets/images/medals-hero 5.png"
+                      class="img_rank"
+                    /><img
+                      src="./assets/images/img-user.png"
+                      class="img_rank"
+                    />
+                    <h4 class="value__tdBold">Marcos Fernando</h4>
+                  </td>
+                  <td class="value__tdBold">4190</td>
+                </tr>
+
+                <tr class="tr_demais">
+                  <td class="td__placing"><h5>11º</h5></td>
+                  <td class="td_flex">
+                    <img
+                      src="./assets/images/medals-hero 5.png"
+                      class="img_rank"
+                    /><img
+                      src="./assets/images/img-user.png"
+                      class="img_rank"
+                    />
+                    <h4 class="value__tdBold">Alex Pereira de Lima</h4>
+                  </td>
+                  <td class="value__tdBold">1708</td>
+                </tr>
+
+                <tr class="tr_demais">
+                  <td class="td__placing"><h5>12º</h5></td>
+                  <td class="td_flex">
+                    <img
+                      src="./assets/images/medals-hero 5.png"
+                      class="img_rank"
+                    /><img
+                      src="./assets/images/img-user.png"
+                      class="img_rank"
+                    />
+                    <h4 class="value__tdBold">Uander Castro Mendes Soares</h4>
+                  </td>
+                  <td class="value__tdBold">2982</td>
+                </tr>
+
+                <tr class="tr_demais">
+                  <td class="td__placing"><h5>13º</h5></td>
+                  <td class="td_flex">
+                    <img
+                      src="./assets/images/medals-hero 5.png"
+                      class="img_rank"
+                    /><img
+                      src="./assets/images/img-user.png"
+                      class="img_rank"
+                    />
+                    <h4 class="value__tdBold">Marcos Fernando</h4>
+                  </td>
+                  <td class="value__tdBold">4190</td>
+                </tr>
+
+                <tr class="tr_demais">
+                  <td class="td__placing"><h5>14º</h5></td>
+                  <td class="td_flex">
+                    <img
+                      src="./assets/images/medals-hero 5.png"
+                      class="img_rank"
+                    /><img
+                      src="./assets/images/img-user.png"
+                      class="img_rank"
+                    />
+                    <h4 class="value__tdBold">Uander Castro Mendes Soares</h4>
+                  </td>
+                  <td class="value__tdBold">2982</td>
+                </tr>
+
+                <tr class="tr_demais">
+                  <td class="td__placing"><h5>15º</h5></td>
+                  <td class="td_flex">
+                    <img
+                      src="./assets/images/medals-hero 5.png"
+                      class="img_rank"
+                    /><img
+                      src="./assets/images/img-user.png"
+                      class="img_rank"
+                    />
+                    <h4 class="value__tdBold">Alex Pereira de Lima</h4>
+                  </td>
+                  <td class="value__tdBold">1708</td>
+                </tr>
+              </tbody>
+            </table>
+            <ul class="ul__listProx flexWrap">
+              <li>
+                <a href="#">
+                  <img
+                    src="./assets/images/voltar.png"
+                    alt=""
+                    width="30"
+                    height="30"
+                  />
+                  Anterior
+                </a>
+              </li>
+              <li class="active__pageProx">
+                <a href="#">1</a>
+              </li>
+              <li>
+                <a href="#">2</a>
+              </li>
+              <li>
+                <a href="#">3</a>
+              </li>
+              <li>
+                <a href="#">4</a>
+              </li>
+              <li>
+                <a href="#">5</a>
+              </li>
+              <li>
+                <a href="#">...</a>
+              </li>
+              <li>
+                <a href="#">312</a>
+              </li>
+              <li>
+                <a href="#">
+                  Próxima
+                  <img
+                    src="./assets/images/prox.png"
+                    alt=""
+                    width="30"
+                    height="30"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="div_box">
+            <div class="div_premios">
+              <h3>Prêmios</h3>
+              <br />
+              <p>
+                Como prêmios em dinheiro para até o
+                <span>50º</span> colocado!<br />Corrida Maluca Finalizada no dia
+                <span>05 de janeiro de 2022</span>.
+              </p>
+              <br />
+              <p>
+                <span>Objetivo:</span> Conseguir o maior numero de cliques
+                possível e ficar entre os <span>10 primeiros colocados</span>.
+              </p>
+              <div class="div_prem">
+                <div class="div_display">
+                  <div class="box title__valueNeg">1º Prêmio</div>
+                  <div class="box sub__titleValueNeg">
+                    R$ 200,00 + Saque Especial
+                  </div>
+                </div>
+                <div class="div_display">
+                  <div class="box title__valueNeg">2º Prêmio</div>
+                  <div class="box sub__titleValueNeg">
+                    R$ 100,00 + Saque Especial
+                  </div>
+                </div>
+                <div class="div_display">
+                  <div class="box title__valueNeg">3º Prêmio</div>
+                  <div class="box sub__titleValueNeg">
+                    R$ 50,00 + Saque Especial
+                  </div>
+                </div>
+                <div class="div_display">
+                  <div class="box title__valueNeg">4º Prêmio</div>
+                  <div class="box sub__titleValueNeg">
+                    R$ 5,00 + Saque Especial
+                  </div>
+                </div>
+                <div class="div_display">
+                  <div class="box title__valueNeg">5º Prêmio</div>
+                  <div class="box sub__titleValueNeg">
+                    R$ 2,00 reais via PIX
+                  </div>
+                </div>
+              </div>
+              <p>
+                <span class="span_red">*</span> Membros que de alguma forma
+                desejarem patrocinar esta corrida com algum brinde poderá entrar
+                em contato.
+              </p>
+              <br />
+              <p>
+                Como agradecimento, o mesmo poderá anunciar em todas as
+                modalidades do <span>mug ads</span> gratuitamente para sempre.
+              </p>
+              <br />
+              <p>
+                <span class="span_red">Atenção:</span><br />
+                Antes de participar Leia as
+                <a href="">Regras da corrida maluca</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

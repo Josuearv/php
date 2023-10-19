@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./style/cssStyleModal/estilo.css" />
+    <link rel="stylesheet" href="./style/form_projeto_04.css" />
+    <link rel="stylesheet" href="./style/flex.css" />
+
+    <title>Nell bux</title>
+
+    <script src="./script/jquery.js"></script>
+  </head>
+  <body>
+    
+    <!-- aside -->
+    <aside id="menu-mobile" class="menu-mobile-fecado">
+      <div class="container">
+        <div id="fechar-menu-mobile">
+          <span class="material-icons">cancel</span>
+        </div>
+      </div>
+
+      <ul id="menu-principal">
+        <li><a href="#">Area Membro</a></li>
+        <li><a href="#">Meus Projetos</a></li>
+        <li><a href="#">Minhas Finanças</a></li>
+      </ul>
+
+      <div class="espaco20"></div>
+
+      <a
+        href="#pesquisa-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <span class="material-icons">search</span>
+          <div>Pesquisar</div>
+        </div>
+      </a>
+
+      <a
+        href="#notificacoes-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <span class="material-icons">notifications</span>
+          <div>Notificações</div>
+        </div>
+      </a>
+
+      <a
+        href="#mensagens-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <span class="material-icons">sms</span>
+          <div>Mensagens</div>
+        </div>
+      </a>
+
+      <a
+        href="#usuario-modal"
+        rel="modal:open"
+        class="botao-menu-mobile fechar-menu-mobile"
+      >
+        <div class="flex-centro-centro AlignItemsCenter justifyContentCenter">
+          <div id="logo-tb" class="menu-usuario">TB</div>
+        </div>
+      </a>
+    </aside>   
+    
+    <!-- header -->
+    <header class="header justifyContentCenter">
+      <div class="header__container justifyContentSpaceBetween alignItemsCenter">
+        <img src="./assets/imagesHeader/logo.png" />
+        <div id="bt-abrir-menu-mobile" class="exit__menu">
+          <span class="material-icons">menu</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="main justifyContentCenter">
+      <div class="main__container">
+        <section class="div_display section__primary">
+          
+          <!-- DIV DO FORMULARIO -->
+          <div class="div_box_form">
+            <form method="POST" action="">
+              <h3 class="title__primary">Minha proposta</h3>
+              <br />
+              <p class="title__nameBox">Qual Taxa de juros?</p>
+
+              <div class="formall__Cards">
+                <div class="div_display_auto">
+  
+                  <div class="checked__Label">
+                    <label for="5%am">
+                      5% a.m
+                      <input type="radio" id="5%am" name="radio"/>
+                      <div class="custom-radio">
+                        <span></span>
+                      </div>
+                      <div class="border-Orange">
+                        <span></span>
+                      </div>
+                    <label>
+                  </div>   
+  
+                  <div class="checked__Label">
+                    <label for="10%am">
+                      10% a.m
+                      <input type="radio" id="10%am" name="radio"/>
+                      <div class="custom-radio">
+                        <span></span>
+                      </div>
+                      <div class="border-Orange">
+                        <span></span>
+                      </div>
+                    <label>
+                  </div>   
+  
+                  <div class="checked__Label">
+                    <label for="15%am">
+                      15% a.m
+                      <input type="radio" id="15%am" name="radio"/>
+                      <div class="custom-radio">
+                        <span></span>
+                      </div>
+                      <div class="border-Orange">
+                        <span></span>
+                      </div>
+                    <label>
+                  </div>
+  
+                  <div class="checked__Label">
+                    <label for="20%am">
+                      20% a.m
+                      <input type="radio" id="20%am"  name="radio"/>
+                      <div class="custom-radio">
+                        <span></span>
+                      </div>
+                      <div class="border-Orange">
+                        <span></span>
+                      </div>
+                    <label>
+                  </div>
+  
+                  <div class="checked__Label">
+                    <label for="25%am">
+                      25% a.m
+                      <input type="radio" id="25%am" name="radio"/>
+                      <div class="custom-radio">
+                        <span></span>
+                      </div>
+                      <div class="border-Orange">
+                        <span></span>
+                      </div>
+                    <label>
+                  </div>   
+  
+                  <div class="checked__Label">
+                    <label for="others">
+                      Outro
+                      <input type="radio" id="others" name="radio"/>
+                      <div class="custom-radio">
+                        <span></span>
+                      </div>
+                      <div class="border-Orange">
+                        <span></span>
+                      </div>
+                    <label>
+                  </div>
+  
+                  <div class="checked__Label">
+                    <label for="doesNotApply">
+                      Não se aplica
+                      <input type="radio" id="doesNotApply" name="radio"/>
+                      <div class="custom-radio">
+                        <span></span>
+                      </div>
+                      <div class="border-Orange">
+                        <span></span>
+                      </div>
+                    <label>
+                  </div>
+  
+                </div>
+                
+                <br />
+                <p class="title__nameBox">Em quantas vezes?</p>
+                <div class="div_display_auto">
+  
+                  <div class="checked__Label">
+                    <label for="onemonth">
+                      1 mês
+                      <input type="radio" id="onemonth" name="radio2"/>
+                      <div class="custom-radio">
+                        <span></span>
+                      </div>
+                      <div class="border-Orange">
+                        <span></span>
+                      </div>
+                    <label>
+                  </div>   
+  
+                  <div class="checked__Label">
+                    <label for="3months">
+                      3 meses
+                      <input type="radio" id="3months" name="radio2"/>
+                      <div class="custom-radio">
+                        <span></span>
+                      </div>
+                      <div class="border-Orange">
+                        <span></span>
+                      </div>
+                    <label>
+                  </div>   
+  
+                  <div class="checked__Label">
+                    <label for="6months">
+                      6 meses
+                      <input type="radio" id="6months" name="radio2"/>
+                      <div class="custom-radio">
+                        <span></span>
+                      </div>
+                      <div class="border-Orange">
+                        <span></span>
+                      </div>
+                    <label>
+                  </div>
+  
+                  <div class="checked__Label">
+                    <label for="12months">
+                      12 meses
+                      <input type="radio" id="12months"  name="radio2"/>
+                      <div class="custom-radio">
+                        <span></span>
+                      </div>
+                      <div class="border-Orange">
+                        <span></span>
+                      </div>
+                    <label>
+                  </div>
+  
+                  <div class="checked__Label">
+                    <label for="24months">
+                      24 meses
+                      <input type="radio" id="24months" name="radio2"/>
+                      <div class="custom-radio">
+                        <span></span>
+                      </div>
+                      <div class="border-Orange">
+                        <span></span>
+                      </div>
+                    <label>
+                  </div>   
+  
+                  <div class="checked__Label">
+                    <label for="othersTwo">
+                      Outro
+                      <input type="radio" id="othersTwo" name="radio2"/>
+                      <div class="custom-radio">
+                        <span></span>
+                      </div>
+                      <div class="border-Orange">
+                        <span></span>
+                      </div>
+                    <label>
+                  </div>
+  
+                  <div class="checked__Label">
+                    <label for="doesNotApplyTwo">
+                      Não se aplica
+                      <input type="radio" id="doesNotApplyTwo" name="radio2"/>
+                      <div class="custom-radio">
+                        <span></span>
+                      </div>
+                      <div class="border-Orange">
+                        <span></span>
+                      </div>
+                    <label>
+                  </div>
+  
+                </div>
+                <!-- BOTÃO DA PÁGINA -->
+                <br /><br />
+              </div>
+
+
+              <div class="div_progresso">
+                <img
+                    src="./assets/formProject/arrowLeft.png"
+                    alt=""
+                    width="40"
+                    height="40"
+                  /> 
+
+                <div class="bar">
+                  <div></div>
+                </div>
+
+                <div class="submitDiv" style="text-align: right">
+                  <input
+                    type="submit"
+                    name=""
+                    class="btn_proximo"
+                    disable="disable"
+                    value="Próxima"
+                  />
+                </div>
+
+              </div>
+            </form>
+          </div>
+          <!-- DIV DE INFOEMAÇÕES LATERIAS -->
+          <aside class="div_box_info asideL">
+            <h3 class="title__primaryAside">As definiçoes de tempo, parcelamento e juros disponíveis são cruciais para o investidor
+            </h3>
+            <p class="text__infoAside">Evite qualquer mal entendido completando conscientemente estes pontos. Logo, o investidor também terá a possibilidade de oferecer a sua visão sobre o investimento através de sua proposta especifica</p>
+            <img src="./assets/formProject/imageProjeto2.png" class="img_info" />
+          </aside>
+        </section>
+      </div>
+    </main>
+
+    <!-- jQuery Modal -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+    />
+    <script type="module" src="./script/menu-mobile.js"></script>
+
+    <div id="pesquisa-modal" class="modal">
+      <div class="modal-header">
+        <span class="material-icons">search</span>
+      </div>
+      <div class="modal-body">
+        <input
+          type="text"
+          name="campo-pesquisa-modal"
+          id="campo-pesquisa-modal"
+          value=""
+          placeholder="O que você está procurando?"
+        />
+      </div>
+      <div class="modal-buttons">
+        <a href="#" rel="modal:close" class="botao-modal">Sair</a>
+      </div>
+    </div>
+
+    <div id="notificacoes-modal" class="modal">
+      <div class="modal-header">
+        <span class="material-icons">notifications</span>
+      </div>
+      <div class="modal-body">
+        <div class="lista">
+          <div class="item-notificacao">
+            <div class="mensagem">
+              <div class="titulo">Rejeitamos seu projeto</div>
+              <div class="descricao">Em criar plataforma para reclamação</div>
+            </div>
+            <div class="icone">
+              <span class="material-icons">delete</span>
+            </div>
+          </div>
+
+          <div class="item-notificacao">
+            <div class="mensagem">
+              <div class="titulo">Rejeitamos seu projeto</div>
+              <div class="descricao">Em criar plataforma para reclamação</div>
+            </div>
+            <div class="icone">
+              <span class="material-icons">delete</span>
+            </div>
+          </div>
+
+          <div class="item-notificacao">
+            <div class="mensagem">
+              <div class="titulo">Rejeitamos seu projeto</div>
+              <div class="descricao">Em criar plataforma para reclamação</div>
+            </div>
+            <div class="icone">
+              <span class="material-icons">delete</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-buttons">
+        <a href="#" rel="modal:close" class="botao-modal margin-right5"
+          >Ver todos</a
+        >
+        <a href="#" rel="modal:close" class="botao-modal">Sair</a>
+      </div>
+    </div>
+
+    <div id="mensagens-modal" class="modal">
+      <div class="modal-header">
+        <span class="material-icons">sms</span>
+      </div>
+      <div class="modal-body">
+        <div class="lista">
+          <div class="item-mensagem">
+            <div class="avatar"></div>
+            <div class="mensagem">
+              <div class="titulo">Rejeitamos seu projeto</div>
+              <div class="descricao">Em criar plataforma para reclamação</div>
+            </div>
+            <div class="icone">
+              <span class="material-icons">delete</span>
+            </div>
+          </div>
+
+          <div class="item-mensagem">
+            <div class="avatar"></div>
+            <div class="mensagem">
+              <div class="titulo">Rejeitamos seu projeto</div>
+              <div class="descricao">Em criar plataforma para reclamação</div>
+            </div>
+            <div class="icone">
+              <span class="material-icons">delete</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-buttons">
+        <a href="#" rel="modal:close" class="botao-modal margin-right5"
+          >Ver todos</a
+        >
+        <a href="#" rel="modal:close" class="botao-modal">Sair</a>
+      </div>
+    </div>
+
+    <div id="usuario-modal" class="modal">
+      <div class="modal-header">
+        <div id="logo-tb" class="menu-usuario">TB</div>
+      </div>
+      <div class="modal-body">
+        <div id="box-menu-usuario-modal">
+          <div class="dados">
+            Olá <span class="font-bold">Marcos</span>, seja Bem-Vindo.
+          </div>
+
+          <div class="dados">
+            <ul>
+              <li><a href="#">Configurações da Conta</a></li>
+              <li><a href="#">Meu Perfil</a></li>
+              <li><a href="#">Rank do Dia</a></li>
+            </ul>
+          </div>
+
+          <div class="dados">
+            <div class="header">Ofertas e Pedidos</div>
+
+            <ul>
+              <li><a href="#">Abrir Uma Oferta de Investimento</a></li>
+              <li><a href="#">Encontrar Pedidos</a></li>
+              <li><a href="#">Abrir um Pedido de Crédito</a></li>
+            </ul>
+          </div>
+
+          <div class="dados">
+            <div class="header">Informações da Conta</div>
+
+            <ul>
+              <li><a href="#">Lista de Indicativos</a></li>
+              <li><a href="#">Lista de Seguidores</a></li>
+              <li><a href="#">Histórico de Conta</a></li>
+              <li><a href="#">Faça uma Pergunta</a></li>
+              <li><a href="#">Minhas Apostas</a></li>
+            </ul>
+          </div>
+
+          <div class="dados">
+            <div class="header">Informações da Conta</div>
+
+            <ul>
+              <li>Conta NellBux</li>
+              <li>Meu Usuário</li>
+              <li>1211451-1</li>
+              <li>@eduardoon</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="modal-buttons">
+        <a href="#" rel="modal:close" class="botao-modal">Sair</a>
+      </div>
+    </div>
+
+  </body>
+</html>
